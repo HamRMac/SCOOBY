@@ -5,7 +5,7 @@ from os import listdir
 from os.path import isfile, join
 
 # colour calibration
-hsv_range = np.load('colour calibration/hsv_value.npy')
+hsv_range = np.load('CV\\colour calibration\\hsv_value.npy')
 print(hsv_range)
 
 # Known parameters
@@ -14,7 +14,7 @@ focal_length = 700  # Adjust this based on your camera calibration
 min_distance_between_balls = 100  # Minimum distance between centers of detected balls
 min_ball_radius = 15
 
-test_image_folder = 'test images'
+test_image_folder = 'CV\\test images'
 test_images = [f for f in listdir(test_image_folder) if isfile(join(test_image_folder, f))]
 print(test_images)
 
@@ -79,6 +79,7 @@ def process_image(image_path):
     # Convert the image back to RGB for displaying with matplotlib
     frame_rgb = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
     return frame_rgb
+
 
 # Prepare subplots over 3 rows
 num_images = len(test_images)
