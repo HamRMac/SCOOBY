@@ -1,0 +1,48 @@
+'import warnings' failed; traceback:
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/warnings.py", line 585, in <module>
+    _processoptions(sys.warnoptions)
+  File "/usr/lib/python3.12/warnings.py", line 209, in _processoptions
+    _setoption(arg)
+  File "/usr/lib/python3.12/warnings.py", line 225, in _setoption
+    import re
+  File "/usr/lib/python3.12/re/__init__.py", line 125, in <module>
+    from . import _compiler, _parser
+  File "/usr/lib/python3.12/re/_compiler.py", line 16, in <module>
+    from ._casefix import _EXTRA_CASES
+  File "<frozen importlib._bootstrap>", line 1357, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 417, in __enter__
+  File "<frozen importlib._bootstrap>", line 443, in _get_module_lock
+  File "<frozen importlib._bootstrap>", line 232, in __init__
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/pathlib.py", line 862, in exists
+    self.stat(follow_symlinks=follow_symlinks)
+  File "/usr/lib/python3.12/pathlib.py", line 842, in stat
+    return os.stat(self, follow_symlinks=follow_symlinks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'pyproject.toml'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/E14Raspberry/ScooperBot/tennisbot_ws/build/serial_motor_demo/setup.py", line 5, in <module>
+    setup(
+  File "/usr/lib/python3/dist-packages/setuptools/__init__.py", line 107, in setup
+    return distutils.core.setup(**attrs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/setuptools/_distutils/core.py", line 159, in setup
+    dist.parse_config_files()
+  File "/usr/lib/python3/dist-packages/setuptools/dist.py", line 891, in parse_config_files
+    inifiles, tomlfiles = self._get_project_config_files(filenames)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/setuptools/dist.py", line 883, in _get_project_config_files
+    elif standard_project_metadata.exists():
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/pathlib.py", line 864, in exists
+    if not _ignore_error(e):
+           ^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/pathlib.py", line 51, in _ignore_error
+    def _ignore_error(exception):
+    
+KeyboardInterrupt
