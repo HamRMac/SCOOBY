@@ -17,7 +17,8 @@ from rclpy.node import Node
 from sensor_msgs.msg        import Image
 from geometry_msgs.msg      import Point
 from cv_bridge              import CvBridge, CvBridgeError
-import ball_tracker.process_image as proc
+
+import time
 
 import cv2
 
@@ -56,8 +57,17 @@ class DetectBall(Node):
         self.model.setInputSwapRB(True)
         self.get_logger().info('Detector Ready!')
 
+        self.lastrcvtime = 0
+        self.to_interval = 0.5
+
 
     def callback(self,data):
+        # If not ready to process nxt frame skip
+        if (time.time() - self.lastrcvtime < self.to_interval):
+            return;
+
+        self.lastrcvtime = time.time()
+
         try:
             cv_image = self.bridge.imgmsg_to_cv2(data, "bgr8")
         except CvBridgeError as e:
@@ -71,12 +81,12 @@ class DetectBall(Node):
             if len(classIndex) > 0:
                 # Draw bounding boxes and labels on the frame
                 for classInd, conf, boxes in zip(classIndex.flatten(), confidence.flatten(), bbox):
-                    if classInd <= len(self.classLabels):
+                    if (classInd <= len(self.classLabels)) and (classInd.item() == 37):
                         cv2.rectangle(cv_image, boxes, (255, 0, 0), 2)
                         boxes = boxes.tolist()
                         centrelist.append([boxes[0]+boxes[2]/2,boxes[1]+boxes[3]/2,boxes[2]*boxes[3]])
-                    else:
-                        print(f"Warning: Detected class index {classInd} out of range")
+                    #else:
+                        #print(f"Warning: Detected class index {classInd} out of range")
             img_to_pub = self.bridge.cv2_to_imgmsg(cv_image, "bgr8")
             img_to_pub.header = data.header
             self.image_out_pub.publish(img_to_pub)
@@ -110,7 +120,6 @@ def main(args=None):
     detect_ball = DetectBall()
     while rclpy.ok():
         rclpy.spin_once(detect_ball)
-        proc.wait_on_gui()
 
     detect_ball.destroy_node()
     rclpy.shutdown()
