@@ -1,0 +1,28 @@
+[0.097s] Invoking command in '/home/E14Raspberry/ScooperBot/tennisbot_ws/build/tennisbotmaster': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo:/opt/ros/jazzy /usr/bin/cmake --build /home/E14Raspberry/ScooperBot/tennisbot_ws/build/tennisbotmaster -- -j4 -l4
+[0.373s] Invoked command in '/home/E14Raspberry/ScooperBot/tennisbot_ws/build/tennisbotmaster' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo:/opt/ros/jazzy /usr/bin/cmake --build /home/E14Raspberry/ScooperBot/tennisbot_ws/build/tennisbotmaster -- -j4 -l4
+[0.789s] Invoking command in '/home/E14Raspberry/ScooperBot/tennisbot_ws/build/tennisbotmaster': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo:/opt/ros/jazzy /usr/bin/cmake --install /home/E14Raspberry/ScooperBot/tennisbot_ws/build/tennisbotmaster
+[0.866s] -- Install configuration: ""
+[0.870s] -- Execute custom install script
+[0.873s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/tennisbotmaster/share/tennisbotmaster/description/inertial_macros.xacro
+[0.880s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/tennisbotmaster/share/tennisbotmaster/description/robot.urdf.xacro
+[0.883s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/tennisbotmaster/share/tennisbotmaster/description/robot_core.xacro
+[0.885s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/tennisbotmaster/share/tennisbotmaster/description/ros2_control.xacro
+[0.887s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/tennisbotmaster/share/tennisbotmaster/launch/robot_state_pub.launch.py
+[0.889s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/tennisbotmaster/share/tennisbotmaster/launch/start_robot_ctlr.launch.py
+[0.894s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/tennisbotmaster/share/tennisbotmaster/config/my_controllers.yaml
+[0.895s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/tennisbotmaster/share/ament_index/resource_index/package_run_dependencies/tennisbotmaster
+[0.899s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/tennisbotmaster/share/ament_index/resource_index/parent_prefix_path/tennisbotmaster
+[0.900s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/tennisbotmaster/share/tennisbotmaster/environment/ament_prefix_path.sh
+[0.903s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/tennisbotmaster/share/tennisbotmaster/environment/ament_prefix_path.dsv
+[0.907s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/tennisbotmaster/share/tennisbotmaster/environment/path.sh
+[0.921s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/tennisbotmaster/share/tennisbotmaster/environment/path.dsv
+[0.921s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/tennisbotmaster/share/tennisbotmaster/local_setup.bash
+[0.922s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/tennisbotmaster/share/tennisbotmaster/local_setup.sh
+[0.929s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/tennisbotmaster/share/tennisbotmaster/local_setup.zsh
+[0.930s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/tennisbotmaster/share/tennisbotmaster/local_setup.dsv
+[0.931s] -- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/tennisbotmaster/share/tennisbotmaster/package.dsv
+[1.035s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/tennisbotmaster/share/ament_index/resource_index/packages/tennisbotmaster
+[1.038s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/tennisbotmaster/share/tennisbotmaster/cmake/tennisbotmasterConfig.cmake
+[1.041s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/tennisbotmaster/share/tennisbotmaster/cmake/tennisbotmasterConfig-version.cmake
+[1.043s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/tennisbotmaster/share/tennisbotmaster/package.xml
+[1.072s] Invoked command in '/home/E14Raspberry/ScooperBot/tennisbot_ws/build/tennisbotmaster' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo:/opt/ros/jazzy /usr/bin/cmake --install /home/E14Raspberry/ScooperBot/tennisbot_ws/build/tennisbotmaster

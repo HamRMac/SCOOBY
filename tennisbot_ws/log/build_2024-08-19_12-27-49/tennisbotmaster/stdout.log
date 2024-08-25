@@ -1,0 +1,35 @@
+-- Found ament_cmake: 2.5.2 (/opt/ros/jazzy/share/ament_cmake/cmake)
+-- Override CMake install command with custom implementation using symlinks instead of copying resources
+-- Found ament_lint_auto: 0.17.1 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+-- Added test 'flake8' to check Python code syntax and style conventions
+-- Configured 'flake8' exclude dirs and/or files: 
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done (2.7s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/E14Raspberry/ScooperBot/tennisbot_ws/build/tennisbotmaster
+-- Install configuration: ""
+-- Execute custom install script
+-- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/tennisbotmaster/share/tennisbotmaster/description/inertial_macros.xacro
+-- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/tennisbotmaster/share/tennisbotmaster/description/robot.urdf.xacro
+-- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/tennisbotmaster/share/tennisbotmaster/description/robot_core.xacro
+-- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/tennisbotmaster/share/tennisbotmaster/description/ros2_control.xacro
+-- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/tennisbotmaster/share/tennisbotmaster/launch/robot_state_pub.launch.py
+-- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/tennisbotmaster/share/tennisbotmaster/launch/start_robot_ctlr.launch.py
+-- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/tennisbotmaster/share/tennisbotmaster/config/my_controllers.yaml
+-- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/tennisbotmaster/share/ament_index/resource_index/package_run_dependencies/tennisbotmaster
+-- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/tennisbotmaster/share/ament_index/resource_index/parent_prefix_path/tennisbotmaster
+-- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/tennisbotmaster/share/tennisbotmaster/environment/ament_prefix_path.sh
+-- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/tennisbotmaster/share/tennisbotmaster/environment/ament_prefix_path.dsv
+-- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/tennisbotmaster/share/tennisbotmaster/environment/path.sh
+-- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/tennisbotmaster/share/tennisbotmaster/environment/path.dsv
+-- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/tennisbotmaster/share/tennisbotmaster/local_setup.bash
+-- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/tennisbotmaster/share/tennisbotmaster/local_setup.sh
+-- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/tennisbotmaster/share/tennisbotmaster/local_setup.zsh
+-- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/tennisbotmaster/share/tennisbotmaster/local_setup.dsv
+-- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/tennisbotmaster/share/tennisbotmaster/package.dsv
+-- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/tennisbotmaster/share/ament_index/resource_index/packages/tennisbotmaster
+-- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/tennisbotmaster/share/tennisbotmaster/cmake/tennisbotmasterConfig.cmake
+-- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/tennisbotmaster/share/tennisbotmaster/cmake/tennisbotmasterConfig-version.cmake
+-- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/tennisbotmaster/share/tennisbotmaster/package.xml

@@ -1,1 +1,1 @@
-/home/E14Raspberry/tennisbot_ws/src/serial_motor_demo/serial_motor_demo_msgs/msg/MotorCommand.msg
+/home/E14Raspberry/ScooperBot/tennisbot_ws/src/serial_motor_demo/serial_motor_demo_msgs/msg/MotorCommand.msg

@@ -1,0 +1,31 @@
+[10.378s] Invoking command in '/home/E14Raspberry/ScooperBot/tennisbot_ws/build/ball_tracker': PYTHONPATH=/home/E14Raspberry/ScooperBot/tennisbot_ws/build/ball_tracker/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/ball_tracker/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/E14Raspberry/ScooperBot/tennisbot_ws/build/ball_tracker/build --no-deps symlink_data
+[11.345s] /usr/lib/python3/dist-packages/setuptools/dist.py:744: SetuptoolsDeprecationWarning: Invalid dash-separated options
+[11.345s] !!
+[11.349s] 
+[11.350s]         ********************************************************************************
+[11.350s]         Usage of dash-separated 'script-dir' will not be supported in future
+[11.360s]         versions. Please use the underscore name 'script_dir' instead.
+[11.361s] 
+[11.361s]         This deprecation is overdue, please update your project and remove deprecated
+[11.371s]         calls to avoid build errors in the future.
+[11.373s] 
+[11.373s]         See https://setuptools.pypa.io/en/latest/userguide/declarative_config.html for details.
+[11.374s]         ********************************************************************************
+[11.374s] 
+[11.375s] !!
+[11.376s]   opt = self.warn_dash_deprecation(opt, section)
+[12.863s] running develop
+[12.863s] /usr/lib/python3/dist-packages/setuptools/command/develop.py:40: EasyInstallDeprecationWarning: easy_install command is deprecated.
+[12.871s] !!
+[12.875s] 
+[12.875s]         ********************************************************************************
+[12.880s]         Please avoid running ``setup.py`` and ``easy_install``.
+[12.887s]         Instead, use pypa/build, pypa/installer or other
+[12.892s]         standards-based tools.
+[12.899s] 
+[12.903s]         See https://github.com/pypa/setuptools/issues/917 for details.
+[12.910s]         ********************************************************************************
+[12.912s] 
+[12.915s] !!
+[12.927s]   easy_install.initialize_options(self)
+[12.934s] interrupted

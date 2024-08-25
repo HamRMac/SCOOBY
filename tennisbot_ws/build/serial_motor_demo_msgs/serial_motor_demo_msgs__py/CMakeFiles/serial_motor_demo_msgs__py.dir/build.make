@@ -53,29 +53,29 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/E14Raspberry/tennisbot_ws/src/serial_motor_demo/serial_motor_demo_msgs
+CMAKE_SOURCE_DIR = /home/E14Raspberry/ScooperBot/tennisbot_ws/src/serial_motor_demo/serial_motor_demo_msgs
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/E14Raspberry/tennisbot_ws/build/serial_motor_demo_msgs
+CMAKE_BINARY_DIR = /home/E14Raspberry/ScooperBot/tennisbot_ws/build/serial_motor_demo_msgs
 
 # Utility rule file for serial_motor_demo_msgs__py.
 
 # Include any custom commands dependencies for this target.
-include /home/E14Raspberry/tennisbot_ws/build/serial_motor_demo_msgs/serial_motor_demo_msgs__py/CMakeFiles/serial_motor_demo_msgs__py.dir/compiler_depend.make
+include /home/E14Raspberry/ScooperBot/tennisbot_ws/build/serial_motor_demo_msgs/serial_motor_demo_msgs__py/CMakeFiles/serial_motor_demo_msgs__py.dir/compiler_depend.make
 
 # Include the progress variables for this target.
-include /home/E14Raspberry/tennisbot_ws/build/serial_motor_demo_msgs/serial_motor_demo_msgs__py/CMakeFiles/serial_motor_demo_msgs__py.dir/progress.make
+include /home/E14Raspberry/ScooperBot/tennisbot_ws/build/serial_motor_demo_msgs/serial_motor_demo_msgs__py/CMakeFiles/serial_motor_demo_msgs__py.dir/progress.make
 
-/home/E14Raspberry/tennisbot_ws/build/serial_motor_demo_msgs/serial_motor_demo_msgs__py/CMakeFiles/serial_motor_demo_msgs__py: rosidl_generator_py/serial_motor_demo_msgs/_serial_motor_demo_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
-/home/E14Raspberry/tennisbot_ws/build/serial_motor_demo_msgs/serial_motor_demo_msgs__py/CMakeFiles/serial_motor_demo_msgs__py: rosidl_generator_py/serial_motor_demo_msgs/_serial_motor_demo_msgs_s.ep.rosidl_typesupport_introspection_c.c
-/home/E14Raspberry/tennisbot_ws/build/serial_motor_demo_msgs/serial_motor_demo_msgs__py/CMakeFiles/serial_motor_demo_msgs__py: rosidl_generator_py/serial_motor_demo_msgs/_serial_motor_demo_msgs_s.ep.rosidl_typesupport_c.c
-/home/E14Raspberry/tennisbot_ws/build/serial_motor_demo_msgs/serial_motor_demo_msgs__py/CMakeFiles/serial_motor_demo_msgs__py: rosidl_generator_py/serial_motor_demo_msgs/msg/_motor_command.py
-/home/E14Raspberry/tennisbot_ws/build/serial_motor_demo_msgs/serial_motor_demo_msgs__py/CMakeFiles/serial_motor_demo_msgs__py: rosidl_generator_py/serial_motor_demo_msgs/msg/_motor_vels.py
-/home/E14Raspberry/tennisbot_ws/build/serial_motor_demo_msgs/serial_motor_demo_msgs__py/CMakeFiles/serial_motor_demo_msgs__py: rosidl_generator_py/serial_motor_demo_msgs/msg/_encoder_vals.py
-/home/E14Raspberry/tennisbot_ws/build/serial_motor_demo_msgs/serial_motor_demo_msgs__py/CMakeFiles/serial_motor_demo_msgs__py: rosidl_generator_py/serial_motor_demo_msgs/msg/__init__.py
-/home/E14Raspberry/tennisbot_ws/build/serial_motor_demo_msgs/serial_motor_demo_msgs__py/CMakeFiles/serial_motor_demo_msgs__py: rosidl_generator_py/serial_motor_demo_msgs/msg/_motor_command_s.c
-/home/E14Raspberry/tennisbot_ws/build/serial_motor_demo_msgs/serial_motor_demo_msgs__py/CMakeFiles/serial_motor_demo_msgs__py: rosidl_generator_py/serial_motor_demo_msgs/msg/_motor_vels_s.c
-/home/E14Raspberry/tennisbot_ws/build/serial_motor_demo_msgs/serial_motor_demo_msgs__py/CMakeFiles/serial_motor_demo_msgs__py: rosidl_generator_py/serial_motor_demo_msgs/msg/_encoder_vals_s.c
+/home/E14Raspberry/ScooperBot/tennisbot_ws/build/serial_motor_demo_msgs/serial_motor_demo_msgs__py/CMakeFiles/serial_motor_demo_msgs__py: rosidl_generator_py/serial_motor_demo_msgs/_serial_motor_demo_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+/home/E14Raspberry/ScooperBot/tennisbot_ws/build/serial_motor_demo_msgs/serial_motor_demo_msgs__py/CMakeFiles/serial_motor_demo_msgs__py: rosidl_generator_py/serial_motor_demo_msgs/_serial_motor_demo_msgs_s.ep.rosidl_typesupport_introspection_c.c
+/home/E14Raspberry/ScooperBot/tennisbot_ws/build/serial_motor_demo_msgs/serial_motor_demo_msgs__py/CMakeFiles/serial_motor_demo_msgs__py: rosidl_generator_py/serial_motor_demo_msgs/_serial_motor_demo_msgs_s.ep.rosidl_typesupport_c.c
+/home/E14Raspberry/ScooperBot/tennisbot_ws/build/serial_motor_demo_msgs/serial_motor_demo_msgs__py/CMakeFiles/serial_motor_demo_msgs__py: rosidl_generator_py/serial_motor_demo_msgs/msg/_motor_command.py
+/home/E14Raspberry/ScooperBot/tennisbot_ws/build/serial_motor_demo_msgs/serial_motor_demo_msgs__py/CMakeFiles/serial_motor_demo_msgs__py: rosidl_generator_py/serial_motor_demo_msgs/msg/_motor_vels.py
+/home/E14Raspberry/ScooperBot/tennisbot_ws/build/serial_motor_demo_msgs/serial_motor_demo_msgs__py/CMakeFiles/serial_motor_demo_msgs__py: rosidl_generator_py/serial_motor_demo_msgs/msg/_encoder_vals.py
+/home/E14Raspberry/ScooperBot/tennisbot_ws/build/serial_motor_demo_msgs/serial_motor_demo_msgs__py/CMakeFiles/serial_motor_demo_msgs__py: rosidl_generator_py/serial_motor_demo_msgs/msg/__init__.py
+/home/E14Raspberry/ScooperBot/tennisbot_ws/build/serial_motor_demo_msgs/serial_motor_demo_msgs__py/CMakeFiles/serial_motor_demo_msgs__py: rosidl_generator_py/serial_motor_demo_msgs/msg/_motor_command_s.c
+/home/E14Raspberry/ScooperBot/tennisbot_ws/build/serial_motor_demo_msgs/serial_motor_demo_msgs__py/CMakeFiles/serial_motor_demo_msgs__py: rosidl_generator_py/serial_motor_demo_msgs/msg/_motor_vels_s.c
+/home/E14Raspberry/ScooperBot/tennisbot_ws/build/serial_motor_demo_msgs/serial_motor_demo_msgs__py/CMakeFiles/serial_motor_demo_msgs__py: rosidl_generator_py/serial_motor_demo_msgs/msg/_encoder_vals_s.c
 
 rosidl_generator_py/serial_motor_demo_msgs/_serial_motor_demo_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/jazzy/lib/rosidl_generator_py/rosidl_generator_py
 rosidl_generator_py/serial_motor_demo_msgs/_serial_motor_demo_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/jazzy/lib/python3.12/site-packages/rosidl_generator_py/__init__.py
@@ -93,8 +93,8 @@ rosidl_generator_py/serial_motor_demo_msgs/_serial_motor_demo_msgs_s.ep.rosidl_t
 rosidl_generator_py/serial_motor_demo_msgs/_serial_motor_demo_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/serial_motor_demo_msgs/msg/MotorCommand.idl
 rosidl_generator_py/serial_motor_demo_msgs/_serial_motor_demo_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/serial_motor_demo_msgs/msg/MotorVels.idl
 rosidl_generator_py/serial_motor_demo_msgs/_serial_motor_demo_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/serial_motor_demo_msgs/msg/EncoderVals.idl
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/E14Raspberry/tennisbot_ws/build/serial_motor_demo_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Python code for ROS interfaces"
-	cd /home/E14Raspberry/tennisbot_ws/build/serial_motor_demo_msgs/serial_motor_demo_msgs__py && /usr/bin/python3 /opt/ros/jazzy/share/rosidl_generator_py/cmake/../../../lib/rosidl_generator_py/rosidl_generator_py --generator-arguments-file /home/E14Raspberry/tennisbot_ws/build/serial_motor_demo_msgs/rosidl_generator_py__arguments.json --typesupport-impls "rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c;rosidl_typesupport_c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/E14Raspberry/ScooperBot/tennisbot_ws/build/serial_motor_demo_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Python code for ROS interfaces"
+	cd /home/E14Raspberry/ScooperBot/tennisbot_ws/build/serial_motor_demo_msgs/serial_motor_demo_msgs__py && /usr/bin/python3 /opt/ros/jazzy/share/rosidl_generator_py/cmake/../../../lib/rosidl_generator_py/rosidl_generator_py --generator-arguments-file /home/E14Raspberry/ScooperBot/tennisbot_ws/build/serial_motor_demo_msgs/rosidl_generator_py__arguments.json --typesupport-impls "rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c;rosidl_typesupport_c"
 
 rosidl_generator_py/serial_motor_demo_msgs/_serial_motor_demo_msgs_s.ep.rosidl_typesupport_introspection_c.c: rosidl_generator_py/serial_motor_demo_msgs/_serial_motor_demo_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/serial_motor_demo_msgs/_serial_motor_demo_msgs_s.ep.rosidl_typesupport_introspection_c.c
@@ -133,19 +133,19 @@ serial_motor_demo_msgs__py: rosidl_generator_py/serial_motor_demo_msgs/msg/_moto
 serial_motor_demo_msgs__py: rosidl_generator_py/serial_motor_demo_msgs/msg/_motor_command_s.c
 serial_motor_demo_msgs__py: rosidl_generator_py/serial_motor_demo_msgs/msg/_motor_vels.py
 serial_motor_demo_msgs__py: rosidl_generator_py/serial_motor_demo_msgs/msg/_motor_vels_s.c
-serial_motor_demo_msgs__py: /home/E14Raspberry/tennisbot_ws/build/serial_motor_demo_msgs/serial_motor_demo_msgs__py/CMakeFiles/serial_motor_demo_msgs__py
-serial_motor_demo_msgs__py: /home/E14Raspberry/tennisbot_ws/build/serial_motor_demo_msgs/serial_motor_demo_msgs__py/CMakeFiles/serial_motor_demo_msgs__py.dir/build.make
+serial_motor_demo_msgs__py: /home/E14Raspberry/ScooperBot/tennisbot_ws/build/serial_motor_demo_msgs/serial_motor_demo_msgs__py/CMakeFiles/serial_motor_demo_msgs__py
+serial_motor_demo_msgs__py: /home/E14Raspberry/ScooperBot/tennisbot_ws/build/serial_motor_demo_msgs/serial_motor_demo_msgs__py/CMakeFiles/serial_motor_demo_msgs__py.dir/build.make
 .PHONY : serial_motor_demo_msgs__py
 
 # Rule to build all files generated by this target.
-/home/E14Raspberry/tennisbot_ws/build/serial_motor_demo_msgs/serial_motor_demo_msgs__py/CMakeFiles/serial_motor_demo_msgs__py.dir/build: serial_motor_demo_msgs__py
-.PHONY : /home/E14Raspberry/tennisbot_ws/build/serial_motor_demo_msgs/serial_motor_demo_msgs__py/CMakeFiles/serial_motor_demo_msgs__py.dir/build
+/home/E14Raspberry/ScooperBot/tennisbot_ws/build/serial_motor_demo_msgs/serial_motor_demo_msgs__py/CMakeFiles/serial_motor_demo_msgs__py.dir/build: serial_motor_demo_msgs__py
+.PHONY : /home/E14Raspberry/ScooperBot/tennisbot_ws/build/serial_motor_demo_msgs/serial_motor_demo_msgs__py/CMakeFiles/serial_motor_demo_msgs__py.dir/build
 
-/home/E14Raspberry/tennisbot_ws/build/serial_motor_demo_msgs/serial_motor_demo_msgs__py/CMakeFiles/serial_motor_demo_msgs__py.dir/clean:
-	cd /home/E14Raspberry/tennisbot_ws/build/serial_motor_demo_msgs/serial_motor_demo_msgs__py && $(CMAKE_COMMAND) -P CMakeFiles/serial_motor_demo_msgs__py.dir/cmake_clean.cmake
-.PHONY : /home/E14Raspberry/tennisbot_ws/build/serial_motor_demo_msgs/serial_motor_demo_msgs__py/CMakeFiles/serial_motor_demo_msgs__py.dir/clean
+/home/E14Raspberry/ScooperBot/tennisbot_ws/build/serial_motor_demo_msgs/serial_motor_demo_msgs__py/CMakeFiles/serial_motor_demo_msgs__py.dir/clean:
+	cd /home/E14Raspberry/ScooperBot/tennisbot_ws/build/serial_motor_demo_msgs/serial_motor_demo_msgs__py && $(CMAKE_COMMAND) -P CMakeFiles/serial_motor_demo_msgs__py.dir/cmake_clean.cmake
+.PHONY : /home/E14Raspberry/ScooperBot/tennisbot_ws/build/serial_motor_demo_msgs/serial_motor_demo_msgs__py/CMakeFiles/serial_motor_demo_msgs__py.dir/clean
 
-/home/E14Raspberry/tennisbot_ws/build/serial_motor_demo_msgs/serial_motor_demo_msgs__py/CMakeFiles/serial_motor_demo_msgs__py.dir/depend:
-	cd /home/E14Raspberry/tennisbot_ws/build/serial_motor_demo_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/E14Raspberry/tennisbot_ws/src/serial_motor_demo/serial_motor_demo_msgs /home/E14Raspberry/tennisbot_ws/build/serial_motor_demo_msgs/serial_motor_demo_msgs__py /home/E14Raspberry/tennisbot_ws/build/serial_motor_demo_msgs /home/E14Raspberry/tennisbot_ws/build/serial_motor_demo_msgs/serial_motor_demo_msgs__py /home/E14Raspberry/tennisbot_ws/build/serial_motor_demo_msgs/serial_motor_demo_msgs__py/CMakeFiles/serial_motor_demo_msgs__py.dir/DependInfo.cmake "--color=$(COLOR)"
-.PHONY : /home/E14Raspberry/tennisbot_ws/build/serial_motor_demo_msgs/serial_motor_demo_msgs__py/CMakeFiles/serial_motor_demo_msgs__py.dir/depend
+/home/E14Raspberry/ScooperBot/tennisbot_ws/build/serial_motor_demo_msgs/serial_motor_demo_msgs__py/CMakeFiles/serial_motor_demo_msgs__py.dir/depend:
+	cd /home/E14Raspberry/ScooperBot/tennisbot_ws/build/serial_motor_demo_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/E14Raspberry/ScooperBot/tennisbot_ws/src/serial_motor_demo/serial_motor_demo_msgs /home/E14Raspberry/ScooperBot/tennisbot_ws/build/serial_motor_demo_msgs/serial_motor_demo_msgs__py /home/E14Raspberry/ScooperBot/tennisbot_ws/build/serial_motor_demo_msgs /home/E14Raspberry/ScooperBot/tennisbot_ws/build/serial_motor_demo_msgs/serial_motor_demo_msgs__py /home/E14Raspberry/ScooperBot/tennisbot_ws/build/serial_motor_demo_msgs/serial_motor_demo_msgs__py/CMakeFiles/serial_motor_demo_msgs__py.dir/DependInfo.cmake "--color=$(COLOR)"
+.PHONY : /home/E14Raspberry/ScooperBot/tennisbot_ws/build/serial_motor_demo_msgs/serial_motor_demo_msgs__py/CMakeFiles/serial_motor_demo_msgs__py.dir/depend
 

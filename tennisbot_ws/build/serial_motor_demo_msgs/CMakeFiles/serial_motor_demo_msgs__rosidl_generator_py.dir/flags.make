@@ -4,7 +4,7 @@
 # compile C with /usr/bin/cc
 C_DEFINES = -DROS_PACKAGE_NAME=\"serial_motor_demo_msgs\" -Dserial_motor_demo_msgs__rosidl_generator_py_EXPORTS
 
-C_INCLUDES = -I/home/E14Raspberry/tennisbot_ws/build/serial_motor_demo_msgs/rosidl_generator_c -I/home/E14Raspberry/tennisbot_ws/build/serial_motor_demo_msgs/rosidl_generator_py -isystem /opt/ros/jazzy/include/rosidl_runtime_c -isystem /opt/ros/jazzy/include/rcutils -isystem /opt/ros/jazzy/include/rosidl_typesupport_interface -isystem /usr/lib/python3/dist-packages/numpy/core/include -isystem /usr/include/python3.12
+C_INCLUDES = -I/home/E14Raspberry/ScooperBot/tennisbot_ws/build/serial_motor_demo_msgs/rosidl_generator_c -I/home/E14Raspberry/ScooperBot/tennisbot_ws/build/serial_motor_demo_msgs/rosidl_generator_py -isystem /opt/ros/jazzy/include/rosidl_runtime_c -isystem /opt/ros/jazzy/include/rcutils -isystem /opt/ros/jazzy/include/rosidl_typesupport_interface -isystem /usr/lib/python3/dist-packages/numpy/core/include -isystem /usr/include/python3.12
 
 C_FLAGS = -std=gnu99 -fPIC -Wall -Wextra
 

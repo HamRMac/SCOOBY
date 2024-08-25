@@ -1,0 +1,31 @@
+[3.225s] Invoking command in '/home/E14Raspberry/ScooperBot/tennisbot_ws/build/serial_motor_demo': CMAKE_PREFIX_PATH=/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/tennisbotmaster:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/diffdrive_arduino PYTHONPATH=/home/E14Raspberry/ScooperBot/tennisbot_ws/build/serial_motor_demo/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo/lib/python3.12/site-packages:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/lib/python3.12/site-packages:/home/E14Raspberry/ScooperBot/tennisbot_ws/build/serial_motor_demo:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/E14Raspberry/ScooperBot/tennisbot_ws/build/serial_motor_demo/build --no-deps symlink_data
+[4.520s] running develop
+[4.521s] /usr/lib/python3/dist-packages/setuptools/command/develop.py:40: EasyInstallDeprecationWarning: easy_install command is deprecated.
+[4.521s] !!
+[4.522s] 
+[4.522s]         ********************************************************************************
+[4.522s]         Please avoid running ``setup.py`` and ``easy_install``.
+[4.523s]         Instead, use pypa/build, pypa/installer or other
+[4.523s]         standards-based tools.
+[4.523s] 
+[4.524s]         See https://github.com/pypa/setuptools/issues/917 for details.
+[4.524s]         ********************************************************************************
+[4.524s] 
+[4.525s] !!
+[4.525s]   easy_install.initialize_options(self)
+[5.312s] running egg_info
+[5.383s] writing serial_motor_demo.egg-info/PKG-INFO
+[5.384s] writing dependency_links to serial_motor_demo.egg-info/dependency_links.txt
+[5.385s] writing entry points to serial_motor_demo.egg-info/entry_points.txt
+[5.386s] writing requirements to serial_motor_demo.egg-info/requires.txt
+[5.387s] writing top-level names to serial_motor_demo.egg-info/top_level.txt
+[5.536s] reading manifest file 'serial_motor_demo.egg-info/SOURCES.txt'
+[5.539s] writing manifest file 'serial_motor_demo.egg-info/SOURCES.txt'
+[5.615s] running build_ext
+[5.615s] Creating /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo/lib/python3.12/site-packages/serial-motor-demo.egg-link (link to .)
+[5.618s] Installing driver script to /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo/lib/serial_motor_demo
+[5.619s] Installing gui script to /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo/lib/serial_motor_demo
+[5.620s] 
+[5.621s] Installed /home/E14Raspberry/ScooperBot/tennisbot_ws/build/serial_motor_demo
+[5.621s] running symlink_data
+[5.776s] Invoked command in '/home/E14Raspberry/ScooperBot/tennisbot_ws/build/serial_motor_demo' returned '0': CMAKE_PREFIX_PATH=/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/tennisbotmaster:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/diffdrive_arduino PYTHONPATH=/home/E14Raspberry/ScooperBot/tennisbot_ws/build/serial_motor_demo/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo/lib/python3.12/site-packages:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/lib/python3.12/site-packages:/home/E14Raspberry/ScooperBot/tennisbot_ws/build/serial_motor_demo:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/E14Raspberry/ScooperBot/tennisbot_ws/build/serial_motor_demo/build --no-deps symlink_data

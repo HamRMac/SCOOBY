@@ -1,0 +1,157 @@
+[0.143s] Invoking command in '/home/E14Raspberry/ScooperBot/tennisbot_ws/build/serial_motor_demo_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/E14Raspberry/ScooperBot/tennisbot_ws/build/serial_motor_demo_msgs -- -j4 -l4
+[2.096s] [  1%] Built target serial_motor_demo_msgs__rosidl_generator_type_description
+[2.103s] [  1%] Built target ament_cmake_python_symlink_serial_motor_demo_msgs
+[2.104s] [  3%] Built target serial_motor_demo_msgs__cpp
+[2.109s] [ 24%] Built target serial_motor_demo_msgs__rosidl_generator_c
+[2.112s] [ 33%] Built target serial_motor_demo_msgs__rosidl_typesupport_fastrtps_c
+[2.113s] [ 42%] Built target serial_motor_demo_msgs__rosidl_typesupport_cpp
+[2.120s] [ 51%] Built target serial_motor_demo_msgs__rosidl_typesupport_introspection_cpp
+[2.442s] [ 61%] Built target serial_motor_demo_msgs__rosidl_typesupport_introspection_c
+[2.515s] [ 70%] Built target serial_motor_demo_msgs__rosidl_typesupport_c
+[2.667s] [ 79%] Built target serial_motor_demo_msgs__rosidl_typesupport_fastrtps_cpp
+[3.168s] [ 79%] Built target serial_motor_demo_msgs
+[3.698s] [ 81%] Built target serial_motor_demo_msgs__py
+[4.272s] running egg_info
+[4.301s] [ 88%] Built target serial_motor_demo_msgs__rosidl_generator_py
+[4.802s] writing serial_motor_demo_msgs.egg-info/PKG-INFO
+[4.807s] writing dependency_links to serial_motor_demo_msgs.egg-info/dependency_links.txt
+[4.811s] writing top-level names to serial_motor_demo_msgs.egg-info/top_level.txt
+[5.046s] [ 92%] Built target serial_motor_demo_msgs_s__rosidl_typesupport_fastrtps_c
+[5.087s] [ 96%] Built target serial_motor_demo_msgs_s__rosidl_typesupport_introspection_c
+[5.216s] [100%] Built target serial_motor_demo_msgs_s__rosidl_typesupport_c
+[5.943s] reading manifest file 'serial_motor_demo_msgs.egg-info/SOURCES.txt'
+[5.953s] writing manifest file 'serial_motor_demo_msgs.egg-info/SOURCES.txt'
+[6.336s] [100%] Built target ament_cmake_python_build_serial_motor_demo_msgs_egg
+[7.850s] Invoked command in '/home/E14Raspberry/ScooperBot/tennisbot_ws/build/serial_motor_demo_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/E14Raspberry/ScooperBot/tennisbot_ws/build/serial_motor_demo_msgs -- -j4 -l4
+[9.922s] Invoking command in '/home/E14Raspberry/ScooperBot/tennisbot_ws/build/serial_motor_demo_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/E14Raspberry/ScooperBot/tennisbot_ws/build/serial_motor_demo_msgs
+[10.074s] -- Install configuration: ""
+[10.082s] -- Execute custom install script
+[10.088s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/share/ament_index/resource_index/rosidl_interfaces/serial_motor_demo_msgs
+[10.094s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/msg/MotorCommand.json
+[10.099s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/msg/MotorVels.json
+[10.104s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/msg/EncoderVals.json
+[10.121s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/encoder_vals__functions.h
+[10.126s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/encoder_vals__struct.h
+[10.130s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/encoder_vals__type_support.h
+[10.135s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/motor_command__functions.h
+[10.140s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/motor_command__struct.h
+[10.146s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/motor_command__type_support.h
+[10.151s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/motor_vels__functions.h
+[10.156s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/motor_vels__struct.h
+[10.161s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/motor_vels__type_support.h
+[10.166s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/encoder_vals.h
+[10.172s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/motor_command.h
+[10.176s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/motor_vels.h
+[10.181s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/rosidl_generator_c__visibility_control.h
+[10.186s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/environment/library_path.sh
+[10.191s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/environment/library_path.dsv
+[10.207s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/encoder_vals__rosidl_typesupport_fastrtps_c.h
+[10.212s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/motor_command__rosidl_typesupport_fastrtps_c.h
+[10.217s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/motor_vels__rosidl_typesupport_fastrtps_c.h
+[10.222s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[10.234s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/encoder_vals__rosidl_typesupport_introspection_c.h
+[10.240s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/motor_command__rosidl_typesupport_introspection_c.h
+[10.245s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/motor_vels__rosidl_typesupport_introspection_c.h
+[10.251s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[10.266s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/encoder_vals__builder.hpp
+[10.270s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/encoder_vals__struct.hpp
+[10.274s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/encoder_vals__traits.hpp
+[10.279s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/encoder_vals__type_support.hpp
+[10.284s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/motor_command__builder.hpp
+[10.288s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/motor_command__struct.hpp
+[10.294s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/motor_command__traits.hpp
+[10.299s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/motor_command__type_support.hpp
+[10.304s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/motor_vels__builder.hpp
+[10.310s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/motor_vels__struct.hpp
+[10.315s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/motor_vels__traits.hpp
+[10.320s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/motor_vels__type_support.hpp
+[10.325s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/encoder_vals.hpp
+[10.330s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/motor_command.hpp
+[10.335s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/motor_vels.hpp
+[10.341s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
+[10.358s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/encoder_vals__rosidl_typesupport_fastrtps_cpp.hpp
+[10.363s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/motor_command__rosidl_typesupport_fastrtps_cpp.hpp
+[10.369s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/motor_vels__rosidl_typesupport_fastrtps_cpp.hpp
+[10.374s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[10.384s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/encoder_vals__rosidl_typesupport_introspection_cpp.hpp
+[10.389s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/motor_command__rosidl_typesupport_introspection_cpp.hpp
+[10.394s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/motor_vels__rosidl_typesupport_introspection_cpp.hpp
+[10.399s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/environment/pythonpath.sh
+[10.403s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/environment/pythonpath.dsv
+[10.411s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/lib/python3.12/site-packages/serial_motor_demo_msgs-0.0.0-py3.12.egg-info/PKG-INFO
+[10.415s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/lib/python3.12/site-packages/serial_motor_demo_msgs-0.0.0-py3.12.egg-info/SOURCES.txt
+[10.420s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/lib/python3.12/site-packages/serial_motor_demo_msgs-0.0.0-py3.12.egg-info/dependency_links.txt
+[10.425s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/lib/python3.12/site-packages/serial_motor_demo_msgs-0.0.0-py3.12.egg-info/top_level.txt
+[10.446s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/lib/python3.12/site-packages/serial_motor_demo_msgs/__init__.py
+[10.450s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/lib/python3.12/site-packages/serial_motor_demo_msgs/_serial_motor_demo_msgs_s.ep.rosidl_typesupport_c.c
+[10.454s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/lib/python3.12/site-packages/serial_motor_demo_msgs/_serial_motor_demo_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+[10.458s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/lib/python3.12/site-packages/serial_motor_demo_msgs/_serial_motor_demo_msgs_s.ep.rosidl_typesupport_introspection_c.c
+[10.463s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/lib/python3.12/site-packages/serial_motor_demo_msgs/msg/__init__.py
+[10.470s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/lib/python3.12/site-packages/serial_motor_demo_msgs/msg/_encoder_vals.py
+[10.471s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/lib/python3.12/site-packages/serial_motor_demo_msgs/msg/_encoder_vals_s.c
+[10.475s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/lib/python3.12/site-packages/serial_motor_demo_msgs/msg/_motor_command.py
+[10.479s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/lib/python3.12/site-packages/serial_motor_demo_msgs/msg/_motor_command_s.c
+[10.484s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/lib/python3.12/site-packages/serial_motor_demo_msgs/msg/_motor_vels.py
+[10.489s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/lib/python3.12/site-packages/serial_motor_demo_msgs/msg/_motor_vels_s.c
+[10.492s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/lib/python3.12/site-packages/serial_motor_demo_msgs/serial_motor_demo_msgs_s__rosidl_typesupport_c.so
+[10.510s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/lib/python3.12/site-packages/serial_motor_demo_msgs/serial_motor_demo_msgs_s__rosidl_typesupport_fastrtps_c.so
+[10.512s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/lib/python3.12/site-packages/serial_motor_demo_msgs/serial_motor_demo_msgs_s__rosidl_typesupport_introspection_c.so
+[10.513s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/lib/python3.12/site-packages/serial_motor_demo_msgs/serial_motor_demo_msgs_s__rosidl_typesupport_fastrtps_c.so
+[10.514s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/lib/python3.12/site-packages/serial_motor_demo_msgs/serial_motor_demo_msgs_s__rosidl_typesupport_introspection_c.so
+[10.517s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/lib/python3.12/site-packages/serial_motor_demo_msgs/serial_motor_demo_msgs_s__rosidl_typesupport_c.so
+[10.522s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/msg/MotorCommand.idl
+[10.527s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/msg/MotorVels.idl
+[10.532s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/msg/EncoderVals.idl
+[10.536s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/msg/MotorCommand.msg
+[10.541s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/msg/MotorVels.msg
+[10.545s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/msg/EncoderVals.msg
+[10.551s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/share/ament_index/resource_index/package_run_dependencies/serial_motor_demo_msgs
+[10.557s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/share/ament_index/resource_index/parent_prefix_path/serial_motor_demo_msgs
+[10.561s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/environment/ament_prefix_path.sh
+[10.565s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/environment/ament_prefix_path.dsv
+[10.570s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/environment/path.sh
+[10.573s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/environment/path.dsv
+[10.577s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/local_setup.bash
+[10.582s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/local_setup.sh
+[10.586s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/local_setup.zsh
+[10.589s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/local_setup.dsv
+[10.591s] -- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/package.dsv
+[10.757s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/share/ament_index/resource_index/packages/serial_motor_demo_msgs
+[10.762s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/cmake/rosidl_cmake-extras.cmake
+[10.766s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/cmake/ament_cmake_export_include_directories-extras.cmake
+[10.771s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/cmake/ament_cmake_export_libraries-extras.cmake
+[10.776s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/cmake/ament_cmake_export_targets-extras.cmake
+[10.780s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[10.785s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/cmake/ament_cmake_export_dependencies-extras.cmake
+[10.790s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[10.796s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/cmake/serial_motor_demo_msgsConfig.cmake
+[10.799s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/cmake/serial_motor_demo_msgsConfig-version.cmake
+[10.804s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/package.xml
+[10.810s] -- Up-to-date: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/lib/libserial_motor_demo_msgs__rosidl_generator_c.so
+[10.819s] -- Up-to-date: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/lib/libserial_motor_demo_msgs__rosidl_typesupport_fastrtps_c.so
+[10.828s] -- Up-to-date: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/lib/libserial_motor_demo_msgs__rosidl_typesupport_introspection_c.so
+[10.836s] -- Up-to-date: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/lib/libserial_motor_demo_msgs__rosidl_typesupport_c.so
+[10.845s] -- Up-to-date: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/lib/libserial_motor_demo_msgs__rosidl_typesupport_fastrtps_cpp.so
+[10.854s] -- Up-to-date: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/lib/libserial_motor_demo_msgs__rosidl_typesupport_introspection_cpp.so
+[10.862s] -- Up-to-date: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/lib/libserial_motor_demo_msgs__rosidl_typesupport_cpp.so
+[11.232s] Listing '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/lib/python3.12/site-packages/serial_motor_demo_msgs'...
+[11.233s] Listing '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/lib/python3.12/site-packages/serial_motor_demo_msgs/msg'...
+[11.271s] -- Up-to-date: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/lib/libserial_motor_demo_msgs__rosidl_generator_py.so
+[11.277s] -- Up-to-date: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/cmake/export_serial_motor_demo_msgs__rosidl_generator_cExport.cmake
+[11.278s] -- Up-to-date: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/cmake/export_serial_motor_demo_msgs__rosidl_generator_cExport-noconfig.cmake
+[11.279s] -- Up-to-date: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/cmake/export_serial_motor_demo_msgs__rosidl_typesupport_fastrtps_cExport.cmake
+[11.280s] -- Up-to-date: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/cmake/export_serial_motor_demo_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[11.283s] -- Up-to-date: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/cmake/serial_motor_demo_msgs__rosidl_typesupport_introspection_cExport.cmake
+[11.285s] -- Up-to-date: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/cmake/serial_motor_demo_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[11.287s] -- Up-to-date: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/cmake/serial_motor_demo_msgs__rosidl_typesupport_cExport.cmake
+[11.288s] -- Up-to-date: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/cmake/serial_motor_demo_msgs__rosidl_typesupport_cExport-noconfig.cmake
+[11.291s] -- Up-to-date: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/cmake/export_serial_motor_demo_msgs__rosidl_generator_cppExport.cmake
+[11.293s] -- Up-to-date: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/cmake/export_serial_motor_demo_msgs__rosidl_typesupport_fastrtps_cppExport.cmake
+[11.294s] -- Up-to-date: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/cmake/export_serial_motor_demo_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[11.297s] -- Up-to-date: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/cmake/serial_motor_demo_msgs__rosidl_typesupport_introspection_cppExport.cmake
+[11.298s] -- Up-to-date: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/cmake/serial_motor_demo_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[11.300s] -- Up-to-date: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/cmake/serial_motor_demo_msgs__rosidl_typesupport_cppExport.cmake
+[11.301s] -- Up-to-date: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/cmake/serial_motor_demo_msgs__rosidl_typesupport_cppExport-noconfig.cmake
+[11.303s] -- Up-to-date: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/cmake/export_serial_motor_demo_msgs__rosidl_generator_pyExport.cmake
+[11.305s] -- Up-to-date: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/cmake/export_serial_motor_demo_msgs__rosidl_generator_pyExport-noconfig.cmake
+[11.315s] Invoked command in '/home/E14Raspberry/ScooperBot/tennisbot_ws/build/serial_motor_demo_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/E14Raspberry/ScooperBot/tennisbot_ws/build/serial_motor_demo_msgs

@@ -1,0 +1,1299 @@
+[0.000000] (-) TimerEvent: {}
+[0.000887] (diffdrive_arduino) JobQueued: {'identifier': 'diffdrive_arduino', 'dependencies': OrderedDict()}
+[0.001019] (serial) JobQueued: {'identifier': 'serial', 'dependencies': OrderedDict()}
+[0.001092] (serial_motor_demo_msgs) JobQueued: {'identifier': 'serial_motor_demo_msgs', 'dependencies': OrderedDict()}
+[0.001157] (tennisbotmaster) JobQueued: {'identifier': 'tennisbotmaster', 'dependencies': OrderedDict()}
+[0.001219] (twist_stamper) JobQueued: {'identifier': 'twist_stamper', 'dependencies': OrderedDict()}
+[0.001283] (serial_motor_demo) JobQueued: {'identifier': 'serial_motor_demo', 'dependencies': OrderedDict({'serial_motor_demo_msgs': '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs'})}
+[0.002125] (serial_motor_demo_msgs) JobStarted: {'identifier': 'serial_motor_demo_msgs'}
+[0.027041] (diffdrive_arduino) JobStarted: {'identifier': 'diffdrive_arduino'}
+[0.045124] (serial) JobStarted: {'identifier': 'serial'}
+[0.062618] (tennisbotmaster) JobStarted: {'identifier': 'tennisbotmaster'}
+[0.087517] (serial_motor_demo_msgs) JobProgress: {'identifier': 'serial_motor_demo_msgs', 'progress': 'cmake'}
+[0.088381] (serial_motor_demo_msgs) Command: {'cmd': ['/usr/bin/cmake', '/home/E14Raspberry/ScooperBot/tennisbot_ws/src/serial_motor_demo/serial_motor_demo_msgs', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs'], 'cwd': '/home/E14Raspberry/ScooperBot/tennisbot_ws/build/serial_motor_demo_msgs', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'E14Raspberry', 'SSH_CLIENT': '2407:e400:9041:3c00:d961:2ede:2c54:ce68 49828 22', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/lib:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial/lib:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/diffdrive_arduino/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/lib', 'HOME': '/home/E14Raspberry', 'OLDPWD': '/home/E14Raspberry', 'SSH_TTY': '/dev/pts/0', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLCON_PREFIX_PATH': '/home/E14Raspberry/ScooperBot/tennisbot_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'E14Raspberry', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '222', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'ROS_DOMAIN_ID': '100', 'AMENT_PREFIX_PATH': '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/twist_stamper:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/tennisbotmaster:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/diffdrive_arduino:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/E14Raspberry/ScooperBot/tennisbot_ws/build/serial_motor_demo_msgs', 'SSH_CONNECTION': '2407:e400:9041:3c00:d961:2ede:2c54:ce68 49828 2407:e400:9041:3c00::7d0 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/E14Raspberry/ScooperBot/tennisbot_ws/build/twist_stamper:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/twist_stamper/lib/python3.12/site-packages:/home/E14Raspberry/ScooperBot/tennisbot_ws/build/serial_motor_demo:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo/lib/python3.12/site-packages:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/tennisbotmaster:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/diffdrive_arduino:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/twist_stamper:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo:/opt/ros/jazzy'}), 'shell': False}
+[0.099191] (-) TimerEvent: {}
+[0.100167] (diffdrive_arduino) JobProgress: {'identifier': 'diffdrive_arduino', 'progress': 'cmake'}
+[0.100869] (diffdrive_arduino) Command: {'cmd': ['/usr/bin/cmake', '/home/E14Raspberry/ScooperBot/tennisbot_ws/src/diffdrive_arduino', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/E14Raspberry/ScooperBot/tennisbot_ws/install/diffdrive_arduino'], 'cwd': '/home/E14Raspberry/ScooperBot/tennisbot_ws/build/diffdrive_arduino', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'E14Raspberry', 'SSH_CLIENT': '2407:e400:9041:3c00:d961:2ede:2c54:ce68 49828 22', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/lib:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial/lib:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/diffdrive_arduino/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/lib', 'HOME': '/home/E14Raspberry', 'OLDPWD': '/home/E14Raspberry', 'SSH_TTY': '/dev/pts/0', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLCON_PREFIX_PATH': '/home/E14Raspberry/ScooperBot/tennisbot_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'E14Raspberry', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '222', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'ROS_DOMAIN_ID': '100', 'AMENT_PREFIX_PATH': '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/twist_stamper:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/tennisbotmaster:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/diffdrive_arduino:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/E14Raspberry/ScooperBot/tennisbot_ws/build/diffdrive_arduino', 'SSH_CONNECTION': '2407:e400:9041:3c00:d961:2ede:2c54:ce68 49828 2407:e400:9041:3c00::7d0 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/E14Raspberry/ScooperBot/tennisbot_ws/build/twist_stamper:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/twist_stamper/lib/python3.12/site-packages:/home/E14Raspberry/ScooperBot/tennisbot_ws/build/serial_motor_demo:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo/lib/python3.12/site-packages:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/tennisbotmaster:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/diffdrive_arduino:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/twist_stamper:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo:/opt/ros/jazzy'}), 'shell': False}
+[0.108549] (serial) JobProgress: {'identifier': 'serial', 'progress': 'cmake'}
+[0.112567] (serial) Command: {'cmd': ['/usr/bin/cmake', '/home/E14Raspberry/ScooperBot/tennisbot_ws/src/serial', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial'], 'cwd': '/home/E14Raspberry/ScooperBot/tennisbot_ws/build/serial', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'E14Raspberry', 'SSH_CLIENT': '2407:e400:9041:3c00:d961:2ede:2c54:ce68 49828 22', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/lib:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial/lib:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/diffdrive_arduino/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/lib', 'HOME': '/home/E14Raspberry', 'OLDPWD': '/home/E14Raspberry', 'SSH_TTY': '/dev/pts/0', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLCON_PREFIX_PATH': '/home/E14Raspberry/ScooperBot/tennisbot_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'E14Raspberry', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '222', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'ROS_DOMAIN_ID': '100', 'AMENT_PREFIX_PATH': '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/twist_stamper:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/tennisbotmaster:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/diffdrive_arduino:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/E14Raspberry/ScooperBot/tennisbot_ws/build/serial', 'SSH_CONNECTION': '2407:e400:9041:3c00:d961:2ede:2c54:ce68 49828 2407:e400:9041:3c00::7d0 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/E14Raspberry/ScooperBot/tennisbot_ws/build/twist_stamper:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/twist_stamper/lib/python3.12/site-packages:/home/E14Raspberry/ScooperBot/tennisbot_ws/build/serial_motor_demo:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo/lib/python3.12/site-packages:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/tennisbotmaster:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/diffdrive_arduino:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/twist_stamper:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo:/opt/ros/jazzy'}), 'shell': False}
+[0.138376] (tennisbotmaster) JobProgress: {'identifier': 'tennisbotmaster', 'progress': 'cmake'}
+[0.138649] (tennisbotmaster) Command: {'cmd': ['/usr/bin/cmake', '/home/E14Raspberry/ScooperBot/tennisbot_ws/src/tennisbotmaster', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/E14Raspberry/ScooperBot/tennisbot_ws/install/tennisbotmaster'], 'cwd': '/home/E14Raspberry/ScooperBot/tennisbot_ws/build/tennisbotmaster', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'E14Raspberry', 'SSH_CLIENT': '2407:e400:9041:3c00:d961:2ede:2c54:ce68 49828 22', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/lib:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial/lib:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/diffdrive_arduino/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/lib', 'HOME': '/home/E14Raspberry', 'OLDPWD': '/home/E14Raspberry', 'SSH_TTY': '/dev/pts/0', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLCON_PREFIX_PATH': '/home/E14Raspberry/ScooperBot/tennisbot_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'E14Raspberry', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '222', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'ROS_DOMAIN_ID': '100', 'AMENT_PREFIX_PATH': '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/twist_stamper:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/tennisbotmaster:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/diffdrive_arduino:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/E14Raspberry/ScooperBot/tennisbot_ws/build/tennisbotmaster', 'SSH_CONNECTION': '2407:e400:9041:3c00:d961:2ede:2c54:ce68 49828 2407:e400:9041:3c00::7d0 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/E14Raspberry/ScooperBot/tennisbot_ws/build/twist_stamper:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/twist_stamper/lib/python3.12/site-packages:/home/E14Raspberry/ScooperBot/tennisbot_ws/build/serial_motor_demo:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo/lib/python3.12/site-packages:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/tennisbotmaster:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/diffdrive_arduino:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/twist_stamper:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo:/opt/ros/jazzy'}), 'shell': False}
+[0.201843] (-) TimerEvent: {}
+[0.302762] (-) TimerEvent: {}
+[0.403646] (-) TimerEvent: {}
+[0.470979] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- The C compiler identification is GNU 13.2.0\n'}
+[0.491082] (serial) StdoutLine: {'line': b'-- The C compiler identification is GNU 13.2.0\n'}
+[0.503848] (-) TimerEvent: {}
+[0.506971] (tennisbotmaster) StdoutLine: {'line': b'-- The C compiler identification is GNU 13.2.0\n'}
+[0.531662] (diffdrive_arduino) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 13.2.0\n'}
+[0.604053] (-) TimerEvent: {}
+[0.628634] (diffdrive_arduino) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.705821] (-) TimerEvent: {}
+[0.808414] (-) TimerEvent: {}
+[0.836280] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 13.2.0\n'}
+[0.848683] (serial) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 13.2.0\n'}
+[0.856731] (tennisbotmaster) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 13.2.0\n'}
+[0.908699] (-) TimerEvent: {}
+[0.929034] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.942860] (serial) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.947505] (tennisbotmaster) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[1.011678] (-) TimerEvent: {}
+[1.112589] (-) TimerEvent: {}
+[1.214975] (-) TimerEvent: {}
+[1.252927] (diffdrive_arduino) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[1.301704] (diffdrive_arduino) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[1.304225] (diffdrive_arduino) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[1.308849] (diffdrive_arduino) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[1.316672] (-) TimerEvent: {}
+[1.339167] (diffdrive_arduino) StdoutLine: {'line': b'-- Found ament_cmake: 2.5.2 (/opt/ros/jazzy/share/ament_cmake/cmake)\n'}
+[1.416925] (-) TimerEvent: {}
+[1.482866] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[1.483767] (serial) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[1.494812] (tennisbotmaster) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[1.519654] (-) TimerEvent: {}
+[1.521520] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[1.524774] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[1.525351] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[1.526605] (serial) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[1.528772] (serial) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[1.531614] (serial) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[1.533377] (tennisbotmaster) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[1.535674] (tennisbotmaster) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[1.536628] (tennisbotmaster) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[1.575336] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[1.588770] (tennisbotmaster) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[1.594757] (serial) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[1.621943] (-) TimerEvent: {}
+[1.722969] (-) TimerEvent: {}
+[1.826765] (-) TimerEvent: {}
+[1.927847] (-) TimerEvent: {}
+[2.028827] (-) TimerEvent: {}
+[2.132709] (-) TimerEvent: {}
+[2.211049] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[2.223719] (tennisbotmaster) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[2.232872] (-) TimerEvent: {}
+[2.240134] (serial) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[2.252872] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[2.254031] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[2.256530] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[2.261823] (tennisbotmaster) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[2.262444] (tennisbotmaster) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[2.263254] (tennisbotmaster) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[2.282532] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Found ament_cmake: 2.5.2 (/opt/ros/jazzy/share/ament_cmake/cmake)\n'}
+[2.288295] (serial) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[2.291676] (tennisbotmaster) StdoutLine: {'line': b'-- Found ament_cmake: 2.5.2 (/opt/ros/jazzy/share/ament_cmake/cmake)\n'}
+[2.292351] (serial) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[2.294037] (serial) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[2.322229] (serial) StdoutLine: {'line': b'-- Found ament_cmake: 2.5.2 (/opt/ros/jazzy/share/ament_cmake/cmake)\n'}
+[2.327425] (diffdrive_arduino) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter \n'}
+[2.334686] (-) TimerEvent: {}
+[2.437650] (-) TimerEvent: {}
+[2.538845] (-) TimerEvent: {}
+[2.644059] (-) TimerEvent: {}
+[2.744956] (-) TimerEvent: {}
+[2.846038] (-) TimerEvent: {}
+[2.872429] (diffdrive_arduino) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[2.946240] (-) TimerEvent: {}
+[3.047116] (-) TimerEvent: {}
+[3.150942] (-) TimerEvent: {}
+[3.193379] (diffdrive_arduino) StdoutLine: {'line': b'-- Found hardware_interface: 4.15.0 (/opt/ros/jazzy/share/hardware_interface/cmake)\n'}
+[3.251118] (-) TimerEvent: {}
+[3.313469] (tennisbotmaster) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter \n'}
+[3.315181] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter \n'}
+[3.353655] (-) TimerEvent: {}
+[3.388577] (serial) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter \n'}
+[3.453954] (-) TimerEvent: {}
+[3.558639] (-) TimerEvent: {}
+[3.585214] (diffdrive_arduino) StdoutLine: {'line': b'-- Found rosidl_generator_c: 4.6.3 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)\n'}
+[3.658830] (-) TimerEvent: {}
+[3.705688] (diffdrive_arduino) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 4.6.3 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)\n'}
+[3.759099] (-) TimerEvent: {}
+[3.776715] (tennisbotmaster) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[3.786643] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[3.852641] (diffdrive_arduino) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[3.859716] (serial) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[3.860253] (-) TimerEvent: {}
+[3.954208] (diffdrive_arduino) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[3.960462] (-) TimerEvent: {}
+[4.030947] (tennisbotmaster) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.17.1 (/opt/ros/jazzy/share/ament_lint_auto/cmake)\n'}
+[4.051670] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.17.1 (/opt/ros/jazzy/share/ament_lint_auto/cmake)\n'}
+[4.060638] (-) TimerEvent: {}
+[4.119165] (serial) StdoutLine: {'line': b'-- Found ament_cmake_gtest: 2.5.2 (/opt/ros/jazzy/share/ament_cmake_gtest/cmake)\n'}
+[4.161894] (-) TimerEvent: {}
+[4.189676] (serial) StdoutLine: {'line': b'-- Found Boost: /usr/lib/aarch64-linux-gnu/cmake/Boost-1.83.0/BoostConfig.cmake (found version "1.83.0")  \n'}
+[4.211863] (serial) StdoutLine: {'line': b"-- Found gtest sources under '/opt/ros/jazzy/src/gtest_vendor': C++ tests using 'Google Test' will be built\n"}
+[4.223837] (serial) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[4.264691] (-) TimerEvent: {}
+[4.365589] (-) TimerEvent: {}
+[4.466582] (-) TimerEvent: {}
+[4.576755] (-) TimerEvent: {}
+[4.677658] (-) TimerEvent: {}
+[4.725056] (tennisbotmaster) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[4.727195] (tennisbotmaster) StdoutLine: {'line': b"-- Configured 'flake8' exclude dirs and/or files: \n"}
+[4.734665] (tennisbotmaster) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[4.736207] (tennisbotmaster) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[4.751823] (tennisbotmaster) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[4.765867] (tennisbotmaster) StdoutLine: {'line': b'-- Configuring done (4.6s)\n'}
+[4.779415] (-) TimerEvent: {}
+[4.793378] (tennisbotmaster) StdoutLine: {'line': b'-- Generating done (0.0s)\n'}
+[4.794045] (serial) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[4.799739] (serial) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[4.800458] (tennisbotmaster) StdoutLine: {'line': b'-- Build files have been written to: /home/E14Raspberry/ScooperBot/tennisbot_ws/build/tennisbotmaster\n'}
+[4.806787] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.6.0 (/opt/ros/jazzy/share/rosidl_default_generators/cmake)\n'}
+[4.822790] (tennisbotmaster) CommandEnded: {'returncode': 0}
+[4.824868] (tennisbotmaster) JobProgress: {'identifier': 'tennisbotmaster', 'progress': 'build'}
+[4.830861] (tennisbotmaster) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/E14Raspberry/ScooperBot/tennisbot_ws/build/tennisbotmaster', '--', '-j4', '-l4'], 'cwd': '/home/E14Raspberry/ScooperBot/tennisbot_ws/build/tennisbotmaster', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'E14Raspberry', 'SSH_CLIENT': '2407:e400:9041:3c00:d961:2ede:2c54:ce68 49828 22', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/lib:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial/lib:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/diffdrive_arduino/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/lib', 'HOME': '/home/E14Raspberry', 'OLDPWD': '/home/E14Raspberry', 'SSH_TTY': '/dev/pts/0', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLCON_PREFIX_PATH': '/home/E14Raspberry/ScooperBot/tennisbot_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'E14Raspberry', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '222', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'ROS_DOMAIN_ID': '100', 'AMENT_PREFIX_PATH': '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/twist_stamper:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/tennisbotmaster:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/diffdrive_arduino:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/E14Raspberry/ScooperBot/tennisbot_ws/build/tennisbotmaster', 'SSH_CONNECTION': '2407:e400:9041:3c00:d961:2ede:2c54:ce68 49828 2407:e400:9041:3c00::7d0 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/E14Raspberry/ScooperBot/tennisbot_ws/build/twist_stamper:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/twist_stamper/lib/python3.12/site-packages:/home/E14Raspberry/ScooperBot/tennisbot_ws/build/serial_motor_demo:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo/lib/python3.12/site-packages:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/tennisbotmaster:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/diffdrive_arduino:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/twist_stamper:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo:/opt/ros/jazzy'}), 'shell': False}
+[4.856460] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[4.880669] (-) TimerEvent: {}
+[4.985683] (-) TimerEvent: {}
+[5.047406] (tennisbotmaster) CommandEnded: {'returncode': 0}
+[5.089659] (-) TimerEvent: {}
+[5.182690] (tennisbotmaster) JobProgress: {'identifier': 'tennisbotmaster', 'progress': 'install'}
+[5.189851] (-) TimerEvent: {}
+[5.231465] (tennisbotmaster) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/E14Raspberry/ScooperBot/tennisbot_ws/build/tennisbotmaster'], 'cwd': '/home/E14Raspberry/ScooperBot/tennisbot_ws/build/tennisbotmaster', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'E14Raspberry', 'SSH_CLIENT': '2407:e400:9041:3c00:d961:2ede:2c54:ce68 49828 22', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/lib:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial/lib:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/diffdrive_arduino/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/lib', 'HOME': '/home/E14Raspberry', 'OLDPWD': '/home/E14Raspberry', 'SSH_TTY': '/dev/pts/0', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLCON_PREFIX_PATH': '/home/E14Raspberry/ScooperBot/tennisbot_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'E14Raspberry', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '222', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'ROS_DOMAIN_ID': '100', 'AMENT_PREFIX_PATH': '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/twist_stamper:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/tennisbotmaster:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/diffdrive_arduino:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/E14Raspberry/ScooperBot/tennisbot_ws/build/tennisbotmaster', 'SSH_CONNECTION': '2407:e400:9041:3c00:d961:2ede:2c54:ce68 49828 2407:e400:9041:3c00::7d0 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/E14Raspberry/ScooperBot/tennisbot_ws/build/twist_stamper:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/twist_stamper/lib/python3.12/site-packages:/home/E14Raspberry/ScooperBot/tennisbot_ws/build/serial_motor_demo:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo/lib/python3.12/site-packages:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/tennisbotmaster:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/diffdrive_arduino:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/twist_stamper:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo:/opt/ros/jazzy'}), 'shell': False}
+[5.238312] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[5.290354] (-) TimerEvent: {}
+[5.294834] (tennisbotmaster) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[5.298726] (tennisbotmaster) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[5.299916] (tennisbotmaster) StdoutLine: {'line': b'-- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/tennisbotmaster/share/tennisbotmaster/description/inertial_macros.xacro\n'}
+[5.346151] (tennisbotmaster) StdoutLine: {'line': b'-- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/tennisbotmaster/share/tennisbotmaster/description/robot.urdf.xacro\n'}
+[5.354702] (diffdrive_arduino) StdoutLine: {'line': b'-- Found TinyXML2 via Config file: /usr/lib/aarch64-linux-gnu/cmake/tinyxml2\n'}
+[5.364056] (serial) StdoutLine: {'line': b'-- Configuring done (5.2s)\n'}
+[5.392201] (-) TimerEvent: {}
+[5.396232] (tennisbotmaster) StdoutLine: {'line': b'-- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/tennisbotmaster/share/tennisbotmaster/description/robot_core.xacro\n'}
+[5.435919] (tennisbotmaster) StdoutLine: {'line': b'-- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/tennisbotmaster/share/tennisbotmaster/description/ros2_control.xacro\n'}
+[5.448552] (serial) StdoutLine: {'line': b'-- Generating done (0.1s)\n'}
+[5.459777] (serial) StdoutLine: {'line': b'-- Build files have been written to: /home/E14Raspberry/ScooperBot/tennisbot_ws/build/serial\n'}
+[5.493333] (serial) CommandEnded: {'returncode': 0}
+[5.496543] (-) TimerEvent: {}
+[5.497934] (serial) JobProgress: {'identifier': 'serial', 'progress': 'build'}
+[5.498105] (serial) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/E14Raspberry/ScooperBot/tennisbot_ws/build/serial', '--', '-j4', '-l4'], 'cwd': '/home/E14Raspberry/ScooperBot/tennisbot_ws/build/serial', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'E14Raspberry', 'SSH_CLIENT': '2407:e400:9041:3c00:d961:2ede:2c54:ce68 49828 22', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/lib:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial/lib:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/diffdrive_arduino/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/lib', 'HOME': '/home/E14Raspberry', 'OLDPWD': '/home/E14Raspberry', 'SSH_TTY': '/dev/pts/0', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLCON_PREFIX_PATH': '/home/E14Raspberry/ScooperBot/tennisbot_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'E14Raspberry', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '222', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'ROS_DOMAIN_ID': '100', 'AMENT_PREFIX_PATH': '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/twist_stamper:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/tennisbotmaster:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/diffdrive_arduino:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/E14Raspberry/ScooperBot/tennisbot_ws/build/serial', 'SSH_CONNECTION': '2407:e400:9041:3c00:d961:2ede:2c54:ce68 49828 2407:e400:9041:3c00::7d0 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/E14Raspberry/ScooperBot/tennisbot_ws/build/twist_stamper:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/twist_stamper/lib/python3.12/site-packages:/home/E14Raspberry/ScooperBot/tennisbot_ws/build/serial_motor_demo:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo/lib/python3.12/site-packages:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/tennisbotmaster:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/diffdrive_arduino:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/twist_stamper:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo:/opt/ros/jazzy'}), 'shell': False}
+[5.502468] (tennisbotmaster) StdoutLine: {'line': b'-- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/tennisbotmaster/share/tennisbotmaster/launch/robot_state_pub.launch.py\n'}
+[5.540631] (tennisbotmaster) StdoutLine: {'line': b'-- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/tennisbotmaster/share/tennisbotmaster/launch/start_robot_ctlr.launch.py\n'}
+[5.570673] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Found rosidl_adapter: 4.6.3 (/opt/ros/jazzy/share/rosidl_adapter/cmake)\n'}
+[5.583842] (tennisbotmaster) StdoutLine: {'line': b'-- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/tennisbotmaster/share/tennisbotmaster/config/my_controllers.yaml\n'}
+[5.596952] (-) TimerEvent: {}
+[5.634740] (tennisbotmaster) StdoutLine: {'line': b'-- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/tennisbotmaster/share/ament_index/resource_index/package_run_dependencies/tennisbotmaster\n'}
+[5.664579] (diffdrive_arduino) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 7.3.1 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)\n'}
+[5.694630] (diffdrive_arduino) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 8.4.1 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)\n'}
+[5.697764] (tennisbotmaster) StdoutLine: {'line': b'-- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/tennisbotmaster/share/ament_index/resource_index/parent_prefix_path/tennisbotmaster\n'}
+[5.698551] (-) TimerEvent: {}
+[5.777897] (tennisbotmaster) StdoutLine: {'line': b'-- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/tennisbotmaster/share/tennisbotmaster/environment/ament_prefix_path.sh\n'}
+[5.802759] (-) TimerEvent: {}
+[5.808911] (serial) StdoutLine: {'line': b'[  7%] \x1b[32mBuilding CXX object CMakeFiles/serial.dir/src/impl/unix.cc.o\x1b[0m\n'}
+[5.839776] (serial) StdoutLine: {'line': b'[ 14%] \x1b[32mBuilding CXX object gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o\x1b[0m\n'}
+[5.840746] (serial) StdoutLine: {'line': b'[ 21%] \x1b[32mBuilding CXX object CMakeFiles/serial.dir/src/serial.cc.o\x1b[0m\n'}
+[5.862672] (serial) StdoutLine: {'line': b'[ 28%] \x1b[32mBuilding CXX object gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o\x1b[0m\n'}
+[5.868542] (tennisbotmaster) StdoutLine: {'line': b'-- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/tennisbotmaster/share/tennisbotmaster/environment/ament_prefix_path.dsv\n'}
+[5.905706] (-) TimerEvent: {}
+[5.954808] (tennisbotmaster) StdoutLine: {'line': b'-- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/tennisbotmaster/share/tennisbotmaster/environment/path.sh\n'}
+[6.000822] (tennisbotmaster) StdoutLine: {'line': b'-- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/tennisbotmaster/share/tennisbotmaster/environment/path.dsv\n'}
+[6.010654] (-) TimerEvent: {}
+[6.029654] (diffdrive_arduino) StdoutLine: {'line': b'-- Found TinyXML2 via Config file: /usr/lib/aarch64-linux-gnu/cmake/tinyxml2\n'}
+[6.047875] (tennisbotmaster) StdoutLine: {'line': b'-- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/tennisbotmaster/share/tennisbotmaster/local_setup.bash\n'}
+[6.115709] (tennisbotmaster) StdoutLine: {'line': b'-- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/tennisbotmaster/share/tennisbotmaster/local_setup.sh\n'}
+[6.116382] (-) TimerEvent: {}
+[6.167372] (tennisbotmaster) StdoutLine: {'line': b'-- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/tennisbotmaster/share/tennisbotmaster/local_setup.zsh\n'}
+[6.219660] (-) TimerEvent: {}
+[6.246677] (tennisbotmaster) StdoutLine: {'line': b'-- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/tennisbotmaster/share/tennisbotmaster/local_setup.dsv\n'}
+[6.323658] (-) TimerEvent: {}
+[6.329199] (tennisbotmaster) StdoutLine: {'line': b'-- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/tennisbotmaster/share/tennisbotmaster/package.dsv\n'}
+[6.413772] (tennisbotmaster) StdoutLine: {'line': b'-- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/tennisbotmaster/share/ament_index/resource_index/packages/tennisbotmaster\n'}
+[6.423863] (-) TimerEvent: {}
+[6.513561] (tennisbotmaster) StdoutLine: {'line': b'-- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/tennisbotmaster/share/tennisbotmaster/cmake/tennisbotmasterConfig.cmake\n'}
+[6.526672] (-) TimerEvent: {}
+[6.600880] (tennisbotmaster) StdoutLine: {'line': b'-- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/tennisbotmaster/share/tennisbotmaster/cmake/tennisbotmasterConfig-version.cmake\n'}
+[6.609918] (diffdrive_arduino) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.13")  \n'}
+[6.633663] (diffdrive_arduino) StdoutLine: {'line': b'-- Found TinyXML2 via Config file: /usr/lib/aarch64-linux-gnu/cmake/tinyxml2\n'}
+[6.634557] (-) TimerEvent: {}
+[6.671791] (tennisbotmaster) StdoutLine: {'line': b'-- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/tennisbotmaster/share/tennisbotmaster/package.xml\n'}
+[6.742038] (tennisbotmaster) CommandEnded: {'returncode': 0}
+[6.743364] (-) TimerEvent: {}
+[6.768844] (diffdrive_arduino) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") \n'}
+[6.780985] (diffdrive_arduino) StdoutLine: {'line': b'-- Found TinyXML2 via Config file: /usr/lib/aarch64-linux-gnu/cmake/tinyxml2\n'}
+[6.848627] (-) TimerEvent: {}
+[6.883751] (diffdrive_arduino) StdoutLine: {'line': b'-- Found TinyXML2 via Config file: /usr/lib/aarch64-linux-gnu/cmake/tinyxml2\n'}
+[6.951657] (-) TimerEvent: {}
+[6.972771] (diffdrive_arduino) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[7.055695] (-) TimerEvent: {}
+[7.158649] (-) TimerEvent: {}
+[7.245844] (tennisbotmaster) JobEnded: {'identifier': 'tennisbotmaster', 'rc': 0}
+[7.250664] (twist_stamper) JobStarted: {'identifier': 'twist_stamper'}
+[7.268019] (-) TimerEvent: {}
+[7.368922] (-) TimerEvent: {}
+[7.477664] (-) TimerEvent: {}
+[7.580744] (-) TimerEvent: {}
+[7.683733] (-) TimerEvent: {}
+[7.787682] (-) TimerEvent: {}
+[7.890733] (-) TimerEvent: {}
+[7.993889] (-) TimerEvent: {}
+[8.098020] (-) TimerEvent: {}
+[8.200674] (-) TimerEvent: {}
+[8.305033] (-) TimerEvent: {}
+[8.409055] (-) TimerEvent: {}
+[8.515019] (-) TimerEvent: {}
+[8.616094] (-) TimerEvent: {}
+[8.721684] (-) TimerEvent: {}
+[8.822778] (-) TimerEvent: {}
+[8.926058] (-) TimerEvent: {}
+[9.032653] (-) TimerEvent: {}
+[9.134666] (-) TimerEvent: {}
+[9.237687] (-) TimerEvent: {}
+[9.340727] (-) TimerEvent: {}
+[9.445121] (-) TimerEvent: {}
+[9.552736] (-) TimerEvent: {}
+[9.654103] (-) TimerEvent: {}
+[9.755820] (-) TimerEvent: {}
+[9.861775] (-) TimerEvent: {}
+[9.962800] (-) TimerEvent: {}
+[10.068782] (-) TimerEvent: {}
+[10.169998] (-) TimerEvent: {}
+[10.271645] (-) TimerEvent: {}
+[10.374754] (-) TimerEvent: {}
+[10.475662] (-) TimerEvent: {}
+[10.579972] (-) TimerEvent: {}
+[10.608933] (diffdrive_arduino) StdoutLine: {'line': b'-- Found ament_cmake_gtest: 2.5.2 (/opt/ros/jazzy/share/ament_cmake_gtest/cmake)\n'}
+[10.684656] (-) TimerEvent: {}
+[10.785620] (-) TimerEvent: {}
+[10.886647] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.12.0 (/opt/ros/jazzy/share/ament_cmake_ros/cmake)\n'}
+[10.887315] (-) TimerEvent: {}
+[10.990647] (-) TimerEvent: {}
+[11.096677] (-) TimerEvent: {}
+[11.202671] (-) TimerEvent: {}
+[11.303702] (-) TimerEvent: {}
+[11.405150] (-) TimerEvent: {}
+[11.513683] (-) TimerEvent: {}
+[11.616657] (-) TimerEvent: {}
+[11.719656] (-) TimerEvent: {}
+[11.822695] (-) TimerEvent: {}
+[11.925811] (-) TimerEvent: {}
+[12.027194] (-) TimerEvent: {}
+[12.135747] (-) TimerEvent: {}
+[12.189654] (diffdrive_arduino) StdoutLine: {'line': b'-- Configuring done (12.0s)\n'}
+[12.238660] (-) TimerEvent: {}
+[12.341694] (-) TimerEvent: {}
+[12.442686] (-) TimerEvent: {}
+[12.462049] (diffdrive_arduino) StdoutLine: {'line': b'-- Generating done (0.2s)\n'}
+[12.490233] (diffdrive_arduino) StdoutLine: {'line': b'-- Build files have been written to: /home/E14Raspberry/ScooperBot/tennisbot_ws/build/diffdrive_arduino\n'}
+[12.544652] (-) TimerEvent: {}
+[12.617052] (diffdrive_arduino) CommandEnded: {'returncode': 0}
+[12.618800] (diffdrive_arduino) JobProgress: {'identifier': 'diffdrive_arduino', 'progress': 'build'}
+[12.618935] (diffdrive_arduino) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/E14Raspberry/ScooperBot/tennisbot_ws/build/diffdrive_arduino', '--', '-j4', '-l4'], 'cwd': '/home/E14Raspberry/ScooperBot/tennisbot_ws/build/diffdrive_arduino', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'E14Raspberry', 'SSH_CLIENT': '2407:e400:9041:3c00:d961:2ede:2c54:ce68 49828 22', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/lib:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial/lib:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/diffdrive_arduino/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/lib', 'HOME': '/home/E14Raspberry', 'OLDPWD': '/home/E14Raspberry', 'SSH_TTY': '/dev/pts/0', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLCON_PREFIX_PATH': '/home/E14Raspberry/ScooperBot/tennisbot_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'E14Raspberry', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '222', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'ROS_DOMAIN_ID': '100', 'AMENT_PREFIX_PATH': '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/twist_stamper:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/tennisbotmaster:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/diffdrive_arduino:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/E14Raspberry/ScooperBot/tennisbot_ws/build/diffdrive_arduino', 'SSH_CONNECTION': '2407:e400:9041:3c00:d961:2ede:2c54:ce68 49828 2407:e400:9041:3c00::7d0 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/E14Raspberry/ScooperBot/tennisbot_ws/build/twist_stamper:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/twist_stamper/lib/python3.12/site-packages:/home/E14Raspberry/ScooperBot/tennisbot_ws/build/serial_motor_demo:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo/lib/python3.12/site-packages:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/tennisbotmaster:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/diffdrive_arduino:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/twist_stamper:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo:/opt/ros/jazzy'}), 'shell': False}
+[12.648694] (-) TimerEvent: {}
+[12.724579] (serial) StdoutLine: {'line': b'[ 35%] \x1b[32mBuilding CXX object CMakeFiles/serial.dir/src/impl/list_ports/list_ports_linux.cc.o\x1b[0m\n'}
+[12.750873] (-) TimerEvent: {}
+[12.854684] (-) TimerEvent: {}
+[12.958959] (-) TimerEvent: {}
+[13.060412] (-) TimerEvent: {}
+[13.167701] (-) TimerEvent: {}
+[13.268732] (-) TimerEvent: {}
+[13.309072] (diffdrive_arduino) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/diffdrive_arduino.dir/hardware/diffbot_system.cpp.o\x1b[0m\n'}
+[13.374659] (-) TimerEvent: {}
+[13.476651] (-) TimerEvent: {}
+[13.577713] (-) TimerEvent: {}
+[13.680659] (-) TimerEvent: {}
+[13.781644] (-) TimerEvent: {}
+[13.885965] (-) TimerEvent: {}
+[13.987391] (-) TimerEvent: {}
+[14.090891] (-) TimerEvent: {}
+[14.195674] (-) TimerEvent: {}
+[14.296636] (-) TimerEvent: {}
+[14.398889] (-) TimerEvent: {}
+[14.505000] (-) TimerEvent: {}
+[14.607680] (-) TimerEvent: {}
+[14.710638] (-) TimerEvent: {}
+[14.813757] (-) TimerEvent: {}
+[14.918649] (-) TimerEvent: {}
+[15.023687] (-) TimerEvent: {}
+[15.124466] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[15.125690] (-) TimerEvent: {}
+[15.227521] (-) TimerEvent: {}
+[15.330973] (-) TimerEvent: {}
+[15.434207] (-) TimerEvent: {}
+[15.540718] (-) TimerEvent: {}
+[15.641667] (-) TimerEvent: {}
+[15.747198] (-) TimerEvent: {}
+[15.857712] (-) TimerEvent: {}
+[15.975644] (-) TimerEvent: {}
+[16.093709] (-) TimerEvent: {}
+[16.202680] (-) TimerEvent: {}
+[16.310678] (-) TimerEvent: {}
+[16.415685] (-) TimerEvent: {}
+[16.516590] (-) TimerEvent: {}
+[16.619737] (-) TimerEvent: {}
+[16.722643] (-) TimerEvent: {}
+[16.823478] (-) TimerEvent: {}
+[16.928022] (-) TimerEvent: {}
+[17.029571] (-) TimerEvent: {}
+[17.132407] (-) TimerEvent: {}
+[17.237012] (-) TimerEvent: {}
+[17.337921] (-) TimerEvent: {}
+[17.440941] (-) TimerEvent: {}
+[17.543698] (-) TimerEvent: {}
+[17.644712] (-) TimerEvent: {}
+[17.748083] (-) TimerEvent: {}
+[17.853034] (-) TimerEvent: {}
+[17.957697] (-) TimerEvent: {}
+[18.058760] (-) TimerEvent: {}
+[18.163018] (-) TimerEvent: {}
+[18.266750] (-) TimerEvent: {}
+[18.373678] (-) TimerEvent: {}
+[18.476651] (-) TimerEvent: {}
+[18.579655] (-) TimerEvent: {}
+[18.682689] (-) TimerEvent: {}
+[18.783614] (-) TimerEvent: {}
+[18.884526] (-) TimerEvent: {}
+[18.985543] (-) TimerEvent: {}
+[18.989869] (serial) StdoutLine: {'line': b'[ 42%] \x1b[32m\x1b[1mLinking CXX static library libgtest_main.a\x1b[0m\n'}
+[19.090707] (-) TimerEvent: {}
+[19.183968] (twist_stamper) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', 'setup.py', 'develop', '--editable', '--build-directory', '/home/E14Raspberry/ScooperBot/tennisbot_ws/build/twist_stamper/build', '--no-deps', 'symlink_data'], 'cwd': '/home/E14Raspberry/ScooperBot/tennisbot_ws/build/twist_stamper', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'E14Raspberry', 'SSH_CLIENT': '2407:e400:9041:3c00:d961:2ede:2c54:ce68 49828 22', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/lib:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial/lib:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/diffdrive_arduino/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/lib', 'HOME': '/home/E14Raspberry', 'OLDPWD': '/home/E14Raspberry', 'SSH_TTY': '/dev/pts/0', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLCON_PREFIX_PATH': '/home/E14Raspberry/ScooperBot/tennisbot_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'E14Raspberry', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '222', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'ROS_DOMAIN_ID': '100', 'AMENT_PREFIX_PATH': '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/twist_stamper:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/tennisbotmaster:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/diffdrive_arduino:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/E14Raspberry/ScooperBot/tennisbot_ws/build/twist_stamper', 'SSH_CONNECTION': '2407:e400:9041:3c00:d961:2ede:2c54:ce68 49828 2407:e400:9041:3c00::7d0 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/E14Raspberry/ScooperBot/tennisbot_ws/build/twist_stamper/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/twist_stamper/lib/python3.12/site-packages:/home/E14Raspberry/ScooperBot/tennisbot_ws/build/twist_stamper:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/twist_stamper/lib/python3.12/site-packages:/home/E14Raspberry/ScooperBot/tennisbot_ws/build/serial_motor_demo:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo/lib/python3.12/site-packages:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/tennisbotmaster:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/diffdrive_arduino'}, 'shell': False}
+[19.195526] (-) TimerEvent: {}
+[19.302683] (-) TimerEvent: {}
+[19.406727] (-) TimerEvent: {}
+[19.436907] (serial) StdoutLine: {'line': b'[ 42%] Built target gtest_main\n'}
+[19.509770] (-) TimerEvent: {}
+[19.611017] (-) TimerEvent: {}
+[19.714654] (-) TimerEvent: {}
+[19.816229] (-) TimerEvent: {}
+[19.919999] (-) TimerEvent: {}
+[19.997584] (serial) StdoutLine: {'line': b'[ 50%] \x1b[32m\x1b[1mLinking CXX static library libserial.a\x1b[0m\n'}
+[20.025884] (-) TimerEvent: {}
+[20.128642] (-) TimerEvent: {}
+[20.229924] (-) TimerEvent: {}
+[20.286560] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[20.332461] (-) TimerEvent: {}
+[20.341966] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Found python_cmake_module: 0.11.1 (/opt/ros/jazzy/share/python_cmake_module/cmake)\n'}
+[20.397413] (serial) StdoutLine: {'line': b'[ 50%] Built target serial\n'}
+[20.432639] (-) TimerEvent: {}
+[20.535708] (-) TimerEvent: {}
+[20.571411] (serial) StdoutLine: {'line': b'[ 57%] \x1b[32mBuilding CXX object CMakeFiles/serial_example.dir/examples/serial_example.cc.o\x1b[0m\n'}
+[20.635905] (-) TimerEvent: {}
+[20.738638] (-) TimerEvent: {}
+[20.839555] (-) TimerEvent: {}
+[20.942267] (-) TimerEvent: {}
+[21.047641] (-) TimerEvent: {}
+[21.148524] (-) TimerEvent: {}
+[21.250218] (-) TimerEvent: {}
+[21.353988] (-) TimerEvent: {}
+[21.457704] (-) TimerEvent: {}
+[21.467716] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Found PythonExtra: /usr/bin/python3  \n'}
+[21.557885] (-) TimerEvent: {}
+[21.662079] (-) TimerEvent: {}
+[21.765762] (-) TimerEvent: {}
+[21.868671] (-) TimerEvent: {}
+[21.971671] (-) TimerEvent: {}
+[22.074759] (-) TimerEvent: {}
+[22.176097] (-) TimerEvent: {}
+[22.278049] (-) TimerEvent: {}
+[22.380007] (-) TimerEvent: {}
+[22.484713] (-) TimerEvent: {}
+[22.588684] (-) TimerEvent: {}
+[22.627599] (twist_stamper) StdoutLine: {'line': b'running develop\n'}
+[22.634931] (twist_stamper) StderrLine: {'line': b'/usr/lib/python3/dist-packages/setuptools/command/develop.py:40: EasyInstallDeprecationWarning: easy_install command is deprecated.\n'}
+[22.636238] (twist_stamper) StderrLine: {'line': b'!!\n'}
+[22.637216] (twist_stamper) StderrLine: {'line': b'\n'}
+[22.641312] (twist_stamper) StderrLine: {'line': b'        ********************************************************************************\n'}
+[22.642319] (twist_stamper) StderrLine: {'line': b'        Please avoid running ``setup.py`` and ``easy_install``.\n'}
+[22.643417] (twist_stamper) StderrLine: {'line': b'        Instead, use pypa/build, pypa/installer or other\n'}
+[22.647600] (twist_stamper) StderrLine: {'line': b'        standards-based tools.\n'}
+[22.648641] (twist_stamper) StderrLine: {'line': b'\n'}
+[22.652732] (twist_stamper) StderrLine: {'line': b'        See https://github.com/pypa/setuptools/issues/917 for details.\n'}
+[22.653405] (twist_stamper) StderrLine: {'line': b'        ********************************************************************************\n'}
+[22.654082] (twist_stamper) StderrLine: {'line': b'\n'}
+[22.654732] (twist_stamper) StderrLine: {'line': b'!!\n'}
+[22.655327] (twist_stamper) StderrLine: {'line': b'  easy_install.initialize_options(self)\n'}
+[22.688878] (-) TimerEvent: {}
+[22.791687] (-) TimerEvent: {}
+[22.898798] (-) TimerEvent: {}
+[23.000711] (-) TimerEvent: {}
+[23.101622] (-) TimerEvent: {}
+[23.203659] (-) TimerEvent: {}
+[23.306645] (-) TimerEvent: {}
+[23.407539] (-) TimerEvent: {}
+[23.510674] (-) TimerEvent: {}
+[23.611451] (-) TimerEvent: {}
+[23.712279] (-) TimerEvent: {}
+[23.816681] (-) TimerEvent: {}
+[23.917691] (-) TimerEvent: {}
+[24.019725] (-) TimerEvent: {}
+[24.127559] (-) TimerEvent: {}
+[24.181545] (serial) StdoutLine: {'line': b'[ 64%] \x1b[32m\x1b[1mLinking CXX executable serial_example\x1b[0m\n'}
+[24.231671] (-) TimerEvent: {}
+[24.332650] (-) TimerEvent: {}
+[24.435653] (-) TimerEvent: {}
+[24.536637] (-) TimerEvent: {}
+[24.642674] (-) TimerEvent: {}
+[24.744438] (-) TimerEvent: {}
+[24.848089] (-) TimerEvent: {}
+[24.955716] (-) TimerEvent: {}
+[24.983244] (serial) StdoutLine: {'line': b'[ 64%] Built target serial_example\n'}
+[25.055907] (-) TimerEvent: {}
+[25.087646] (twist_stamper) StdoutLine: {'line': b'running egg_info\n'}
+[25.102718] (twist_stamper) StdoutLine: {'line': b'creating twist_stamper.egg-info\n'}
+[25.156225] (-) TimerEvent: {}
+[25.192713] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter Development NumPy Development.Module Development.Embed \n'}
+[25.256425] (-) TimerEvent: {}
+[25.300869] (twist_stamper) StdoutLine: {'line': b'writing twist_stamper.egg-info/PKG-INFO\n'}
+[25.303002] (twist_stamper) StdoutLine: {'line': b'writing dependency_links to twist_stamper.egg-info/dependency_links.txt\n'}
+[25.305861] (twist_stamper) StdoutLine: {'line': b'writing entry points to twist_stamper.egg-info/entry_points.txt\n'}
+[25.308262] (twist_stamper) StdoutLine: {'line': b'writing requirements to twist_stamper.egg-info/requires.txt\n'}
+[25.311791] (twist_stamper) StdoutLine: {'line': b'writing top-level names to twist_stamper.egg-info/top_level.txt\n'}
+[25.314682] (twist_stamper) StdoutLine: {'line': b"writing manifest file 'twist_stamper.egg-info/SOURCES.txt'\n"}
+[25.357648] (-) TimerEvent: {}
+[25.450287] (serial_motor_demo_msgs) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[25.457853] (-) TimerEvent: {}
+[25.471425] (serial_motor_demo_msgs) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[25.484653] (serial_motor_demo_msgs) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[25.550574] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Configuring done (25.4s)\n'}
+[25.560636] (-) TimerEvent: {}
+[25.661464] (-) TimerEvent: {}
+[25.694183] (twist_stamper) StdoutLine: {'line': b"reading manifest file 'twist_stamper.egg-info/SOURCES.txt'\n"}
+[25.700656] (twist_stamper) StdoutLine: {'line': b"writing manifest file 'twist_stamper.egg-info/SOURCES.txt'\n"}
+[25.761678] (-) TimerEvent: {}
+[25.865032] (-) TimerEvent: {}
+[25.879873] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Generating done (0.3s)\n'}
+[25.883674] (twist_stamper) StdoutLine: {'line': b'running build_ext\n'}
+[25.887657] (twist_stamper) StdoutLine: {'line': b'Creating /home/E14Raspberry/ScooperBot/tennisbot_ws/install/twist_stamper/lib/python3.12/site-packages/twist-stamper.egg-link (link to .)\n'}
+[25.891857] (twist_stamper) StdoutLine: {'line': b'Installing twist_stamper script to /home/E14Raspberry/ScooperBot/tennisbot_ws/install/twist_stamper/lib/twist_stamper\n'}
+[25.895672] (twist_stamper) StdoutLine: {'line': b'Installing twist_unstamper script to /home/E14Raspberry/ScooperBot/tennisbot_ws/install/twist_stamper/lib/twist_stamper\n'}
+[25.899629] (twist_stamper) StdoutLine: {'line': b'\n'}
+[25.900581] (twist_stamper) StdoutLine: {'line': b'Installed /home/E14Raspberry/ScooperBot/tennisbot_ws/build/twist_stamper\n'}
+[25.901248] (twist_stamper) StdoutLine: {'line': b'running symlink_data\n'}
+[25.905687] (twist_stamper) StdoutLine: {'line': b'creating /home/E14Raspberry/ScooperBot/tennisbot_ws/install/twist_stamper/share/ament_index\n'}
+[25.909306] (twist_stamper) StdoutLine: {'line': b'creating /home/E14Raspberry/ScooperBot/tennisbot_ws/install/twist_stamper/share/ament_index/resource_index\n'}
+[25.910356] (twist_stamper) StdoutLine: {'line': b'creating /home/E14Raspberry/ScooperBot/tennisbot_ws/install/twist_stamper/share/ament_index/resource_index/packages\n'}
+[25.911432] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Build files have been written to: /home/E14Raspberry/ScooperBot/tennisbot_ws/build/serial_motor_demo_msgs\n'}
+[25.915974] (twist_stamper) StdoutLine: {'line': b'symbolically linking /home/E14Raspberry/ScooperBot/tennisbot_ws/build/twist_stamper/resource/twist_stamper -> /home/E14Raspberry/ScooperBot/tennisbot_ws/install/twist_stamper/share/ament_index/resource_index/packages\n'}
+[25.917365] (twist_stamper) StdoutLine: {'line': b'symbolically linking /home/E14Raspberry/ScooperBot/tennisbot_ws/build/twist_stamper/package.xml -> /home/E14Raspberry/ScooperBot/tennisbot_ws/install/twist_stamper/share/twist_stamper\n'}
+[25.948022] (serial_motor_demo_msgs) CommandEnded: {'returncode': 0}
+[25.954429] (serial_motor_demo_msgs) JobProgress: {'identifier': 'serial_motor_demo_msgs', 'progress': 'build'}
+[25.958859] (serial_motor_demo_msgs) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/E14Raspberry/ScooperBot/tennisbot_ws/build/serial_motor_demo_msgs', '--', '-j4', '-l4'], 'cwd': '/home/E14Raspberry/ScooperBot/tennisbot_ws/build/serial_motor_demo_msgs', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'E14Raspberry', 'SSH_CLIENT': '2407:e400:9041:3c00:d961:2ede:2c54:ce68 49828 22', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/lib:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial/lib:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/diffdrive_arduino/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/lib', 'HOME': '/home/E14Raspberry', 'OLDPWD': '/home/E14Raspberry', 'SSH_TTY': '/dev/pts/0', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLCON_PREFIX_PATH': '/home/E14Raspberry/ScooperBot/tennisbot_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'E14Raspberry', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '222', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'ROS_DOMAIN_ID': '100', 'AMENT_PREFIX_PATH': '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/twist_stamper:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/tennisbotmaster:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/diffdrive_arduino:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/E14Raspberry/ScooperBot/tennisbot_ws/build/serial_motor_demo_msgs', 'SSH_CONNECTION': '2407:e400:9041:3c00:d961:2ede:2c54:ce68 49828 2407:e400:9041:3c00::7d0 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/E14Raspberry/ScooperBot/tennisbot_ws/build/twist_stamper:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/twist_stamper/lib/python3.12/site-packages:/home/E14Raspberry/ScooperBot/tennisbot_ws/build/serial_motor_demo:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo/lib/python3.12/site-packages:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/tennisbotmaster:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/diffdrive_arduino:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/twist_stamper:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo:/opt/ros/jazzy'}), 'shell': False}
+[25.970381] (-) TimerEvent: {}
+[26.075886] (-) TimerEvent: {}
+[26.171429] (twist_stamper) CommandEnded: {'returncode': 0}
+[26.177176] (-) TimerEvent: {}
+[26.248725] (twist_stamper) JobEnded: {'identifier': 'twist_stamper', 'rc': 0}
+[26.279013] (-) TimerEvent: {}
+[26.361712] (serial_motor_demo_msgs) StdoutLine: {'line': b'[  1%] \x1b[34m\x1b[1mGenerating type hashes for ROS interfaces\x1b[0m\n'}
+[26.379248] (-) TimerEvent: {}
+[26.414926] (serial_motor_demo_msgs) StdoutLine: {'line': b'[  1%] Built target ament_cmake_python_symlink_serial_motor_demo_msgs\n'}
+[26.479697] (-) TimerEvent: {}
+[26.582384] (-) TimerEvent: {}
+[26.687034] (-) TimerEvent: {}
+[26.787926] (-) TimerEvent: {}
+[26.890132] (-) TimerEvent: {}
+[26.993666] (-) TimerEvent: {}
+[27.094676] (-) TimerEvent: {}
+[27.198093] (-) TimerEvent: {}
+[27.298939] (-) TimerEvent: {}
+[27.399800] (-) TimerEvent: {}
+[27.504006] (-) TimerEvent: {}
+[27.604921] (-) TimerEvent: {}
+[27.705733] (-) TimerEvent: {}
+[27.754252] (serial_motor_demo_msgs) StdoutLine: {'line': b'[  1%] Built target serial_motor_demo_msgs__rosidl_generator_type_description\n'}
+[27.807663] (-) TimerEvent: {}
+[27.886549] (serial_motor_demo_msgs) StdoutLine: {'line': b'[  3%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[27.910666] (-) TimerEvent: {}
+[28.011648] (-) TimerEvent: {}
+[28.018538] (serial_motor_demo_msgs) StdoutLine: {'line': b'[  5%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[28.111874] (-) TimerEvent: {}
+[28.187667] (serial_motor_demo_msgs) StdoutLine: {'line': b'running egg_info\n'}
+[28.190818] (serial_motor_demo_msgs) StdoutLine: {'line': b'creating serial_motor_demo_msgs.egg-info\n'}
+[28.212101] (-) TimerEvent: {}
+[28.318641] (-) TimerEvent: {}
+[28.379909] (serial_motor_demo_msgs) StdoutLine: {'line': b'writing serial_motor_demo_msgs.egg-info/PKG-INFO\n'}
+[28.381788] (serial_motor_demo_msgs) StdoutLine: {'line': b'writing dependency_links to serial_motor_demo_msgs.egg-info/dependency_links.txt\n'}
+[28.385647] (serial_motor_demo_msgs) StdoutLine: {'line': b'writing top-level names to serial_motor_demo_msgs.egg-info/top_level.txt\n'}
+[28.389743] (serial_motor_demo_msgs) StdoutLine: {'line': b"writing manifest file 'serial_motor_demo_msgs.egg-info/SOURCES.txt'\n"}
+[28.418870] (-) TimerEvent: {}
+[28.522662] (-) TimerEvent: {}
+[28.623626] (-) TimerEvent: {}
+[28.727045] (-) TimerEvent: {}
+[28.829767] (-) TimerEvent: {}
+[28.930831] (-) TimerEvent: {}
+[28.993815] (serial_motor_demo_msgs) StdoutLine: {'line': b"reading manifest file 'serial_motor_demo_msgs.egg-info/SOURCES.txt'\n"}
+[28.997395] (serial_motor_demo_msgs) StdoutLine: {'line': b"writing manifest file 'serial_motor_demo_msgs.egg-info/SOURCES.txt'\n"}
+[29.033677] (-) TimerEvent: {}
+[29.135429] (-) TimerEvent: {}
+[29.214510] (serial_motor_demo_msgs) StdoutLine: {'line': b'[  5%] Built target ament_cmake_python_build_serial_motor_demo_msgs_egg\n'}
+[29.235641] (-) TimerEvent: {}
+[29.340023] (-) TimerEvent: {}
+[29.441435] (-) TimerEvent: {}
+[29.544765] (-) TimerEvent: {}
+[29.648669] (-) TimerEvent: {}
+[29.749605] (-) TimerEvent: {}
+[29.850714] (-) TimerEvent: {}
+[29.954892] (-) TimerEvent: {}
+[30.055869] (-) TimerEvent: {}
+[30.159682] (-) TimerEvent: {}
+[30.260692] (-) TimerEvent: {}
+[30.366691] (-) TimerEvent: {}
+[30.469753] (-) TimerEvent: {}
+[30.570804] (-) TimerEvent: {}
+[30.676771] (-) TimerEvent: {}
+[30.780862] (-) TimerEvent: {}
+[30.881824] (-) TimerEvent: {}
+[30.984050] (-) TimerEvent: {}
+[30.988469] (serial_motor_demo_msgs) StdoutLine: {'line': b'[  5%] Built target serial_motor_demo_msgs__cpp\n'}
+[31.086682] (-) TimerEvent: {}
+[31.162276] (serial_motor_demo_msgs) StdoutLine: {'line': b'[  7%] \x1b[32mBuilding C object CMakeFiles/serial_motor_demo_msgs__rosidl_generator_c.dir/rosidl_generator_c/serial_motor_demo_msgs/msg/detail/motor_command__description.c.o\x1b[0m\n'}
+[31.183753] (serial_motor_demo_msgs) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding C object CMakeFiles/serial_motor_demo_msgs__rosidl_generator_c.dir/rosidl_generator_c/serial_motor_demo_msgs/msg/detail/motor_vels__description.c.o\x1b[0m\n'}
+[31.186464] (serial_motor_demo_msgs) StdoutLine: {'line': b'[ 11%] \x1b[32mBuilding C object CMakeFiles/serial_motor_demo_msgs__rosidl_generator_c.dir/rosidl_generator_c/serial_motor_demo_msgs/msg/detail/motor_command__functions.c.o\x1b[0m\n'}
+[31.187436] (-) TimerEvent: {}
+[31.197064] (serial_motor_demo_msgs) StdoutLine: {'line': b'[ 12%] \x1b[32mBuilding C object CMakeFiles/serial_motor_demo_msgs__rosidl_generator_c.dir/rosidl_generator_c/serial_motor_demo_msgs/msg/detail/motor_command__type_support.c.o\x1b[0m\n'}
+[31.292680] (-) TimerEvent: {}
+[31.393664] (-) TimerEvent: {}
+[31.496680] (-) TimerEvent: {}
+[31.541777] (serial_motor_demo_msgs) StdoutLine: {'line': b'[ 14%] \x1b[32mBuilding C object CMakeFiles/serial_motor_demo_msgs__rosidl_generator_c.dir/rosidl_generator_c/serial_motor_demo_msgs/msg/detail/motor_vels__functions.c.o\x1b[0m\n'}
+[31.590132] (serial_motor_demo_msgs) StdoutLine: {'line': b'[ 16%] \x1b[32mBuilding C object CMakeFiles/serial_motor_demo_msgs__rosidl_generator_c.dir/rosidl_generator_c/serial_motor_demo_msgs/msg/detail/encoder_vals__description.c.o\x1b[0m\n'}
+[31.599769] (-) TimerEvent: {}
+[31.610916] (serial_motor_demo_msgs) StdoutLine: {'line': b'[ 18%] \x1b[32mBuilding C object CMakeFiles/serial_motor_demo_msgs__rosidl_generator_c.dir/rosidl_generator_c/serial_motor_demo_msgs/msg/detail/motor_vels__type_support.c.o\x1b[0m\n'}
+[31.675224] (serial_motor_demo_msgs) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding C object CMakeFiles/serial_motor_demo_msgs__rosidl_generator_c.dir/rosidl_generator_c/serial_motor_demo_msgs/msg/detail/encoder_vals__functions.c.o\x1b[0m\n'}
+[31.699987] (-) TimerEvent: {}
+[31.804114] (-) TimerEvent: {}
+[31.907665] (-) TimerEvent: {}
+[32.008687] (-) TimerEvent: {}
+[32.010838] (serial_motor_demo_msgs) StdoutLine: {'line': b'[ 22%] \x1b[32mBuilding C object CMakeFiles/serial_motor_demo_msgs__rosidl_generator_c.dir/rosidl_generator_c/serial_motor_demo_msgs/msg/detail/encoder_vals__type_support.c.o\x1b[0m\n'}
+[32.110662] (-) TimerEvent: {}
+[32.211798] (-) TimerEvent: {}
+[32.214057] (serial_motor_demo_msgs) StdoutLine: {'line': b'[ 24%] \x1b[32m\x1b[1mLinking C shared library libserial_motor_demo_msgs__rosidl_generator_c.so\x1b[0m\n'}
+[32.312020] (-) TimerEvent: {}
+[32.414670] (-) TimerEvent: {}
+[32.453301] (serial_motor_demo_msgs) StdoutLine: {'line': b'[ 24%] Built target serial_motor_demo_msgs__rosidl_generator_c\n'}
+[32.519680] (-) TimerEvent: {}
+[32.534783] (serial_motor_demo_msgs) StdoutLine: {'line': b'[ 25%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[32.543956] (serial_motor_demo_msgs) StdoutLine: {'line': b'[ 27%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[32.567417] (serial_motor_demo_msgs) StdoutLine: {'line': b'[ 29%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[32.574011] (serial_motor_demo_msgs) StdoutLine: {'line': b'[ 31%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[32.624661] (-) TimerEvent: {}
+[32.727648] (-) TimerEvent: {}
+[32.828433] (-) TimerEvent: {}
+[32.929566] (-) TimerEvent: {}
+[33.036062] (-) TimerEvent: {}
+[33.139798] (-) TimerEvent: {}
+[33.246837] (-) TimerEvent: {}
+[33.353719] (-) TimerEvent: {}
+[33.456658] (-) TimerEvent: {}
+[33.557603] (-) TimerEvent: {}
+[33.658439] (-) TimerEvent: {}
+[33.761081] (-) TimerEvent: {}
+[33.867620] (-) TimerEvent: {}
+[33.969716] (-) TimerEvent: {}
+[34.070647] (-) TimerEvent: {}
+[34.172115] (-) TimerEvent: {}
+[34.277665] (-) TimerEvent: {}
+[34.378622] (-) TimerEvent: {}
+[34.482670] (-) TimerEvent: {}
+[34.583705] (-) TimerEvent: {}
+[34.686702] (-) TimerEvent: {}
+[34.787627] (-) TimerEvent: {}
+[34.889708] (-) TimerEvent: {}
+[34.960029] (serial_motor_demo_msgs) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/serial_motor_demo_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/serial_motor_demo_msgs/msg/motor_command__type_support.cpp.o\x1b[0m\n'}
+[34.989932] (-) TimerEvent: {}
+[35.094890] (-) TimerEvent: {}
+[35.196137] (-) TimerEvent: {}
+[35.272854] (serial_motor_demo_msgs) StdoutLine: {'line': b'[ 35%] \x1b[32mBuilding CXX object CMakeFiles/serial_motor_demo_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/serial_motor_demo_msgs/msg/detail/motor_command__type_support.cpp.o\x1b[0m\n'}
+[35.296388] (-) TimerEvent: {}
+[35.402683] (-) TimerEvent: {}
+[35.503777] (-) TimerEvent: {}
+[35.605375] (-) TimerEvent: {}
+[35.708637] (-) TimerEvent: {}
+[35.815607] (serial_motor_demo_msgs) StdoutLine: {'line': b'[ 37%] \x1b[32mBuilding CXX object CMakeFiles/serial_motor_demo_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/serial_motor_demo_msgs/msg/detail/motor_command__type_support_c.cpp.o\x1b[0m\n'}
+[35.816531] (-) TimerEvent: {}
+[35.923155] (-) TimerEvent: {}
+[36.027706] (-) TimerEvent: {}
+[36.131724] (-) TimerEvent: {}
+[36.233679] (-) TimerEvent: {}
+[36.337691] (-) TimerEvent: {}
+[36.384345] (serial_motor_demo_msgs) StdoutLine: {'line': b'[ 38%] \x1b[32mBuilding CXX object CMakeFiles/serial_motor_demo_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/serial_motor_demo_msgs/msg/detail/dds_fastrtps/motor_command__type_support.cpp.o\x1b[0m\n'}
+[36.438682] (-) TimerEvent: {}
+[36.542974] (-) TimerEvent: {}
+[36.643997] (-) TimerEvent: {}
+[36.747988] (-) TimerEvent: {}
+[36.850693] (-) TimerEvent: {}
+[36.951770] (-) TimerEvent: {}
+[37.059709] (-) TimerEvent: {}
+[37.162683] (-) TimerEvent: {}
+[37.265698] (-) TimerEvent: {}
+[37.368687] (-) TimerEvent: {}
+[37.471689] (-) TimerEvent: {}
+[37.572688] (-) TimerEvent: {}
+[37.676218] (-) TimerEvent: {}
+[37.778952] (-) TimerEvent: {}
+[37.882721] (-) TimerEvent: {}
+[37.986688] (-) TimerEvent: {}
+[38.088735] (-) TimerEvent: {}
+[38.192686] (-) TimerEvent: {}
+[38.293791] (-) TimerEvent: {}
+[38.400142] (-) TimerEvent: {}
+[38.501278] (-) TimerEvent: {}
+[38.606683] (-) TimerEvent: {}
+[38.707694] (-) TimerEvent: {}
+[38.810724] (-) TimerEvent: {}
+[38.864814] (serial_motor_demo_msgs) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding CXX object CMakeFiles/serial_motor_demo_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/serial_motor_demo_msgs/msg/detail/motor_vels__type_support.cpp.o\x1b[0m\n'}
+[38.913695] (-) TimerEvent: {}
+[39.014686] (-) TimerEvent: {}
+[39.118081] (-) TimerEvent: {}
+[39.221687] (-) TimerEvent: {}
+[39.245462] (serial_motor_demo_msgs) StdoutLine: {'line': b'[ 42%] \x1b[32mBuilding CXX object CMakeFiles/serial_motor_demo_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/serial_motor_demo_msgs/msg/motor_vels__type_support.cpp.o\x1b[0m\n'}
+[39.327742] (-) TimerEvent: {}
+[39.428684] (-) TimerEvent: {}
+[39.529668] (-) TimerEvent: {}
+[39.630697] (-) TimerEvent: {}
+[39.735039] (-) TimerEvent: {}
+[39.836005] (-) TimerEvent: {}
+[39.940083] (-) TimerEvent: {}
+[40.041685] (-) TimerEvent: {}
+[40.146688] (-) TimerEvent: {}
+[40.247661] (-) TimerEvent: {}
+[40.351119] (-) TimerEvent: {}
+[40.459687] (-) TimerEvent: {}
+[40.560675] (-) TimerEvent: {}
+[40.661710] (-) TimerEvent: {}
+[40.768684] (-) TimerEvent: {}
+[40.871675] (-) TimerEvent: {}
+[40.972709] (-) TimerEvent: {}
+[41.073674] (-) TimerEvent: {}
+[41.176692] (-) TimerEvent: {}
+[41.183868] (serial_motor_demo_msgs) StdoutLine: {'line': b'[ 44%] \x1b[32mBuilding CXX object CMakeFiles/serial_motor_demo_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/serial_motor_demo_msgs/msg/detail/motor_vels__type_support_c.cpp.o\x1b[0m\n'}
+[41.279686] (-) TimerEvent: {}
+[41.382680] (-) TimerEvent: {}
+[41.484079] (-) TimerEvent: {}
+[41.575352] (serial_motor_demo_msgs) StdoutLine: {'line': b'[ 46%] \x1b[32mBuilding CXX object CMakeFiles/serial_motor_demo_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/serial_motor_demo_msgs/msg/detail/encoder_vals__type_support.cpp.o\x1b[0m\n'}
+[41.588798] (-) TimerEvent: {}
+[41.689986] (-) TimerEvent: {}
+[41.794774] (-) TimerEvent: {}
+[41.898674] (-) TimerEvent: {}
+[41.999869] (-) TimerEvent: {}
+[42.066714] (serial_motor_demo_msgs) StdoutLine: {'line': b'[ 48%] \x1b[32mBuilding CXX object CMakeFiles/serial_motor_demo_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/serial_motor_demo_msgs/msg/detail/dds_fastrtps/motor_vels__type_support.cpp.o\x1b[0m\n'}
+[42.100153] (-) TimerEvent: {}
+[42.116174] (serial) StdoutLine: {'line': b'[ 71%] \x1b[32m\x1b[1mLinking CXX static library libgtest.a\x1b[0m\n'}
+[42.200457] (-) TimerEvent: {}
+[42.303684] (-) TimerEvent: {}
+[42.404673] (-) TimerEvent: {}
+[42.508066] (-) TimerEvent: {}
+[42.610741] (-) TimerEvent: {}
+[42.713718] (-) TimerEvent: {}
+[42.819688] (-) TimerEvent: {}
+[42.857102] (serial_motor_demo_msgs) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/serial_motor_demo_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/serial_motor_demo_msgs/msg/encoder_vals__type_support.cpp.o\x1b[0m\n'}
+[42.919897] (-) TimerEvent: {}
+[42.991911] (serial) StdoutLine: {'line': b'[ 71%] Built target gtest\n'}
+[43.022764] (-) TimerEvent: {}
+[43.129669] (-) TimerEvent: {}
+[43.230589] (-) TimerEvent: {}
+[43.294781] (serial) StdoutLine: {'line': b'[ 78%] \x1b[32mBuilding CXX object tests/CMakeFiles/serial-test.dir/unix_serial_tests.cc.o\x1b[0m\n'}
+[43.311217] (serial) StdoutLine: {'line': b'[ 85%] \x1b[32mBuilding CXX object tests/CMakeFiles/serial-test-timer.dir/unit/unix_timer_tests.cc.o\x1b[0m\n'}
+[43.333129] (-) TimerEvent: {}
+[43.436372] (-) TimerEvent: {}
+[43.540073] (-) TimerEvent: {}
+[43.642702] (-) TimerEvent: {}
+[43.745683] (-) TimerEvent: {}
+[43.848721] (-) TimerEvent: {}
+[43.951682] (-) TimerEvent: {}
+[44.054679] (-) TimerEvent: {}
+[44.156654] (-) TimerEvent: {}
+[44.260049] (-) TimerEvent: {}
+[44.366687] (-) TimerEvent: {}
+[44.467985] (-) TimerEvent: {}
+[44.568898] (-) TimerEvent: {}
+[44.673239] (-) TimerEvent: {}
+[44.777682] (-) TimerEvent: {}
+[44.880691] (-) TimerEvent: {}
+[44.983699] (-) TimerEvent: {}
+[45.087678] (-) TimerEvent: {}
+[45.190688] (-) TimerEvent: {}
+[45.292721] (-) TimerEvent: {}
+[45.396793] (-) TimerEvent: {}
+[45.501095] (-) TimerEvent: {}
+[45.607672] (-) TimerEvent: {}
+[45.710738] (-) TimerEvent: {}
+[45.813721] (-) TimerEvent: {}
+[45.916683] (-) TimerEvent: {}
+[46.019714] (-) TimerEvent: {}
+[46.120735] (-) TimerEvent: {}
+[46.139865] (serial_motor_demo_msgs) StdoutLine: {'line': b'[ 51%] \x1b[32m\x1b[1mLinking CXX shared library libserial_motor_demo_msgs__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[46.226688] (-) TimerEvent: {}
+[46.327601] (-) TimerEvent: {}
+[46.428569] (-) TimerEvent: {}
+[46.533093] (-) TimerEvent: {}
+[46.630687] (serial_motor_demo_msgs) StdoutLine: {'line': b'[ 53%] \x1b[32mBuilding CXX object CMakeFiles/serial_motor_demo_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/serial_motor_demo_msgs/msg/detail/encoder_vals__type_support_c.cpp.o\x1b[0m\n'}
+[46.634724] (-) TimerEvent: {}
+[46.714738] (serial_motor_demo_msgs) StdoutLine: {'line': b'[ 53%] Built target serial_motor_demo_msgs__rosidl_typesupport_introspection_cpp\n'}
+[46.740673] (-) TimerEvent: {}
+[46.841685] (-) TimerEvent: {}
+[46.862972] (serial_motor_demo_msgs) StdoutLine: {'line': b'[ 55%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[46.941927] (-) TimerEvent: {}
+[47.045743] (-) TimerEvent: {}
+[47.152670] (-) TimerEvent: {}
+[47.207840] (serial_motor_demo_msgs) StdoutLine: {'line': b'[ 57%] \x1b[32m\x1b[1mLinking CXX shared library libserial_motor_demo_msgs__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[47.252926] (-) TimerEvent: {}
+[47.353746] (-) TimerEvent: {}
+[47.465707] (-) TimerEvent: {}
+[47.501604] (serial_motor_demo_msgs) StdoutLine: {'line': b'[ 57%] Built target serial_motor_demo_msgs__rosidl_typesupport_cpp\n'}
+[47.565940] (-) TimerEvent: {}
+[47.573630] (serial_motor_demo_msgs) StdoutLine: {'line': b'[ 59%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[47.668673] (-) TimerEvent: {}
+[47.769802] (-) TimerEvent: {}
+[47.873916] (-) TimerEvent: {}
+[47.975646] (-) TimerEvent: {}
+[48.080712] (-) TimerEvent: {}
+[48.181542] (-) TimerEvent: {}
+[48.285713] (-) TimerEvent: {}
+[48.386653] (-) TimerEvent: {}
+[48.488695] (-) TimerEvent: {}
+[48.589653] (-) TimerEvent: {}
+[48.691724] (-) TimerEvent: {}
+[48.794665] (-) TimerEvent: {}
+[48.897666] (-) TimerEvent: {}
+[48.999830] (-) TimerEvent: {}
+[49.104129] (-) TimerEvent: {}
+[49.208694] (-) TimerEvent: {}
+[49.314666] (-) TimerEvent: {}
+[49.415646] (-) TimerEvent: {}
+[49.518661] (-) TimerEvent: {}
+[49.619719] (-) TimerEvent: {}
+[49.667151] (serial_motor_demo_msgs) StdoutLine: {'line': b'[ 61%] \x1b[32mBuilding CXX object CMakeFiles/serial_motor_demo_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/serial_motor_demo_msgs/msg/detail/dds_fastrtps/encoder_vals__type_support.cpp.o\x1b[0m\n'}
+[49.701084] (serial_motor_demo_msgs) StdoutLine: {'line': b'[ 62%] \x1b[32mBuilding C object CMakeFiles/serial_motor_demo_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/serial_motor_demo_msgs/msg/detail/motor_command__type_support.c.o\x1b[0m\n'}
+[49.720701] (-) TimerEvent: {}
+[49.823245] (-) TimerEvent: {}
+[49.927701] (-) TimerEvent: {}
+[50.030684] (-) TimerEvent: {}
+[50.047906] (serial_motor_demo_msgs) StdoutLine: {'line': b'[ 64%] \x1b[32mBuilding C object CMakeFiles/serial_motor_demo_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/serial_motor_demo_msgs/msg/detail/motor_vels__type_support.c.o\x1b[0m\n'}
+[50.132675] (-) TimerEvent: {}
+[50.235690] (-) TimerEvent: {}
+[50.338696] (-) TimerEvent: {}
+[50.441708] (-) TimerEvent: {}
+[50.545693] (-) TimerEvent: {}
+[50.564684] (serial_motor_demo_msgs) StdoutLine: {'line': b'[ 66%] \x1b[32mBuilding C object CMakeFiles/serial_motor_demo_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/serial_motor_demo_msgs/msg/detail/encoder_vals__type_support.c.o\x1b[0m\n'}
+[50.646693] (-) TimerEvent: {}
+[50.749679] (-) TimerEvent: {}
+[50.853902] (-) TimerEvent: {}
+[50.924360] (serial_motor_demo_msgs) StdoutLine: {'line': b'[ 68%] \x1b[32mBuilding CXX object CMakeFiles/serial_motor_demo_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/serial_motor_demo_msgs/msg/motor_command__type_support.cpp.o\x1b[0m\n'}
+[50.954078] (-) TimerEvent: {}
+[51.059025] (-) TimerEvent: {}
+[51.088472] (serial_motor_demo_msgs) StdoutLine: {'line': b'[ 70%] \x1b[32m\x1b[1mLinking C shared library libserial_motor_demo_msgs__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[51.159215] (-) TimerEvent: {}
+[51.260944] (-) TimerEvent: {}
+[51.308808] (serial_motor_demo_msgs) StdoutLine: {'line': b'[ 70%] Built target serial_motor_demo_msgs__rosidl_typesupport_introspection_c\n'}
+[51.363710] (-) TimerEvent: {}
+[51.423203] (serial_motor_demo_msgs) StdoutLine: {'line': b'[ 72%] \x1b[32mBuilding CXX object CMakeFiles/serial_motor_demo_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/serial_motor_demo_msgs/msg/motor_vels__type_support.cpp.o\x1b[0m\n'}
+[51.465661] (-) TimerEvent: {}
+[51.569949] (-) TimerEvent: {}
+[51.582226] (serial_motor_demo_msgs) StdoutLine: {'line': b'[ 74%] \x1b[32mBuilding CXX object CMakeFiles/serial_motor_demo_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/serial_motor_demo_msgs/msg/encoder_vals__type_support.cpp.o\x1b[0m\n'}
+[51.672777] (-) TimerEvent: {}
+[51.777013] (-) TimerEvent: {}
+[51.878715] (-) TimerEvent: {}
+[51.982585] (-) TimerEvent: {}
+[52.087679] (-) TimerEvent: {}
+[52.188727] (serial_motor_demo_msgs) StdoutLine: {'line': b'[ 75%] \x1b[32m\x1b[1mLinking CXX shared library libserial_motor_demo_msgs__rosidl_typesupport_c.so\x1b[0m\n'}
+[52.192920] (-) TimerEvent: {}
+[52.294079] (-) TimerEvent: {}
+[52.397098] (-) TimerEvent: {}
+[52.453904] (serial_motor_demo_msgs) StdoutLine: {'line': b'[ 75%] Built target serial_motor_demo_msgs__rosidl_typesupport_c\n'}
+[52.499691] (-) TimerEvent: {}
+[52.603686] (-) TimerEvent: {}
+[52.704680] (-) TimerEvent: {}
+[52.809690] (-) TimerEvent: {}
+[52.910711] (-) TimerEvent: {}
+[53.014690] (-) TimerEvent: {}
+[53.115854] (-) TimerEvent: {}
+[53.220703] (-) TimerEvent: {}
+[53.321783] (-) TimerEvent: {}
+[53.396011] (serial_motor_demo_msgs) StdoutLine: {'line': b'[ 77%] \x1b[32m\x1b[1mLinking CXX shared library libserial_motor_demo_msgs__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[53.423742] (-) TimerEvent: {}
+[53.529080] (-) TimerEvent: {}
+[53.632684] (-) TimerEvent: {}
+[53.733721] (-) TimerEvent: {}
+[53.836088] (-) TimerEvent: {}
+[53.898714] (serial_motor_demo_msgs) StdoutLine: {'line': b'[ 77%] Built target serial_motor_demo_msgs__rosidl_typesupport_fastrtps_c\n'}
+[53.926607] (serial) StdoutLine: {'line': b'[ 92%] \x1b[32m\x1b[1mLinking CXX executable serial-test-timer\x1b[0m\n'}
+[53.937651] (-) TimerEvent: {}
+[54.038557] (-) TimerEvent: {}
+[54.142195] (-) TimerEvent: {}
+[54.245075] (-) TimerEvent: {}
+[54.288855] (diffdrive_arduino) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX shared library libdiffdrive_arduino.so\x1b[0m\n'}
+[54.346688] (-) TimerEvent: {}
+[54.449671] (-) TimerEvent: {}
+[54.551082] (-) TimerEvent: {}
+[54.627543] (serial) StdoutLine: {'line': b'[ 92%] Built target serial-test-timer\n'}
+[54.651411] (-) TimerEvent: {}
+[54.752686] (-) TimerEvent: {}
+[54.853831] (-) TimerEvent: {}
+[54.955208] (-) TimerEvent: {}
+[55.054266] (serial) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/boost/bind/detail/requires_cxx11.hpp:9\x1b[m\x1b[K,\n'}
+[55.056166] (-) TimerEvent: {}
+[55.057441] (serial) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/boost/bind/bind.hpp:24\x1b[m\x1b[K,\n'}
+[55.058638] (serial) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/boost/bind.hpp:29\x1b[m\x1b[K,\n'}
+[55.059933] (serial) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/E14Raspberry/ScooperBot/tennisbot_ws/src/serial/tests/unix_serial_tests.cc:23\x1b[m\x1b[K:\n'}
+[55.061205] (serial) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/boost/bind.hpp:36:1:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K#pragma message: The practice of declaring the Bind placeholders (_1, _2, ...) in the global namespace is deprecated. Please use <boost/bind/bind.hpp> + using namespace boost::placeholders, or define BOOST_BIND_GLOBAL_PLACEHOLDERS to retain the current behavior.\x1b[m\x1b[K\xe2\x80\x99\n'}
+[55.062383] (serial) StderrLine: {'line': b'   36 | \x1b[01;36m\x1b[KBOOST_PRAGMA_MESSAGE\x1b[m\x1b[K(\n'}
+[55.063515] (serial) StderrLine: {'line': b'      | \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[55.156598] (-) TimerEvent: {}
+[55.258962] (-) TimerEvent: {}
+[55.360339] (-) TimerEvent: {}
+[55.389401] (serial_motor_demo_msgs) StdoutLine: {'line': b'[ 79%] \x1b[32m\x1b[1mLinking CXX shared library libserial_motor_demo_msgs__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[55.453875] (diffdrive_arduino) StdoutLine: {'line': b'[100%] Built target diffdrive_arduino\n'}
+[55.460663] (-) TimerEvent: {}
+[55.511057] (diffdrive_arduino) CommandEnded: {'returncode': 0}
+[55.560903] (-) TimerEvent: {}
+[55.648656] (serial_motor_demo_msgs) StdoutLine: {'line': b'[ 79%] Built target serial_motor_demo_msgs__rosidl_typesupport_fastrtps_cpp\n'}
+[55.659550] (diffdrive_arduino) JobProgress: {'identifier': 'diffdrive_arduino', 'progress': 'install'}
+[55.660713] (diffdrive_arduino) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/E14Raspberry/ScooperBot/tennisbot_ws/build/diffdrive_arduino'], 'cwd': '/home/E14Raspberry/ScooperBot/tennisbot_ws/build/diffdrive_arduino', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'E14Raspberry', 'SSH_CLIENT': '2407:e400:9041:3c00:d961:2ede:2c54:ce68 49828 22', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/lib:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial/lib:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/diffdrive_arduino/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/lib', 'HOME': '/home/E14Raspberry', 'OLDPWD': '/home/E14Raspberry', 'SSH_TTY': '/dev/pts/0', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLCON_PREFIX_PATH': '/home/E14Raspberry/ScooperBot/tennisbot_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'E14Raspberry', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '222', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'ROS_DOMAIN_ID': '100', 'AMENT_PREFIX_PATH': '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/twist_stamper:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/tennisbotmaster:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/diffdrive_arduino:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/E14Raspberry/ScooperBot/tennisbot_ws/build/diffdrive_arduino', 'SSH_CONNECTION': '2407:e400:9041:3c00:d961:2ede:2c54:ce68 49828 2407:e400:9041:3c00::7d0 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/E14Raspberry/ScooperBot/tennisbot_ws/build/twist_stamper:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/twist_stamper/lib/python3.12/site-packages:/home/E14Raspberry/ScooperBot/tennisbot_ws/build/serial_motor_demo:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo/lib/python3.12/site-packages:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/tennisbotmaster:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/diffdrive_arduino:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/twist_stamper:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo:/opt/ros/jazzy'}), 'shell': False}
+[55.665048] (-) TimerEvent: {}
+[55.700863] (diffdrive_arduino) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[55.703388] (diffdrive_arduino) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[55.705412] (diffdrive_arduino) StdoutLine: {'line': b'-- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/diffdrive_arduino/share/diffdrive_arduino//diffdrive_arduino.xml\n'}
+[55.753165] (diffdrive_arduino) StdoutLine: {'line': b'-- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/diffdrive_arduino/include/diffdrive_arduino/diffdrive_arduino/arduino_comms.hpp\n'}
+[55.754224] (serial_motor_demo_msgs) StdoutLine: {'line': b'[ 79%] Built target serial_motor_demo_msgs\n'}
+[55.765301] (-) TimerEvent: {}
+[55.797872] (diffdrive_arduino) StdoutLine: {'line': b'-- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/diffdrive_arduino/include/diffdrive_arduino/diffdrive_arduino/diffbot_system.hpp\n'}
+[55.843585] (diffdrive_arduino) StdoutLine: {'line': b'-- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/diffdrive_arduino/include/diffdrive_arduino/diffdrive_arduino/visibility_control.h\n'}
+[55.866690] (serial_motor_demo_msgs) StdoutLine: {'line': b'[ 81%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[55.867585] (-) TimerEvent: {}
+[55.891804] (diffdrive_arduino) StdoutLine: {'line': b'-- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/diffdrive_arduino/include/diffdrive_arduino/diffdrive_arduino/wheel.hpp\n'}
+[55.939435] (diffdrive_arduino) StdoutLine: {'line': b'-- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/diffdrive_arduino/share/diffdrive_arduino/launch/view_robot.launch.py\n'}
+[55.967793] (-) TimerEvent: {}
+[55.988405] (diffdrive_arduino) StdoutLine: {'line': b'-- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/diffdrive_arduino/share/diffdrive_arduino/ros2_control/diffbot.ros2_control.xacro\n'}
+[56.039763] (diffdrive_arduino) StdoutLine: {'line': b'-- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/diffdrive_arduino/share/diffdrive_arduino/urdf/diffbot.materials.xacro\n'}
+[56.068005] (-) TimerEvent: {}
+[56.088887] (diffdrive_arduino) StdoutLine: {'line': b'-- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/diffdrive_arduino/share/diffdrive_arduino/urdf/diffbot.urdf.xacro\n'}
+[56.137732] (diffdrive_arduino) StdoutLine: {'line': b'-- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/diffdrive_arduino/share/diffdrive_arduino/urdf/diffbot_description.urdf.xacro\n'}
+[56.168228] (-) TimerEvent: {}
+[56.187788] (diffdrive_arduino) StdoutLine: {'line': b'-- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/diffdrive_arduino/share/diffdrive_arduino/rviz/diffbot.rviz\n'}
+[56.236814] (diffdrive_arduino) StdoutLine: {'line': b'-- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/diffdrive_arduino/share/diffdrive_arduino/rviz/diffbot_view.rviz\n'}
+[56.268462] (-) TimerEvent: {}
+[56.290060] (diffdrive_arduino) StdoutLine: {'line': b'-- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/diffdrive_arduino/share/diffdrive_arduino/launch/diffbot.launch.py\n'}
+[56.338180] (diffdrive_arduino) StdoutLine: {'line': b'-- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/diffdrive_arduino/share/diffdrive_arduino/config/diffbot_controllers.yaml\n'}
+[56.368667] (-) TimerEvent: {}
+[56.387899] (diffdrive_arduino) StdoutLine: {'line': b'-- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/diffdrive_arduino/share/diffdrive_arduino/environment/library_path.sh\n'}
+[56.436233] (diffdrive_arduino) StdoutLine: {'line': b'-- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/diffdrive_arduino/share/diffdrive_arduino/environment/library_path.dsv\n'}
+[56.468974] (-) TimerEvent: {}
+[56.487443] (diffdrive_arduino) StdoutLine: {'line': b'-- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/diffdrive_arduino/share/ament_index/resource_index/package_run_dependencies/diffdrive_arduino\n'}
+[56.535751] (diffdrive_arduino) StdoutLine: {'line': b'-- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/diffdrive_arduino/share/ament_index/resource_index/parent_prefix_path/diffdrive_arduino\n'}
+[56.569174] (-) TimerEvent: {}
+[56.584228] (diffdrive_arduino) StdoutLine: {'line': b'-- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/diffdrive_arduino/share/diffdrive_arduino/environment/ament_prefix_path.sh\n'}
+[56.631115] (diffdrive_arduino) StdoutLine: {'line': b'-- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/diffdrive_arduino/share/diffdrive_arduino/environment/ament_prefix_path.dsv\n'}
+[56.671653] (-) TimerEvent: {}
+[56.677392] (diffdrive_arduino) StdoutLine: {'line': b'-- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/diffdrive_arduino/share/diffdrive_arduino/environment/path.sh\n'}
+[56.725826] (diffdrive_arduino) StdoutLine: {'line': b'-- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/diffdrive_arduino/share/diffdrive_arduino/environment/path.dsv\n'}
+[56.769972] (diffdrive_arduino) StdoutLine: {'line': b'-- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/diffdrive_arduino/share/diffdrive_arduino/local_setup.bash\n'}
+[56.771798] (-) TimerEvent: {}
+[56.816470] (diffdrive_arduino) StdoutLine: {'line': b'-- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/diffdrive_arduino/share/diffdrive_arduino/local_setup.sh\n'}
+[56.865687] (diffdrive_arduino) StdoutLine: {'line': b'-- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/diffdrive_arduino/share/diffdrive_arduino/local_setup.zsh\n'}
+[56.871976] (-) TimerEvent: {}
+[56.917783] (diffdrive_arduino) StdoutLine: {'line': b'-- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/diffdrive_arduino/share/diffdrive_arduino/local_setup.dsv\n'}
+[56.961746] (diffdrive_arduino) StdoutLine: {'line': b'-- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/diffdrive_arduino/share/diffdrive_arduino/package.dsv\n'}
+[56.972258] (-) TimerEvent: {}
+[57.009832] (diffdrive_arduino) StdoutLine: {'line': b'-- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/diffdrive_arduino/share/ament_index/resource_index/packages/diffdrive_arduino\n'}
+[57.017086] (serial) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable serial-test\x1b[0m\n'}
+[57.054775] (diffdrive_arduino) StdoutLine: {'line': b'-- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/diffdrive_arduino/share/ament_index/resource_index/hardware_interface__pluginlib__plugin/diffdrive_arduino\n'}
+[57.072675] (-) TimerEvent: {}
+[57.099651] (diffdrive_arduino) StdoutLine: {'line': b'-- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/diffdrive_arduino/share/diffdrive_arduino/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[57.153208] (diffdrive_arduino) StdoutLine: {'line': b'-- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/diffdrive_arduino/share/diffdrive_arduino/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[57.172929] (-) TimerEvent: {}
+[57.197796] (diffdrive_arduino) StdoutLine: {'line': b'-- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/diffdrive_arduino/share/diffdrive_arduino/cmake/diffdrive_arduinoConfig.cmake\n'}
+[57.252655] (diffdrive_arduino) StdoutLine: {'line': b'-- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/diffdrive_arduino/share/diffdrive_arduino/cmake/diffdrive_arduinoConfig-version.cmake\n'}
+[57.273244] (-) TimerEvent: {}
+[57.305971] (diffdrive_arduino) StdoutLine: {'line': b'-- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/diffdrive_arduino/share/diffdrive_arduino/package.xml\n'}
+[57.360658] (diffdrive_arduino) StdoutLine: {'line': b'-- Installing: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/diffdrive_arduino/lib/libdiffdrive_arduino.so\n'}
+[57.365105] (diffdrive_arduino) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/E14Raspberry/ScooperBot/tennisbot_ws/install/diffdrive_arduino/lib/libdiffdrive_arduino.so" to ""\n'}
+[57.369026] (diffdrive_arduino) StdoutLine: {'line': b'-- Installing: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/diffdrive_arduino/share/diffdrive_arduino/cmake/export_diffdrive_arduinoExport.cmake\n'}
+[57.373632] (diffdrive_arduino) StdoutLine: {'line': b'-- Installing: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/diffdrive_arduino/share/diffdrive_arduino/cmake/export_diffdrive_arduinoExport-noconfig.cmake\n'}
+[57.374274] (-) TimerEvent: {}
+[57.383529] (diffdrive_arduino) CommandEnded: {'returncode': 0}
+[57.474477] (-) TimerEvent: {}
+[57.576078] (-) TimerEvent: {}
+[57.617952] (serial) StdoutLine: {'line': b'[100%] Built target serial-test\n'}
+[57.631053] (diffdrive_arduino) JobEnded: {'identifier': 'diffdrive_arduino', 'rc': 0}
+[57.669903] (serial) CommandEnded: {'returncode': 0}
+[57.676228] (-) TimerEvent: {}
+[57.776945] (-) TimerEvent: {}
+[57.878024] (-) TimerEvent: {}
+[57.886663] (serial) JobProgress: {'identifier': 'serial', 'progress': 'install'}
+[57.890408] (serial) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/E14Raspberry/ScooperBot/tennisbot_ws/build/serial'], 'cwd': '/home/E14Raspberry/ScooperBot/tennisbot_ws/build/serial', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'E14Raspberry', 'SSH_CLIENT': '2407:e400:9041:3c00:d961:2ede:2c54:ce68 49828 22', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/lib:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial/lib:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/diffdrive_arduino/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/lib', 'HOME': '/home/E14Raspberry', 'OLDPWD': '/home/E14Raspberry', 'SSH_TTY': '/dev/pts/0', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLCON_PREFIX_PATH': '/home/E14Raspberry/ScooperBot/tennisbot_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'E14Raspberry', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '222', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'ROS_DOMAIN_ID': '100', 'AMENT_PREFIX_PATH': '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/twist_stamper:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/tennisbotmaster:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/diffdrive_arduino:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/E14Raspberry/ScooperBot/tennisbot_ws/build/serial', 'SSH_CONNECTION': '2407:e400:9041:3c00:d961:2ede:2c54:ce68 49828 2407:e400:9041:3c00::7d0 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/E14Raspberry/ScooperBot/tennisbot_ws/build/twist_stamper:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/twist_stamper/lib/python3.12/site-packages:/home/E14Raspberry/ScooperBot/tennisbot_ws/build/serial_motor_demo:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo/lib/python3.12/site-packages:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/tennisbotmaster:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/diffdrive_arduino:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/twist_stamper:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo:/opt/ros/jazzy'}), 'shell': False}
+[57.925870] (serial) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[57.927949] (serial) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[57.929865] (serial) StdoutLine: {'line': b'-- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial/lib/libserial.a\n'}
+[57.977230] (serial) StdoutLine: {'line': b'-- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial/include/serial/serial.h\n'}
+[57.978149] (-) TimerEvent: {}
+[58.024299] (serial) StdoutLine: {'line': b'-- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial/include/serial/v8stdint.h\n'}
+[58.067923] (serial) StdoutLine: {'line': b'-- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial/share/serial/environment/library_path.sh\n'}
+[58.078382] (-) TimerEvent: {}
+[58.083630] (serial_motor_demo_msgs) StdoutLine: {'line': b'[ 81%] Built target serial_motor_demo_msgs__py\n'}
+[58.111989] (serial) StdoutLine: {'line': b'-- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial/share/serial/environment/library_path.dsv\n'}
+[58.156520] (serial) StdoutLine: {'line': b'-- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial/share/ament_index/resource_index/package_run_dependencies/serial\n'}
+[58.179707] (-) TimerEvent: {}
+[58.189870] (serial_motor_demo_msgs) StdoutLine: {'line': b'[ 83%] \x1b[32mBuilding C object CMakeFiles/serial_motor_demo_msgs__rosidl_generator_py.dir/rosidl_generator_py/serial_motor_demo_msgs/msg/_motor_command_s.c.o\x1b[0m\n'}
+[58.191046] (serial_motor_demo_msgs) StdoutLine: {'line': b'[ 85%] \x1b[32mBuilding C object CMakeFiles/serial_motor_demo_msgs__rosidl_generator_py.dir/rosidl_generator_py/serial_motor_demo_msgs/msg/_motor_vels_s.c.o\x1b[0m\n'}
+[58.207536] (serial) StdoutLine: {'line': b'-- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial/share/ament_index/resource_index/parent_prefix_path/serial\n'}
+[58.255720] (serial) StdoutLine: {'line': b'-- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial/share/serial/environment/ament_prefix_path.sh\n'}
+[58.281665] (-) TimerEvent: {}
+[58.300188] (serial) StdoutLine: {'line': b'-- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial/share/serial/environment/ament_prefix_path.dsv\n'}
+[58.344620] (serial) StdoutLine: {'line': b'-- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial/share/serial/environment/path.sh\n'}
+[58.382667] (-) TimerEvent: {}
+[58.390210] (serial) StdoutLine: {'line': b'-- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial/share/serial/environment/path.dsv\n'}
+[58.436665] (serial) StdoutLine: {'line': b'-- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial/share/serial/local_setup.bash\n'}
+[58.482544] (serial) StdoutLine: {'line': b'-- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial/share/serial/local_setup.sh\n'}
+[58.483140] (-) TimerEvent: {}
+[58.530166] (serial) StdoutLine: {'line': b'-- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial/share/serial/local_setup.zsh\n'}
+[58.580166] (serial) StdoutLine: {'line': b'-- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial/share/serial/local_setup.dsv\n'}
+[58.583527] (-) TimerEvent: {}
+[58.628172] (serial) StdoutLine: {'line': b'-- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial/share/serial/package.dsv\n'}
+[58.676048] (serial) StdoutLine: {'line': b'-- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial/share/ament_index/resource_index/packages/serial\n'}
+[58.683693] (-) TimerEvent: {}
+[58.723194] (serial) StdoutLine: {'line': b'-- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial/share/serial/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[58.767346] (serial) StdoutLine: {'line': b'-- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial/share/serial/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[58.783877] (-) TimerEvent: {}
+[58.812523] (serial) StdoutLine: {'line': b'-- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial/share/serial/cmake/serialConfig.cmake\n'}
+[58.869917] (serial) StdoutLine: {'line': b'-- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial/share/serial/cmake/serialConfig-version.cmake\n'}
+[58.884075] (-) TimerEvent: {}
+[58.919475] (serial) StdoutLine: {'line': b'-- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial/share/serial/package.xml\n'}
+[58.979030] (serial) CommandEnded: {'returncode': 0}
+[58.984388] (-) TimerEvent: {}
+[59.033878] (serial_motor_demo_msgs) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding C object CMakeFiles/serial_motor_demo_msgs__rosidl_generator_py.dir/rosidl_generator_py/serial_motor_demo_msgs/msg/_encoder_vals_s.c.o\x1b[0m\n'}
+[59.084614] (-) TimerEvent: {}
+[59.185298] (-) TimerEvent: {}
+[59.232061] (serial) JobEnded: {'identifier': 'serial', 'rc': 0}
+[59.285475] (-) TimerEvent: {}
+[59.386089] (-) TimerEvent: {}
+[59.486770] (-) TimerEvent: {}
+[59.587442] (-) TimerEvent: {}
+[59.604004] (serial_motor_demo_msgs) StdoutLine: {'line': b'[ 88%] \x1b[32m\x1b[1mLinking C shared library libserial_motor_demo_msgs__rosidl_generator_py.so\x1b[0m\n'}
+[59.687691] (-) TimerEvent: {}
+[59.788371] (-) TimerEvent: {}
+[59.811710] (serial_motor_demo_msgs) StdoutLine: {'line': b'[ 88%] Built target serial_motor_demo_msgs__rosidl_generator_py\n'}
+[59.888613] (-) TimerEvent: {}
+[59.919864] (serial_motor_demo_msgs) StdoutLine: {'line': b'[ 92%] \x1b[32mBuilding C object CMakeFiles/serial_motor_demo_msgs_s__rosidl_typesupport_fastrtps_c.dir/rosidl_generator_py/serial_motor_demo_msgs/_serial_motor_demo_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[59.920645] (serial_motor_demo_msgs) StdoutLine: {'line': b'[ 92%] \x1b[32mBuilding C object CMakeFiles/serial_motor_demo_msgs_s__rosidl_typesupport_introspection_c.dir/rosidl_generator_py/serial_motor_demo_msgs/_serial_motor_demo_msgs_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[59.988786] (-) TimerEvent: {}
+[60.089410] (-) TimerEvent: {}
+[60.190115] (-) TimerEvent: {}
+[60.290824] (-) TimerEvent: {}
+[60.391667] (-) TimerEvent: {}
+[60.492317] (-) TimerEvent: {}
+[60.493833] (serial_motor_demo_msgs) StdoutLine: {'line': b'[ 94%] \x1b[32m\x1b[1mLinking C shared module rosidl_generator_py/serial_motor_demo_msgs/serial_motor_demo_msgs_s__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[60.527274] (serial_motor_demo_msgs) StdoutLine: {'line': b'[ 96%] \x1b[32m\x1b[1mLinking C shared module rosidl_generator_py/serial_motor_demo_msgs/serial_motor_demo_msgs_s__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[60.592638] (-) TimerEvent: {}
+[60.647630] (serial_motor_demo_msgs) StdoutLine: {'line': b'[ 96%] Built target serial_motor_demo_msgs_s__rosidl_typesupport_introspection_c\n'}
+[60.685561] (serial_motor_demo_msgs) StdoutLine: {'line': b'[ 96%] Built target serial_motor_demo_msgs_s__rosidl_typesupport_fastrtps_c\n'}
+[60.692800] (-) TimerEvent: {}
+[60.748985] (serial_motor_demo_msgs) StdoutLine: {'line': b'[ 98%] \x1b[32mBuilding C object CMakeFiles/serial_motor_demo_msgs_s__rosidl_typesupport_c.dir/rosidl_generator_py/serial_motor_demo_msgs/_serial_motor_demo_msgs_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[60.793024] (-) TimerEvent: {}
+[60.893737] (-) TimerEvent: {}
+[60.994352] (-) TimerEvent: {}
+[61.094997] (-) TimerEvent: {}
+[61.195621] (-) TimerEvent: {}
+[61.291589] (serial_motor_demo_msgs) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared module rosidl_generator_py/serial_motor_demo_msgs/serial_motor_demo_msgs_s__rosidl_typesupport_c.so\x1b[0m\n'}
+[61.295818] (-) TimerEvent: {}
+[61.396460] (-) TimerEvent: {}
+[61.446342] (serial_motor_demo_msgs) StdoutLine: {'line': b'[100%] Built target serial_motor_demo_msgs_s__rosidl_typesupport_c\n'}
+[61.496646] (-) TimerEvent: {}
+[61.501945] (serial_motor_demo_msgs) CommandEnded: {'returncode': 0}
+[61.596847] (-) TimerEvent: {}
+[61.697560] (-) TimerEvent: {}
+[61.798230] (-) TimerEvent: {}
+[61.899007] (-) TimerEvent: {}
+[61.999817] (-) TimerEvent: {}
+[62.100712] (-) TimerEvent: {}
+[62.201329] (-) TimerEvent: {}
+[62.245623] (serial_motor_demo_msgs) JobProgress: {'identifier': 'serial_motor_demo_msgs', 'progress': 'install'}
+[62.246466] (serial_motor_demo_msgs) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/E14Raspberry/ScooperBot/tennisbot_ws/build/serial_motor_demo_msgs'], 'cwd': '/home/E14Raspberry/ScooperBot/tennisbot_ws/build/serial_motor_demo_msgs', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'E14Raspberry', 'SSH_CLIENT': '2407:e400:9041:3c00:d961:2ede:2c54:ce68 49828 22', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/lib:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial/lib:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/diffdrive_arduino/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/lib', 'HOME': '/home/E14Raspberry', 'OLDPWD': '/home/E14Raspberry', 'SSH_TTY': '/dev/pts/0', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLCON_PREFIX_PATH': '/home/E14Raspberry/ScooperBot/tennisbot_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'E14Raspberry', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '222', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'ROS_DOMAIN_ID': '100', 'AMENT_PREFIX_PATH': '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/twist_stamper:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/tennisbotmaster:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/diffdrive_arduino:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/E14Raspberry/ScooperBot/tennisbot_ws/build/serial_motor_demo_msgs', 'SSH_CONNECTION': '2407:e400:9041:3c00:d961:2ede:2c54:ce68 49828 2407:e400:9041:3c00::7d0 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/E14Raspberry/ScooperBot/tennisbot_ws/build/twist_stamper:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/twist_stamper/lib/python3.12/site-packages:/home/E14Raspberry/ScooperBot/tennisbot_ws/build/serial_motor_demo:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo/lib/python3.12/site-packages:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/tennisbotmaster:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/diffdrive_arduino:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/twist_stamper:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo:/opt/ros/jazzy'}), 'shell': False}
+[62.288290] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[62.290513] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[62.292074] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/share/ament_index/resource_index/rosidl_interfaces/serial_motor_demo_msgs\n'}
+[62.301514] (-) TimerEvent: {}
+[62.335234] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/msg/MotorCommand.json\n'}
+[62.379004] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/msg/MotorVels.json\n'}
+[62.401659] (-) TimerEvent: {}
+[62.422315] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/msg/EncoderVals.json\n'}
+[62.468761] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/encoder_vals__functions.h\n'}
+[62.501841] (-) TimerEvent: {}
+[62.514402] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/encoder_vals__struct.h\n'}
+[62.557107] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/encoder_vals__type_support.h\n'}
+[62.599868] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/motor_command__functions.h\n'}
+[62.601962] (-) TimerEvent: {}
+[62.643371] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/motor_command__struct.h\n'}
+[62.686563] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/motor_command__type_support.h\n'}
+[62.702156] (-) TimerEvent: {}
+[62.729244] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/motor_vels__functions.h\n'}
+[62.771674] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/motor_vels__struct.h\n'}
+[62.802335] (-) TimerEvent: {}
+[62.814333] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/motor_vels__type_support.h\n'}
+[62.856382] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/encoder_vals.h\n'}
+[62.898892] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/motor_command.h\n'}
+[62.902519] (-) TimerEvent: {}
+[62.941253] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/motor_vels.h\n'}
+[62.985437] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/rosidl_generator_c__visibility_control.h\n'}
+[63.002690] (-) TimerEvent: {}
+[63.030684] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/environment/library_path.sh\n'}
+[63.075307] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/environment/library_path.dsv\n'}
+[63.102892] (-) TimerEvent: {}
+[63.121469] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/encoder_vals__rosidl_typesupport_fastrtps_c.h\n'}
+[63.165620] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/motor_command__rosidl_typesupport_fastrtps_c.h\n'}
+[63.203068] (-) TimerEvent: {}
+[63.208740] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/motor_vels__rosidl_typesupport_fastrtps_c.h\n'}
+[63.251431] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[63.296286] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/encoder_vals__rosidl_typesupport_introspection_c.h\n'}
+[63.303249] (-) TimerEvent: {}
+[63.340702] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/motor_command__rosidl_typesupport_introspection_c.h\n'}
+[63.385616] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/motor_vels__rosidl_typesupport_introspection_c.h\n'}
+[63.403430] (-) TimerEvent: {}
+[63.429049] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[63.474733] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/encoder_vals__builder.hpp\n'}
+[63.503629] (-) TimerEvent: {}
+[63.518228] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/encoder_vals__struct.hpp\n'}
+[63.560816] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/encoder_vals__traits.hpp\n'}
+[63.602959] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/encoder_vals__type_support.hpp\n'}
+[63.603762] (-) TimerEvent: {}
+[63.646024] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/motor_command__builder.hpp\n'}
+[63.688682] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/motor_command__struct.hpp\n'}
+[63.703978] (-) TimerEvent: {}
+[63.733424] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/motor_command__traits.hpp\n'}
+[63.776390] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/motor_command__type_support.hpp\n'}
+[63.804148] (-) TimerEvent: {}
+[63.820330] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/motor_vels__builder.hpp\n'}
+[63.863783] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/motor_vels__struct.hpp\n'}
+[63.904344] (-) TimerEvent: {}
+[63.909193] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/motor_vels__traits.hpp\n'}
+[63.955709] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/motor_vels__type_support.hpp\n'}
+[63.998711] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/encoder_vals.hpp\n'}
+[64.004535] (-) TimerEvent: {}
+[64.041671] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/motor_command.hpp\n'}
+[64.084528] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/motor_vels.hpp\n'}
+[64.104672] (-) TimerEvent: {}
+[64.126972] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[64.172976] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/encoder_vals__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[64.204855] (-) TimerEvent: {}
+[64.216663] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/motor_command__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[64.259608] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/motor_vels__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[64.302989] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[64.304973] (-) TimerEvent: {}
+[64.348419] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/encoder_vals__rosidl_typesupport_introspection_cpp.hpp\n'}
+[64.392343] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/motor_command__rosidl_typesupport_introspection_cpp.hpp\n'}
+[64.405197] (-) TimerEvent: {}
+[64.434758] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/motor_vels__rosidl_typesupport_introspection_cpp.hpp\n'}
+[64.478183] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/environment/pythonpath.sh\n'}
+[64.505425] (-) TimerEvent: {}
+[64.522152] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/environment/pythonpath.dsv\n'}
+[64.568301] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/lib/python3.12/site-packages/serial_motor_demo_msgs-0.0.0-py3.12.egg-info/PKG-INFO\n'}
+[64.605626] (-) TimerEvent: {}
+[64.614040] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/lib/python3.12/site-packages/serial_motor_demo_msgs-0.0.0-py3.12.egg-info/SOURCES.txt\n'}
+[64.658552] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/lib/python3.12/site-packages/serial_motor_demo_msgs-0.0.0-py3.12.egg-info/dependency_links.txt\n'}
+[64.703498] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/lib/python3.12/site-packages/serial_motor_demo_msgs-0.0.0-py3.12.egg-info/top_level.txt\n'}
+[64.705754] (-) TimerEvent: {}
+[64.751857] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/lib/python3.12/site-packages/serial_motor_demo_msgs/__init__.py\n'}
+[64.795012] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/lib/python3.12/site-packages/serial_motor_demo_msgs/_serial_motor_demo_msgs_s.ep.rosidl_typesupport_c.c\n'}
+[64.805940] (-) TimerEvent: {}
+[64.838848] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/lib/python3.12/site-packages/serial_motor_demo_msgs/_serial_motor_demo_msgs_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[64.882775] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/lib/python3.12/site-packages/serial_motor_demo_msgs/_serial_motor_demo_msgs_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[64.906130] (-) TimerEvent: {}
+[64.926859] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/lib/python3.12/site-packages/serial_motor_demo_msgs/msg/__init__.py\n'}
+[64.971615] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/lib/python3.12/site-packages/serial_motor_demo_msgs/msg/_encoder_vals.py\n'}
+[65.006309] (-) TimerEvent: {}
+[65.016818] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/lib/python3.12/site-packages/serial_motor_demo_msgs/msg/_encoder_vals_s.c\n'}
+[65.060166] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/lib/python3.12/site-packages/serial_motor_demo_msgs/msg/_motor_command.py\n'}
+[65.103906] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/lib/python3.12/site-packages/serial_motor_demo_msgs/msg/_motor_command_s.c\n'}
+[65.106473] (-) TimerEvent: {}
+[65.147733] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/lib/python3.12/site-packages/serial_motor_demo_msgs/msg/_motor_vels.py\n'}
+[65.191237] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/lib/python3.12/site-packages/serial_motor_demo_msgs/msg/_motor_vels_s.c\n'}
+[65.206724] (-) TimerEvent: {}
+[65.236390] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/lib/python3.12/site-packages/serial_motor_demo_msgs/serial_motor_demo_msgs_s__rosidl_typesupport_c.so\n'}
+[65.280256] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/lib/python3.12/site-packages/serial_motor_demo_msgs/serial_motor_demo_msgs_s__rosidl_typesupport_fastrtps_c.so\n'}
+[65.306903] (-) TimerEvent: {}
+[65.323982] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/lib/python3.12/site-packages/serial_motor_demo_msgs/serial_motor_demo_msgs_s__rosidl_typesupport_introspection_c.so\n'}
+[65.368981] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/lib/python3.12/site-packages/serial_motor_demo_msgs/serial_motor_demo_msgs_s__rosidl_typesupport_fastrtps_c.so\n'}
+[65.370626] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/lib/python3.12/site-packages/serial_motor_demo_msgs/serial_motor_demo_msgs_s__rosidl_typesupport_introspection_c.so\n'}
+[65.372261] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/lib/python3.12/site-packages/serial_motor_demo_msgs/serial_motor_demo_msgs_s__rosidl_typesupport_c.so\n'}
+[65.372995] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/msg/MotorCommand.idl\n'}
+[65.407073] (-) TimerEvent: {}
+[65.440460] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/msg/MotorVels.idl\n'}
+[65.487278] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/msg/EncoderVals.idl\n'}
+[65.507248] (-) TimerEvent: {}
+[65.531146] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/msg/MotorCommand.msg\n'}
+[65.575148] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/msg/MotorVels.msg\n'}
+[65.607446] (-) TimerEvent: {}
+[65.618684] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/msg/EncoderVals.msg\n'}
+[65.664954] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/share/ament_index/resource_index/package_run_dependencies/serial_motor_demo_msgs\n'}
+[65.707624] (-) TimerEvent: {}
+[65.710541] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/share/ament_index/resource_index/parent_prefix_path/serial_motor_demo_msgs\n'}
+[65.755299] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/environment/ament_prefix_path.sh\n'}
+[65.799550] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/environment/ament_prefix_path.dsv\n'}
+[65.807797] (-) TimerEvent: {}
+[65.843944] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/environment/path.sh\n'}
+[65.888145] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/environment/path.dsv\n'}
+[65.907971] (-) TimerEvent: {}
+[65.933230] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/local_setup.bash\n'}
+[65.978655] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/local_setup.sh\n'}
+[66.008134] (-) TimerEvent: {}
+[66.023323] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/local_setup.zsh\n'}
+[66.067266] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/local_setup.dsv\n'}
+[66.108321] (-) TimerEvent: {}
+[66.111635] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/package.dsv\n'}
+[66.156076] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/share/ament_index/resource_index/packages/serial_motor_demo_msgs\n'}
+[66.202906] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/cmake/rosidl_cmake-extras.cmake\n'}
+[66.208541] (-) TimerEvent: {}
+[66.248438] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[66.295669] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[66.308674] (-) TimerEvent: {}
+[66.339567] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[66.383986] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[66.408848] (-) TimerEvent: {}
+[66.431506] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[66.475175] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[66.509020] (-) TimerEvent: {}
+[66.520073] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/cmake/serial_motor_demo_msgsConfig.cmake\n'}
+[66.564586] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/cmake/serial_motor_demo_msgsConfig-version.cmake\n'}
+[66.609191] (-) TimerEvent: {}
+[66.610756] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/package.xml\n'}
+[66.654734] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Installing: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/lib/libserial_motor_demo_msgs__rosidl_generator_c.so\n'}
+[66.657754] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/lib/libserial_motor_demo_msgs__rosidl_generator_c.so" to ""\n'}
+[66.658292] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Installing: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/lib/libserial_motor_demo_msgs__rosidl_typesupport_fastrtps_c.so\n'}
+[66.661211] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/lib/libserial_motor_demo_msgs__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[66.661844] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Installing: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/lib/libserial_motor_demo_msgs__rosidl_typesupport_introspection_c.so\n'}
+[66.665057] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/lib/libserial_motor_demo_msgs__rosidl_typesupport_introspection_c.so" to ""\n'}
+[66.665714] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Installing: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/lib/libserial_motor_demo_msgs__rosidl_typesupport_c.so\n'}
+[66.668917] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/lib/libserial_motor_demo_msgs__rosidl_typesupport_c.so" to ""\n'}
+[66.669591] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Installing: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/lib/libserial_motor_demo_msgs__rosidl_typesupport_fastrtps_cpp.so\n'}
+[66.673117] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/lib/libserial_motor_demo_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[66.673799] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Installing: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/lib/libserial_motor_demo_msgs__rosidl_typesupport_introspection_cpp.so\n'}
+[66.676863] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/lib/libserial_motor_demo_msgs__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[66.677397] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Installing: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/lib/libserial_motor_demo_msgs__rosidl_typesupport_cpp.so\n'}
+[66.680220] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/lib/libserial_motor_demo_msgs__rosidl_typesupport_cpp.so" to ""\n'}
+[66.709325] (-) TimerEvent: {}
+[66.809904] (-) TimerEvent: {}
+[66.857647] (serial_motor_demo_msgs) StdoutLine: {'line': b"Listing '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/lib/python3.12/site-packages/serial_motor_demo_msgs'...\n"}
+[66.858910] (serial_motor_demo_msgs) StdoutLine: {'line': b"Compiling '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/lib/python3.12/site-packages/serial_motor_demo_msgs/__init__.py'...\n"}
+[66.859882] (serial_motor_demo_msgs) StdoutLine: {'line': b"Listing '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/lib/python3.12/site-packages/serial_motor_demo_msgs/msg'...\n"}
+[66.860804] (serial_motor_demo_msgs) StdoutLine: {'line': b"Compiling '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/lib/python3.12/site-packages/serial_motor_demo_msgs/msg/__init__.py'...\n"}
+[66.861764] (serial_motor_demo_msgs) StdoutLine: {'line': b"Compiling '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/lib/python3.12/site-packages/serial_motor_demo_msgs/msg/_encoder_vals.py'...\n"}
+[66.862598] (serial_motor_demo_msgs) StdoutLine: {'line': b"Compiling '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/lib/python3.12/site-packages/serial_motor_demo_msgs/msg/_motor_command.py'...\n"}
+[66.863451] (serial_motor_demo_msgs) StdoutLine: {'line': b"Compiling '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/lib/python3.12/site-packages/serial_motor_demo_msgs/msg/_motor_vels.py'...\n"}
+[66.888366] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Installing: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/lib/libserial_motor_demo_msgs__rosidl_generator_py.so\n'}
+[66.891216] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/lib/libserial_motor_demo_msgs__rosidl_generator_py.so" to ""\n'}
+[66.891825] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Installing: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/cmake/export_serial_motor_demo_msgs__rosidl_generator_cExport.cmake\n'}
+[66.893503] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Installing: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/cmake/export_serial_motor_demo_msgs__rosidl_generator_cExport-noconfig.cmake\n'}
+[66.895547] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Installing: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/cmake/export_serial_motor_demo_msgs__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[66.897464] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Installing: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/cmake/export_serial_motor_demo_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[66.899464] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Installing: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/cmake/serial_motor_demo_msgs__rosidl_typesupport_introspection_cExport.cmake\n'}
+[66.901406] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Installing: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/cmake/serial_motor_demo_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[66.903374] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Installing: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/cmake/serial_motor_demo_msgs__rosidl_typesupport_cExport.cmake\n'}
+[66.904981] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Installing: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/cmake/serial_motor_demo_msgs__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[66.906530] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Installing: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/cmake/export_serial_motor_demo_msgs__rosidl_generator_cppExport.cmake\n'}
+[66.908158] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Installing: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/cmake/export_serial_motor_demo_msgs__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[66.909697] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Installing: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/cmake/export_serial_motor_demo_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[66.910117] (-) TimerEvent: {}
+[66.911399] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Installing: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/cmake/serial_motor_demo_msgs__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[66.912987] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Installing: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/cmake/serial_motor_demo_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[66.914591] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Installing: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/cmake/serial_motor_demo_msgs__rosidl_typesupport_cppExport.cmake\n'}
+[66.916083] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Installing: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/cmake/serial_motor_demo_msgs__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[66.917672] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Installing: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/cmake/export_serial_motor_demo_msgs__rosidl_generator_pyExport.cmake\n'}
+[66.919189] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Installing: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/cmake/export_serial_motor_demo_msgs__rosidl_generator_pyExport-noconfig.cmake\n'}
+[66.927769] (serial_motor_demo_msgs) CommandEnded: {'returncode': 0}
+[67.010320] (-) TimerEvent: {}
+[67.110983] (-) TimerEvent: {}
+[67.211657] (-) TimerEvent: {}
+[67.312345] (-) TimerEvent: {}
+[67.413072] (-) TimerEvent: {}
+[67.513779] (-) TimerEvent: {}
+[67.614435] (-) TimerEvent: {}
+[67.715323] (-) TimerEvent: {}
+[67.765876] (serial_motor_demo_msgs) JobEnded: {'identifier': 'serial_motor_demo_msgs', 'rc': 0}
+[67.769252] (serial_motor_demo) JobStarted: {'identifier': 'serial_motor_demo'}
+[67.816294] (-) TimerEvent: {}
+[67.916997] (-) TimerEvent: {}
+[68.018000] (-) TimerEvent: {}
+[68.118589] (-) TimerEvent: {}
+[68.219130] (-) TimerEvent: {}
+[68.319718] (-) TimerEvent: {}
+[68.420213] (-) TimerEvent: {}
+[68.520772] (-) TimerEvent: {}
+[68.621359] (-) TimerEvent: {}
+[68.722082] (-) TimerEvent: {}
+[68.822884] (-) TimerEvent: {}
+[68.923554] (-) TimerEvent: {}
+[69.024079] (-) TimerEvent: {}
+[69.124598] (-) TimerEvent: {}
+[69.225114] (-) TimerEvent: {}
+[69.325615] (-) TimerEvent: {}
+[69.426101] (-) TimerEvent: {}
+[69.526600] (-) TimerEvent: {}
+[69.627091] (-) TimerEvent: {}
+[69.727590] (-) TimerEvent: {}
+[69.828103] (-) TimerEvent: {}
+[69.928579] (-) TimerEvent: {}
+[70.029068] (-) TimerEvent: {}
+[70.129609] (-) TimerEvent: {}
+[70.230104] (-) TimerEvent: {}
+[70.330595] (-) TimerEvent: {}
+[70.431087] (-) TimerEvent: {}
+[70.531708] (-) TimerEvent: {}
+[70.632235] (-) TimerEvent: {}
+[70.732792] (-) TimerEvent: {}
+[70.833410] (-) TimerEvent: {}
+[70.934331] (-) TimerEvent: {}
+[70.995144] (serial_motor_demo) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', 'setup.py', 'develop', '--editable', '--build-directory', '/home/E14Raspberry/ScooperBot/tennisbot_ws/build/serial_motor_demo/build', '--no-deps', 'symlink_data'], 'cwd': '/home/E14Raspberry/ScooperBot/tennisbot_ws/build/serial_motor_demo', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'E14Raspberry', 'SSH_CLIENT': '2407:e400:9041:3c00:d961:2ede:2c54:ce68 49828 22', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/lib:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial/lib:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/diffdrive_arduino/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/lib', 'HOME': '/home/E14Raspberry', 'OLDPWD': '/home/E14Raspberry', 'SSH_TTY': '/dev/pts/0', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLCON_PREFIX_PATH': '/home/E14Raspberry/ScooperBot/tennisbot_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'E14Raspberry', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '222', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'ROS_DOMAIN_ID': '100', 'AMENT_PREFIX_PATH': '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/twist_stamper:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/tennisbotmaster:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/diffdrive_arduino:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/E14Raspberry/ScooperBot/tennisbot_ws/build/serial_motor_demo', 'SSH_CONNECTION': '2407:e400:9041:3c00:d961:2ede:2c54:ce68 49828 2407:e400:9041:3c00::7d0 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/E14Raspberry/ScooperBot/tennisbot_ws/build/serial_motor_demo/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo/lib/python3.12/site-packages:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/lib/python3.12/site-packages:/home/E14Raspberry/ScooperBot/tennisbot_ws/build/twist_stamper:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/twist_stamper/lib/python3.12/site-packages:/home/E14Raspberry/ScooperBot/tennisbot_ws/build/serial_motor_demo:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/tennisbotmaster:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/diffdrive_arduino'}, 'shell': False}
+[71.034562] (-) TimerEvent: {}
+[71.135138] (-) TimerEvent: {}
+[71.235789] (-) TimerEvent: {}
+[71.336316] (-) TimerEvent: {}
+[71.436946] (-) TimerEvent: {}
+[71.537467] (-) TimerEvent: {}
+[71.638036] (-) TimerEvent: {}
+[71.738589] (-) TimerEvent: {}
+[71.839112] (-) TimerEvent: {}
+[71.939679] (-) TimerEvent: {}
+[72.040178] (-) TimerEvent: {}
+[72.140739] (-) TimerEvent: {}
+[72.241279] (-) TimerEvent: {}
+[72.288519] (serial_motor_demo) StdoutLine: {'line': b'running develop\n'}
+[72.289438] (serial_motor_demo) StderrLine: {'line': b'/usr/lib/python3/dist-packages/setuptools/command/develop.py:40: EasyInstallDeprecationWarning: easy_install command is deprecated.\n'}
+[72.289981] (serial_motor_demo) StderrLine: {'line': b'!!\n'}
+[72.290322] (serial_motor_demo) StderrLine: {'line': b'\n'}
+[72.290694] (serial_motor_demo) StderrLine: {'line': b'        ********************************************************************************\n'}
+[72.291031] (serial_motor_demo) StderrLine: {'line': b'        Please avoid running ``setup.py`` and ``easy_install``.\n'}
+[72.291344] (serial_motor_demo) StderrLine: {'line': b'        Instead, use pypa/build, pypa/installer or other\n'}
+[72.291710] (serial_motor_demo) StderrLine: {'line': b'        standards-based tools.\n'}
+[72.292040] (serial_motor_demo) StderrLine: {'line': b'\n'}
+[72.292344] (serial_motor_demo) StderrLine: {'line': b'        See https://github.com/pypa/setuptools/issues/917 for details.\n'}
+[72.292704] (serial_motor_demo) StderrLine: {'line': b'        ********************************************************************************\n'}
+[72.293033] (serial_motor_demo) StderrLine: {'line': b'\n'}
+[72.293327] (serial_motor_demo) StderrLine: {'line': b'!!\n'}
+[72.293675] (serial_motor_demo) StderrLine: {'line': b'  easy_install.initialize_options(self)\n'}
+[72.341424] (-) TimerEvent: {}
+[72.441992] (-) TimerEvent: {}
+[72.542553] (-) TimerEvent: {}
+[72.643073] (-) TimerEvent: {}
+[72.743586] (-) TimerEvent: {}
+[72.844085] (-) TimerEvent: {}
+[72.944587] (-) TimerEvent: {}
+[73.045086] (-) TimerEvent: {}
+[73.076282] (serial_motor_demo) StdoutLine: {'line': b'running egg_info\n'}
+[73.077018] (serial_motor_demo) StdoutLine: {'line': b'creating serial_motor_demo.egg-info\n'}
+[73.145226] (-) TimerEvent: {}
+[73.146195] (serial_motor_demo) StdoutLine: {'line': b'writing serial_motor_demo.egg-info/PKG-INFO\n'}
+[73.147353] (serial_motor_demo) StdoutLine: {'line': b'writing dependency_links to serial_motor_demo.egg-info/dependency_links.txt\n'}
+[73.148052] (serial_motor_demo) StdoutLine: {'line': b'writing entry points to serial_motor_demo.egg-info/entry_points.txt\n'}
+[73.148622] (serial_motor_demo) StdoutLine: {'line': b'writing requirements to serial_motor_demo.egg-info/requires.txt\n'}
+[73.149236] (serial_motor_demo) StdoutLine: {'line': b'writing top-level names to serial_motor_demo.egg-info/top_level.txt\n'}
+[73.149752] (serial_motor_demo) StdoutLine: {'line': b"writing manifest file 'serial_motor_demo.egg-info/SOURCES.txt'\n"}
+[73.245363] (-) TimerEvent: {}
+[73.295114] (serial_motor_demo) StdoutLine: {'line': b"reading manifest file 'serial_motor_demo.egg-info/SOURCES.txt'\n"}
+[73.297591] (serial_motor_demo) StdoutLine: {'line': b"writing manifest file 'serial_motor_demo.egg-info/SOURCES.txt'\n"}
+[73.345547] (-) TimerEvent: {}
+[73.373841] (serial_motor_demo) StdoutLine: {'line': b'running build_ext\n'}
+[73.374460] (serial_motor_demo) StdoutLine: {'line': b'Creating /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo/lib/python3.12/site-packages/serial-motor-demo.egg-link (link to .)\n'}
+[73.376752] (serial_motor_demo) StdoutLine: {'line': b'Installing driver script to /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo/lib/serial_motor_demo\n'}
+[73.377688] (serial_motor_demo) StdoutLine: {'line': b'Installing gui script to /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo/lib/serial_motor_demo\n'}
+[73.378826] (serial_motor_demo) StdoutLine: {'line': b'\n'}
+[73.379348] (serial_motor_demo) StdoutLine: {'line': b'Installed /home/E14Raspberry/ScooperBot/tennisbot_ws/build/serial_motor_demo\n'}
+[73.379760] (serial_motor_demo) StdoutLine: {'line': b'running symlink_data\n'}
+[73.380242] (serial_motor_demo) StdoutLine: {'line': b'creating /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo/share/ament_index\n'}
+[73.380749] (serial_motor_demo) StdoutLine: {'line': b'creating /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo/share/ament_index/resource_index\n'}
+[73.381142] (serial_motor_demo) StdoutLine: {'line': b'creating /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo/share/ament_index/resource_index/packages\n'}
+[73.381621] (serial_motor_demo) StdoutLine: {'line': b'symbolically linking /home/E14Raspberry/ScooperBot/tennisbot_ws/build/serial_motor_demo/resource/serial_motor_demo -> /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo/share/ament_index/resource_index/packages\n'}
+[73.382384] (serial_motor_demo) StdoutLine: {'line': b'symbolically linking /home/E14Raspberry/ScooperBot/tennisbot_ws/build/serial_motor_demo/package.xml -> /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo/share/serial_motor_demo\n'}
+[73.445756] (-) TimerEvent: {}
+[73.532990] (serial_motor_demo) CommandEnded: {'returncode': 0}
+[73.546211] (-) TimerEvent: {}
+[73.565145] (serial_motor_demo) JobEnded: {'identifier': 'serial_motor_demo', 'rc': 0}
+[73.568614] (-) EventReactorShutdown: {}

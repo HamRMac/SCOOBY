@@ -1,0 +1,81 @@
+[0.071s] Invoking command in '/home/E14Raspberry/ScooperBot/tennisbot_ws/build/serial': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/twist_stamper:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo:/opt/ros/jazzy /usr/bin/cmake /home/E14Raspberry/ScooperBot/tennisbot_ws/src/serial -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial
+[0.446s] -- The C compiler identification is GNU 13.2.0
+[0.804s] -- The CXX compiler identification is GNU 13.2.0
+[0.898s] -- Detecting C compiler ABI info
+[1.439s] -- Detecting C compiler ABI info - done
+[1.482s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.484s] -- Detecting C compile features
+[1.487s] -- Detecting C compile features - done
+[1.551s] -- Detecting CXX compiler ABI info
+[2.196s] -- Detecting CXX compiler ABI info - done
+[2.244s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[2.248s] -- Detecting CXX compile features
+[2.249s] -- Detecting CXX compile features - done
+[2.278s] -- Found ament_cmake: 2.5.2 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[3.344s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[3.815s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[4.075s] -- Found ament_cmake_gtest: 2.5.2 (/opt/ros/jazzy/share/ament_cmake_gtest/cmake)
+[4.145s] -- Found Boost: /usr/lib/aarch64-linux-gnu/cmake/Boost-1.83.0/BoostConfig.cmake (found version "1.83.0")  
+[4.167s] -- Found gtest sources under '/opt/ros/jazzy/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[4.179s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[4.749s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[4.755s] -- Found Threads: TRUE  
+[5.319s] -- Configuring done (5.2s)
+[5.404s] -- Generating done (0.1s)
+[5.416s] -- Build files have been written to: /home/E14Raspberry/ScooperBot/tennisbot_ws/build/serial
+[5.451s] Invoked command in '/home/E14Raspberry/ScooperBot/tennisbot_ws/build/serial' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/twist_stamper:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo:/opt/ros/jazzy /usr/bin/cmake /home/E14Raspberry/ScooperBot/tennisbot_ws/src/serial -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial
+[5.457s] Invoking command in '/home/E14Raspberry/ScooperBot/tennisbot_ws/build/serial': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/twist_stamper:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo:/opt/ros/jazzy /usr/bin/cmake --build /home/E14Raspberry/ScooperBot/tennisbot_ws/build/serial -- -j4 -l4
+[5.764s] [  7%] [32mBuilding CXX object CMakeFiles/serial.dir/src/impl/unix.cc.o[0m
+[5.795s] [ 14%] [32mBuilding CXX object gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o[0m
+[5.796s] [ 21%] [32mBuilding CXX object CMakeFiles/serial.dir/src/serial.cc.o[0m
+[5.818s] [ 28%] [32mBuilding CXX object gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o[0m
+[12.680s] [ 35%] [32mBuilding CXX object CMakeFiles/serial.dir/src/impl/list_ports/list_ports_linux.cc.o[0m
+[18.946s] [ 42%] [32m[1mLinking CXX static library libgtest_main.a[0m
+[19.392s] [ 42%] Built target gtest_main
+[19.953s] [ 50%] [32m[1mLinking CXX static library libserial.a[0m
+[20.353s] [ 50%] Built target serial
+[20.527s] [ 57%] [32mBuilding CXX object CMakeFiles/serial_example.dir/examples/serial_example.cc.o[0m
+[24.137s] [ 64%] [32m[1mLinking CXX executable serial_example[0m
+[24.939s] [ 64%] Built target serial_example
+[42.072s] [ 71%] [32m[1mLinking CXX static library libgtest.a[0m
+[42.948s] [ 71%] Built target gtest
+[43.250s] [ 78%] [32mBuilding CXX object tests/CMakeFiles/serial-test.dir/unix_serial_tests.cc.o[0m
+[43.267s] [ 85%] [32mBuilding CXX object tests/CMakeFiles/serial-test-timer.dir/unit/unix_timer_tests.cc.o[0m
+[53.882s] [ 92%] [32m[1mLinking CXX executable serial-test-timer[0m
+[54.583s] [ 92%] Built target serial-test-timer
+[55.011s] In file included from [01m[K/usr/include/boost/bind/detail/requires_cxx11.hpp:9[m[K,
+[55.013s]                  from [01m[K/usr/include/boost/bind/bind.hpp:24[m[K,
+[55.014s]                  from [01m[K/usr/include/boost/bind.hpp:29[m[K,
+[55.016s]                  from [01m[K/home/E14Raspberry/ScooperBot/tennisbot_ws/src/serial/tests/unix_serial_tests.cc:23[m[K:
+[55.017s] [01m[K/usr/include/boost/bind.hpp:36:1:[m[K [01;36m[Knote: [m[K‘[01m[K#pragma message: The practice of declaring the Bind placeholders (_1, _2, ...) in the global namespace is deprecated. Please use <boost/bind/bind.hpp> + using namespace boost::placeholders, or define BOOST_BIND_GLOBAL_PLACEHOLDERS to retain the current behavior.[m[K’
+[55.018s]    36 | [01;36m[KBOOST_PRAGMA_MESSAGE[m[K(
+[55.019s]       | [01;36m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[56.973s] [100%] [32m[1mLinking CXX executable serial-test[0m
+[57.574s] [100%] Built target serial-test
+[57.625s] Invoked command in '/home/E14Raspberry/ScooperBot/tennisbot_ws/build/serial' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/twist_stamper:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo:/opt/ros/jazzy /usr/bin/cmake --build /home/E14Raspberry/ScooperBot/tennisbot_ws/build/serial -- -j4 -l4
+[57.846s] Invoking command in '/home/E14Raspberry/ScooperBot/tennisbot_ws/build/serial': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/twist_stamper:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo:/opt/ros/jazzy /usr/bin/cmake --install /home/E14Raspberry/ScooperBot/tennisbot_ws/build/serial
+[57.881s] -- Install configuration: ""
+[57.883s] -- Execute custom install script
+[57.885s] -- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial/lib/libserial.a
+[57.933s] -- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial/include/serial/serial.h
+[57.980s] -- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial/include/serial/v8stdint.h
+[58.023s] -- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial/share/serial/environment/library_path.sh
+[58.067s] -- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial/share/serial/environment/library_path.dsv
+[58.112s] -- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial/share/ament_index/resource_index/package_run_dependencies/serial
+[58.163s] -- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial/share/ament_index/resource_index/parent_prefix_path/serial
+[58.211s] -- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial/share/serial/environment/ament_prefix_path.sh
+[58.256s] -- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial/share/serial/environment/ament_prefix_path.dsv
+[58.300s] -- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial/share/serial/environment/path.sh
+[58.346s] -- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial/share/serial/environment/path.dsv
+[58.392s] -- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial/share/serial/local_setup.bash
+[58.438s] -- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial/share/serial/local_setup.sh
+[58.486s] -- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial/share/serial/local_setup.zsh
+[58.536s] -- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial/share/serial/local_setup.dsv
+[58.583s] -- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial/share/serial/package.dsv
+[58.631s] -- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial/share/ament_index/resource_index/packages/serial
+[58.679s] -- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial/share/serial/cmake/ament_cmake_export_include_directories-extras.cmake
+[58.723s] -- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial/share/serial/cmake/ament_cmake_export_libraries-extras.cmake
+[58.768s] -- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial/share/serial/cmake/serialConfig.cmake
+[58.825s] -- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial/share/serial/cmake/serialConfig-version.cmake
+[58.875s] -- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial/share/serial/package.xml
+[58.936s] Invoked command in '/home/E14Raspberry/ScooperBot/tennisbot_ws/build/serial' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/twist_stamper:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo:/opt/ros/jazzy /usr/bin/cmake --install /home/E14Raspberry/ScooperBot/tennisbot_ws/build/serial

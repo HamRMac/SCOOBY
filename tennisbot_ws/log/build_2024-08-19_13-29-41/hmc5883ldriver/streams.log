@@ -1,0 +1,53 @@
+[0.087s] Invoking command in '/home/E14Raspberry/ScooperBot/tennisbot_ws/build/hmc5883ldriver': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/twist_stamper:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo:/opt/ros/jazzy /usr/bin/cmake /home/E14Raspberry/ScooperBot/tennisbot_ws/src/hmc5883l_ros2 -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/E14Raspberry/ScooperBot/tennisbot_ws/install/hmc5883ldriver
+[1.619s] -- The C compiler identification is GNU 13.2.0
+[2.755s] -- The CXX compiler identification is GNU 13.2.0
+[2.872s] -- Detecting C compiler ABI info
+[3.425s] -- Detecting C compiler ABI info - done
+[3.480s] -- Check for working C compiler: /usr/bin/cc - skipped
+[3.485s] -- Detecting C compile features
+[3.491s] -- Detecting C compile features - done
+[3.549s] -- Detecting CXX compiler ABI info
+[4.130s] -- Detecting CXX compiler ABI info - done
+[4.179s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[4.182s] -- Detecting CXX compile features
+[4.183s] -- Detecting CXX compile features - done
+[4.218s] -- Found ament_cmake: 2.5.2 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[5.116s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[5.544s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[5.912s] -- Found rclcpp: 28.1.3 (/opt/ros/jazzy/share/rclcpp/cmake)
+[6.308s] -- Found rosidl_generator_c: 4.6.3 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[6.452s] -- Found rosidl_generator_cpp: 4.6.3 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[6.651s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[6.816s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[7.427s] -- Found rmw_implementation_cmake: 7.3.1 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[7.461s] -- Found rmw_fastrtps_cpp: 8.4.1 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[8.009s] -- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.13")  
+[8.099s] -- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") 
+[8.204s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[8.717s] -- Found sensor_msgs: 5.3.5 (/opt/ros/jazzy/share/sensor_msgs/cmake)
+[9.623s] -- Configuring done (9.5s)
+[9.707s] -- Generating done (0.0s)
+[9.717s] -- Build files have been written to: /home/E14Raspberry/ScooperBot/tennisbot_ws/build/hmc5883ldriver
+[9.766s] Invoked command in '/home/E14Raspberry/ScooperBot/tennisbot_ws/build/hmc5883ldriver' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/twist_stamper:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo:/opt/ros/jazzy /usr/bin/cmake /home/E14Raspberry/ScooperBot/tennisbot_ws/src/hmc5883l_ros2 -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/E14Raspberry/ScooperBot/tennisbot_ws/install/hmc5883ldriver
+[9.774s] Invoking command in '/home/E14Raspberry/ScooperBot/tennisbot_ws/build/hmc5883ldriver': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/twist_stamper:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo:/opt/ros/jazzy /usr/bin/cmake --build /home/E14Raspberry/ScooperBot/tennisbot_ws/build/hmc5883ldriver -- -j4 -l4
+[10.100s] [ 66%] [32mBuilding CXX object CMakeFiles/hmc5883ldriver.dir/src/hmc5883lsensor.cpp.o[0m
+[10.101s] [ 66%] [32mBuilding CXX object CMakeFiles/hmc5883ldriver.dir/src/hmc5883ldriver.cpp.o[0m
+[10.770s] [01m[K/home/E14Raspberry/ScooperBot/tennisbot_ws/src/hmc5883l_ros2/src/hmc5883lsensor.cpp:6:10:[m[K [01;31m[Kfatal error: [m[Ki2c/smbus.h: No such file or directory
+[10.771s]     6 | #include [01;31m[K<i2c/smbus.h>[m[K
+[10.771s]       |          [01;31m[K^~~~~~~~~~~~~[m[K
+[10.772s] compilation terminated.
+[10.776s] gmake[2]: *** [CMakeFiles/hmc5883ldriver.dir/build.make:90: CMakeFiles/hmc5883ldriver.dir/src/hmc5883lsensor.cpp.o] Error 1
+[10.776s] gmake[2]: *** Waiting for unfinished jobs....
+[13.369s] In file included from [01m[K/home/E14Raspberry/ScooperBot/tennisbot_ws/src/hmc5883l_ros2/include/hmc5883ldriver/hmc5883ldriver.h:4[m[K,
+[13.370s]                  from [01m[K/home/E14Raspberry/ScooperBot/tennisbot_ws/src/hmc5883l_ros2/src/hmc5883ldriver.cpp:1[m[K:
+[13.370s] [01m[K/home/E14Raspberry/ScooperBot/tennisbot_ws/src/hmc5883l_ros2/include/hmc5883ldriver/hmc5883lsensor.h:28:3:[m[K [01;31m[Kerror: [m[K‘[01m[Kuint8_t[m[K’ does not name a type
+[13.370s]    28 |   [01;31m[Kuint8_t[m[K read_buffer[6];
+[13.371s]       |   [01;31m[K^~~~~~~[m[K
+[13.371s] [01m[K/home/E14Raspberry/ScooperBot/tennisbot_ws/src/hmc5883l_ros2/include/hmc5883ldriver/hmc5883lsensor.h:6:1:[m[K [01;36m[Knote: [m[K‘[01m[Kuint8_t[m[K’ is defined in header ‘[01m[K<cstdint>[m[K’; did you forget to ‘[01m[K#include <cstdint>[m[K’?
+[13.372s]     5 | #include <unordered_map>
+[13.372s]   +++ |+[32m[K#include <cstdint>[m[K
+[13.372s]     6 | 
+[26.412s] gmake[2]: *** [CMakeFiles/hmc5883ldriver.dir/build.make:76: CMakeFiles/hmc5883ldriver.dir/src/hmc5883ldriver.cpp.o] Error 1
+[26.412s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/hmc5883ldriver.dir/all] Error 2
+[26.413s] gmake: *** [Makefile:146: all] Error 2
+[26.421s] Invoked command in '/home/E14Raspberry/ScooperBot/tennisbot_ws/build/hmc5883ldriver' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/twist_stamper:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo:/opt/ros/jazzy /usr/bin/cmake --build /home/E14Raspberry/ScooperBot/tennisbot_ws/build/hmc5883ldriver -- -j4 -l4

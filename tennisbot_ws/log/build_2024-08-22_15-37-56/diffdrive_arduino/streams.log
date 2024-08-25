@@ -1,0 +1,44 @@
+[1.764s] Invoking command in '/home/E14Raspberry/ScooperBot/tennisbot_ws/build/diffdrive_arduino': CMAKE_PREFIX_PATH=/opt/ros/jazzy /usr/bin/cmake --build /home/E14Raspberry/ScooperBot/tennisbot_ws/build/diffdrive_arduino -- -j4 -l4
+[4.172s] [100%] Built target diffdrive_arduino
+[4.342s] Invoked command in '/home/E14Raspberry/ScooperBot/tennisbot_ws/build/diffdrive_arduino' returned '0': CMAKE_PREFIX_PATH=/opt/ros/jazzy /usr/bin/cmake --build /home/E14Raspberry/ScooperBot/tennisbot_ws/build/diffdrive_arduino -- -j4 -l4
+[4.595s] Invoking command in '/home/E14Raspberry/ScooperBot/tennisbot_ws/build/diffdrive_arduino': CMAKE_PREFIX_PATH=/opt/ros/jazzy /usr/bin/cmake --install /home/E14Raspberry/ScooperBot/tennisbot_ws/build/diffdrive_arduino
+[4.658s] -- Install configuration: ""
+[4.673s] -- Execute custom install script
+[4.676s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/diffdrive_arduino/share/diffdrive_arduino//diffdrive_arduino.xml
+[4.699s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/diffdrive_arduino/include/diffdrive_arduino/diffdrive_arduino/arduino_comms.hpp
+[4.707s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/diffdrive_arduino/include/diffdrive_arduino/diffdrive_arduino/diffbot_system.hpp
+[4.717s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/diffdrive_arduino/include/diffdrive_arduino/diffdrive_arduino/visibility_control.h
+[4.726s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/diffdrive_arduino/include/diffdrive_arduino/diffdrive_arduino/wheel.hpp
+[4.727s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/diffdrive_arduino/share/diffdrive_arduino/launch/view_robot.launch.py
+[4.733s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/diffdrive_arduino/share/diffdrive_arduino/ros2_control/diffbot.ros2_control.xacro
+[4.743s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/diffdrive_arduino/share/diffdrive_arduino/urdf/diffbot.materials.xacro
+[4.747s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/diffdrive_arduino/share/diffdrive_arduino/urdf/diffbot.urdf.xacro
+[4.748s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/diffdrive_arduino/share/diffdrive_arduino/urdf/diffbot_description.urdf.xacro
+[4.803s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/diffdrive_arduino/share/diffdrive_arduino/rviz/diffbot.rviz
+[4.817s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/diffdrive_arduino/share/diffdrive_arduino/rviz/diffbot_view.rviz
+[4.849s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/diffdrive_arduino/share/diffdrive_arduino/launch/diffbot.launch.py
+[4.866s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/diffdrive_arduino/share/diffdrive_arduino/config/diffbot_controllers.yaml
+[4.873s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/diffdrive_arduino/share/diffdrive_arduino/environment/library_path.sh
+[4.877s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/diffdrive_arduino/share/diffdrive_arduino/environment/library_path.dsv
+[4.885s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/diffdrive_arduino/share/ament_index/resource_index/package_run_dependencies/diffdrive_arduino
+[4.890s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/diffdrive_arduino/share/ament_index/resource_index/parent_prefix_path/diffdrive_arduino
+[4.895s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/diffdrive_arduino/share/diffdrive_arduino/environment/ament_prefix_path.sh
+[4.895s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/diffdrive_arduino/share/diffdrive_arduino/environment/ament_prefix_path.dsv
+[4.900s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/diffdrive_arduino/share/diffdrive_arduino/environment/path.sh
+[4.901s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/diffdrive_arduino/share/diffdrive_arduino/environment/path.dsv
+[4.905s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/diffdrive_arduino/share/diffdrive_arduino/local_setup.bash
+[4.912s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/diffdrive_arduino/share/diffdrive_arduino/local_setup.sh
+[4.917s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/diffdrive_arduino/share/diffdrive_arduino/local_setup.zsh
+[4.919s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/diffdrive_arduino/share/diffdrive_arduino/local_setup.dsv
+[4.926s] -- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/diffdrive_arduino/share/diffdrive_arduino/package.dsv
+[5.006s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/diffdrive_arduino/share/ament_index/resource_index/packages/diffdrive_arduino
+[5.010s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/diffdrive_arduino/share/ament_index/resource_index/hardware_interface__pluginlib__plugin/diffdrive_arduino
+[5.016s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/diffdrive_arduino/share/diffdrive_arduino/cmake/ament_cmake_export_targets-extras.cmake
+[5.020s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/diffdrive_arduino/share/diffdrive_arduino/cmake/ament_cmake_export_dependencies-extras.cmake
+[5.023s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/diffdrive_arduino/share/diffdrive_arduino/cmake/diffdrive_arduinoConfig.cmake
+[5.034s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/diffdrive_arduino/share/diffdrive_arduino/cmake/diffdrive_arduinoConfig-version.cmake
+[5.037s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/diffdrive_arduino/share/diffdrive_arduino/package.xml
+[5.051s] -- Up-to-date: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/diffdrive_arduino/lib/libdiffdrive_arduino.so
+[5.073s] -- Up-to-date: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/diffdrive_arduino/share/diffdrive_arduino/cmake/export_diffdrive_arduinoExport.cmake
+[5.077s] -- Up-to-date: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/diffdrive_arduino/share/diffdrive_arduino/cmake/export_diffdrive_arduinoExport-noconfig.cmake
+[6.141s] Invoked command in '/home/E14Raspberry/ScooperBot/tennisbot_ws/build/diffdrive_arduino' returned '0': CMAKE_PREFIX_PATH=/opt/ros/jazzy /usr/bin/cmake --install /home/E14Raspberry/ScooperBot/tennisbot_ws/build/diffdrive_arduino

@@ -1,0 +1,18 @@
+[01m[K/home/E14Raspberry/ScooperBot/tennisbot_ws/src/hmc5883l_ros2/src/hmc5883lsensor.cpp:6:10:[m[K [01;31m[Kfatal error: [m[Ki2c/smbus.h: No such file or directory
+    6 | #include [01;31m[K<i2c/smbus.h>[m[K
+      |          [01;31m[K^~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/hmc5883ldriver.dir/build.make:90: CMakeFiles/hmc5883ldriver.dir/src/hmc5883lsensor.cpp.o] Error 1
+gmake[2]: *** Waiting for unfinished jobs....
+In file included from [01m[K/home/E14Raspberry/ScooperBot/tennisbot_ws/src/hmc5883l_ros2/include/hmc5883ldriver/hmc5883ldriver.h:4[m[K,
+                 from [01m[K/home/E14Raspberry/ScooperBot/tennisbot_ws/src/hmc5883l_ros2/src/hmc5883ldriver.cpp:1[m[K:
+[01m[K/home/E14Raspberry/ScooperBot/tennisbot_ws/src/hmc5883l_ros2/include/hmc5883ldriver/hmc5883lsensor.h:28:3:[m[K [01;31m[Kerror: [m[K‘[01m[Kuint8_t[m[K’ does not name a type
+   28 |   [01;31m[Kuint8_t[m[K read_buffer[6];
+      |   [01;31m[K^~~~~~~[m[K
+[01m[K/home/E14Raspberry/ScooperBot/tennisbot_ws/src/hmc5883l_ros2/include/hmc5883ldriver/hmc5883lsensor.h:6:1:[m[K [01;36m[Knote: [m[K‘[01m[Kuint8_t[m[K’ is defined in header ‘[01m[K<cstdint>[m[K’; did you forget to ‘[01m[K#include <cstdint>[m[K’?
+    5 | #include <unordered_map>
+  +++ |+[32m[K#include <cstdint>[m[K
+    6 | 
+gmake[2]: *** [CMakeFiles/hmc5883ldriver.dir/build.make:76: CMakeFiles/hmc5883ldriver.dir/src/hmc5883ldriver.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/hmc5883ldriver.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

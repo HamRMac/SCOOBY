@@ -4,7 +4,7 @@
 # compile C with /usr/bin/cc
 C_DEFINES = -DROSIDL_TYPESUPPORT_INTROSPECTION_C_BUILDING_DLL_serial_motor_demo_msgs -DROS_PACKAGE_NAME=\"serial_motor_demo_msgs\"
 
-C_INCLUDES = -I/home/E14Raspberry/tennisbot_ws/build/serial_motor_demo_msgs/rosidl_typesupport_introspection_c -I/home/E14Raspberry/tennisbot_ws/build/serial_motor_demo_msgs/rosidl_generator_c -isystem /opt/ros/jazzy/include/rosidl_runtime_c -isystem /opt/ros/jazzy/include/rcutils -isystem /opt/ros/jazzy/include/rosidl_typesupport_interface -isystem /opt/ros/jazzy/include/rosidl_typesupport_introspection_c
+C_INCLUDES = -I/home/E14Raspberry/ScooperBot/tennisbot_ws/build/serial_motor_demo_msgs/rosidl_typesupport_introspection_c -I/home/E14Raspberry/ScooperBot/tennisbot_ws/build/serial_motor_demo_msgs/rosidl_generator_c -isystem /opt/ros/jazzy/include/rosidl_runtime_c -isystem /opt/ros/jazzy/include/rcutils -isystem /opt/ros/jazzy/include/rosidl_typesupport_interface -isystem /opt/ros/jazzy/include/rosidl_typesupport_introspection_c
 
 C_FLAGS = -std=gnu11 -fPIC -Wall
 

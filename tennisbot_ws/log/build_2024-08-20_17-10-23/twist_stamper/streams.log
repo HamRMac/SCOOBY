@@ -1,0 +1,31 @@
+[4.271s] Invoking command in '/home/E14Raspberry/ScooperBot/tennisbot_ws/build/twist_stamper': PYTHONPATH=/home/E14Raspberry/ScooperBot/tennisbot_ws/build/twist_stamper/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/twist_stamper/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/E14Raspberry/ScooperBot/tennisbot_ws/build/twist_stamper/build --no-deps symlink_data
+[5.740s] running develop
+[5.741s] /usr/lib/python3/dist-packages/setuptools/command/develop.py:40: EasyInstallDeprecationWarning: easy_install command is deprecated.
+[5.741s] !!
+[5.742s] 
+[5.742s]         ********************************************************************************
+[5.743s]         Please avoid running ``setup.py`` and ``easy_install``.
+[5.743s]         Instead, use pypa/build, pypa/installer or other
+[5.744s]         standards-based tools.
+[5.744s] 
+[5.744s]         See https://github.com/pypa/setuptools/issues/917 for details.
+[5.745s]         ********************************************************************************
+[5.745s] 
+[5.745s] !!
+[5.746s]   easy_install.initialize_options(self)
+[6.746s] running egg_info
+[6.867s] writing twist_stamper.egg-info/PKG-INFO
+[6.868s] writing dependency_links to twist_stamper.egg-info/dependency_links.txt
+[6.870s] writing entry points to twist_stamper.egg-info/entry_points.txt
+[6.872s] writing requirements to twist_stamper.egg-info/requires.txt
+[6.873s] writing top-level names to twist_stamper.egg-info/top_level.txt
+[7.067s] reading manifest file 'twist_stamper.egg-info/SOURCES.txt'
+[7.070s] writing manifest file 'twist_stamper.egg-info/SOURCES.txt'
+[7.170s] running build_ext
+[7.171s] Creating /home/E14Raspberry/ScooperBot/tennisbot_ws/install/twist_stamper/lib/python3.12/site-packages/twist-stamper.egg-link (link to .)
+[7.174s] Installing twist_stamper script to /home/E14Raspberry/ScooperBot/tennisbot_ws/install/twist_stamper/lib/twist_stamper
+[7.175s] Installing twist_unstamper script to /home/E14Raspberry/ScooperBot/tennisbot_ws/install/twist_stamper/lib/twist_stamper
+[7.176s] 
+[7.177s] Installed /home/E14Raspberry/ScooperBot/tennisbot_ws/build/twist_stamper
+[7.177s] running symlink_data
+[7.344s] Invoked command in '/home/E14Raspberry/ScooperBot/tennisbot_ws/build/twist_stamper' returned '0': PYTHONPATH=/home/E14Raspberry/ScooperBot/tennisbot_ws/build/twist_stamper/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/twist_stamper/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/E14Raspberry/ScooperBot/tennisbot_ws/build/twist_stamper/build --no-deps symlink_data

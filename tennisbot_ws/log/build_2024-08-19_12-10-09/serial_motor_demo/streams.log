@@ -1,0 +1,31 @@
+[3.975s] Invoking command in '/home/E14Raspberry/ScooperBot/tennisbot_ws/build/serial_motor_demo': AMENT_PREFIX_PATH=/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs LD_LIBRARY_PATH=/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/E14Raspberry/ScooperBot/tennisbot_ws/build/serial_motor_demo/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo/lib/python3.12/site-packages:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/E14Raspberry/ScooperBot/tennisbot_ws/build/serial_motor_demo/build --no-deps symlink_data
+[5.252s] running develop
+[5.254s] /usr/lib/python3/dist-packages/setuptools/command/develop.py:40: EasyInstallDeprecationWarning: easy_install command is deprecated.
+[5.254s] !!
+[5.254s] 
+[5.255s]         ********************************************************************************
+[5.255s]         Please avoid running ``setup.py`` and ``easy_install``.
+[5.255s]         Instead, use pypa/build, pypa/installer or other
+[5.256s]         standards-based tools.
+[5.256s] 
+[5.257s]         See https://github.com/pypa/setuptools/issues/917 for details.
+[5.257s]         ********************************************************************************
+[5.257s] 
+[5.257s] !!
+[5.258s]   easy_install.initialize_options(self)
+[6.063s] running egg_info
+[6.132s] writing serial_motor_demo.egg-info/PKG-INFO
+[6.133s] writing dependency_links to serial_motor_demo.egg-info/dependency_links.txt
+[6.135s] writing entry points to serial_motor_demo.egg-info/entry_points.txt
+[6.136s] writing requirements to serial_motor_demo.egg-info/requires.txt
+[6.138s] writing top-level names to serial_motor_demo.egg-info/top_level.txt
+[6.289s] reading manifest file 'serial_motor_demo.egg-info/SOURCES.txt'
+[6.293s] writing manifest file 'serial_motor_demo.egg-info/SOURCES.txt'
+[6.369s] running build_ext
+[6.369s] Creating /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo/lib/python3.12/site-packages/serial-motor-demo.egg-link (link to .)
+[6.372s] Installing driver script to /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo/lib/serial_motor_demo
+[6.373s] Installing gui script to /home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo/lib/serial_motor_demo
+[6.374s] 
+[6.375s] Installed /home/E14Raspberry/ScooperBot/tennisbot_ws/build/serial_motor_demo
+[6.375s] running symlink_data
+[6.532s] Invoked command in '/home/E14Raspberry/ScooperBot/tennisbot_ws/build/serial_motor_demo' returned '0': AMENT_PREFIX_PATH=/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs LD_LIBRARY_PATH=/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/E14Raspberry/ScooperBot/tennisbot_ws/build/serial_motor_demo/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo/lib/python3.12/site-packages:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/E14Raspberry/ScooperBot/tennisbot_ws/build/serial_motor_demo/build --no-deps symlink_data

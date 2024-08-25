@@ -1,1 +1,1 @@
-/home/E14Raspberry/tennisbot_ws/build/serial_motor_demo_msgs/ament_cmake_environment_hooks/local_setup.sh
+/home/E14Raspberry/ScooperBot/tennisbot_ws/build/serial_motor_demo_msgs/ament_cmake_environment_hooks/local_setup.sh
