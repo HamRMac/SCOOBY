@@ -5,6 +5,7 @@ from transforms3d.euler import quat2euler
 import sys
 
 from rclpy.time import Duration
+from rclpy.time import Time as rclpTime
 import tf2_ros
 import sensor_msgs.msg as sensor_msgs
 from geometry_msgs.msg import PoseStamped
@@ -27,13 +28,13 @@ class SimpleNavHelpers():
                          (a.position.y - b.position.y) ** 2 +
                          (a.position.z - b.position.z) ** 2)
 
-    def get_curr_robot_pose(self, now, logger):
+    def get_curr_robot_pose(self, now, logger, frame_id):
         curr_robot_pose = PoseStamped()
-        curr_robot_pose.header.frame_id = "map"
+        curr_robot_pose.header.frame_id = frame_id
         curr_robot_pose.header.stamp = now.to_msg()
         try:
             transform = self.tf_buffer.lookup_transform(
-                "map", "base_link", time=now, timeout=Duration(seconds=0.5))
+                frame_id, "base_link", time=rclpTime(seconds=0), timeout=Duration(seconds=0.5))
             curr_robot_pose.pose.position.x = transform.transform.translation.x
             curr_robot_pose.pose.position.y = transform.transform.translation.y
             curr_robot_pose.pose.position.z = transform.transform.translation.z

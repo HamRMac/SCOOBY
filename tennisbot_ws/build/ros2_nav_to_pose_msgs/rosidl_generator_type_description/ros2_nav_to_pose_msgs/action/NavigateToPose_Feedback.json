@@ -1,0 +1,26 @@
+{
+  "type_description_msg": {
+    "type_description": {
+      "type_name": "ros2_nav_to_pose_msgs/action/NavigateToPose_Feedback",
+      "fields": [
+        {
+          "name": "remaining_distance_to_goal",
+          "type": {
+            "type_id": 11,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        }
+      ]
+    },
+    "referenced_type_descriptions": []
+  },
+  "type_hashes": [
+    {
+      "type_name": "ros2_nav_to_pose_msgs/action/NavigateToPose_Feedback",
+      "hash_string": "RIHS01_552f80f360268b6a84a918281ebc799bf09aadad84ea4aa45206854b508b788f"
+    }
+  ]
+}

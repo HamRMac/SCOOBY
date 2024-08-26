@@ -1,0 +1,1 @@
+/home/E14Raspberry/ScooperBot/tennisbot_ws/build/yasmin_demos/ament_cmake_environment_hooks/pythonpath.sh

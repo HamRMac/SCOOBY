@@ -1,0 +1,135 @@
+{
+  "type_description_msg": {
+    "type_description": {
+      "type_name": "yasmin_msgs/msg/StateMachine",
+      "fields": [
+        {
+          "name": "states",
+          "type": {
+            "type_id": 145,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": "yasmin_msgs/msg/State"
+          },
+          "default_value": ""
+        }
+      ]
+    },
+    "referenced_type_descriptions": [
+      {
+        "type_name": "yasmin_msgs/msg/State",
+        "fields": [
+          {
+            "name": "id",
+            "type": {
+              "type_id": 6,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          },
+          {
+            "name": "parent",
+            "type": {
+              "type_id": 6,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": "-1"
+          },
+          {
+            "name": "name",
+            "type": {
+              "type_id": 17,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          },
+          {
+            "name": "transitions",
+            "type": {
+              "type_id": 145,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": "yasmin_msgs/msg/Transition"
+            },
+            "default_value": ""
+          },
+          {
+            "name": "outcomes",
+            "type": {
+              "type_id": 161,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          },
+          {
+            "name": "is_fsm",
+            "type": {
+              "type_id": 15,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          },
+          {
+            "name": "current_state",
+            "type": {
+              "type_id": 6,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": "-1"
+          }
+        ]
+      },
+      {
+        "type_name": "yasmin_msgs/msg/Transition",
+        "fields": [
+          {
+            "name": "outcome",
+            "type": {
+              "type_id": 17,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          },
+          {
+            "name": "state",
+            "type": {
+              "type_id": 17,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          }
+        ]
+      }
+    ]
+  },
+  "type_hashes": [
+    {
+      "type_name": "yasmin_msgs/msg/StateMachine",
+      "hash_string": "RIHS01_224c8e76657998712da5d9f7a26a1b9d61028d2642f4ea6f98343527b55cd386"
+    },
+    {
+      "type_name": "yasmin_msgs/msg/State",
+      "hash_string": "RIHS01_76a6ee5d9e3d5e80c82fdd1bc4a461b4558553cdf296343960dda733b117c79f"
+    },
+    {
+      "type_name": "yasmin_msgs/msg/Transition",
+      "hash_string": "RIHS01_a0199d3627a13be5c0fbfb9d1530855457d19067a0f5174b99b9ec9199701a29"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "package_name": "ros2_nav_to_pose_msgs",
+  "output_dir": "/home/E14Raspberry/ScooperBot/tennisbot_ws/build/ros2_nav_to_pose_msgs/rosidl_generator_type_description/ros2_nav_to_pose_msgs",
+  "idl_tuples": [
+    "/home/E14Raspberry/ScooperBot/tennisbot_ws/build/ros2_nav_to_pose_msgs/rosidl_adapter/ros2_nav_to_pose_msgs:action/NavigateToPose.idl"
+  ],
+  "include_paths": [
+    "builtin_interfaces:/opt/ros/jazzy/share/builtin_interfaces",
+    "geometry_msgs:/opt/ros/jazzy/share/geometry_msgs",
+    "std_msgs:/opt/ros/jazzy/share/std_msgs",
+    "service_msgs:/opt/ros/jazzy/share/service_msgs",
+    "action_msgs:/opt/ros/jazzy/share/action_msgs",
+    "unique_identifier_msgs:/opt/ros/jazzy/share/unique_identifier_msgs"
+  ]
+}

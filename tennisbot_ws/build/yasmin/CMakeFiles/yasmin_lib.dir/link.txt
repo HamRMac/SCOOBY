@@ -1,0 +1,2 @@
+/usr/bin/ar qc libyasmin_lib.a CMakeFiles/yasmin_lib.dir/src/yasmin/blackboard/blackboard.cpp.o CMakeFiles/yasmin_lib.dir/src/yasmin/state.cpp.o CMakeFiles/yasmin_lib.dir/src/yasmin/cb_state.cpp.o CMakeFiles/yasmin_lib.dir/src/yasmin/state_machine.cpp.o
+/usr/bin/ranlib libyasmin_lib.a

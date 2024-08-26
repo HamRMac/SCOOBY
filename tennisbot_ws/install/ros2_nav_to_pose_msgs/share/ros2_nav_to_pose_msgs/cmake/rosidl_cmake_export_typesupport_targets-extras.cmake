@@ -1,0 +1,1 @@
+/home/E14Raspberry/ScooperBot/tennisbot_ws/build/ros2_nav_to_pose_msgs/rosidl_cmake/rosidl_cmake_export_typesupport_targets-extras.cmake

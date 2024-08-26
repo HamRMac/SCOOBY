@@ -1,0 +1,48 @@
+[13.625s] Invoking command in '/home/E14Raspberry/ScooperBot/tennisbot_ws/build/ball_tracker': PYTHONPATH=/home/E14Raspberry/ScooperBot/tennisbot_ws/build/ball_tracker/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/ball_tracker/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/E14Raspberry/ScooperBot/tennisbot_ws/build/ball_tracker/build --no-deps symlink_data
+[15.448s] /usr/lib/python3/dist-packages/setuptools/dist.py:744: SetuptoolsDeprecationWarning: Invalid dash-separated options
+[15.450s] !!
+[15.452s] 
+[15.453s]         ********************************************************************************
+[15.455s]         Usage of dash-separated 'script-dir' will not be supported in future
+[15.456s]         versions. Please use the underscore name 'script_dir' instead.
+[15.457s] 
+[15.458s]         This deprecation is overdue, please update your project and remove deprecated
+[15.460s]         calls to avoid build errors in the future.
+[15.462s] 
+[15.463s]         See https://setuptools.pypa.io/en/latest/userguide/declarative_config.html for details.
+[15.464s]         ********************************************************************************
+[15.465s] 
+[15.467s] !!
+[15.468s]   opt = self.warn_dash_deprecation(opt, section)
+[18.723s] running develop
+[18.726s] /usr/lib/python3/dist-packages/setuptools/command/develop.py:40: EasyInstallDeprecationWarning: easy_install command is deprecated.
+[18.727s] !!
+[18.732s] 
+[18.737s]         ********************************************************************************
+[18.738s]         Please avoid running ``setup.py`` and ``easy_install``.
+[18.739s]         Instead, use pypa/build, pypa/installer or other
+[18.740s]         standards-based tools.
+[18.742s] 
+[18.743s]         See https://github.com/pypa/setuptools/issues/917 for details.
+[18.744s]         ********************************************************************************
+[18.746s] 
+[18.750s] !!
+[18.752s]   easy_install.initialize_options(self)
+[22.223s] running egg_info
+[22.555s] writing ball_tracker.egg-info/PKG-INFO
+[22.565s] writing dependency_links to ball_tracker.egg-info/dependency_links.txt
+[22.566s] writing entry points to ball_tracker.egg-info/entry_points.txt
+[22.568s] writing requirements to ball_tracker.egg-info/requires.txt
+[22.571s] writing top-level names to ball_tracker.egg-info/top_level.txt
+[23.365s] reading manifest file 'ball_tracker.egg-info/SOURCES.txt'
+[23.379s] writing manifest file 'ball_tracker.egg-info/SOURCES.txt'
+[23.738s] running build_ext
+[23.741s] Creating /home/E14Raspberry/ScooperBot/tennisbot_ws/install/ball_tracker/lib/python3.12/site-packages/ball-tracker.egg-link (link to .)
+[23.755s] Installing detect_ball script to /home/E14Raspberry/ScooperBot/tennisbot_ws/install/ball_tracker/lib/ball_tracker
+[23.757s] Installing detect_ball_3d script to /home/E14Raspberry/ScooperBot/tennisbot_ws/install/ball_tracker/lib/ball_tracker
+[23.769s] Installing detect_ball_nn script to /home/E14Raspberry/ScooperBot/tennisbot_ws/install/ball_tracker/lib/ball_tracker
+[23.777s] Installing follow_ball script to /home/E14Raspberry/ScooperBot/tennisbot_ws/install/ball_tracker/lib/ball_tracker
+[23.781s] 
+[23.783s] Installed /home/E14Raspberry/ScooperBot/tennisbot_ws/build/ball_tracker
+[23.785s] running symlink_data
+[24.158s] Invoked command in '/home/E14Raspberry/ScooperBot/tennisbot_ws/build/ball_tracker' returned '0': PYTHONPATH=/home/E14Raspberry/ScooperBot/tennisbot_ws/build/ball_tracker/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/ball_tracker/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/E14Raspberry/ScooperBot/tennisbot_ws/build/ball_tracker/build --no-deps symlink_data

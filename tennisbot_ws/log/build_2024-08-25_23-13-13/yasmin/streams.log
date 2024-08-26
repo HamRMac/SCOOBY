@@ -1,0 +1,62 @@
+[0.412s] Invoking command in '/home/E14Raspberry/ScooperBot/tennisbot_ws/build/yasmin': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/twist_stamper:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/ball_tracker:/opt/ros/jazzy /usr/bin/cmake --build /home/E14Raspberry/ScooperBot/tennisbot_ws/build/yasmin -- -j4 -l4
+[2.372s] [  0%] Built target ament_cmake_python_symlink_yasmin
+[2.881s] [100%] Built target yasmin_lib
+[11.936s] running egg_info
+[12.522s] writing yasmin.egg-info/PKG-INFO
+[12.526s] writing dependency_links to yasmin.egg-info/dependency_links.txt
+[12.544s] writing top-level names to yasmin.egg-info/top_level.txt
+[14.117s] reading manifest file 'yasmin.egg-info/SOURCES.txt'
+[14.129s] writing manifest file 'yasmin.egg-info/SOURCES.txt'
+[14.792s] [100%] Built target ament_cmake_python_build_yasmin_egg
+[15.139s] Invoked command in '/home/E14Raspberry/ScooperBot/tennisbot_ws/build/yasmin' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/twist_stamper:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/ball_tracker:/opt/ros/jazzy /usr/bin/cmake --build /home/E14Raspberry/ScooperBot/tennisbot_ws/build/yasmin -- -j4 -l4
+[16.515s] Invoking command in '/home/E14Raspberry/ScooperBot/tennisbot_ws/build/yasmin': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/twist_stamper:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/ball_tracker:/opt/ros/jazzy /usr/bin/cmake --install /home/E14Raspberry/ScooperBot/tennisbot_ws/build/yasmin
+[16.807s] -- Install configuration: ""
+[16.810s] -- Execute custom install script
+[16.826s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin/lib/libyasmin_lib.a
+[16.838s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin/include//yasmin/blackboard/blackboard.hpp
+[16.840s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin/include//yasmin/blackboard/blackboard_value.hpp
+[16.845s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin/include//yasmin/blackboard/blackboard_value_interface.hpp
+[16.850s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin/include//yasmin/cb_state.hpp
+[16.865s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin/include//yasmin/state.hpp
+[16.867s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin/include//yasmin/state_machine.hpp
+[16.874s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin/include//yasmin/yasmin_logs.hpp
+[16.882s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin/share/yasmin/environment/library_path.sh
+[16.884s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin/share/yasmin/environment/library_path.dsv
+[16.895s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin/share/yasmin/environment/pythonpath.sh
+[16.907s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin/share/yasmin/environment/pythonpath.dsv
+[16.920s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin/lib/python3.12/site-packages/yasmin-2.3.1-py3.12.egg-info/PKG-INFO
+[16.926s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin/lib/python3.12/site-packages/yasmin-2.3.1-py3.12.egg-info/SOURCES.txt
+[16.941s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin/lib/python3.12/site-packages/yasmin-2.3.1-py3.12.egg-info/dependency_links.txt
+[16.948s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin/lib/python3.12/site-packages/yasmin-2.3.1-py3.12.egg-info/top_level.txt
+[16.969s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin/lib/python3.12/site-packages/yasmin/__init__.py
+[16.973s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin/lib/python3.12/site-packages/yasmin/blackboard.py
+[16.978s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin/lib/python3.12/site-packages/yasmin/cb_state.py
+[16.984s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin/lib/python3.12/site-packages/yasmin/state.py
+[16.994s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin/lib/python3.12/site-packages/yasmin/state_machine.py
+[16.999s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin/lib/python3.12/site-packages/yasmin/yasmin_logs.py
+[17.011s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin/pytests//run_pytests.sh
+[17.012s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin/pytests//test_blackboard.py
+[17.025s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin/pytests//test_cb_state.py
+[17.028s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin/pytests//test_state.py
+[17.034s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin/pytests//test_state_machine.py
+[17.038s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin/lib/yasmin/run_pytests.sh
+[17.047s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin/share/ament_index/resource_index/package_run_dependencies/yasmin
+[17.059s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin/share/ament_index/resource_index/parent_prefix_path/yasmin
+[17.065s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin/share/yasmin/environment/ament_prefix_path.sh
+[17.074s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin/share/yasmin/environment/ament_prefix_path.dsv
+[17.079s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin/share/yasmin/environment/path.sh
+[17.090s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin/share/yasmin/environment/path.dsv
+[17.098s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin/share/yasmin/local_setup.bash
+[17.101s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin/share/yasmin/local_setup.sh
+[17.109s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin/share/yasmin/local_setup.zsh
+[17.119s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin/share/yasmin/local_setup.dsv
+[17.127s] -- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin/share/yasmin/package.dsv
+[17.634s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin/share/ament_index/resource_index/packages/yasmin
+[17.643s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin/share/yasmin/cmake/ament_cmake_export_include_directories-extras.cmake
+[17.653s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin/share/yasmin/cmake/ament_cmake_export_libraries-extras.cmake
+[17.667s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin/share/yasmin/cmake/ament_cmake_export_dependencies-extras.cmake
+[17.670s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin/share/yasmin/cmake/yasminConfig.cmake
+[17.677s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin/share/yasmin/cmake/yasminConfig-version.cmake
+[17.689s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin/share/yasmin/package.xml
+[18.708s] Listing '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin/lib/python3.12/site-packages/yasmin'...
+[18.857s] Invoked command in '/home/E14Raspberry/ScooperBot/tennisbot_ws/build/yasmin' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/twist_stamper:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/ball_tracker:/opt/ros/jazzy /usr/bin/cmake --install /home/E14Raspberry/ScooperBot/tennisbot_ws/build/yasmin

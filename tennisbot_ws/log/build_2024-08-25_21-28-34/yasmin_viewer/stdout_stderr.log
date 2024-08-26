@@ -1,0 +1,97 @@
+-- The C compiler identification is GNU 13.2.0
+-- The CXX compiler identification is GNU 13.2.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 2.5.2 (/opt/ros/jazzy/share/ament_cmake/cmake)
+-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+-- Override CMake install command with custom implementation using symlinks instead of copying resources
+-- Found rclcpp: 28.1.3 (/opt/ros/jazzy/share/rclcpp/cmake)
+-- Found rosidl_generator_c: 4.6.3 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+-- Found rosidl_generator_cpp: 4.6.3 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 7.3.1 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+-- Found rmw_fastrtps_cpp: 8.4.1 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+-- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.13")  
+-- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") 
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Found rclpy: 7.1.1 (/opt/ros/jazzy/share/rclpy/cmake)
+-- Found yasmin: 2.3.1 (/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin/share/yasmin/cmake)
+-- Found yasmin_ros: 2.3.1 (/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_ros/share/yasmin_ros/cmake)
+-- Found yasmin_msgs: 2.3.1 (/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_msgs/share/yasmin_msgs/cmake)
+-- Configuring done (25.2s)
+-- Generating done (0.2s)
+-- Build files have been written to: /home/E14Raspberry/ScooperBot/tennisbot_ws/build/yasmin_viewer
+[ 50%] [32mBuilding CXX object CMakeFiles/yasmin_viewer_lib.dir/src/yasmin_viewer/yasmin_viewer_pub.cpp.o[0m
+[ 50%] Built target ament_cmake_python_symlink_yasmin_viewer
+running egg_info
+creating yasmin_viewer.egg-info
+writing yasmin_viewer.egg-info/PKG-INFO
+writing dependency_links to yasmin_viewer.egg-info/dependency_links.txt
+writing top-level names to yasmin_viewer.egg-info/top_level.txt
+writing manifest file 'yasmin_viewer.egg-info/SOURCES.txt'
+reading manifest file 'yasmin_viewer.egg-info/SOURCES.txt'
+writing manifest file 'yasmin_viewer.egg-info/SOURCES.txt'
+[ 50%] Built target ament_cmake_python_build_yasmin_viewer_egg
+[100%] [32m[1mLinking CXX static library libyasmin_viewer_lib.a[0m
+[100%] Built target yasmin_viewer_lib
+-- Install configuration: ""
+-- Execute custom install script
+-- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_viewer/lib/libyasmin_viewer_lib.a
+-- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_viewer/include//yasmin_viewer/yasmin_viewer_pub.hpp
+-- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_viewer/share/yasmin_viewer/yasmin_viewer_web_client//asset-manifest.json
+-- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_viewer/share/yasmin_viewer/yasmin_viewer_web_client//favicon.ico
+-- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_viewer/share/yasmin_viewer/yasmin_viewer_web_client//index.html
+-- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_viewer/share/yasmin_viewer/yasmin_viewer_web_client//logo192.png
+-- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_viewer/share/yasmin_viewer/yasmin_viewer_web_client//logo512.png
+-- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_viewer/share/yasmin_viewer/yasmin_viewer_web_client//manifest.json
+-- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_viewer/share/yasmin_viewer/yasmin_viewer_web_client//robots.txt
+-- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_viewer/share/yasmin_viewer/yasmin_viewer_web_client//static/css/main.073c9b0a.css
+-- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_viewer/share/yasmin_viewer/yasmin_viewer_web_client//static/css/main.073c9b0a.css.map
+-- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_viewer/share/yasmin_viewer/yasmin_viewer_web_client//static/js/787.d1eb2cfc.chunk.js
+-- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_viewer/share/yasmin_viewer/yasmin_viewer_web_client//static/js/787.d1eb2cfc.chunk.js.map
+-- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_viewer/share/yasmin_viewer/yasmin_viewer_web_client//static/js/main.713a3c3e.js
+-- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_viewer/share/yasmin_viewer/yasmin_viewer_web_client//static/js/main.713a3c3e.js.LICENSE.txt
+-- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_viewer/share/yasmin_viewer/yasmin_viewer_web_client//static/js/main.713a3c3e.js.map
+-- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_viewer/share/yasmin_viewer/environment/library_path.sh
+-- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_viewer/share/yasmin_viewer/environment/library_path.dsv
+-- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_viewer/share/yasmin_viewer/environment/pythonpath.sh
+-- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_viewer/share/yasmin_viewer/environment/pythonpath.dsv
+-- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_viewer/lib/python3.12/site-packages/yasmin_viewer-2.3.1-py3.12.egg-info/PKG-INFO
+-- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_viewer/lib/python3.12/site-packages/yasmin_viewer-2.3.1-py3.12.egg-info/SOURCES.txt
+-- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_viewer/lib/python3.12/site-packages/yasmin_viewer-2.3.1-py3.12.egg-info/dependency_links.txt
+-- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_viewer/lib/python3.12/site-packages/yasmin_viewer-2.3.1-py3.12.egg-info/top_level.txt
+-- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_viewer/lib/python3.12/site-packages/yasmin_viewer/__init__.py
+-- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_viewer/lib/python3.12/site-packages/yasmin_viewer/yasmin_viewer_node.py
+-- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_viewer/lib/python3.12/site-packages/yasmin_viewer/yasmin_viewer_pub.py
+-- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_viewer/share/ament_index/resource_index/package_run_dependencies/yasmin_viewer
+-- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_viewer/share/ament_index/resource_index/parent_prefix_path/yasmin_viewer
+-- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_viewer/share/yasmin_viewer/environment/ament_prefix_path.sh
+-- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_viewer/share/yasmin_viewer/environment/ament_prefix_path.dsv
+-- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_viewer/share/yasmin_viewer/environment/path.sh
+-- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_viewer/share/yasmin_viewer/environment/path.dsv
+-- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_viewer/share/yasmin_viewer/local_setup.bash
+-- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_viewer/share/yasmin_viewer/local_setup.sh
+-- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_viewer/share/yasmin_viewer/local_setup.zsh
+-- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_viewer/share/yasmin_viewer/local_setup.dsv
+-- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_viewer/share/yasmin_viewer/package.dsv
+-- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_viewer/share/ament_index/resource_index/packages/yasmin_viewer
+-- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_viewer/share/yasmin_viewer/cmake/ament_cmake_export_include_directories-extras.cmake
+-- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_viewer/share/yasmin_viewer/cmake/ament_cmake_export_libraries-extras.cmake
+-- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_viewer/share/yasmin_viewer/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_viewer/share/yasmin_viewer/cmake/yasmin_viewerConfig.cmake
+-- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_viewer/share/yasmin_viewer/cmake/yasmin_viewerConfig-version.cmake
+-- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_viewer/share/yasmin_viewer/package.xml
+Listing '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_viewer/lib/python3.12/site-packages/yasmin_viewer'...
+Compiling '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_viewer/lib/python3.12/site-packages/yasmin_viewer/__init__.py'...
+Compiling '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_viewer/lib/python3.12/site-packages/yasmin_viewer/yasmin_viewer_node.py'...
+Compiling '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_viewer/lib/python3.12/site-packages/yasmin_viewer/yasmin_viewer_pub.py'...
+-- Installing: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_viewer/lib/yasmin_viewer/yasmin_viewer_node

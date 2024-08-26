@@ -1,0 +1,249 @@
+[0.000000] (-) TimerEvent: {}
+[0.006166] (-) JobUnselected: {'identifier': 'ball_tracker'}
+[0.007605] (-) JobUnselected: {'identifier': 'diffdrive_arduino'}
+[0.007861] (-) JobUnselected: {'identifier': 'ros2_nav_to_pose_msgs'}
+[0.008056] (-) JobUnselected: {'identifier': 'serial_motor_demo'}
+[0.008248] (-) JobUnselected: {'identifier': 'serial_motor_demo_msgs'}
+[0.008434] (-) JobUnselected: {'identifier': 'tennisbotmaster'}
+[0.008645] (-) JobUnselected: {'identifier': 'twist_stamper'}
+[0.008852] (-) JobUnselected: {'identifier': 'yasmin'}
+[0.009032] (-) JobUnselected: {'identifier': 'yasmin_demos'}
+[0.009209] (-) JobUnselected: {'identifier': 'yasmin_msgs'}
+[0.009385] (-) JobUnselected: {'identifier': 'yasmin_ros'}
+[0.009628] (-) JobUnselected: {'identifier': 'yasmin_viewer'}
+[0.009858] (ros2_nav_to_pose) JobQueued: {'identifier': 'ros2_nav_to_pose', 'dependencies': OrderedDict()}
+[0.010083] (ros2_nav_to_pose) JobStarted: {'identifier': 'ros2_nav_to_pose'}
+[0.100162] (-) TimerEvent: {}
+[0.203294] (-) TimerEvent: {}
+[0.304660] (-) TimerEvent: {}
+[0.406280] (-) TimerEvent: {}
+[0.508213] (-) TimerEvent: {}
+[0.611510] (-) TimerEvent: {}
+[0.712813] (-) TimerEvent: {}
+[0.815303] (-) TimerEvent: {}
+[0.916714] (-) TimerEvent: {}
+[1.017780] (-) TimerEvent: {}
+[1.119060] (-) TimerEvent: {}
+[1.220139] (-) TimerEvent: {}
+[1.321382] (-) TimerEvent: {}
+[1.423455] (-) TimerEvent: {}
+[1.526167] (-) TimerEvent: {}
+[1.627722] (-) TimerEvent: {}
+[1.728812] (-) TimerEvent: {}
+[1.830047] (-) TimerEvent: {}
+[1.931766] (-) TimerEvent: {}
+[2.036934] (-) TimerEvent: {}
+[2.138083] (-) TimerEvent: {}
+[2.239352] (-) TimerEvent: {}
+[2.340844] (-) TimerEvent: {}
+[2.442083] (-) TimerEvent: {}
+[2.543430] (-) TimerEvent: {}
+[2.644711] (-) TimerEvent: {}
+[2.746773] (-) TimerEvent: {}
+[2.848060] (-) TimerEvent: {}
+[2.949441] (-) TimerEvent: {}
+[3.052449] (-) TimerEvent: {}
+[3.153524] (-) TimerEvent: {}
+[3.254775] (-) TimerEvent: {}
+[3.355984] (-) TimerEvent: {}
+[3.457229] (-) TimerEvent: {}
+[3.558457] (-) TimerEvent: {}
+[3.659734] (-) TimerEvent: {}
+[3.760872] (-) TimerEvent: {}
+[3.862074] (-) TimerEvent: {}
+[3.963229] (-) TimerEvent: {}
+[4.064438] (-) TimerEvent: {}
+[4.165941] (-) TimerEvent: {}
+[4.267191] (-) TimerEvent: {}
+[4.369114] (-) TimerEvent: {}
+[4.470950] (-) TimerEvent: {}
+[4.572339] (-) TimerEvent: {}
+[4.673904] (-) TimerEvent: {}
+[4.775751] (-) TimerEvent: {}
+[4.876775] (-) TimerEvent: {}
+[4.977966] (-) TimerEvent: {}
+[5.079052] (-) TimerEvent: {}
+[5.180159] (-) TimerEvent: {}
+[5.281325] (-) TimerEvent: {}
+[5.382861] (-) TimerEvent: {}
+[5.488545] (-) TimerEvent: {}
+[5.589706] (-) TimerEvent: {}
+[5.690796] (-) TimerEvent: {}
+[5.792056] (-) TimerEvent: {}
+[5.893203] (-) TimerEvent: {}
+[5.994338] (-) TimerEvent: {}
+[6.095494] (-) TimerEvent: {}
+[6.196772] (-) TimerEvent: {}
+[6.298386] (-) TimerEvent: {}
+[6.401328] (-) TimerEvent: {}
+[6.503700] (-) TimerEvent: {}
+[6.604819] (-) TimerEvent: {}
+[6.706063] (-) TimerEvent: {}
+[6.809294] (-) TimerEvent: {}
+[6.910772] (-) TimerEvent: {}
+[7.011802] (-) TimerEvent: {}
+[7.112908] (-) TimerEvent: {}
+[7.214038] (-) TimerEvent: {}
+[7.315142] (-) TimerEvent: {}
+[7.416346] (-) TimerEvent: {}
+[7.517561] (-) TimerEvent: {}
+[7.618889] (-) TimerEvent: {}
+[7.720166] (-) TimerEvent: {}
+[7.821263] (-) TimerEvent: {}
+[7.922430] (-) TimerEvent: {}
+[8.025901] (-) TimerEvent: {}
+[8.129466] (-) TimerEvent: {}
+[8.230958] (-) TimerEvent: {}
+[8.332096] (-) TimerEvent: {}
+[8.435815] (-) TimerEvent: {}
+[8.536901] (-) TimerEvent: {}
+[8.639345] (-) TimerEvent: {}
+[8.743367] (-) TimerEvent: {}
+[8.844703] (-) TimerEvent: {}
+[8.945807] (-) TimerEvent: {}
+[9.046864] (-) TimerEvent: {}
+[9.148060] (-) TimerEvent: {}
+[9.249213] (-) TimerEvent: {}
+[9.350354] (-) TimerEvent: {}
+[9.452005] (-) TimerEvent: {}
+[9.553285] (-) TimerEvent: {}
+[9.654463] (-) TimerEvent: {}
+[9.755676] (-) TimerEvent: {}
+[9.856762] (-) TimerEvent: {}
+[9.957852] (-) TimerEvent: {}
+[10.059028] (-) TimerEvent: {}
+[10.160130] (-) TimerEvent: {}
+[10.261277] (-) TimerEvent: {}
+[10.362809] (-) TimerEvent: {}
+[10.464451] (-) TimerEvent: {}
+[10.570307] (-) TimerEvent: {}
+[10.671810] (-) TimerEvent: {}
+[10.782264] (-) TimerEvent: {}
+[10.883458] (-) TimerEvent: {}
+[10.984777] (-) TimerEvent: {}
+[11.086123] (-) TimerEvent: {}
+[11.187787] (-) TimerEvent: {}
+[11.230632] (ros2_nav_to_pose) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', 'setup.py', 'develop', '--editable', '--build-directory', '/home/E14Raspberry/ScooperBot/tennisbot_ws/build/ros2_nav_to_pose/build', '--no-deps', 'symlink_data'], 'cwd': '/home/E14Raspberry/ScooperBot/tennisbot_ws/build/ros2_nav_to_pose', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'E14Raspberry', 'SSH_CLIENT': '192.168.1.161 61584 22', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/ros2_nav_to_pose_msgs/lib:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_demos/lib:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_viewer/lib:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_ros/lib:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_msgs/lib:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin/lib:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/lib:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/diffdrive_arduino/lib:/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/E14Raspberry', 'OLDPWD': '/home/E14Raspberry/ScooperBot/tennisbot_ws/src/yasmin', 'SSH_TTY': '/dev/pts/3', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLCON_PREFIX_PATH': '/home/E14Raspberry/ScooperBot/tennisbot_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'E14Raspberry', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '5', 'PATH': '/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'ROS_DOMAIN_ID': '100', 'AMENT_PREFIX_PATH': '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/ros2_nav_to_pose_msgs:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/ros2_nav_to_pose:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_demos:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_viewer:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_ros:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_msgs:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/twist_stamper:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/tennisbotmaster:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/diffdrive_arduino:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/ball_tracker:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/E14Raspberry/ScooperBot/tennisbot_ws/build/ros2_nav_to_pose', 'SSH_CONNECTION': '192.168.1.161 61584 192.168.1.160 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/E14Raspberry/ScooperBot/tennisbot_ws/build/ros2_nav_to_pose/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/ros2_nav_to_pose/lib/python3.12/site-packages:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/ros2_nav_to_pose_msgs/lib/python3.12/site-packages:/home/E14Raspberry/ScooperBot/tennisbot_ws/build/ros2_nav_to_pose:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/ros2_nav_to_pose/lib/python3.12/site-packages:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_demos/lib/python3.12/site-packages:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_viewer/lib/python3.12/site-packages:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_ros/lib/python3.12/site-packages:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_msgs/lib/python3.12/site-packages:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin/lib/python3.12/site-packages:/home/E14Raspberry/ScooperBot/tennisbot_ws/build/twist_stamper:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/twist_stamper/lib/python3.12/site-packages:/home/E14Raspberry/ScooperBot/tennisbot_ws/build/serial_motor_demo:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo/lib/python3.12/site-packages:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/lib/python3.12/site-packages:/home/E14Raspberry/ScooperBot/tennisbot_ws/build/ball_tracker:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/ball_tracker/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/ros2_nav_to_pose_msgs:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_demos:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_viewer:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_ros:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_msgs:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/tennisbotmaster:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/diffdrive_arduino:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor'}, 'shell': False}
+[11.288780] (-) TimerEvent: {}
+[11.391272] (-) TimerEvent: {}
+[11.493531] (-) TimerEvent: {}
+[11.594724] (-) TimerEvent: {}
+[11.696233] (-) TimerEvent: {}
+[11.797495] (-) TimerEvent: {}
+[11.898777] (-) TimerEvent: {}
+[12.000243] (-) TimerEvent: {}
+[12.102169] (-) TimerEvent: {}
+[12.203887] (-) TimerEvent: {}
+[12.305157] (-) TimerEvent: {}
+[12.406398] (-) TimerEvent: {}
+[12.507633] (-) TimerEvent: {}
+[12.608852] (-) TimerEvent: {}
+[12.712002] (-) TimerEvent: {}
+[12.813371] (-) TimerEvent: {}
+[12.914458] (-) TimerEvent: {}
+[13.015639] (-) TimerEvent: {}
+[13.116770] (-) TimerEvent: {}
+[13.217902] (-) TimerEvent: {}
+[13.319035] (-) TimerEvent: {}
+[13.420980] (-) TimerEvent: {}
+[13.522323] (-) TimerEvent: {}
+[13.623466] (-) TimerEvent: {}
+[13.724651] (-) TimerEvent: {}
+[13.825752] (-) TimerEvent: {}
+[13.926788] (-) TimerEvent: {}
+[14.028377] (-) TimerEvent: {}
+[14.131103] (-) TimerEvent: {}
+[14.233442] (-) TimerEvent: {}
+[14.335286] (-) TimerEvent: {}
+[14.436466] (-) TimerEvent: {}
+[14.537672] (-) TimerEvent: {}
+[14.638933] (-) TimerEvent: {}
+[14.740114] (-) TimerEvent: {}
+[14.841300] (-) TimerEvent: {}
+[14.942463] (-) TimerEvent: {}
+[15.043646] (-) TimerEvent: {}
+[15.144780] (-) TimerEvent: {}
+[15.246188] (-) TimerEvent: {}
+[15.348501] (-) TimerEvent: {}
+[15.449845] (-) TimerEvent: {}
+[15.551173] (-) TimerEvent: {}
+[15.657762] (-) TimerEvent: {}
+[15.758807] (-) TimerEvent: {}
+[15.837116] (ros2_nav_to_pose) StdoutLine: {'line': b'running develop\n'}
+[15.840795] (ros2_nav_to_pose) StderrLine: {'line': b'/usr/lib/python3/dist-packages/setuptools/command/develop.py:40: EasyInstallDeprecationWarning: easy_install command is deprecated.\n'}
+[15.844077] (ros2_nav_to_pose) StderrLine: {'line': b'!!\n'}
+[15.846029] (ros2_nav_to_pose) StderrLine: {'line': b'\n'}
+[15.847807] (ros2_nav_to_pose) StderrLine: {'line': b'        ********************************************************************************\n'}
+[15.849362] (ros2_nav_to_pose) StderrLine: {'line': b'        Please avoid running ``setup.py`` and ``easy_install``.\n'}
+[15.851079] (ros2_nav_to_pose) StderrLine: {'line': b'        Instead, use pypa/build, pypa/installer or other\n'}
+[15.852871] (ros2_nav_to_pose) StderrLine: {'line': b'        standards-based tools.\n'}
+[15.854403] (ros2_nav_to_pose) StderrLine: {'line': b'\n'}
+[15.856118] (ros2_nav_to_pose) StderrLine: {'line': b'        See https://github.com/pypa/setuptools/issues/917 for details.\n'}
+[15.857704] (ros2_nav_to_pose) StderrLine: {'line': b'        ********************************************************************************\n'}
+[15.859357] (-) TimerEvent: {}
+[15.860353] (ros2_nav_to_pose) StderrLine: {'line': b'\n'}
+[15.862075] (ros2_nav_to_pose) StderrLine: {'line': b'!!\n'}
+[15.864664] (ros2_nav_to_pose) StderrLine: {'line': b'  easy_install.initialize_options(self)\n'}
+[15.959956] (-) TimerEvent: {}
+[16.062494] (-) TimerEvent: {}
+[16.163857] (-) TimerEvent: {}
+[16.265037] (-) TimerEvent: {}
+[16.366558] (-) TimerEvent: {}
+[16.470207] (-) TimerEvent: {}
+[16.573695] (-) TimerEvent: {}
+[16.678095] (-) TimerEvent: {}
+[16.780244] (-) TimerEvent: {}
+[16.881673] (-) TimerEvent: {}
+[16.982785] (-) TimerEvent: {}
+[17.083933] (-) TimerEvent: {}
+[17.185227] (-) TimerEvent: {}
+[17.286354] (-) TimerEvent: {}
+[17.387844] (-) TimerEvent: {}
+[17.489983] (-) TimerEvent: {}
+[17.591141] (-) TimerEvent: {}
+[17.692215] (-) TimerEvent: {}
+[17.793625] (-) TimerEvent: {}
+[17.894751] (-) TimerEvent: {}
+[17.996335] (-) TimerEvent: {}
+[18.098127] (-) TimerEvent: {}
+[18.201124] (-) TimerEvent: {}
+[18.304081] (-) TimerEvent: {}
+[18.405369] (-) TimerEvent: {}
+[18.506535] (-) TimerEvent: {}
+[18.608457] (-) TimerEvent: {}
+[18.711878] (-) TimerEvent: {}
+[18.813084] (-) TimerEvent: {}
+[18.914449] (-) TimerEvent: {}
+[18.944799] (ros2_nav_to_pose) StdoutLine: {'line': b'running egg_info\n'}
+[19.014740] (-) TimerEvent: {}
+[19.115984] (-) TimerEvent: {}
+[19.217187] (-) TimerEvent: {}
+[19.218683] (ros2_nav_to_pose) StdoutLine: {'line': b'writing ros2_nav_to_pose.egg-info/PKG-INFO\n'}
+[19.220956] (ros2_nav_to_pose) StdoutLine: {'line': b'writing dependency_links to ros2_nav_to_pose.egg-info/dependency_links.txt\n'}
+[19.223101] (ros2_nav_to_pose) StdoutLine: {'line': b'writing entry points to ros2_nav_to_pose.egg-info/entry_points.txt\n'}
+[19.225343] (ros2_nav_to_pose) StdoutLine: {'line': b'writing requirements to ros2_nav_to_pose.egg-info/requires.txt\n'}
+[19.226834] (ros2_nav_to_pose) StdoutLine: {'line': b'writing top-level names to ros2_nav_to_pose.egg-info/top_level.txt\n'}
+[19.317662] (-) TimerEvent: {}
+[19.418751] (-) TimerEvent: {}
+[19.519895] (-) TimerEvent: {}
+[19.621114] (-) TimerEvent: {}
+[19.722663] (-) TimerEvent: {}
+[19.776937] (ros2_nav_to_pose) StdoutLine: {'line': b"reading manifest file 'ros2_nav_to_pose.egg-info/SOURCES.txt'\n"}
+[19.787749] (ros2_nav_to_pose) StdoutLine: {'line': b"writing manifest file 'ros2_nav_to_pose.egg-info/SOURCES.txt'\n"}
+[19.822816] (-) TimerEvent: {}
+[19.923970] (-) TimerEvent: {}
+[20.026992] (-) TimerEvent: {}
+[20.078319] (ros2_nav_to_pose) StdoutLine: {'line': b'running build_ext\n'}
+[20.080113] (ros2_nav_to_pose) StdoutLine: {'line': b'Creating /home/E14Raspberry/ScooperBot/tennisbot_ws/install/ros2_nav_to_pose/lib/python3.12/site-packages/ros2-nav-to-pose.egg-link (link to .)\n'}
+[20.086143] (ros2_nav_to_pose) StdoutLine: {'line': b'Installing nav_to_pose_action_client script to /home/E14Raspberry/ScooperBot/tennisbot_ws/install/ros2_nav_to_pose/lib/ros2_nav_to_pose\n'}
+[20.088515] (ros2_nav_to_pose) StdoutLine: {'line': b'Installing nav_to_pose_action_server script to /home/E14Raspberry/ScooperBot/tennisbot_ws/install/ros2_nav_to_pose/lib/ros2_nav_to_pose\n'}
+[20.091690] (ros2_nav_to_pose) StdoutLine: {'line': b'\n'}
+[20.093295] (ros2_nav_to_pose) StdoutLine: {'line': b'Installed /home/E14Raspberry/ScooperBot/tennisbot_ws/build/ros2_nav_to_pose\n'}
+[20.094455] (ros2_nav_to_pose) StdoutLine: {'line': b'running symlink_data\n'}
+[20.127380] (-) TimerEvent: {}
+[20.228837] (-) TimerEvent: {}
+[20.331004] (-) TimerEvent: {}
+[20.377740] (ros2_nav_to_pose) CommandEnded: {'returncode': 0}
+[20.431425] (-) TimerEvent: {}
+[20.510243] (ros2_nav_to_pose) JobEnded: {'identifier': 'ros2_nav_to_pose', 'rc': 0}
+[20.517987] (-) EventReactorShutdown: {}

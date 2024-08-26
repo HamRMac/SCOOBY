@@ -1,0 +1,14 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from yasmin_msgs/msg/Transition.msg
+// generated code does not contain a copyright notice
+
+
+module yasmin_msgs {
+  module msg {
+    struct Transition {
+      string outcome;
+
+      string state;
+    };
+  };
+};

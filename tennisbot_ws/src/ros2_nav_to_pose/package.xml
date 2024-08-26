@@ -4,7 +4,7 @@
   <name>ros2_nav_to_pose</name>
   <version>0.1.0</version>
   <description>Contains an action server to navigate to location based on a given frame'</description>
-  <maintainer email="NA">E14</maintainer>
+  <maintainer email="NA@mmail.com">E14</maintainer>
   <license>TODO: License declaration</license>
 
   <depend>rclpy</depend>

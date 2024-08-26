@@ -1,0 +1,25 @@
+// generated from rosidl_adapter/resource/action.idl.em
+// with input from ros2_nav_to_pose_msgs/action/NavigateToPose.action
+// generated code does not contain a copyright notice
+
+#include "geometry_msgs/msg/PoseStamped.idl"
+
+module ros2_nav_to_pose_msgs {
+  module action {
+    @verbatim (language="comment", text=
+      "Goal")
+    struct NavigateToPose_Goal {
+      geometry_msgs::msg::PoseStamped goal_pose;
+    };
+    @verbatim (language="comment", text=
+      "Result ")
+    struct NavigateToPose_Result {
+      boolean success;
+    };
+    @verbatim (language="comment", text=
+      "Feedback")
+    struct NavigateToPose_Feedback {
+      double remaining_distance_to_goal;
+    };
+  };
+};

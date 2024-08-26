@@ -1,0 +1,11 @@
+setup.py
+yasmin_demos/__init__.py
+yasmin_demos/action_client_demo.py
+yasmin_demos/monitor_demo.py
+yasmin_demos/nav_demo.py
+yasmin_demos/service_client_demo.py
+yasmin_demos/yasmin_demo.py
+yasmin_demos.egg-info/PKG-INFO
+yasmin_demos.egg-info/SOURCES.txt
+yasmin_demos.egg-info/dependency_links.txt
+yasmin_demos.egg-info/top_level.txt

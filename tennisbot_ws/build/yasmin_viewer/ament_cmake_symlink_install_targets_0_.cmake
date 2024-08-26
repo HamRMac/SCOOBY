@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_targets("TARGET_FILES" "/home/E14Raspberry/ScooperBot/tennisbot_ws/build/yasmin_viewer/libyasmin_viewer_lib.a" "TARGETS" "yasmin_viewer_lib" "ARCHIVE_DESTINATION" "lib" "LIBRARY_DESTINATION" "lib" "RUNTIME_DESTINATION" "bin")

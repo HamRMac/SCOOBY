@@ -1,0 +1,6 @@
+msg/State.idl
+msg/State.msg
+msg/StateMachine.idl
+msg/StateMachine.msg
+msg/Transition.idl
+msg/Transition.msg

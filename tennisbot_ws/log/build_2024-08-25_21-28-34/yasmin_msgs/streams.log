@@ -1,0 +1,260 @@
+[0.259s] Invoking command in '/home/E14Raspberry/ScooperBot/tennisbot_ws/build/yasmin_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /home/E14Raspberry/ScooperBot/tennisbot_ws/src/yasmin/yasmin_msgs -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_msgs
+[3.276s] -- The C compiler identification is GNU 13.2.0
+[6.857s] -- The CXX compiler identification is GNU 13.2.0
+[7.324s] -- Detecting C compiler ABI info
+[9.233s] -- Detecting C compiler ABI info - done
+[9.413s] -- Check for working C compiler: /usr/bin/cc - skipped
+[9.417s] -- Detecting C compile features
+[9.430s] -- Detecting C compile features - done
+[9.656s] -- Detecting CXX compiler ABI info
+[11.754s] -- Detecting CXX compiler ABI info - done
+[11.921s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[11.943s] -- Detecting CXX compile features
+[11.947s] -- Detecting CXX compile features - done
+[12.238s] -- Found ament_cmake: 2.5.2 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[15.801s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[17.079s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[20.047s] -- Found ament_lint_auto: 0.17.1 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[23.747s] -- Found rosidl_default_generators: 1.6.0 (/opt/ros/jazzy/share/rosidl_default_generators/cmake)
+[24.188s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[26.994s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[29.233s] -- Found rosidl_adapter: 4.6.3 (/opt/ros/jazzy/share/rosidl_adapter/cmake)
+[37.823s] -- Found ament_cmake_ros: 0.12.0 (/opt/ros/jazzy/share/ament_cmake_ros/cmake)
+[47.491s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[57.020s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[57.174s] -- Found python_cmake_module: 0.11.1 (/opt/ros/jazzy/share/python_cmake_module/cmake)
+[58.937s] -- Found PythonExtra: /usr/bin/python3  
+[64.491s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter Development NumPy Development.Module Development.Embed 
+[65.058s] -- Added test 'copyright' to check source files copyright and LICENSE
+[65.113s] -- Added test 'lint_cmake' to check CMake code style
+[65.153s] -- Added test 'xmllint' to check XML markup files
+[65.307s] -- Configuring done (64.9s)
+[65.927s] -- Generating done (0.5s)
+[65.971s] -- Build files have been written to: /home/E14Raspberry/ScooperBot/tennisbot_ws/build/yasmin_msgs
+[66.024s] Invoked command in '/home/E14Raspberry/ScooperBot/tennisbot_ws/build/yasmin_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /home/E14Raspberry/ScooperBot/tennisbot_ws/src/yasmin/yasmin_msgs -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_msgs
+[66.037s] Invoking command in '/home/E14Raspberry/ScooperBot/tennisbot_ws/build/yasmin_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/E14Raspberry/ScooperBot/tennisbot_ws/build/yasmin_msgs -- -j4 -l4
+[67.025s] [  1%] [34m[1mGenerating type hashes for ROS interfaces[0m
+[70.397s] [  1%] Built target yasmin_msgs__rosidl_generator_type_description
+[70.954s] [  1%] Built target ament_cmake_python_symlink_yasmin_msgs
+[71.377s] [  3%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[77.502s] [  3%] Built target yasmin_msgs__cpp
+[80.659s] running egg_info
+[80.667s] creating yasmin_msgs.egg-info
+[80.972s] writing yasmin_msgs.egg-info/PKG-INFO
+[80.974s] writing dependency_links to yasmin_msgs.egg-info/dependency_links.txt
+[80.976s] writing top-level names to yasmin_msgs.egg-info/top_level.txt
+[80.978s] writing manifest file 'yasmin_msgs.egg-info/SOURCES.txt'
+[81.912s] reading manifest file 'yasmin_msgs.egg-info/SOURCES.txt'
+[81.918s] writing manifest file 'yasmin_msgs.egg-info/SOURCES.txt'
+[82.264s] [  3%] Built target ament_cmake_python_build_yasmin_msgs_egg
+[82.471s] [  5%] [34m[1mGenerating C code for ROS interfaces[0m
+[90.019s] [  7%] [32mBuilding C object CMakeFiles/yasmin_msgs__rosidl_generator_c.dir/rosidl_generator_c/yasmin_msgs/msg/detail/state__description.c.o[0m
+[90.794s] [  9%] [32mBuilding C object CMakeFiles/yasmin_msgs__rosidl_generator_c.dir/rosidl_generator_c/yasmin_msgs/msg/detail/transition__description.c.o[0m
+[91.400s] [ 11%] [32mBuilding C object CMakeFiles/yasmin_msgs__rosidl_generator_c.dir/rosidl_generator_c/yasmin_msgs/msg/detail/transition__functions.c.o[0m
+[92.153s] [ 12%] [32mBuilding C object CMakeFiles/yasmin_msgs__rosidl_generator_c.dir/rosidl_generator_c/yasmin_msgs/msg/detail/transition__type_support.c.o[0m
+[92.690s] [ 14%] [32mBuilding C object CMakeFiles/yasmin_msgs__rosidl_generator_c.dir/rosidl_generator_c/yasmin_msgs/msg/detail/state_machine__description.c.o[0m
+[93.310s] [ 16%] [32mBuilding C object CMakeFiles/yasmin_msgs__rosidl_generator_c.dir/rosidl_generator_c/yasmin_msgs/msg/detail/state_machine__functions.c.o[0m
+[94.057s] [ 18%] [32mBuilding C object CMakeFiles/yasmin_msgs__rosidl_generator_c.dir/rosidl_generator_c/yasmin_msgs/msg/detail/state_machine__type_support.c.o[0m
+[94.580s] [ 20%] [32mBuilding C object CMakeFiles/yasmin_msgs__rosidl_generator_c.dir/rosidl_generator_c/yasmin_msgs/msg/detail/state__type_support.c.o[0m
+[95.122s] [ 22%] [32mBuilding C object CMakeFiles/yasmin_msgs__rosidl_generator_c.dir/rosidl_generator_c/yasmin_msgs/msg/detail/state__functions.c.o[0m
+[96.036s] [ 24%] [32m[1mLinking C shared library libyasmin_msgs__rosidl_generator_c.so[0m
+[96.634s] [ 24%] Built target yasmin_msgs__rosidl_generator_c
+[96.831s] [ 25%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[100.575s] [ 27%] [32mBuilding CXX object CMakeFiles/yasmin_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/yasmin_msgs/msg/state__type_support.cpp.o[0m
+[105.391s] [ 29%] [32mBuilding CXX object CMakeFiles/yasmin_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/yasmin_msgs/msg/transition__type_support.cpp.o[0m
+[110.233s] [ 31%] [32mBuilding CXX object CMakeFiles/yasmin_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/yasmin_msgs/msg/state_machine__type_support.cpp.o[0m
+[115.663s] [ 33%] [32m[1mLinking CXX shared library libyasmin_msgs__rosidl_typesupport_cpp.so[0m
+[116.263s] [ 33%] Built target yasmin_msgs__rosidl_typesupport_cpp
+[116.438s] [ 35%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[121.223s] [ 37%] [32mBuilding CXX object CMakeFiles/yasmin_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/yasmin_msgs/msg/detail/dds_fastrtps/state__type_support.cpp.o[0m
+[129.836s] [ 38%] [32mBuilding CXX object CMakeFiles/yasmin_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/yasmin_msgs/msg/detail/dds_fastrtps/transition__type_support.cpp.o[0m
+[137.020s] [ 40%] [32mBuilding CXX object CMakeFiles/yasmin_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/yasmin_msgs/msg/detail/dds_fastrtps/state_machine__type_support.cpp.o[0m
+[141.298s] [ 42%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[142.334s] [ 44%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[143.367s] [ 46%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[151.680s] [ 48%] [32mBuilding CXX object CMakeFiles/yasmin_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/yasmin_msgs/msg/detail/state__type_support_c.cpp.o[0m
+[151.909s] [ 50%] [32mBuilding CXX object CMakeFiles/yasmin_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/yasmin_msgs/msg/state__type_support.cpp.o[0m
+[154.092s] [ 51%] [32m[1mLinking CXX shared library libyasmin_msgs__rosidl_typesupport_fastrtps_cpp.so[0m
+[154.102s] [ 53%] [32mBuilding CXX object CMakeFiles/yasmin_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/yasmin_msgs/msg/transition__type_support.cpp.o[0m
+[155.181s] [ 55%] [32mBuilding C object CMakeFiles/yasmin_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/yasmin_msgs/msg/detail/state__type_support.c.o[0m
+[155.914s] [ 57%] [32mBuilding CXX object CMakeFiles/yasmin_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/yasmin_msgs/msg/state_machine__type_support.cpp.o[0m
+[156.799s] [ 59%] [32mBuilding C object CMakeFiles/yasmin_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/yasmin_msgs/msg/detail/transition__type_support.c.o[0m
+[157.140s] [ 59%] Built target yasmin_msgs__rosidl_typesupport_fastrtps_cpp
+[157.810s] [ 61%] [32mBuilding C object CMakeFiles/yasmin_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/yasmin_msgs/msg/detail/state_machine__type_support.c.o[0m
+[158.468s] [ 62%] [32m[1mLinking CXX shared library libyasmin_msgs__rosidl_typesupport_c.so[0m
+[159.783s] [ 64%] [32m[1mLinking C shared library libyasmin_msgs__rosidl_typesupport_introspection_c.so[0m
+[160.398s] [ 64%] Built target yasmin_msgs__rosidl_typesupport_c
+[160.911s] [ 64%] Built target yasmin_msgs__rosidl_typesupport_introspection_c
+[163.168s] [ 66%] [32mBuilding CXX object CMakeFiles/yasmin_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/yasmin_msgs/msg/detail/state_machine__type_support_c.cpp.o[0m
+[176.546s] [ 68%] [32mBuilding CXX object CMakeFiles/yasmin_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/yasmin_msgs/msg/detail/transition__type_support_c.cpp.o[0m
+[186.113s] [ 70%] [32m[1mLinking CXX shared library libyasmin_msgs__rosidl_typesupport_fastrtps_c.so[0m
+[187.475s] [ 70%] Built target yasmin_msgs__rosidl_typesupport_fastrtps_c
+[187.687s] [ 72%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[193.630s] [ 74%] [32mBuilding CXX object CMakeFiles/yasmin_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/yasmin_msgs/msg/detail/state__type_support.cpp.o[0m
+[200.330s] [ 75%] [32mBuilding CXX object CMakeFiles/yasmin_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/yasmin_msgs/msg/detail/state_machine__type_support.cpp.o[0m
+[207.473s] [ 77%] [32mBuilding CXX object CMakeFiles/yasmin_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/yasmin_msgs/msg/detail/transition__type_support.cpp.o[0m
+[212.419s] [ 79%] [32m[1mLinking CXX shared library libyasmin_msgs__rosidl_typesupport_introspection_cpp.so[0m
+[213.445s] [ 79%] Built target yasmin_msgs__rosidl_typesupport_introspection_cpp
+[213.826s] [ 79%] Built target yasmin_msgs
+[214.197s] [ 81%] [34m[1mGenerating Python code for ROS interfaces[0m
+[220.925s] [ 81%] Built target yasmin_msgs__py
+[221.303s] [ 83%] [32mBuilding C object CMakeFiles/yasmin_msgs__rosidl_generator_py.dir/rosidl_generator_py/yasmin_msgs/msg/_state_s.c.o[0m
+[223.611s] [ 85%] [32mBuilding C object CMakeFiles/yasmin_msgs__rosidl_generator_py.dir/rosidl_generator_py/yasmin_msgs/msg/_state_machine_s.c.o[0m
+[225.508s] [ 87%] [32mBuilding C object CMakeFiles/yasmin_msgs__rosidl_generator_py.dir/rosidl_generator_py/yasmin_msgs/msg/_transition_s.c.o[0m
+[227.366s] [ 88%] [32m[1mLinking C shared library libyasmin_msgs__rosidl_generator_py.so[0m
+[228.062s] [ 88%] Built target yasmin_msgs__rosidl_generator_py
+[228.490s] [ 90%] [32mBuilding C object CMakeFiles/yasmin_msgs_s__rosidl_typesupport_fastrtps_c.dir/rosidl_generator_py/yasmin_msgs/_yasmin_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[230.359s] [ 92%] [32m[1mLinking C shared module rosidl_generator_py/yasmin_msgs/yasmin_msgs_s__rosidl_typesupport_fastrtps_c.so[0m
+[230.972s] [ 92%] Built target yasmin_msgs_s__rosidl_typesupport_fastrtps_c
+[231.381s] [ 94%] [32mBuilding C object CMakeFiles/yasmin_msgs_s__rosidl_typesupport_c.dir/rosidl_generator_py/yasmin_msgs/_yasmin_msgs_s.ep.rosidl_typesupport_c.c.o[0m
+[233.160s] [ 96%] [32m[1mLinking C shared module rosidl_generator_py/yasmin_msgs/yasmin_msgs_s__rosidl_typesupport_c.so[0m
+[233.673s] [ 96%] Built target yasmin_msgs_s__rosidl_typesupport_c
+[234.061s] [ 98%] [32mBuilding C object CMakeFiles/yasmin_msgs_s__rosidl_typesupport_introspection_c.dir/rosidl_generator_py/yasmin_msgs/_yasmin_msgs_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[235.899s] [100%] [32m[1mLinking C shared module rosidl_generator_py/yasmin_msgs/yasmin_msgs_s__rosidl_typesupport_introspection_c.so[0m
+[236.488s] [100%] Built target yasmin_msgs_s__rosidl_typesupport_introspection_c
+[236.682s] Invoked command in '/home/E14Raspberry/ScooperBot/tennisbot_ws/build/yasmin_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/E14Raspberry/ScooperBot/tennisbot_ws/build/yasmin_msgs -- -j4 -l4
+[238.995s] Invoking command in '/home/E14Raspberry/ScooperBot/tennisbot_ws/build/yasmin_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/E14Raspberry/ScooperBot/tennisbot_ws/build/yasmin_msgs
+[239.157s] -- Install configuration: ""
+[239.162s] -- Execute custom install script
+[239.168s] -- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_msgs/share/ament_index/resource_index/rosidl_interfaces/yasmin_msgs
+[239.369s] -- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_msgs/share/yasmin_msgs/msg/State.json
+[239.564s] -- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_msgs/share/yasmin_msgs/msg/Transition.json
+[239.759s] -- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_msgs/share/yasmin_msgs/msg/StateMachine.json
+[239.959s] -- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_msgs/include/yasmin_msgs/yasmin_msgs/msg/detail/state__functions.h
+[240.153s] -- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_msgs/include/yasmin_msgs/yasmin_msgs/msg/detail/state__struct.h
+[240.359s] -- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_msgs/include/yasmin_msgs/yasmin_msgs/msg/detail/state__type_support.h
+[240.552s] -- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_msgs/include/yasmin_msgs/yasmin_msgs/msg/detail/state_machine__functions.h
+[240.733s] -- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_msgs/include/yasmin_msgs/yasmin_msgs/msg/detail/state_machine__struct.h
+[240.952s] -- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_msgs/include/yasmin_msgs/yasmin_msgs/msg/detail/state_machine__type_support.h
+[241.139s] -- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_msgs/include/yasmin_msgs/yasmin_msgs/msg/detail/transition__functions.h
+[241.355s] -- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_msgs/include/yasmin_msgs/yasmin_msgs/msg/detail/transition__struct.h
+[241.543s] -- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_msgs/include/yasmin_msgs/yasmin_msgs/msg/detail/transition__type_support.h
+[241.736s] -- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_msgs/include/yasmin_msgs/yasmin_msgs/msg/rosidl_generator_c__visibility_control.h
+[241.898s] -- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_msgs/include/yasmin_msgs/yasmin_msgs/msg/state.h
+[242.066s] -- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_msgs/include/yasmin_msgs/yasmin_msgs/msg/state_machine.h
+[242.223s] -- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_msgs/include/yasmin_msgs/yasmin_msgs/msg/transition.h
+[242.397s] -- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_msgs/share/yasmin_msgs/environment/library_path.sh
+[242.584s] -- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_msgs/share/yasmin_msgs/environment/library_path.dsv
+[242.779s] -- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_msgs/include/yasmin_msgs/yasmin_msgs/msg/detail/state__rosidl_typesupport_fastrtps_c.h
+[242.936s] -- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_msgs/include/yasmin_msgs/yasmin_msgs/msg/detail/state_machine__rosidl_typesupport_fastrtps_c.h
+[243.094s] -- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_msgs/include/yasmin_msgs/yasmin_msgs/msg/detail/transition__rosidl_typesupport_fastrtps_c.h
+[243.256s] -- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_msgs/include/yasmin_msgs/yasmin_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[243.432s] -- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_msgs/include/yasmin_msgs/yasmin_msgs/msg/detail/state__rosidl_typesupport_introspection_c.h
+[243.599s] -- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_msgs/include/yasmin_msgs/yasmin_msgs/msg/detail/state_machine__rosidl_typesupport_introspection_c.h
+[243.764s] -- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_msgs/include/yasmin_msgs/yasmin_msgs/msg/detail/transition__rosidl_typesupport_introspection_c.h
+[243.931s] -- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_msgs/include/yasmin_msgs/yasmin_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[244.104s] -- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_msgs/include/yasmin_msgs/yasmin_msgs/msg/detail/state__builder.hpp
+[244.263s] -- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_msgs/include/yasmin_msgs/yasmin_msgs/msg/detail/state__struct.hpp
+[244.421s] -- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_msgs/include/yasmin_msgs/yasmin_msgs/msg/detail/state__traits.hpp
+[244.628s] -- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_msgs/include/yasmin_msgs/yasmin_msgs/msg/detail/state__type_support.hpp
+[244.825s] -- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_msgs/include/yasmin_msgs/yasmin_msgs/msg/detail/state_machine__builder.hpp
+[245.014s] -- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_msgs/include/yasmin_msgs/yasmin_msgs/msg/detail/state_machine__struct.hpp
+[245.188s] -- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_msgs/include/yasmin_msgs/yasmin_msgs/msg/detail/state_machine__traits.hpp
+[245.359s] -- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_msgs/include/yasmin_msgs/yasmin_msgs/msg/detail/state_machine__type_support.hpp
+[245.531s] -- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_msgs/include/yasmin_msgs/yasmin_msgs/msg/detail/transition__builder.hpp
+[245.694s] -- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_msgs/include/yasmin_msgs/yasmin_msgs/msg/detail/transition__struct.hpp
+[245.851s] -- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_msgs/include/yasmin_msgs/yasmin_msgs/msg/detail/transition__traits.hpp
+[246.049s] -- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_msgs/include/yasmin_msgs/yasmin_msgs/msg/detail/transition__type_support.hpp
+[246.217s] -- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_msgs/include/yasmin_msgs/yasmin_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
+[246.416s] -- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_msgs/include/yasmin_msgs/yasmin_msgs/msg/state.hpp
+[246.575s] -- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_msgs/include/yasmin_msgs/yasmin_msgs/msg/state_machine.hpp
+[246.763s] -- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_msgs/include/yasmin_msgs/yasmin_msgs/msg/transition.hpp
+[246.937s] -- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_msgs/include/yasmin_msgs/yasmin_msgs/msg/detail/state__rosidl_typesupport_fastrtps_cpp.hpp
+[247.101s] -- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_msgs/include/yasmin_msgs/yasmin_msgs/msg/detail/state_machine__rosidl_typesupport_fastrtps_cpp.hpp
+[247.302s] -- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_msgs/include/yasmin_msgs/yasmin_msgs/msg/detail/transition__rosidl_typesupport_fastrtps_cpp.hpp
+[247.473s] -- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_msgs/include/yasmin_msgs/yasmin_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[247.643s] -- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_msgs/include/yasmin_msgs/yasmin_msgs/msg/detail/state__rosidl_typesupport_introspection_cpp.hpp
+[247.803s] -- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_msgs/include/yasmin_msgs/yasmin_msgs/msg/detail/state_machine__rosidl_typesupport_introspection_cpp.hpp
+[247.996s] -- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_msgs/include/yasmin_msgs/yasmin_msgs/msg/detail/transition__rosidl_typesupport_introspection_cpp.hpp
+[248.163s] -- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_msgs/share/yasmin_msgs/environment/pythonpath.sh
+[248.340s] -- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_msgs/share/yasmin_msgs/environment/pythonpath.dsv
+[248.552s] -- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_msgs/lib/python3.12/site-packages/yasmin_msgs-2.3.1-py3.12.egg-info/PKG-INFO
+[248.743s] -- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_msgs/lib/python3.12/site-packages/yasmin_msgs-2.3.1-py3.12.egg-info/SOURCES.txt
+[248.936s] -- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_msgs/lib/python3.12/site-packages/yasmin_msgs-2.3.1-py3.12.egg-info/dependency_links.txt
+[249.101s] -- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_msgs/lib/python3.12/site-packages/yasmin_msgs-2.3.1-py3.12.egg-info/top_level.txt
+[249.317s] -- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_msgs/lib/python3.12/site-packages/yasmin_msgs/__init__.py
+[249.487s] -- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_msgs/lib/python3.12/site-packages/yasmin_msgs/_yasmin_msgs_s.ep.rosidl_typesupport_c.c
+[249.646s] -- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_msgs/lib/python3.12/site-packages/yasmin_msgs/_yasmin_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+[249.813s] -- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_msgs/lib/python3.12/site-packages/yasmin_msgs/_yasmin_msgs_s.ep.rosidl_typesupport_introspection_c.c
+[249.974s] -- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_msgs/lib/python3.12/site-packages/yasmin_msgs/msg/__init__.py
+[250.143s] -- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_msgs/lib/python3.12/site-packages/yasmin_msgs/msg/_state.py
+[250.310s] -- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_msgs/lib/python3.12/site-packages/yasmin_msgs/msg/_state_machine.py
+[250.475s] -- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_msgs/lib/python3.12/site-packages/yasmin_msgs/msg/_state_machine_s.c
+[250.639s] -- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_msgs/lib/python3.12/site-packages/yasmin_msgs/msg/_state_s.c
+[250.809s] -- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_msgs/lib/python3.12/site-packages/yasmin_msgs/msg/_transition.py
+[250.970s] -- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_msgs/lib/python3.12/site-packages/yasmin_msgs/msg/_transition_s.c
+[251.137s] -- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_msgs/lib/python3.12/site-packages/yasmin_msgs/yasmin_msgs_s__rosidl_typesupport_c.so
+[251.317s] -- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_msgs/lib/python3.12/site-packages/yasmin_msgs/yasmin_msgs_s__rosidl_typesupport_fastrtps_c.so
+[251.493s] -- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_msgs/lib/python3.12/site-packages/yasmin_msgs/yasmin_msgs_s__rosidl_typesupport_introspection_c.so
+[251.661s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_msgs/lib/python3.12/site-packages/yasmin_msgs/yasmin_msgs_s__rosidl_typesupport_fastrtps_c.so
+[251.666s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_msgs/lib/python3.12/site-packages/yasmin_msgs/yasmin_msgs_s__rosidl_typesupport_introspection_c.so
+[251.670s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_msgs/lib/python3.12/site-packages/yasmin_msgs/yasmin_msgs_s__rosidl_typesupport_c.so
+[251.673s] -- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_msgs/share/yasmin_msgs/msg/State.idl
+[251.842s] -- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_msgs/share/yasmin_msgs/msg/Transition.idl
+[252.007s] -- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_msgs/share/yasmin_msgs/msg/StateMachine.idl
+[252.181s] -- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_msgs/share/yasmin_msgs/msg/State.msg
+[252.337s] -- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_msgs/share/yasmin_msgs/msg/Transition.msg
+[252.489s] -- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_msgs/share/yasmin_msgs/msg/StateMachine.msg
+[252.663s] -- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_msgs/share/ament_index/resource_index/package_run_dependencies/yasmin_msgs
+[252.814s] -- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_msgs/share/ament_index/resource_index/parent_prefix_path/yasmin_msgs
+[252.970s] -- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_msgs/share/yasmin_msgs/environment/ament_prefix_path.sh
+[253.123s] -- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_msgs/share/yasmin_msgs/environment/ament_prefix_path.dsv
+[253.306s] -- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_msgs/share/yasmin_msgs/environment/path.sh
+[253.459s] -- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_msgs/share/yasmin_msgs/environment/path.dsv
+[253.616s] -- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_msgs/share/yasmin_msgs/local_setup.bash
+[253.770s] -- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_msgs/share/yasmin_msgs/local_setup.sh
+[253.927s] -- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_msgs/share/yasmin_msgs/local_setup.zsh
+[254.088s] -- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_msgs/share/yasmin_msgs/local_setup.dsv
+[254.247s] -- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_msgs/share/yasmin_msgs/package.dsv
+[254.405s] -- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_msgs/share/ament_index/resource_index/packages/yasmin_msgs
+[254.566s] -- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_msgs/share/yasmin_msgs/cmake/rosidl_cmake-extras.cmake
+[254.737s] -- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_msgs/share/yasmin_msgs/cmake/ament_cmake_export_include_directories-extras.cmake
+[254.906s] -- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_msgs/share/yasmin_msgs/cmake/ament_cmake_export_libraries-extras.cmake
+[255.078s] -- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_msgs/share/yasmin_msgs/cmake/ament_cmake_export_targets-extras.cmake
+[255.241s] -- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_msgs/share/yasmin_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[255.401s] -- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_msgs/share/yasmin_msgs/cmake/ament_cmake_export_dependencies-extras.cmake
+[255.574s] -- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_msgs/share/yasmin_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[255.741s] -- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_msgs/share/yasmin_msgs/cmake/yasmin_msgsConfig.cmake
+[255.903s] -- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_msgs/share/yasmin_msgs/cmake/yasmin_msgsConfig-version.cmake
+[256.070s] -- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_msgs/share/yasmin_msgs/package.xml
+[256.237s] -- Installing: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_msgs/lib/libyasmin_msgs__rosidl_generator_c.so
+[256.253s] -- Set non-toolchain portion of runtime path of "/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_msgs/lib/libyasmin_msgs__rosidl_generator_c.so" to ""
+[256.258s] -- Installing: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_msgs/lib/libyasmin_msgs__rosidl_typesupport_fastrtps_c.so
+[256.265s] -- Set non-toolchain portion of runtime path of "/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_msgs/lib/libyasmin_msgs__rosidl_typesupport_fastrtps_c.so" to ""
+[256.267s] -- Installing: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_msgs/lib/libyasmin_msgs__rosidl_typesupport_introspection_c.so
+[256.276s] -- Set non-toolchain portion of runtime path of "/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_msgs/lib/libyasmin_msgs__rosidl_typesupport_introspection_c.so" to ""
+[256.279s] -- Installing: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_msgs/lib/libyasmin_msgs__rosidl_typesupport_c.so
+[256.291s] -- Set non-toolchain portion of runtime path of "/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_msgs/lib/libyasmin_msgs__rosidl_typesupport_c.so" to ""
+[256.292s] -- Installing: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_msgs/lib/libyasmin_msgs__rosidl_typesupport_fastrtps_cpp.so
+[256.310s] -- Set non-toolchain portion of runtime path of "/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_msgs/lib/libyasmin_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""
+[256.314s] -- Installing: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_msgs/lib/libyasmin_msgs__rosidl_typesupport_introspection_cpp.so
+[256.324s] -- Set non-toolchain portion of runtime path of "/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_msgs/lib/libyasmin_msgs__rosidl_typesupport_introspection_cpp.so" to ""
+[256.325s] -- Installing: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_msgs/lib/libyasmin_msgs__rosidl_typesupport_cpp.so
+[256.333s] -- Set non-toolchain portion of runtime path of "/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_msgs/lib/libyasmin_msgs__rosidl_typesupport_cpp.so" to ""
+[256.871s] Listing '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_msgs/lib/python3.12/site-packages/yasmin_msgs'...
+[256.874s] Compiling '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_msgs/lib/python3.12/site-packages/yasmin_msgs/__init__.py'...
+[256.876s] Listing '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_msgs/lib/python3.12/site-packages/yasmin_msgs/msg'...
+[256.880s] Compiling '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_msgs/lib/python3.12/site-packages/yasmin_msgs/msg/__init__.py'...
+[256.883s] Compiling '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_msgs/lib/python3.12/site-packages/yasmin_msgs/msg/_state.py'...
+[256.886s] Compiling '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_msgs/lib/python3.12/site-packages/yasmin_msgs/msg/_state_machine.py'...
+[256.888s] Compiling '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_msgs/lib/python3.12/site-packages/yasmin_msgs/msg/_transition.py'...
+[256.931s] -- Installing: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_msgs/lib/libyasmin_msgs__rosidl_generator_py.so
+[256.939s] -- Set non-toolchain portion of runtime path of "/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_msgs/lib/libyasmin_msgs__rosidl_generator_py.so" to ""
+[256.941s] -- Installing: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_msgs/share/yasmin_msgs/cmake/export_yasmin_msgs__rosidl_generator_cExport.cmake
+[256.946s] -- Installing: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_msgs/share/yasmin_msgs/cmake/export_yasmin_msgs__rosidl_generator_cExport-noconfig.cmake
+[256.952s] -- Installing: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_msgs/share/yasmin_msgs/cmake/export_yasmin_msgs__rosidl_typesupport_fastrtps_cExport.cmake
+[256.956s] -- Installing: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_msgs/share/yasmin_msgs/cmake/export_yasmin_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[256.961s] -- Installing: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_msgs/share/yasmin_msgs/cmake/yasmin_msgs__rosidl_typesupport_introspection_cExport.cmake
+[256.970s] -- Installing: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_msgs/share/yasmin_msgs/cmake/yasmin_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[256.979s] -- Installing: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_msgs/share/yasmin_msgs/cmake/yasmin_msgs__rosidl_typesupport_cExport.cmake
+[256.980s] -- Installing: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_msgs/share/yasmin_msgs/cmake/yasmin_msgs__rosidl_typesupport_cExport-noconfig.cmake
+[256.987s] -- Installing: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_msgs/share/yasmin_msgs/cmake/export_yasmin_msgs__rosidl_generator_cppExport.cmake
+[256.991s] -- Installing: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_msgs/share/yasmin_msgs/cmake/export_yasmin_msgs__rosidl_typesupport_fastrtps_cppExport.cmake
+[256.994s] -- Installing: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_msgs/share/yasmin_msgs/cmake/export_yasmin_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[256.997s] -- Installing: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_msgs/share/yasmin_msgs/cmake/yasmin_msgs__rosidl_typesupport_introspection_cppExport.cmake
+[257.002s] -- Installing: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_msgs/share/yasmin_msgs/cmake/yasmin_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[257.009s] -- Installing: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_msgs/share/yasmin_msgs/cmake/yasmin_msgs__rosidl_typesupport_cppExport.cmake
+[257.014s] -- Installing: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_msgs/share/yasmin_msgs/cmake/yasmin_msgs__rosidl_typesupport_cppExport-noconfig.cmake
+[257.018s] -- Installing: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_msgs/share/yasmin_msgs/cmake/export_yasmin_msgs__rosidl_generator_pyExport.cmake
+[257.025s] -- Installing: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_msgs/share/yasmin_msgs/cmake/export_yasmin_msgs__rosidl_generator_pyExport-noconfig.cmake
+[257.047s] Invoked command in '/home/E14Raspberry/ScooperBot/tennisbot_ws/build/yasmin_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/E14Raspberry/ScooperBot/tennisbot_ws/build/yasmin_msgs

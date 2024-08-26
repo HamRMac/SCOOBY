@@ -1,0 +1,2 @@
+/usr/bin/ar qc libyasmin_viewer_lib.a CMakeFiles/yasmin_viewer_lib.dir/src/yasmin_viewer/yasmin_viewer_pub.cpp.o
+/usr/bin/ranlib libyasmin_viewer_lib.a

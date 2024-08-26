@@ -119,7 +119,7 @@ def main(args=None):
 
     detect_ball = DetectBall()
     while rclpy.ok():
-        rclpy.spin_once(detect_ball)
+        rclpy.spin(detect_ball)
 
     detect_ball.destroy_node()
     rclpy.shutdown()

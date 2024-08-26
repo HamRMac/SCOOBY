@@ -1,0 +1,1 @@
+Invoking command in '/home/E14Raspberry/ScooperBot/tennisbot_ws/build/ros2_nav_to_pose_msgs': /usr/bin/cmake /home/E14Raspberry/ScooperBot/tennisbot_ws/src/ros2_nav_to_pose_msgs -DCMAKE_INSTALL_PREFIX=/home/E14Raspberry/ScooperBot/tennisbot_ws/install/ros2_nav_to_pose_msgs

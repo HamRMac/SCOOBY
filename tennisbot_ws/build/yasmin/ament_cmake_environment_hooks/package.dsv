@@ -1,0 +1,4 @@
+source;share/yasmin/local_setup.bash
+source;share/yasmin/local_setup.dsv
+source;share/yasmin/local_setup.sh
+source;share/yasmin/local_setup.zsh

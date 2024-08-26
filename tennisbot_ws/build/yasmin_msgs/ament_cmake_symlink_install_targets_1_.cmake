@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_targets("TARGET_FILES" "/home/E14Raspberry/ScooperBot/tennisbot_ws/build/yasmin_msgs/rosidl_generator_py/yasmin_msgs/yasmin_msgs_s__rosidl_typesupport_introspection_c.so" "TARGETS" "yasmin_msgs_s__rosidl_typesupport_introspection_c" "DESTINATION" "lib/python3.12/site-packages/yasmin_msgs")

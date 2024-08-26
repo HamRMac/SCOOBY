@@ -1,0 +1,4 @@
+source;share/yasmin_ros/local_setup.bash
+source;share/yasmin_ros/local_setup.dsv
+source;share/yasmin_ros/local_setup.sh
+source;share/yasmin_ros/local_setup.zsh

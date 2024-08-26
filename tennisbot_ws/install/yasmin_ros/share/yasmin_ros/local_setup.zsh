@@ -1,0 +1,1 @@
+/home/E14Raspberry/ScooperBot/tennisbot_ws/build/yasmin_ros/ament_cmake_environment_hooks/local_setup.zsh
