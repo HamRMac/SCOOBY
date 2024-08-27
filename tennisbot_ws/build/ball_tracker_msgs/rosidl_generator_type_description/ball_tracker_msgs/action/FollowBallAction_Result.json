@@ -1,0 +1,26 @@
+{
+  "type_description_msg": {
+    "type_description": {
+      "type_name": "ball_tracker_msgs/action/FollowBallAction_Result",
+      "fields": [
+        {
+          "name": "current_distance",
+          "type": {
+            "type_id": 10,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        }
+      ]
+    },
+    "referenced_type_descriptions": []
+  },
+  "type_hashes": [
+    {
+      "type_name": "ball_tracker_msgs/action/FollowBallAction_Result",
+      "hash_string": "RIHS01_f98f202ed9848fab346d97f2287dbf50db76c9481f57c590ac833e9da52c419b"
+    }
+  ]
+}

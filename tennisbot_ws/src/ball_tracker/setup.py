@@ -16,8 +16,8 @@ setup(
     ],
     install_requires=['setuptools'],
     zip_safe=True,
-    maintainer='newans',
-    maintainer_email='josh.newans@gmail.com',
+    maintainer='e14',
+    maintainer_email='NA@mmail.com',
     description='TODO: Package description',
     license='TODO: License declaration',
     tests_require=['pytest'],
@@ -27,7 +27,8 @@ setup(
             'detect_ball_3d = ball_tracker.detect_ball_3d:main',
             'follow_ball = ball_tracker.follow_ball:main',
             'detect_ball_nn = ball_tracker.detect_ball_nn:main',
-            'detect_ball_nn_offload = ball_tracker.detect_ball_nn_offload:main'
+            'detect_ball_nn_offload = ball_tracker.detect_ball_nn_offload:main',
+            'follow_ball_action_server = ball_tracker.follow_ball_action_server:main',
         ],
     },
 )

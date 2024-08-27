@@ -1,0 +1,59 @@
+[0.183s] Invoking command in '/home/E14Raspberry/ScooperBot/tennisbot_ws/build/ball_tracker_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/twist_stamper:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/ros2_nav_to_pose:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/ball_tracker:/opt/ros/jazzy /usr/bin/cmake /home/E14Raspberry/ScooperBot/tennisbot_ws/src/ball_tracker_msgs -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/E14Raspberry/ScooperBot/tennisbot_ws/install/ball_tracker_msgs
+[0.452s] -- Found ament_cmake: 2.5.2 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[3.679s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[3.833s] -- Found rclpy: 7.1.1 (/opt/ros/jazzy/share/rclpy/cmake)
+[3.839s] -- Found sensor_msgs: 5.3.5 (/opt/ros/jazzy/share/sensor_msgs/cmake)
+[4.360s] -- Found rosidl_generator_c: 4.6.3 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[4.487s] -- Found rosidl_generator_cpp: 4.6.3 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[4.648s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[4.835s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[5.741s] -- Found rosidl_default_generators: 1.6.0 (/opt/ros/jazzy/share/rosidl_default_generators/cmake)
+[5.877s] -- Found rosidl_adapter: 4.6.3 (/opt/ros/jazzy/share/rosidl_adapter/cmake)
+[9.754s] [31mCMake Error at /opt/ros/jazzy/share/rosidl_adapter/cmake/rosidl_adapt_interfaces.cmake:57 (message):
+[9.756s]   execute_process(/usr/bin/python3 -m rosidl_adapter --package-name
+[9.758s]   ball_tracker_msgs --arguments-file
+[9.762s]   /home/E14Raspberry/ScooperBot/tennisbot_ws/build/ball_tracker_msgs/rosidl_adapter__arguments__ball_tracker_msgs.json
+[9.765s]   --output-dir
+[9.768s]   /home/E14Raspberry/ScooperBot/tennisbot_ws/build/ball_tracker_msgs/rosidl_adapter/ball_tracker_msgs
+[9.770s]   --output-file
+[9.772s]   /home/E14Raspberry/ScooperBot/tennisbot_ws/build/ball_tracker_msgs/rosidl_adapter/ball_tracker_msgs.idls)
+[9.774s]   returned error code 1:
+[9.775s] 
+[9.777s]   Traceback (most recent call last):
+[9.780s] 
+[9.783s]     File "<frozen runpy>", line 198, in _run_module_as_main
+[9.785s]     File "<frozen runpy>", line 88, in _run_code
+[9.787s]     File "/opt/ros/jazzy/lib/python3.12/site-packages/rosidl_adapter/__main__.py", line 19, in <module>
+[9.789s]       sys.exit(main())
+[9.793s]                ^^^^^^
+[9.795s]     File "/opt/ros/jazzy/lib/python3.12/site-packages/rosidl_adapter/main.py", line 53, in main
+[9.800s]       abs_idl_file = convert_to_idl(
+[9.802s]                      ^^^^^^^^^^^^^^^
+[9.803s]     File "/opt/ros/jazzy/lib/python3.12/site-packages/rosidl_adapter/__init__.py", line 29, in convert_to_idl
+[9.804s]       return convert_action_to_idl(
+[9.806s]              ^^^^^^^^^^^^^^^^^^^^^^
+[9.807s]     File "/opt/ros/jazzy/lib/python3.12/site-packages/rosidl_adapter/action/__init__.py", line 28, in convert_action_to_idl
+[9.808s]       action = parse_action_string(package_name, input_file.stem, content)
+[9.809s]                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[9.813s]     File "/opt/ros/jazzy/lib/python3.12/site-packages/rosidl_adapter/parser.py", line 903, in parse_action_string
+[9.815s]       goal_message = parse_message_string(
+[9.817s]                      ^^^^^^^^^^^^^^^^^^^^^
+[9.818s]     File "/opt/ros/jazzy/lib/python3.12/site-packages/rosidl_adapter/parser.py", line 545, in parse_message_string
+[9.821s]       msg = MessageSpecification(pkg_name, msg_name, fields, constants)
+[9.824s]             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[9.827s]     File "/opt/ros/jazzy/lib/python3.12/site-packages/rosidl_adapter/parser.py", line 389, in __init__
+[9.834s]       self.base_type = BaseType(
+[9.835s]                        ^^^^^^^^^
+[9.836s]     File "/opt/ros/jazzy/lib/python3.12/site-packages/rosidl_adapter/parser.py", line 206, in __init__
+[9.838s]       raise InvalidResourceName(
+[9.839s] 
+[9.841s]   rosidl_adapter.parser.InvalidResourceName: 'follow_ball_Goal' is an invalid
+[9.842s]   message name.  It should have the pattern '^[A-Z][A-Za-z0-9]*$'
+[9.843s] 
+[9.844s] Call Stack (most recent call first):
+[9.845s]   /opt/ros/jazzy/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:132 (rosidl_adapt_interfaces)
+[9.846s]   CMakeLists.txt:25 (rosidl_generate_interfaces)
+[9.848s] 
+[9.849s] [0m
+[9.850s] -- Configuring incomplete, errors occurred!
+[9.857s] Invoked command in '/home/E14Raspberry/ScooperBot/tennisbot_ws/build/ball_tracker_msgs' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/twist_stamper:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/ros2_nav_to_pose:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/ball_tracker:/opt/ros/jazzy /usr/bin/cmake /home/E14Raspberry/ScooperBot/tennisbot_ws/src/ball_tracker_msgs -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/E14Raspberry/ScooperBot/tennisbot_ws/install/ball_tracker_msgs

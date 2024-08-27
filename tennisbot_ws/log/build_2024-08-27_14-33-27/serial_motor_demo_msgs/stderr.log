@@ -1,0 +1,7 @@
+gmake[2]: *** wait: No child processes.  Stop.
+gmake[2]: *** Waiting for unfinished jobs....
+gmake[2]: *** wait: No child processes.  Stop.
+gmake[2]: *** [CMakeFiles/serial_motor_demo_msgs__rosidl_generator_type_description.dir/build.make:103: CMakeFiles/serial_motor_demo_msgs__rosidl_generator_type_description.dir/depend] Interrupt
+gmake[1]: *** [CMakeFiles/Makefile2:451: CMakeFiles/ament_cmake_python_symlink_serial_motor_demo_msgs.dir/all] Error 2
+gmake[1]: *** [CMakeFiles/Makefile2:214: CMakeFiles/serial_motor_demo_msgs__rosidl_generator_type_description.dir/all] Interrupt
+gmake: *** [Makefile:146: all] Interrupt

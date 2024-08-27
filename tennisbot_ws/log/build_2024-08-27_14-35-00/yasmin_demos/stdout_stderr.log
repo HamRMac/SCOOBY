@@ -1,0 +1,12 @@
+[ 25%] Built target yasmin_demo
+[ 50%] Built target action_client_demo
+[ 50%] Built target ament_cmake_python_symlink_yasmin_demos
+[ 75%] Built target service_client_demo
+running egg_info
+writing yasmin_demos.egg-info/PKG-INFO
+writing dependency_links to yasmin_demos.egg-info/dependency_links.txt
+writing top-level names to yasmin_demos.egg-info/top_level.txt
+reading manifest file 'yasmin_demos.egg-info/SOURCES.txt'
+writing manifest file 'yasmin_demos.egg-info/SOURCES.txt'
+[ 75%] Built target ament_cmake_python_build_yasmin_demos_egg
+[100%] Built target monitor_demo

@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_targets("TARGET_FILES" "/home/E14Raspberry/ScooperBot/tennisbot_ws/build/ball_tracker_msgs/rosidl_generator_py/ball_tracker_msgs/ball_tracker_msgs_s__rosidl_typesupport_c.so" "TARGETS" "ball_tracker_msgs_s__rosidl_typesupport_c" "DESTINATION" "lib/python3.12/site-packages/ball_tracker_msgs")

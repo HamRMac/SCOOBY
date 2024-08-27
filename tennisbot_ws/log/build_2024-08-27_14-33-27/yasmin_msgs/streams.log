@@ -1,0 +1,5 @@
+[0.442s] Invoking command in '/home/E14Raspberry/ScooperBot/tennisbot_ws/build/yasmin_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/twist_stamper:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/ros2_nav_to_pose:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/ball_tracker:/opt/ros/jazzy /usr/bin/cmake --build /home/E14Raspberry/ScooperBot/tennisbot_ws/build/yasmin_msgs -- -j4 -l4
+[3.163s] gmake[2]: *** [CMakeFiles/ament_cmake_python_symlink_yasmin_msgs.dir/build.make:85: CMakeFiles/ament_cmake_python_symlink_yasmin_msgs.dir/depend] Interrupt
+[3.193s] gmake[1]: *** [CMakeFiles/Makefile2:451: CMakeFiles/ament_cmake_python_symlink_yasmin_msgs.dir/all] Interrupt
+[3.198s] gmake[1]: *** [CMakeFiles/Makefile2:216: CMakeFiles/yasmin_msgs__rosidl_generator_type_description.dir/all] Interrupt
+[3.220s] gmake: *** [Makefile:146: all] Interrupt

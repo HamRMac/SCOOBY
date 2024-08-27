@@ -1,0 +1,189 @@
+[0.182s] Invoking command in '/home/E14Raspberry/ScooperBot/tennisbot_ws/build/ball_tracker_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/twist_stamper:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/ros2_nav_to_pose:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/ball_tracker:/opt/ros/jazzy /usr/bin/cmake /home/E14Raspberry/ScooperBot/tennisbot_ws/src/ball_tracker_msgs -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/E14Raspberry/ScooperBot/tennisbot_ws/install/ball_tracker_msgs
+[0.445s] -- Found ament_cmake: 2.5.2 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[3.928s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[4.080s] -- Found rclpy: 7.1.1 (/opt/ros/jazzy/share/rclpy/cmake)
+[4.082s] -- Found sensor_msgs: 5.3.5 (/opt/ros/jazzy/share/sensor_msgs/cmake)
+[4.756s] -- Found rosidl_generator_c: 4.6.3 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[4.888s] -- Found rosidl_generator_cpp: 4.6.3 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[5.047s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[5.235s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[6.143s] -- Found rosidl_default_generators: 1.6.0 (/opt/ros/jazzy/share/rosidl_default_generators/cmake)
+[6.275s] -- Found rosidl_adapter: 4.6.3 (/opt/ros/jazzy/share/rosidl_adapter/cmake)
+[16.734s] -- Found ament_cmake_ros: 0.12.0 (/opt/ros/jazzy/share/ament_cmake_ros/cmake)
+[30.036s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[35.020s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[35.231s] -- Found python_cmake_module: 0.11.1 (/opt/ros/jazzy/share/python_cmake_module/cmake)
+[37.338s] -- Found PythonExtra: /usr/bin/python3  
+[44.148s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter Development NumPy Development.Module Development.Embed 
+[45.121s] -- Configuring done (44.7s)
+[45.810s] -- Generating done (0.5s)
+[45.867s] -- Build files have been written to: /home/E14Raspberry/ScooperBot/tennisbot_ws/build/ball_tracker_msgs
+[45.929s] Invoked command in '/home/E14Raspberry/ScooperBot/tennisbot_ws/build/ball_tracker_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/twist_stamper:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/ros2_nav_to_pose:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/ball_tracker:/opt/ros/jazzy /usr/bin/cmake /home/E14Raspberry/ScooperBot/tennisbot_ws/src/ball_tracker_msgs -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/E14Raspberry/ScooperBot/tennisbot_ws/install/ball_tracker_msgs
+[45.948s] Invoking command in '/home/E14Raspberry/ScooperBot/tennisbot_ws/build/ball_tracker_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/twist_stamper:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/ros2_nav_to_pose:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/ball_tracker:/opt/ros/jazzy /usr/bin/cmake --build /home/E14Raspberry/ScooperBot/tennisbot_ws/build/ball_tracker_msgs -- -j4 -l4
+[47.070s] [  2%] [34m[1mGenerating type hashes for ROS interfaces[0m
+[47.273s] [  2%] Built target ament_cmake_python_symlink_ball_tracker_msgs
+[50.985s] [  2%] Built target ball_tracker_msgs__rosidl_generator_type_description
+[51.245s] [  5%] [34m[1mGenerating C code for ROS interfaces[0m
+[51.499s] running egg_info
+[51.507s] creating ball_tracker_msgs.egg-info
+[51.930s] [  8%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[52.024s] writing ball_tracker_msgs.egg-info/PKG-INFO
+[52.032s] writing dependency_links to ball_tracker_msgs.egg-info/dependency_links.txt
+[52.044s] writing top-level names to ball_tracker_msgs.egg-info/top_level.txt
+[52.045s] writing manifest file 'ball_tracker_msgs.egg-info/SOURCES.txt'
+[53.311s] reading manifest file 'ball_tracker_msgs.egg-info/SOURCES.txt'
+[53.322s] writing manifest file 'ball_tracker_msgs.egg-info/SOURCES.txt'
+[53.737s] [  8%] Built target ament_cmake_python_build_ball_tracker_msgs_egg
+[59.701s] [ 11%] [32mBuilding C object CMakeFiles/ball_tracker_msgs__rosidl_generator_c.dir/rosidl_generator_c/ball_tracker_msgs/action/detail/follow_ball_action__description.c.o[0m
+[60.292s] [ 11%] Built target ball_tracker_msgs__cpp
+[61.442s] [ 14%] [32mBuilding C object CMakeFiles/ball_tracker_msgs__rosidl_generator_c.dir/rosidl_generator_c/ball_tracker_msgs/action/detail/follow_ball_action__type_support.c.o[0m
+[62.309s] [ 17%] [32mBuilding C object CMakeFiles/ball_tracker_msgs__rosidl_generator_c.dir/rosidl_generator_c/ball_tracker_msgs/action/detail/follow_ball_action__functions.c.o[0m
+[64.669s] [ 20%] [32m[1mLinking C shared library libball_tracker_msgs__rosidl_generator_c.so[0m
+[65.362s] [ 20%] Built target ball_tracker_msgs__rosidl_generator_c
+[65.589s] [ 23%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[69.659s] [ 26%] [32mBuilding CXX object CMakeFiles/ball_tracker_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ball_tracker_msgs/action/follow_ball_action__type_support.cpp.o[0m
+[81.041s] [ 29%] [32m[1mLinking CXX shared library libball_tracker_msgs__rosidl_typesupport_cpp.so[0m
+[82.134s] [ 29%] Built target ball_tracker_msgs__rosidl_typesupport_cpp
+[82.370s] [ 32%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[87.457s] [ 35%] [32mBuilding C object CMakeFiles/ball_tracker_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ball_tracker_msgs/action/detail/follow_ball_action__type_support.c.o[0m
+[88.671s] [ 38%] [32m[1mLinking C shared library libball_tracker_msgs__rosidl_typesupport_introspection_c.so[0m
+[89.288s] [ 38%] Built target ball_tracker_msgs__rosidl_typesupport_introspection_c
+[89.518s] [ 41%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[93.658s] [ 44%] [32mBuilding CXX object CMakeFiles/ball_tracker_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/ball_tracker_msgs/action/follow_ball_action__type_support.cpp.o[0m
+[94.812s] [ 47%] [32m[1mLinking CXX shared library libball_tracker_msgs__rosidl_typesupport_c.so[0m
+[95.665s] [ 47%] Built target ball_tracker_msgs__rosidl_typesupport_c
+[95.896s] [ 50%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[100.744s] [ 52%] [32mBuilding CXX object CMakeFiles/ball_tracker_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ball_tracker_msgs/action/detail/follow_ball_action__type_support.cpp.o[0m
+[111.961s] [ 55%] [32m[1mLinking CXX shared library libball_tracker_msgs__rosidl_typesupport_introspection_cpp.so[0m
+[113.097s] [ 55%] Built target ball_tracker_msgs__rosidl_typesupport_introspection_cpp
+[113.375s] [ 58%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[119.960s] [ 61%] [32mBuilding CXX object CMakeFiles/ball_tracker_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ball_tracker_msgs/action/detail/dds_fastrtps/follow_ball_action__type_support.cpp.o[0m
+[135.026s] [ 64%] [32m[1mLinking CXX shared library libball_tracker_msgs__rosidl_typesupport_fastrtps_cpp.so[0m
+[136.114s] [ 64%] Built target ball_tracker_msgs__rosidl_typesupport_fastrtps_cpp
+[136.357s] [ 67%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[143.412s] [ 70%] [32mBuilding CXX object CMakeFiles/ball_tracker_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ball_tracker_msgs/action/detail/follow_ball_action__type_support_c.cpp.o[0m
+[152.471s] [ 73%] [32m[1mLinking CXX shared library libball_tracker_msgs__rosidl_typesupport_fastrtps_c.so[0m
+[153.314s] [ 73%] Built target ball_tracker_msgs__rosidl_typesupport_fastrtps_c
+[153.760s] [ 73%] Built target ball_tracker_msgs
+[154.215s] [ 76%] [34m[1mGenerating Python code for ROS interfaces[0m
+[163.921s] [ 76%] Built target ball_tracker_msgs__py
+[164.379s] [ 79%] [32mBuilding C object CMakeFiles/ball_tracker_msgs__rosidl_generator_py.dir/rosidl_generator_py/ball_tracker_msgs/action/_follow_ball_action_s.c.o[0m
+[167.875s] [ 82%] [32m[1mLinking C shared library libball_tracker_msgs__rosidl_generator_py.so[0m
+[168.694s] [ 82%] Built target ball_tracker_msgs__rosidl_generator_py
+[169.135s] [ 85%] [32mBuilding C object CMakeFiles/ball_tracker_msgs_s__rosidl_typesupport_fastrtps_c.dir/rosidl_generator_py/ball_tracker_msgs/_ball_tracker_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[171.507s] [ 88%] [32m[1mLinking C shared module rosidl_generator_py/ball_tracker_msgs/ball_tracker_msgs_s__rosidl_typesupport_fastrtps_c.so[0m
+[172.203s] [ 88%] Built target ball_tracker_msgs_s__rosidl_typesupport_fastrtps_c
+[172.650s] [ 91%] [32mBuilding C object CMakeFiles/ball_tracker_msgs_s__rosidl_typesupport_c.dir/rosidl_generator_py/ball_tracker_msgs/_ball_tracker_msgs_s.ep.rosidl_typesupport_c.c.o[0m
+[174.902s] [ 94%] [32m[1mLinking C shared module rosidl_generator_py/ball_tracker_msgs/ball_tracker_msgs_s__rosidl_typesupport_c.so[0m
+[175.616s] [ 94%] Built target ball_tracker_msgs_s__rosidl_typesupport_c
+[176.135s] [ 97%] [32mBuilding C object CMakeFiles/ball_tracker_msgs_s__rosidl_typesupport_introspection_c.dir/rosidl_generator_py/ball_tracker_msgs/_ball_tracker_msgs_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[178.375s] [100%] [32m[1mLinking C shared module rosidl_generator_py/ball_tracker_msgs/ball_tracker_msgs_s__rosidl_typesupport_introspection_c.so[0m
+[179.035s] [100%] Built target ball_tracker_msgs_s__rosidl_typesupport_introspection_c
+[179.252s] Invoked command in '/home/E14Raspberry/ScooperBot/tennisbot_ws/build/ball_tracker_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/twist_stamper:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/ros2_nav_to_pose:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/ball_tracker:/opt/ros/jazzy /usr/bin/cmake --build /home/E14Raspberry/ScooperBot/tennisbot_ws/build/ball_tracker_msgs -- -j4 -l4
+[181.075s] Invoking command in '/home/E14Raspberry/ScooperBot/tennisbot_ws/build/ball_tracker_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/twist_stamper:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/ros2_nav_to_pose:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/ball_tracker:/opt/ros/jazzy /usr/bin/cmake --install /home/E14Raspberry/ScooperBot/tennisbot_ws/build/ball_tracker_msgs
+[181.283s] -- Install configuration: ""
+[181.289s] -- Execute custom install script
+[181.292s] -- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/ball_tracker_msgs/share/ament_index/resource_index/rosidl_interfaces/ball_tracker_msgs
+[181.482s] -- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/ball_tracker_msgs/share/ball_tracker_msgs/action/FollowBallAction.json
+[181.679s] -- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/ball_tracker_msgs/include/ball_tracker_msgs/ball_tracker_msgs/action/detail/follow_ball_action__functions.h
+[181.870s] -- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/ball_tracker_msgs/include/ball_tracker_msgs/ball_tracker_msgs/action/detail/follow_ball_action__struct.h
+[182.066s] -- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/ball_tracker_msgs/include/ball_tracker_msgs/ball_tracker_msgs/action/detail/follow_ball_action__type_support.h
+[182.251s] -- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/ball_tracker_msgs/include/ball_tracker_msgs/ball_tracker_msgs/action/follow_ball_action.h
+[182.437s] -- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/ball_tracker_msgs/include/ball_tracker_msgs/ball_tracker_msgs/msg/rosidl_generator_c__visibility_control.h
+[182.620s] -- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/ball_tracker_msgs/share/ball_tracker_msgs/environment/library_path.sh
+[182.861s] -- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/ball_tracker_msgs/share/ball_tracker_msgs/environment/library_path.dsv
+[183.110s] -- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/ball_tracker_msgs/include/ball_tracker_msgs/ball_tracker_msgs/action/detail/follow_ball_action__rosidl_typesupport_fastrtps_c.h
+[183.329s] -- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/ball_tracker_msgs/include/ball_tracker_msgs/ball_tracker_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[183.526s] -- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/ball_tracker_msgs/include/ball_tracker_msgs/ball_tracker_msgs/action/detail/follow_ball_action__builder.hpp
+[183.727s] -- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/ball_tracker_msgs/include/ball_tracker_msgs/ball_tracker_msgs/action/detail/follow_ball_action__struct.hpp
+[183.911s] -- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/ball_tracker_msgs/include/ball_tracker_msgs/ball_tracker_msgs/action/detail/follow_ball_action__traits.hpp
+[184.108s] -- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/ball_tracker_msgs/include/ball_tracker_msgs/ball_tracker_msgs/action/detail/follow_ball_action__type_support.hpp
+[184.293s] -- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/ball_tracker_msgs/include/ball_tracker_msgs/ball_tracker_msgs/action/follow_ball_action.hpp
+[184.490s] -- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/ball_tracker_msgs/include/ball_tracker_msgs/ball_tracker_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
+[184.691s] -- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/ball_tracker_msgs/include/ball_tracker_msgs/ball_tracker_msgs/action/detail/follow_ball_action__rosidl_typesupport_fastrtps_cpp.hpp
+[184.891s] -- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/ball_tracker_msgs/include/ball_tracker_msgs/ball_tracker_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[185.082s] -- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/ball_tracker_msgs/include/ball_tracker_msgs/ball_tracker_msgs/action/detail/follow_ball_action__rosidl_typesupport_introspection_c.h
+[185.322s] -- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/ball_tracker_msgs/include/ball_tracker_msgs/ball_tracker_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[185.518s] -- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/ball_tracker_msgs/include/ball_tracker_msgs/ball_tracker_msgs/action/detail/follow_ball_action__rosidl_typesupport_introspection_cpp.hpp
+[185.706s] -- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/ball_tracker_msgs/share/ball_tracker_msgs/environment/pythonpath.sh
+[185.885s] -- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/ball_tracker_msgs/share/ball_tracker_msgs/environment/pythonpath.dsv
+[186.089s] -- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/ball_tracker_msgs/lib/python3.12/site-packages/ball_tracker_msgs-0.1.0-py3.12.egg-info/PKG-INFO
+[186.335s] -- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/ball_tracker_msgs/lib/python3.12/site-packages/ball_tracker_msgs-0.1.0-py3.12.egg-info/SOURCES.txt
+[186.565s] -- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/ball_tracker_msgs/lib/python3.12/site-packages/ball_tracker_msgs-0.1.0-py3.12.egg-info/dependency_links.txt
+[186.798s] -- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/ball_tracker_msgs/lib/python3.12/site-packages/ball_tracker_msgs-0.1.0-py3.12.egg-info/top_level.txt
+[186.998s] -- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/ball_tracker_msgs/lib/python3.12/site-packages/ball_tracker_msgs/__init__.py
+[187.183s] -- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/ball_tracker_msgs/lib/python3.12/site-packages/ball_tracker_msgs/_ball_tracker_msgs_s.ep.rosidl_typesupport_c.c
+[187.375s] -- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/ball_tracker_msgs/lib/python3.12/site-packages/ball_tracker_msgs/_ball_tracker_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+[187.558s] -- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/ball_tracker_msgs/lib/python3.12/site-packages/ball_tracker_msgs/_ball_tracker_msgs_s.ep.rosidl_typesupport_introspection_c.c
+[187.750s] -- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/ball_tracker_msgs/lib/python3.12/site-packages/ball_tracker_msgs/action/__init__.py
+[187.940s] -- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/ball_tracker_msgs/lib/python3.12/site-packages/ball_tracker_msgs/action/_follow_ball_action.py
+[188.128s] -- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/ball_tracker_msgs/lib/python3.12/site-packages/ball_tracker_msgs/action/_follow_ball_action_s.c
+[188.368s] -- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/ball_tracker_msgs/lib/python3.12/site-packages/ball_tracker_msgs/ball_tracker_msgs_s__rosidl_typesupport_c.so
+[188.564s] -- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/ball_tracker_msgs/lib/python3.12/site-packages/ball_tracker_msgs/ball_tracker_msgs_s__rosidl_typesupport_fastrtps_c.so
+[188.748s] -- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/ball_tracker_msgs/lib/python3.12/site-packages/ball_tracker_msgs/ball_tracker_msgs_s__rosidl_typesupport_introspection_c.so
+[188.938s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/ball_tracker_msgs/lib/python3.12/site-packages/ball_tracker_msgs/ball_tracker_msgs_s__rosidl_typesupport_fastrtps_c.so
+[188.949s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/ball_tracker_msgs/lib/python3.12/site-packages/ball_tracker_msgs/ball_tracker_msgs_s__rosidl_typesupport_introspection_c.so
+[188.953s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/ball_tracker_msgs/lib/python3.12/site-packages/ball_tracker_msgs/ball_tracker_msgs_s__rosidl_typesupport_c.so
+[188.958s] -- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/ball_tracker_msgs/share/ball_tracker_msgs/action/FollowBallAction.idl
+[189.140s] -- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/ball_tracker_msgs/share/ball_tracker_msgs/action/FollowBallAction.action
+[189.327s] -- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/ball_tracker_msgs/share/ament_index/resource_index/package_run_dependencies/ball_tracker_msgs
+[189.515s] -- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/ball_tracker_msgs/share/ament_index/resource_index/parent_prefix_path/ball_tracker_msgs
+[189.702s] -- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/ball_tracker_msgs/share/ball_tracker_msgs/environment/ament_prefix_path.sh
+[189.944s] -- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/ball_tracker_msgs/share/ball_tracker_msgs/environment/ament_prefix_path.dsv
+[190.181s] -- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/ball_tracker_msgs/share/ball_tracker_msgs/environment/path.sh
+[190.412s] -- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/ball_tracker_msgs/share/ball_tracker_msgs/environment/path.dsv
+[190.599s] -- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/ball_tracker_msgs/share/ball_tracker_msgs/local_setup.bash
+[190.783s] -- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/ball_tracker_msgs/share/ball_tracker_msgs/local_setup.sh
+[190.966s] -- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/ball_tracker_msgs/share/ball_tracker_msgs/local_setup.zsh
+[191.149s] -- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/ball_tracker_msgs/share/ball_tracker_msgs/local_setup.dsv
+[191.336s] -- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/ball_tracker_msgs/share/ball_tracker_msgs/package.dsv
+[191.578s] -- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/ball_tracker_msgs/share/ament_index/resource_index/packages/ball_tracker_msgs
+[191.767s] -- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/ball_tracker_msgs/share/ball_tracker_msgs/cmake/rosidl_cmake-extras.cmake
+[191.955s] -- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/ball_tracker_msgs/share/ball_tracker_msgs/cmake/ament_cmake_export_dependencies-extras.cmake
+[192.176s] -- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/ball_tracker_msgs/share/ball_tracker_msgs/cmake/ament_cmake_export_include_directories-extras.cmake
+[192.366s] -- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/ball_tracker_msgs/share/ball_tracker_msgs/cmake/ament_cmake_export_libraries-extras.cmake
+[192.611s] -- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/ball_tracker_msgs/share/ball_tracker_msgs/cmake/ament_cmake_export_targets-extras.cmake
+[192.801s] -- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/ball_tracker_msgs/share/ball_tracker_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[192.988s] -- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/ball_tracker_msgs/share/ball_tracker_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[193.172s] -- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/ball_tracker_msgs/share/ball_tracker_msgs/cmake/ball_tracker_msgsConfig.cmake
+[193.360s] -- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/ball_tracker_msgs/share/ball_tracker_msgs/cmake/ball_tracker_msgsConfig-version.cmake
+[193.583s] -- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/ball_tracker_msgs/share/ball_tracker_msgs/package.xml
+[193.773s] -- Installing: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/ball_tracker_msgs/lib/libball_tracker_msgs__rosidl_generator_c.so
+[193.787s] -- Set non-toolchain portion of runtime path of "/home/E14Raspberry/ScooperBot/tennisbot_ws/install/ball_tracker_msgs/lib/libball_tracker_msgs__rosidl_generator_c.so" to ""
+[193.789s] -- Installing: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/ball_tracker_msgs/lib/libball_tracker_msgs__rosidl_typesupport_fastrtps_c.so
+[193.800s] -- Set non-toolchain portion of runtime path of "/home/E14Raspberry/ScooperBot/tennisbot_ws/install/ball_tracker_msgs/lib/libball_tracker_msgs__rosidl_typesupport_fastrtps_c.so" to ""
+[193.801s] -- Installing: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/ball_tracker_msgs/lib/libball_tracker_msgs__rosidl_typesupport_fastrtps_cpp.so
+[193.810s] -- Set non-toolchain portion of runtime path of "/home/E14Raspberry/ScooperBot/tennisbot_ws/install/ball_tracker_msgs/lib/libball_tracker_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""
+[193.812s] -- Installing: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/ball_tracker_msgs/lib/libball_tracker_msgs__rosidl_typesupport_introspection_c.so
+[193.824s] -- Set non-toolchain portion of runtime path of "/home/E14Raspberry/ScooperBot/tennisbot_ws/install/ball_tracker_msgs/lib/libball_tracker_msgs__rosidl_typesupport_introspection_c.so" to ""
+[193.825s] -- Installing: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/ball_tracker_msgs/lib/libball_tracker_msgs__rosidl_typesupport_c.so
+[193.836s] -- Set non-toolchain portion of runtime path of "/home/E14Raspberry/ScooperBot/tennisbot_ws/install/ball_tracker_msgs/lib/libball_tracker_msgs__rosidl_typesupport_c.so" to ""
+[193.840s] -- Installing: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/ball_tracker_msgs/lib/libball_tracker_msgs__rosidl_typesupport_introspection_cpp.so
+[193.848s] -- Set non-toolchain portion of runtime path of "/home/E14Raspberry/ScooperBot/tennisbot_ws/install/ball_tracker_msgs/lib/libball_tracker_msgs__rosidl_typesupport_introspection_cpp.so" to ""
+[193.850s] -- Installing: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/ball_tracker_msgs/lib/libball_tracker_msgs__rosidl_typesupport_cpp.so
+[193.863s] -- Set non-toolchain portion of runtime path of "/home/E14Raspberry/ScooperBot/tennisbot_ws/install/ball_tracker_msgs/lib/libball_tracker_msgs__rosidl_typesupport_cpp.so" to ""
+[194.584s] Listing '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/ball_tracker_msgs/lib/python3.12/site-packages/ball_tracker_msgs'...
+[194.589s] Compiling '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/ball_tracker_msgs/lib/python3.12/site-packages/ball_tracker_msgs/__init__.py'...
+[194.592s] Listing '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/ball_tracker_msgs/lib/python3.12/site-packages/ball_tracker_msgs/action'...
+[194.594s] Compiling '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/ball_tracker_msgs/lib/python3.12/site-packages/ball_tracker_msgs/action/__init__.py'...
+[194.599s] Compiling '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/ball_tracker_msgs/lib/python3.12/site-packages/ball_tracker_msgs/action/_follow_ball_action.py'...
+[194.650s] -- Installing: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/ball_tracker_msgs/lib/libball_tracker_msgs__rosidl_generator_py.so
+[194.658s] -- Set non-toolchain portion of runtime path of "/home/E14Raspberry/ScooperBot/tennisbot_ws/install/ball_tracker_msgs/lib/libball_tracker_msgs__rosidl_generator_py.so" to ""
+[194.663s] -- Installing: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/ball_tracker_msgs/share/ball_tracker_msgs/cmake/export_ball_tracker_msgs__rosidl_generator_cExport.cmake
+[194.668s] -- Installing: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/ball_tracker_msgs/share/ball_tracker_msgs/cmake/export_ball_tracker_msgs__rosidl_generator_cExport-noconfig.cmake
+[194.672s] -- Installing: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/ball_tracker_msgs/share/ball_tracker_msgs/cmake/export_ball_tracker_msgs__rosidl_typesupport_fastrtps_cExport.cmake
+[194.679s] -- Installing: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/ball_tracker_msgs/share/ball_tracker_msgs/cmake/export_ball_tracker_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[194.681s] -- Installing: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/ball_tracker_msgs/share/ball_tracker_msgs/cmake/export_ball_tracker_msgs__rosidl_generator_cppExport.cmake
+[194.688s] -- Installing: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/ball_tracker_msgs/share/ball_tracker_msgs/cmake/export_ball_tracker_msgs__rosidl_typesupport_fastrtps_cppExport.cmake
+[194.692s] -- Installing: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/ball_tracker_msgs/share/ball_tracker_msgs/cmake/export_ball_tracker_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[194.697s] -- Installing: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/ball_tracker_msgs/share/ball_tracker_msgs/cmake/ball_tracker_msgs__rosidl_typesupport_introspection_cExport.cmake
+[194.704s] -- Installing: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/ball_tracker_msgs/share/ball_tracker_msgs/cmake/ball_tracker_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[194.707s] -- Installing: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/ball_tracker_msgs/share/ball_tracker_msgs/cmake/ball_tracker_msgs__rosidl_typesupport_cExport.cmake
+[194.714s] -- Installing: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/ball_tracker_msgs/share/ball_tracker_msgs/cmake/ball_tracker_msgs__rosidl_typesupport_cExport-noconfig.cmake
+[194.720s] -- Installing: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/ball_tracker_msgs/share/ball_tracker_msgs/cmake/ball_tracker_msgs__rosidl_typesupport_introspection_cppExport.cmake
+[194.724s] -- Installing: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/ball_tracker_msgs/share/ball_tracker_msgs/cmake/ball_tracker_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[194.729s] -- Installing: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/ball_tracker_msgs/share/ball_tracker_msgs/cmake/ball_tracker_msgs__rosidl_typesupport_cppExport.cmake
+[194.733s] -- Installing: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/ball_tracker_msgs/share/ball_tracker_msgs/cmake/ball_tracker_msgs__rosidl_typesupport_cppExport-noconfig.cmake
+[194.740s] -- Installing: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/ball_tracker_msgs/share/ball_tracker_msgs/cmake/export_ball_tracker_msgs__rosidl_generator_pyExport.cmake
+[194.743s] -- Installing: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/ball_tracker_msgs/share/ball_tracker_msgs/cmake/export_ball_tracker_msgs__rosidl_generator_pyExport-noconfig.cmake
+[194.768s] Invoked command in '/home/E14Raspberry/ScooperBot/tennisbot_ws/build/ball_tracker_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/twist_stamper:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/ros2_nav_to_pose:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/ball_tracker:/opt/ros/jazzy /usr/bin/cmake --install /home/E14Raspberry/ScooperBot/tennisbot_ws/build/ball_tracker_msgs

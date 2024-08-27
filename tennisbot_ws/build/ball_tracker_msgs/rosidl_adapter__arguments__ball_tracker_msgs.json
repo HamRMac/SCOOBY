@@ -1,0 +1,6 @@
+{
+  "package_name": "ball_tracker_msgs",
+  "non_idl_tuples": [
+    "/home/E14Raspberry/ScooperBot/tennisbot_ws/src/ball_tracker_msgs:action/FollowBallAction.action"
+  ]
+}
