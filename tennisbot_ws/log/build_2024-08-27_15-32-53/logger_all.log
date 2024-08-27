@@ -1,0 +1,1082 @@
+[0.949s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--symlink-install']
+[0.949s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=True, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=4, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0xffff99154770>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0xffff9928b6b0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0xffff9928b6b0>>, mixin_verb=('build',))
+[1.197s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[1.197s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[1.197s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[1.197s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[1.198s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[1.198s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[1.198s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/E14Raspberry/ScooperBot/tennisbot_ws'
+[1.199s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[1.199s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[1.199s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[1.200s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[1.200s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[1.200s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[1.200s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[1.200s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[1.200s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[1.472s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[1.472s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[1.473s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[1.473s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[1.474s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[1.475s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[1.476s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[1.476s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[1.478s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[1.479s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[1.480s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[1.484s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[1.485s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[1.485s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[1.487s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[1.488s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[1.488s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[1.489s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[1.490s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[1.490s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[1.490s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[1.491s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[1.491s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[1.492s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[1.493s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[1.493s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[1.494s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[1.494s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[1.496s] Level 1:colcon.colcon_core.package_identification:_identify(src/ball_tracker) by extensions ['ignore', 'ignore_ament_install']
+[1.497s] Level 1:colcon.colcon_core.package_identification:_identify(src/ball_tracker) by extension 'ignore'
+[1.497s] Level 1:colcon.colcon_core.package_identification:_identify(src/ball_tracker) by extension 'ignore_ament_install'
+[1.498s] Level 1:colcon.colcon_core.package_identification:_identify(src/ball_tracker) by extensions ['colcon_pkg']
+[1.498s] Level 1:colcon.colcon_core.package_identification:_identify(src/ball_tracker) by extension 'colcon_pkg'
+[1.499s] Level 1:colcon.colcon_core.package_identification:_identify(src/ball_tracker) by extensions ['colcon_meta']
+[1.499s] Level 1:colcon.colcon_core.package_identification:_identify(src/ball_tracker) by extension 'colcon_meta'
+[1.500s] Level 1:colcon.colcon_core.package_identification:_identify(src/ball_tracker) by extensions ['ros']
+[1.500s] Level 1:colcon.colcon_core.package_identification:_identify(src/ball_tracker) by extension 'ros'
+[1.529s] DEBUG:colcon.colcon_core.package_identification:Package 'src/ball_tracker' with type 'ros.ament_python' and name 'ball_tracker'
+[1.531s] Level 1:colcon.colcon_core.package_identification:_identify(src/ball_tracker_msgs) by extensions ['ignore', 'ignore_ament_install']
+[1.532s] Level 1:colcon.colcon_core.package_identification:_identify(src/ball_tracker_msgs) by extension 'ignore'
+[1.532s] Level 1:colcon.colcon_core.package_identification:_identify(src/ball_tracker_msgs) by extension 'ignore_ament_install'
+[1.533s] Level 1:colcon.colcon_core.package_identification:_identify(src/ball_tracker_msgs) by extensions ['colcon_pkg']
+[1.534s] Level 1:colcon.colcon_core.package_identification:_identify(src/ball_tracker_msgs) by extension 'colcon_pkg'
+[1.534s] Level 1:colcon.colcon_core.package_identification:_identify(src/ball_tracker_msgs) by extensions ['colcon_meta']
+[1.534s] Level 1:colcon.colcon_core.package_identification:_identify(src/ball_tracker_msgs) by extension 'colcon_meta'
+[1.535s] Level 1:colcon.colcon_core.package_identification:_identify(src/ball_tracker_msgs) by extensions ['ros']
+[1.535s] Level 1:colcon.colcon_core.package_identification:_identify(src/ball_tracker_msgs) by extension 'ros'
+[1.542s] DEBUG:colcon.colcon_core.package_identification:Package 'src/ball_tracker_msgs' with type 'ros.ament_cmake' and name 'ball_tracker_msgs'
+[1.544s] Level 1:colcon.colcon_core.package_identification:_identify(src/diffdrive_arduino) by extensions ['ignore', 'ignore_ament_install']
+[1.545s] Level 1:colcon.colcon_core.package_identification:_identify(src/diffdrive_arduino) by extension 'ignore'
+[1.546s] Level 1:colcon.colcon_core.package_identification:_identify(src/diffdrive_arduino) by extension 'ignore_ament_install'
+[1.546s] Level 1:colcon.colcon_core.package_identification:_identify(src/diffdrive_arduino) by extensions ['colcon_pkg']
+[1.547s] Level 1:colcon.colcon_core.package_identification:_identify(src/diffdrive_arduino) by extension 'colcon_pkg'
+[1.547s] Level 1:colcon.colcon_core.package_identification:_identify(src/diffdrive_arduino) by extensions ['colcon_meta']
+[1.547s] Level 1:colcon.colcon_core.package_identification:_identify(src/diffdrive_arduino) by extension 'colcon_meta'
+[1.548s] Level 1:colcon.colcon_core.package_identification:_identify(src/diffdrive_arduino) by extensions ['ros']
+[1.548s] Level 1:colcon.colcon_core.package_identification:_identify(src/diffdrive_arduino) by extension 'ros'
+[1.558s] DEBUG:colcon.colcon_core.package_identification:Package 'src/diffdrive_arduino' with type 'ros.ament_cmake' and name 'diffdrive_arduino'
+[1.560s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_nav_to_pose) by extensions ['ignore', 'ignore_ament_install']
+[1.561s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_nav_to_pose) by extension 'ignore'
+[1.562s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_nav_to_pose) by extension 'ignore_ament_install'
+[1.563s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_nav_to_pose) by extensions ['colcon_pkg']
+[1.563s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_nav_to_pose) by extension 'colcon_pkg'
+[1.564s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_nav_to_pose) by extensions ['colcon_meta']
+[1.564s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_nav_to_pose) by extension 'colcon_meta'
+[1.564s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_nav_to_pose) by extensions ['ros']
+[1.565s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_nav_to_pose) by extension 'ros'
+[1.571s] DEBUG:colcon.colcon_core.package_identification:Package 'src/ros2_nav_to_pose' with type 'ros.ament_python' and name 'ros2_nav_to_pose'
+[1.573s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_nav_to_pose_msgs) by extensions ['ignore', 'ignore_ament_install']
+[1.573s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_nav_to_pose_msgs) by extension 'ignore'
+[1.574s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_nav_to_pose_msgs) by extension 'ignore_ament_install'
+[1.575s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_nav_to_pose_msgs) by extensions ['colcon_pkg']
+[1.575s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_nav_to_pose_msgs) by extension 'colcon_pkg'
+[1.576s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_nav_to_pose_msgs) by extensions ['colcon_meta']
+[1.576s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_nav_to_pose_msgs) by extension 'colcon_meta'
+[1.577s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_nav_to_pose_msgs) by extensions ['ros']
+[1.577s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_nav_to_pose_msgs) by extension 'ros'
+[1.584s] DEBUG:colcon.colcon_core.package_identification:Package 'src/ros2_nav_to_pose_msgs' with type 'ros.ament_cmake' and name 'ros2_nav_to_pose_msgs'
+[1.586s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial_motor_demo) by extensions ['ignore', 'ignore_ament_install']
+[1.587s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial_motor_demo) by extension 'ignore'
+[1.588s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial_motor_demo) by extension 'ignore_ament_install'
+[1.588s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial_motor_demo) by extensions ['colcon_pkg']
+[1.589s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial_motor_demo) by extension 'colcon_pkg'
+[1.589s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial_motor_demo) by extensions ['colcon_meta']
+[1.589s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial_motor_demo) by extension 'colcon_meta'
+[1.590s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial_motor_demo) by extensions ['ros']
+[1.590s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial_motor_demo) by extension 'ros'
+[1.591s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial_motor_demo) by extensions ['cmake', 'python']
+[1.592s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial_motor_demo) by extension 'cmake'
+[1.592s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial_motor_demo) by extension 'python'
+[1.593s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial_motor_demo) by extensions ['python_setup_py']
+[1.593s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial_motor_demo) by extension 'python_setup_py'
+[1.596s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial_motor_demo/serial_motor_demo) by extensions ['ignore', 'ignore_ament_install']
+[1.596s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial_motor_demo/serial_motor_demo) by extension 'ignore'
+[1.597s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial_motor_demo/serial_motor_demo) by extension 'ignore_ament_install'
+[1.598s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial_motor_demo/serial_motor_demo) by extensions ['colcon_pkg']
+[1.598s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial_motor_demo/serial_motor_demo) by extension 'colcon_pkg'
+[1.599s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial_motor_demo/serial_motor_demo) by extensions ['colcon_meta']
+[1.599s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial_motor_demo/serial_motor_demo) by extension 'colcon_meta'
+[1.599s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial_motor_demo/serial_motor_demo) by extensions ['ros']
+[1.600s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial_motor_demo/serial_motor_demo) by extension 'ros'
+[1.606s] DEBUG:colcon.colcon_core.package_identification:Package 'src/serial_motor_demo/serial_motor_demo' with type 'ros.ament_python' and name 'serial_motor_demo'
+[1.608s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial_motor_demo/serial_motor_demo_msgs) by extensions ['ignore', 'ignore_ament_install']
+[1.609s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial_motor_demo/serial_motor_demo_msgs) by extension 'ignore'
+[1.609s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial_motor_demo/serial_motor_demo_msgs) by extension 'ignore_ament_install'
+[1.610s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial_motor_demo/serial_motor_demo_msgs) by extensions ['colcon_pkg']
+[1.610s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial_motor_demo/serial_motor_demo_msgs) by extension 'colcon_pkg'
+[1.611s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial_motor_demo/serial_motor_demo_msgs) by extensions ['colcon_meta']
+[1.611s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial_motor_demo/serial_motor_demo_msgs) by extension 'colcon_meta'
+[1.612s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial_motor_demo/serial_motor_demo_msgs) by extensions ['ros']
+[1.612s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial_motor_demo/serial_motor_demo_msgs) by extension 'ros'
+[1.618s] DEBUG:colcon.colcon_core.package_identification:Package 'src/serial_motor_demo/serial_motor_demo_msgs' with type 'ros.ament_cmake' and name 'serial_motor_demo_msgs'
+[1.619s] Level 1:colcon.colcon_core.package_identification:_identify(src/tennisbotmaster) by extensions ['ignore', 'ignore_ament_install']
+[1.620s] Level 1:colcon.colcon_core.package_identification:_identify(src/tennisbotmaster) by extension 'ignore'
+[1.621s] Level 1:colcon.colcon_core.package_identification:_identify(src/tennisbotmaster) by extension 'ignore_ament_install'
+[1.622s] Level 1:colcon.colcon_core.package_identification:_identify(src/tennisbotmaster) by extensions ['colcon_pkg']
+[1.622s] Level 1:colcon.colcon_core.package_identification:_identify(src/tennisbotmaster) by extension 'colcon_pkg'
+[1.623s] Level 1:colcon.colcon_core.package_identification:_identify(src/tennisbotmaster) by extensions ['colcon_meta']
+[1.623s] Level 1:colcon.colcon_core.package_identification:_identify(src/tennisbotmaster) by extension 'colcon_meta'
+[1.623s] Level 1:colcon.colcon_core.package_identification:_identify(src/tennisbotmaster) by extensions ['ros']
+[1.624s] Level 1:colcon.colcon_core.package_identification:_identify(src/tennisbotmaster) by extension 'ros'
+[1.629s] DEBUG:colcon.colcon_core.package_identification:Package 'src/tennisbotmaster' with type 'ros.ament_cmake' and name 'tennisbotmaster'
+[1.631s] Level 1:colcon.colcon_core.package_identification:_identify(src/twist_stamper) by extensions ['ignore', 'ignore_ament_install']
+[1.631s] Level 1:colcon.colcon_core.package_identification:_identify(src/twist_stamper) by extension 'ignore'
+[1.632s] Level 1:colcon.colcon_core.package_identification:_identify(src/twist_stamper) by extension 'ignore_ament_install'
+[1.633s] Level 1:colcon.colcon_core.package_identification:_identify(src/twist_stamper) by extensions ['colcon_pkg']
+[1.633s] Level 1:colcon.colcon_core.package_identification:_identify(src/twist_stamper) by extension 'colcon_pkg'
+[1.634s] Level 1:colcon.colcon_core.package_identification:_identify(src/twist_stamper) by extensions ['colcon_meta']
+[1.634s] Level 1:colcon.colcon_core.package_identification:_identify(src/twist_stamper) by extension 'colcon_meta'
+[1.635s] Level 1:colcon.colcon_core.package_identification:_identify(src/twist_stamper) by extensions ['ros']
+[1.635s] Level 1:colcon.colcon_core.package_identification:_identify(src/twist_stamper) by extension 'ros'
+[1.642s] DEBUG:colcon.colcon_core.package_identification:Package 'src/twist_stamper' with type 'ros.ament_python' and name 'twist_stamper'
+[1.644s] Level 1:colcon.colcon_core.package_identification:_identify(src/yasmin) by extensions ['ignore', 'ignore_ament_install']
+[1.645s] Level 1:colcon.colcon_core.package_identification:_identify(src/yasmin) by extension 'ignore'
+[1.645s] Level 1:colcon.colcon_core.package_identification:_identify(src/yasmin) by extension 'ignore_ament_install'
+[1.646s] Level 1:colcon.colcon_core.package_identification:_identify(src/yasmin) by extensions ['colcon_pkg']
+[1.647s] Level 1:colcon.colcon_core.package_identification:_identify(src/yasmin) by extension 'colcon_pkg'
+[1.647s] Level 1:colcon.colcon_core.package_identification:_identify(src/yasmin) by extensions ['colcon_meta']
+[1.648s] Level 1:colcon.colcon_core.package_identification:_identify(src/yasmin) by extension 'colcon_meta'
+[1.648s] Level 1:colcon.colcon_core.package_identification:_identify(src/yasmin) by extensions ['ros']
+[1.648s] Level 1:colcon.colcon_core.package_identification:_identify(src/yasmin) by extension 'ros'
+[1.649s] Level 1:colcon.colcon_core.package_identification:_identify(src/yasmin) by extensions ['cmake', 'python']
+[1.650s] Level 1:colcon.colcon_core.package_identification:_identify(src/yasmin) by extension 'cmake'
+[1.650s] Level 1:colcon.colcon_core.package_identification:_identify(src/yasmin) by extension 'python'
+[1.651s] Level 1:colcon.colcon_core.package_identification:_identify(src/yasmin) by extensions ['python_setup_py']
+[1.651s] Level 1:colcon.colcon_core.package_identification:_identify(src/yasmin) by extension 'python_setup_py'
+[1.653s] Level 1:colcon.colcon_core.package_identification:_identify(src/yasmin/docs) by extensions ['ignore', 'ignore_ament_install']
+[1.654s] Level 1:colcon.colcon_core.package_identification:_identify(src/yasmin/docs) by extension 'ignore'
+[1.655s] Level 1:colcon.colcon_core.package_identification:_identify(src/yasmin/docs) by extension 'ignore_ament_install'
+[1.655s] Level 1:colcon.colcon_core.package_identification:_identify(src/yasmin/docs) by extensions ['colcon_pkg']
+[1.656s] Level 1:colcon.colcon_core.package_identification:_identify(src/yasmin/docs) by extension 'colcon_pkg'
+[1.656s] Level 1:colcon.colcon_core.package_identification:_identify(src/yasmin/docs) by extensions ['colcon_meta']
+[1.656s] Level 1:colcon.colcon_core.package_identification:_identify(src/yasmin/docs) by extension 'colcon_meta'
+[1.657s] Level 1:colcon.colcon_core.package_identification:_identify(src/yasmin/docs) by extensions ['ros']
+[1.657s] Level 1:colcon.colcon_core.package_identification:_identify(src/yasmin/docs) by extension 'ros'
+[1.658s] Level 1:colcon.colcon_core.package_identification:_identify(src/yasmin/docs) by extensions ['cmake', 'python']
+[1.659s] Level 1:colcon.colcon_core.package_identification:_identify(src/yasmin/docs) by extension 'cmake'
+[1.659s] Level 1:colcon.colcon_core.package_identification:_identify(src/yasmin/docs) by extension 'python'
+[1.660s] Level 1:colcon.colcon_core.package_identification:_identify(src/yasmin/docs) by extensions ['python_setup_py']
+[1.660s] Level 1:colcon.colcon_core.package_identification:_identify(src/yasmin/docs) by extension 'python_setup_py'
+[1.662s] Level 1:colcon.colcon_core.package_identification:_identify(src/yasmin/yasmin) by extensions ['ignore', 'ignore_ament_install']
+[1.663s] Level 1:colcon.colcon_core.package_identification:_identify(src/yasmin/yasmin) by extension 'ignore'
+[1.663s] Level 1:colcon.colcon_core.package_identification:_identify(src/yasmin/yasmin) by extension 'ignore_ament_install'
+[1.664s] Level 1:colcon.colcon_core.package_identification:_identify(src/yasmin/yasmin) by extensions ['colcon_pkg']
+[1.665s] Level 1:colcon.colcon_core.package_identification:_identify(src/yasmin/yasmin) by extension 'colcon_pkg'
+[1.665s] Level 1:colcon.colcon_core.package_identification:_identify(src/yasmin/yasmin) by extensions ['colcon_meta']
+[1.665s] Level 1:colcon.colcon_core.package_identification:_identify(src/yasmin/yasmin) by extension 'colcon_meta'
+[1.666s] Level 1:colcon.colcon_core.package_identification:_identify(src/yasmin/yasmin) by extensions ['ros']
+[1.666s] Level 1:colcon.colcon_core.package_identification:_identify(src/yasmin/yasmin) by extension 'ros'
+[1.672s] DEBUG:colcon.colcon_core.package_identification:Package 'src/yasmin/yasmin' with type 'ros.ament_cmake' and name 'yasmin'
+[1.674s] Level 1:colcon.colcon_core.package_identification:_identify(src/yasmin/yasmin_demos) by extensions ['ignore', 'ignore_ament_install']
+[1.675s] Level 1:colcon.colcon_core.package_identification:_identify(src/yasmin/yasmin_demos) by extension 'ignore'
+[1.676s] Level 1:colcon.colcon_core.package_identification:_identify(src/yasmin/yasmin_demos) by extension 'ignore_ament_install'
+[1.676s] Level 1:colcon.colcon_core.package_identification:_identify(src/yasmin/yasmin_demos) by extensions ['colcon_pkg']
+[1.677s] Level 1:colcon.colcon_core.package_identification:_identify(src/yasmin/yasmin_demos) by extension 'colcon_pkg'
+[1.677s] Level 1:colcon.colcon_core.package_identification:_identify(src/yasmin/yasmin_demos) by extensions ['colcon_meta']
+[1.677s] Level 1:colcon.colcon_core.package_identification:_identify(src/yasmin/yasmin_demos) by extension 'colcon_meta'
+[1.678s] Level 1:colcon.colcon_core.package_identification:_identify(src/yasmin/yasmin_demos) by extensions ['ros']
+[1.678s] Level 1:colcon.colcon_core.package_identification:_identify(src/yasmin/yasmin_demos) by extension 'ros'
+[1.688s] DEBUG:colcon.colcon_core.package_identification:Package 'src/yasmin/yasmin_demos' with type 'ros.ament_cmake' and name 'yasmin_demos'
+[1.690s] Level 1:colcon.colcon_core.package_identification:_identify(src/yasmin/yasmin_msgs) by extensions ['ignore', 'ignore_ament_install']
+[1.691s] Level 1:colcon.colcon_core.package_identification:_identify(src/yasmin/yasmin_msgs) by extension 'ignore'
+[1.692s] Level 1:colcon.colcon_core.package_identification:_identify(src/yasmin/yasmin_msgs) by extension 'ignore_ament_install'
+[1.693s] Level 1:colcon.colcon_core.package_identification:_identify(src/yasmin/yasmin_msgs) by extensions ['colcon_pkg']
+[1.693s] Level 1:colcon.colcon_core.package_identification:_identify(src/yasmin/yasmin_msgs) by extension 'colcon_pkg'
+[1.694s] Level 1:colcon.colcon_core.package_identification:_identify(src/yasmin/yasmin_msgs) by extensions ['colcon_meta']
+[1.694s] Level 1:colcon.colcon_core.package_identification:_identify(src/yasmin/yasmin_msgs) by extension 'colcon_meta'
+[1.695s] Level 1:colcon.colcon_core.package_identification:_identify(src/yasmin/yasmin_msgs) by extensions ['ros']
+[1.695s] Level 1:colcon.colcon_core.package_identification:_identify(src/yasmin/yasmin_msgs) by extension 'ros'
+[1.700s] DEBUG:colcon.colcon_core.package_identification:Package 'src/yasmin/yasmin_msgs' with type 'ros.ament_cmake' and name 'yasmin_msgs'
+[1.702s] Level 1:colcon.colcon_core.package_identification:_identify(src/yasmin/yasmin_ros) by extensions ['ignore', 'ignore_ament_install']
+[1.703s] Level 1:colcon.colcon_core.package_identification:_identify(src/yasmin/yasmin_ros) by extension 'ignore'
+[1.703s] Level 1:colcon.colcon_core.package_identification:_identify(src/yasmin/yasmin_ros) by extension 'ignore_ament_install'
+[1.704s] Level 1:colcon.colcon_core.package_identification:_identify(src/yasmin/yasmin_ros) by extensions ['colcon_pkg']
+[1.705s] Level 1:colcon.colcon_core.package_identification:_identify(src/yasmin/yasmin_ros) by extension 'colcon_pkg'
+[1.705s] Level 1:colcon.colcon_core.package_identification:_identify(src/yasmin/yasmin_ros) by extensions ['colcon_meta']
+[1.705s] Level 1:colcon.colcon_core.package_identification:_identify(src/yasmin/yasmin_ros) by extension 'colcon_meta'
+[1.706s] Level 1:colcon.colcon_core.package_identification:_identify(src/yasmin/yasmin_ros) by extensions ['ros']
+[1.706s] Level 1:colcon.colcon_core.package_identification:_identify(src/yasmin/yasmin_ros) by extension 'ros'
+[1.713s] DEBUG:colcon.colcon_core.package_identification:Package 'src/yasmin/yasmin_ros' with type 'ros.ament_cmake' and name 'yasmin_ros'
+[1.715s] Level 1:colcon.colcon_core.package_identification:_identify(src/yasmin/yasmin_viewer) by extensions ['ignore', 'ignore_ament_install']
+[1.716s] Level 1:colcon.colcon_core.package_identification:_identify(src/yasmin/yasmin_viewer) by extension 'ignore'
+[1.717s] Level 1:colcon.colcon_core.package_identification:_identify(src/yasmin/yasmin_viewer) by extension 'ignore_ament_install'
+[1.717s] Level 1:colcon.colcon_core.package_identification:_identify(src/yasmin/yasmin_viewer) by extensions ['colcon_pkg']
+[1.718s] Level 1:colcon.colcon_core.package_identification:_identify(src/yasmin/yasmin_viewer) by extension 'colcon_pkg'
+[1.718s] Level 1:colcon.colcon_core.package_identification:_identify(src/yasmin/yasmin_viewer) by extensions ['colcon_meta']
+[1.718s] Level 1:colcon.colcon_core.package_identification:_identify(src/yasmin/yasmin_viewer) by extension 'colcon_meta'
+[1.719s] Level 1:colcon.colcon_core.package_identification:_identify(src/yasmin/yasmin_viewer) by extensions ['ros']
+[1.719s] Level 1:colcon.colcon_core.package_identification:_identify(src/yasmin/yasmin_viewer) by extension 'ros'
+[1.728s] DEBUG:colcon.colcon_core.package_identification:Package 'src/yasmin/yasmin_viewer' with type 'ros.ament_cmake' and name 'yasmin_viewer'
+[1.730s] Level 1:colcon.colcon_core.package_identification:_identify(venv) by extensions ['ignore', 'ignore_ament_install']
+[1.731s] Level 1:colcon.colcon_core.package_identification:_identify(venv) by extension 'ignore'
+[1.732s] Level 1:colcon.colcon_core.package_identification:_identify(venv) ignored
+[1.732s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[1.733s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[1.733s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[1.733s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[1.733s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[1.839s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[1.839s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[1.863s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 341 installed packages in /opt/ros/jazzy
+[1.871s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[2.070s] Level 5:colcon.colcon_core.verb:set package 'ball_tracker' build argument 'cmake_args' from command line to 'None'
+[2.070s] Level 5:colcon.colcon_core.verb:set package 'ball_tracker' build argument 'cmake_target' from command line to 'None'
+[2.070s] Level 5:colcon.colcon_core.verb:set package 'ball_tracker' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.070s] Level 5:colcon.colcon_core.verb:set package 'ball_tracker' build argument 'cmake_clean_cache' from command line to 'False'
+[2.070s] Level 5:colcon.colcon_core.verb:set package 'ball_tracker' build argument 'cmake_clean_first' from command line to 'False'
+[2.071s] Level 5:colcon.colcon_core.verb:set package 'ball_tracker' build argument 'cmake_force_configure' from command line to 'False'
+[2.071s] Level 5:colcon.colcon_core.verb:set package 'ball_tracker' build argument 'ament_cmake_args' from command line to 'None'
+[2.071s] Level 5:colcon.colcon_core.verb:set package 'ball_tracker' build argument 'catkin_cmake_args' from command line to 'None'
+[2.071s] Level 5:colcon.colcon_core.verb:set package 'ball_tracker' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.071s] DEBUG:colcon.colcon_core.verb:Building package 'ball_tracker' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/E14Raspberry/ScooperBot/tennisbot_ws/build/ball_tracker', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/ball_tracker', 'merge_install': False, 'path': '/home/E14Raspberry/ScooperBot/tennisbot_ws/src/ball_tracker', 'symlink_install': True, 'test_result_base': None}
+[2.072s] Level 5:colcon.colcon_core.verb:set package 'ball_tracker_msgs' build argument 'cmake_args' from command line to 'None'
+[2.072s] Level 5:colcon.colcon_core.verb:set package 'ball_tracker_msgs' build argument 'cmake_target' from command line to 'None'
+[2.072s] Level 5:colcon.colcon_core.verb:set package 'ball_tracker_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.073s] Level 5:colcon.colcon_core.verb:set package 'ball_tracker_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[2.073s] Level 5:colcon.colcon_core.verb:set package 'ball_tracker_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[2.073s] Level 5:colcon.colcon_core.verb:set package 'ball_tracker_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[2.073s] Level 5:colcon.colcon_core.verb:set package 'ball_tracker_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[2.073s] Level 5:colcon.colcon_core.verb:set package 'ball_tracker_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[2.073s] Level 5:colcon.colcon_core.verb:set package 'ball_tracker_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.073s] DEBUG:colcon.colcon_core.verb:Building package 'ball_tracker_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/E14Raspberry/ScooperBot/tennisbot_ws/build/ball_tracker_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/ball_tracker_msgs', 'merge_install': False, 'path': '/home/E14Raspberry/ScooperBot/tennisbot_ws/src/ball_tracker_msgs', 'symlink_install': True, 'test_result_base': None}
+[2.074s] Level 5:colcon.colcon_core.verb:set package 'diffdrive_arduino' build argument 'cmake_args' from command line to 'None'
+[2.074s] Level 5:colcon.colcon_core.verb:set package 'diffdrive_arduino' build argument 'cmake_target' from command line to 'None'
+[2.074s] Level 5:colcon.colcon_core.verb:set package 'diffdrive_arduino' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.075s] Level 5:colcon.colcon_core.verb:set package 'diffdrive_arduino' build argument 'cmake_clean_cache' from command line to 'False'
+[2.075s] Level 5:colcon.colcon_core.verb:set package 'diffdrive_arduino' build argument 'cmake_clean_first' from command line to 'False'
+[2.075s] Level 5:colcon.colcon_core.verb:set package 'diffdrive_arduino' build argument 'cmake_force_configure' from command line to 'False'
+[2.075s] Level 5:colcon.colcon_core.verb:set package 'diffdrive_arduino' build argument 'ament_cmake_args' from command line to 'None'
+[2.075s] Level 5:colcon.colcon_core.verb:set package 'diffdrive_arduino' build argument 'catkin_cmake_args' from command line to 'None'
+[2.075s] Level 5:colcon.colcon_core.verb:set package 'diffdrive_arduino' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.075s] DEBUG:colcon.colcon_core.verb:Building package 'diffdrive_arduino' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/E14Raspberry/ScooperBot/tennisbot_ws/build/diffdrive_arduino', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/diffdrive_arduino', 'merge_install': False, 'path': '/home/E14Raspberry/ScooperBot/tennisbot_ws/src/diffdrive_arduino', 'symlink_install': True, 'test_result_base': None}
+[2.076s] Level 5:colcon.colcon_core.verb:set package 'ros2_nav_to_pose' build argument 'cmake_args' from command line to 'None'
+[2.076s] Level 5:colcon.colcon_core.verb:set package 'ros2_nav_to_pose' build argument 'cmake_target' from command line to 'None'
+[2.076s] Level 5:colcon.colcon_core.verb:set package 'ros2_nav_to_pose' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.076s] Level 5:colcon.colcon_core.verb:set package 'ros2_nav_to_pose' build argument 'cmake_clean_cache' from command line to 'False'
+[2.077s] Level 5:colcon.colcon_core.verb:set package 'ros2_nav_to_pose' build argument 'cmake_clean_first' from command line to 'False'
+[2.077s] Level 5:colcon.colcon_core.verb:set package 'ros2_nav_to_pose' build argument 'cmake_force_configure' from command line to 'False'
+[2.077s] Level 5:colcon.colcon_core.verb:set package 'ros2_nav_to_pose' build argument 'ament_cmake_args' from command line to 'None'
+[2.077s] Level 5:colcon.colcon_core.verb:set package 'ros2_nav_to_pose' build argument 'catkin_cmake_args' from command line to 'None'
+[2.077s] Level 5:colcon.colcon_core.verb:set package 'ros2_nav_to_pose' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.077s] DEBUG:colcon.colcon_core.verb:Building package 'ros2_nav_to_pose' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/E14Raspberry/ScooperBot/tennisbot_ws/build/ros2_nav_to_pose', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/ros2_nav_to_pose', 'merge_install': False, 'path': '/home/E14Raspberry/ScooperBot/tennisbot_ws/src/ros2_nav_to_pose', 'symlink_install': True, 'test_result_base': None}
+[2.078s] Level 5:colcon.colcon_core.verb:set package 'ros2_nav_to_pose_msgs' build argument 'cmake_args' from command line to 'None'
+[2.078s] Level 5:colcon.colcon_core.verb:set package 'ros2_nav_to_pose_msgs' build argument 'cmake_target' from command line to 'None'
+[2.078s] Level 5:colcon.colcon_core.verb:set package 'ros2_nav_to_pose_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.078s] Level 5:colcon.colcon_core.verb:set package 'ros2_nav_to_pose_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[2.079s] Level 5:colcon.colcon_core.verb:set package 'ros2_nav_to_pose_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[2.079s] Level 5:colcon.colcon_core.verb:set package 'ros2_nav_to_pose_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[2.079s] Level 5:colcon.colcon_core.verb:set package 'ros2_nav_to_pose_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[2.079s] Level 5:colcon.colcon_core.verb:set package 'ros2_nav_to_pose_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[2.079s] Level 5:colcon.colcon_core.verb:set package 'ros2_nav_to_pose_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.079s] DEBUG:colcon.colcon_core.verb:Building package 'ros2_nav_to_pose_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/E14Raspberry/ScooperBot/tennisbot_ws/build/ros2_nav_to_pose_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/ros2_nav_to_pose_msgs', 'merge_install': False, 'path': '/home/E14Raspberry/ScooperBot/tennisbot_ws/src/ros2_nav_to_pose_msgs', 'symlink_install': True, 'test_result_base': None}
+[2.080s] Level 5:colcon.colcon_core.verb:set package 'serial_motor_demo_msgs' build argument 'cmake_args' from command line to 'None'
+[2.080s] Level 5:colcon.colcon_core.verb:set package 'serial_motor_demo_msgs' build argument 'cmake_target' from command line to 'None'
+[2.080s] Level 5:colcon.colcon_core.verb:set package 'serial_motor_demo_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.080s] Level 5:colcon.colcon_core.verb:set package 'serial_motor_demo_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[2.080s] Level 5:colcon.colcon_core.verb:set package 'serial_motor_demo_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[2.081s] Level 5:colcon.colcon_core.verb:set package 'serial_motor_demo_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[2.081s] Level 5:colcon.colcon_core.verb:set package 'serial_motor_demo_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[2.081s] Level 5:colcon.colcon_core.verb:set package 'serial_motor_demo_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[2.081s] Level 5:colcon.colcon_core.verb:set package 'serial_motor_demo_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.081s] DEBUG:colcon.colcon_core.verb:Building package 'serial_motor_demo_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/E14Raspberry/ScooperBot/tennisbot_ws/build/serial_motor_demo_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs', 'merge_install': False, 'path': '/home/E14Raspberry/ScooperBot/tennisbot_ws/src/serial_motor_demo/serial_motor_demo_msgs', 'symlink_install': True, 'test_result_base': None}
+[2.082s] Level 5:colcon.colcon_core.verb:set package 'tennisbotmaster' build argument 'cmake_args' from command line to 'None'
+[2.082s] Level 5:colcon.colcon_core.verb:set package 'tennisbotmaster' build argument 'cmake_target' from command line to 'None'
+[2.082s] Level 5:colcon.colcon_core.verb:set package 'tennisbotmaster' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.082s] Level 5:colcon.colcon_core.verb:set package 'tennisbotmaster' build argument 'cmake_clean_cache' from command line to 'False'
+[2.082s] Level 5:colcon.colcon_core.verb:set package 'tennisbotmaster' build argument 'cmake_clean_first' from command line to 'False'
+[2.083s] Level 5:colcon.colcon_core.verb:set package 'tennisbotmaster' build argument 'cmake_force_configure' from command line to 'False'
+[2.083s] Level 5:colcon.colcon_core.verb:set package 'tennisbotmaster' build argument 'ament_cmake_args' from command line to 'None'
+[2.083s] Level 5:colcon.colcon_core.verb:set package 'tennisbotmaster' build argument 'catkin_cmake_args' from command line to 'None'
+[2.083s] Level 5:colcon.colcon_core.verb:set package 'tennisbotmaster' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.083s] DEBUG:colcon.colcon_core.verb:Building package 'tennisbotmaster' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/E14Raspberry/ScooperBot/tennisbot_ws/build/tennisbotmaster', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/tennisbotmaster', 'merge_install': False, 'path': '/home/E14Raspberry/ScooperBot/tennisbot_ws/src/tennisbotmaster', 'symlink_install': True, 'test_result_base': None}
+[2.084s] Level 5:colcon.colcon_core.verb:set package 'twist_stamper' build argument 'cmake_args' from command line to 'None'
+[2.084s] Level 5:colcon.colcon_core.verb:set package 'twist_stamper' build argument 'cmake_target' from command line to 'None'
+[2.084s] Level 5:colcon.colcon_core.verb:set package 'twist_stamper' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.084s] Level 5:colcon.colcon_core.verb:set package 'twist_stamper' build argument 'cmake_clean_cache' from command line to 'False'
+[2.084s] Level 5:colcon.colcon_core.verb:set package 'twist_stamper' build argument 'cmake_clean_first' from command line to 'False'
+[2.084s] Level 5:colcon.colcon_core.verb:set package 'twist_stamper' build argument 'cmake_force_configure' from command line to 'False'
+[2.084s] Level 5:colcon.colcon_core.verb:set package 'twist_stamper' build argument 'ament_cmake_args' from command line to 'None'
+[2.085s] Level 5:colcon.colcon_core.verb:set package 'twist_stamper' build argument 'catkin_cmake_args' from command line to 'None'
+[2.085s] Level 5:colcon.colcon_core.verb:set package 'twist_stamper' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.085s] DEBUG:colcon.colcon_core.verb:Building package 'twist_stamper' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/E14Raspberry/ScooperBot/tennisbot_ws/build/twist_stamper', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/twist_stamper', 'merge_install': False, 'path': '/home/E14Raspberry/ScooperBot/tennisbot_ws/src/twist_stamper', 'symlink_install': True, 'test_result_base': None}
+[2.086s] Level 5:colcon.colcon_core.verb:set package 'yasmin' build argument 'cmake_args' from command line to 'None'
+[2.086s] Level 5:colcon.colcon_core.verb:set package 'yasmin' build argument 'cmake_target' from command line to 'None'
+[2.086s] Level 5:colcon.colcon_core.verb:set package 'yasmin' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.086s] Level 5:colcon.colcon_core.verb:set package 'yasmin' build argument 'cmake_clean_cache' from command line to 'False'
+[2.086s] Level 5:colcon.colcon_core.verb:set package 'yasmin' build argument 'cmake_clean_first' from command line to 'False'
+[2.086s] Level 5:colcon.colcon_core.verb:set package 'yasmin' build argument 'cmake_force_configure' from command line to 'False'
+[2.086s] Level 5:colcon.colcon_core.verb:set package 'yasmin' build argument 'ament_cmake_args' from command line to 'None'
+[2.086s] Level 5:colcon.colcon_core.verb:set package 'yasmin' build argument 'catkin_cmake_args' from command line to 'None'
+[2.087s] Level 5:colcon.colcon_core.verb:set package 'yasmin' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.087s] DEBUG:colcon.colcon_core.verb:Building package 'yasmin' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/E14Raspberry/ScooperBot/tennisbot_ws/build/yasmin', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin', 'merge_install': False, 'path': '/home/E14Raspberry/ScooperBot/tennisbot_ws/src/yasmin/yasmin', 'symlink_install': True, 'test_result_base': None}
+[2.088s] Level 5:colcon.colcon_core.verb:set package 'yasmin_msgs' build argument 'cmake_args' from command line to 'None'
+[2.088s] Level 5:colcon.colcon_core.verb:set package 'yasmin_msgs' build argument 'cmake_target' from command line to 'None'
+[2.088s] Level 5:colcon.colcon_core.verb:set package 'yasmin_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.088s] Level 5:colcon.colcon_core.verb:set package 'yasmin_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[2.088s] Level 5:colcon.colcon_core.verb:set package 'yasmin_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[2.088s] Level 5:colcon.colcon_core.verb:set package 'yasmin_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[2.088s] Level 5:colcon.colcon_core.verb:set package 'yasmin_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[2.088s] Level 5:colcon.colcon_core.verb:set package 'yasmin_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[2.088s] Level 5:colcon.colcon_core.verb:set package 'yasmin_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.088s] DEBUG:colcon.colcon_core.verb:Building package 'yasmin_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/E14Raspberry/ScooperBot/tennisbot_ws/build/yasmin_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_msgs', 'merge_install': False, 'path': '/home/E14Raspberry/ScooperBot/tennisbot_ws/src/yasmin/yasmin_msgs', 'symlink_install': True, 'test_result_base': None}
+[2.090s] Level 5:colcon.colcon_core.verb:set package 'serial_motor_demo' build argument 'cmake_args' from command line to 'None'
+[2.090s] Level 5:colcon.colcon_core.verb:set package 'serial_motor_demo' build argument 'cmake_target' from command line to 'None'
+[2.090s] Level 5:colcon.colcon_core.verb:set package 'serial_motor_demo' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.090s] Level 5:colcon.colcon_core.verb:set package 'serial_motor_demo' build argument 'cmake_clean_cache' from command line to 'False'
+[2.090s] Level 5:colcon.colcon_core.verb:set package 'serial_motor_demo' build argument 'cmake_clean_first' from command line to 'False'
+[2.090s] Level 5:colcon.colcon_core.verb:set package 'serial_motor_demo' build argument 'cmake_force_configure' from command line to 'False'
+[2.090s] Level 5:colcon.colcon_core.verb:set package 'serial_motor_demo' build argument 'ament_cmake_args' from command line to 'None'
+[2.090s] Level 5:colcon.colcon_core.verb:set package 'serial_motor_demo' build argument 'catkin_cmake_args' from command line to 'None'
+[2.090s] Level 5:colcon.colcon_core.verb:set package 'serial_motor_demo' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.090s] DEBUG:colcon.colcon_core.verb:Building package 'serial_motor_demo' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/E14Raspberry/ScooperBot/tennisbot_ws/build/serial_motor_demo', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo', 'merge_install': False, 'path': '/home/E14Raspberry/ScooperBot/tennisbot_ws/src/serial_motor_demo/serial_motor_demo', 'symlink_install': True, 'test_result_base': None}
+[2.091s] Level 5:colcon.colcon_core.verb:set package 'yasmin_ros' build argument 'cmake_args' from command line to 'None'
+[2.092s] Level 5:colcon.colcon_core.verb:set package 'yasmin_ros' build argument 'cmake_target' from command line to 'None'
+[2.092s] Level 5:colcon.colcon_core.verb:set package 'yasmin_ros' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.092s] Level 5:colcon.colcon_core.verb:set package 'yasmin_ros' build argument 'cmake_clean_cache' from command line to 'False'
+[2.092s] Level 5:colcon.colcon_core.verb:set package 'yasmin_ros' build argument 'cmake_clean_first' from command line to 'False'
+[2.092s] Level 5:colcon.colcon_core.verb:set package 'yasmin_ros' build argument 'cmake_force_configure' from command line to 'False'
+[2.092s] Level 5:colcon.colcon_core.verb:set package 'yasmin_ros' build argument 'ament_cmake_args' from command line to 'None'
+[2.092s] Level 5:colcon.colcon_core.verb:set package 'yasmin_ros' build argument 'catkin_cmake_args' from command line to 'None'
+[2.092s] Level 5:colcon.colcon_core.verb:set package 'yasmin_ros' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.092s] DEBUG:colcon.colcon_core.verb:Building package 'yasmin_ros' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/E14Raspberry/ScooperBot/tennisbot_ws/build/yasmin_ros', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_ros', 'merge_install': False, 'path': '/home/E14Raspberry/ScooperBot/tennisbot_ws/src/yasmin/yasmin_ros', 'symlink_install': True, 'test_result_base': None}
+[2.093s] Level 5:colcon.colcon_core.verb:set package 'yasmin_viewer' build argument 'cmake_args' from command line to 'None'
+[2.094s] Level 5:colcon.colcon_core.verb:set package 'yasmin_viewer' build argument 'cmake_target' from command line to 'None'
+[2.094s] Level 5:colcon.colcon_core.verb:set package 'yasmin_viewer' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.094s] Level 5:colcon.colcon_core.verb:set package 'yasmin_viewer' build argument 'cmake_clean_cache' from command line to 'False'
+[2.094s] Level 5:colcon.colcon_core.verb:set package 'yasmin_viewer' build argument 'cmake_clean_first' from command line to 'False'
+[2.094s] Level 5:colcon.colcon_core.verb:set package 'yasmin_viewer' build argument 'cmake_force_configure' from command line to 'False'
+[2.094s] Level 5:colcon.colcon_core.verb:set package 'yasmin_viewer' build argument 'ament_cmake_args' from command line to 'None'
+[2.094s] Level 5:colcon.colcon_core.verb:set package 'yasmin_viewer' build argument 'catkin_cmake_args' from command line to 'None'
+[2.094s] Level 5:colcon.colcon_core.verb:set package 'yasmin_viewer' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.094s] DEBUG:colcon.colcon_core.verb:Building package 'yasmin_viewer' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/E14Raspberry/ScooperBot/tennisbot_ws/build/yasmin_viewer', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_viewer', 'merge_install': False, 'path': '/home/E14Raspberry/ScooperBot/tennisbot_ws/src/yasmin/yasmin_viewer', 'symlink_install': True, 'test_result_base': None}
+[2.095s] Level 5:colcon.colcon_core.verb:set package 'yasmin_demos' build argument 'cmake_args' from command line to 'None'
+[2.095s] Level 5:colcon.colcon_core.verb:set package 'yasmin_demos' build argument 'cmake_target' from command line to 'None'
+[2.096s] Level 5:colcon.colcon_core.verb:set package 'yasmin_demos' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.096s] Level 5:colcon.colcon_core.verb:set package 'yasmin_demos' build argument 'cmake_clean_cache' from command line to 'False'
+[2.096s] Level 5:colcon.colcon_core.verb:set package 'yasmin_demos' build argument 'cmake_clean_first' from command line to 'False'
+[2.096s] Level 5:colcon.colcon_core.verb:set package 'yasmin_demos' build argument 'cmake_force_configure' from command line to 'False'
+[2.096s] Level 5:colcon.colcon_core.verb:set package 'yasmin_demos' build argument 'ament_cmake_args' from command line to 'None'
+[2.096s] Level 5:colcon.colcon_core.verb:set package 'yasmin_demos' build argument 'catkin_cmake_args' from command line to 'None'
+[2.096s] Level 5:colcon.colcon_core.verb:set package 'yasmin_demos' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.096s] DEBUG:colcon.colcon_core.verb:Building package 'yasmin_demos' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/E14Raspberry/ScooperBot/tennisbot_ws/build/yasmin_demos', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_demos', 'merge_install': False, 'path': '/home/E14Raspberry/ScooperBot/tennisbot_ws/src/yasmin/yasmin_demos', 'symlink_install': True, 'test_result_base': None}
+[2.097s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[2.099s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[2.100s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/E14Raspberry/ScooperBot/tennisbot_ws/src/yasmin/yasmin' with build type 'ament_cmake'
+[2.102s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/E14Raspberry/ScooperBot/tennisbot_ws/src/yasmin/yasmin'
+[2.118s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[2.119s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.119s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.142s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/E14Raspberry/ScooperBot/tennisbot_ws/src/yasmin/yasmin_msgs' with build type 'ament_cmake'
+[2.143s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/E14Raspberry/ScooperBot/tennisbot_ws/src/yasmin/yasmin_msgs'
+[2.143s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.144s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.188s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/E14Raspberry/ScooperBot/tennisbot_ws/src/serial_motor_demo/serial_motor_demo_msgs' with build type 'ament_cmake'
+[2.190s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/E14Raspberry/ScooperBot/tennisbot_ws/src/serial_motor_demo/serial_motor_demo_msgs'
+[2.191s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.192s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.243s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/E14Raspberry/ScooperBot/tennisbot_ws/src/ball_tracker' with build type 'ament_python'
+[2.244s] Level 1:colcon.colcon_core.shell:create_environment_hook('ball_tracker', 'ament_prefix_path')
+[2.245s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/ball_tracker/share/ball_tracker/hook/ament_prefix_path.ps1'
+[2.255s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/ball_tracker/share/ball_tracker/hook/ament_prefix_path.dsv'
+[2.261s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/ball_tracker/share/ball_tracker/hook/ament_prefix_path.sh'
+[2.268s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.269s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.369s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/E14Raspberry/ScooperBot/tennisbot_ws/build/yasmin': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/E14Raspberry/ScooperBot/tennisbot_ws/build/yasmin -- -j4 -l4
+[2.407s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/E14Raspberry/ScooperBot/tennisbot_ws/build/yasmin_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/E14Raspberry/ScooperBot/tennisbot_ws/build/yasmin_msgs -- -j4 -l4
+[2.444s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/E14Raspberry/ScooperBot/tennisbot_ws/build/serial_motor_demo_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/E14Raspberry/ScooperBot/tennisbot_ws/build/serial_motor_demo_msgs -- -j4 -l4
+[7.679s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/E14Raspberry/ScooperBot/tennisbot_ws/src/ball_tracker'
+[7.682s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[7.686s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[11.476s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/E14Raspberry/ScooperBot/tennisbot_ws/build/yasmin' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/E14Raspberry/ScooperBot/tennisbot_ws/build/yasmin -- -j4 -l4
+[11.785s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/E14Raspberry/ScooperBot/tennisbot_ws/build/yasmin_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/E14Raspberry/ScooperBot/tennisbot_ws/build/yasmin_msgs -- -j4 -l4
+[12.288s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/E14Raspberry/ScooperBot/tennisbot_ws/build/yasmin': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/E14Raspberry/ScooperBot/tennisbot_ws/build/yasmin
+[12.339s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/E14Raspberry/ScooperBot/tennisbot_ws/build/serial_motor_demo_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/E14Raspberry/ScooperBot/tennisbot_ws/build/serial_motor_demo_msgs -- -j4 -l4
+[13.347s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(yasmin)
+[13.349s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/E14Raspberry/ScooperBot/tennisbot_ws/build/yasmin' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/E14Raspberry/ScooperBot/tennisbot_ws/build/yasmin
+[13.381s] Level 1:colcon.colcon_core.environment:checking '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin' for CMake module files
+[13.391s] Level 1:colcon.colcon_core.environment:checking '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin' for CMake config files
+[13.403s] Level 1:colcon.colcon_core.shell:create_environment_hook('yasmin', 'cmake_prefix_path')
+[13.404s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin/share/yasmin/hook/cmake_prefix_path.ps1'
+[13.409s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin/share/yasmin/hook/cmake_prefix_path.dsv'
+[13.413s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin/share/yasmin/hook/cmake_prefix_path.sh'
+[13.419s] Level 1:colcon.colcon_core.environment:checking '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin/lib'
+[13.421s] Level 1:colcon.colcon_core.environment:checking '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin/bin'
+[13.422s] Level 1:colcon.colcon_core.environment:checking '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin/lib/pkgconfig/yasmin.pc'
+[13.425s] Level 1:colcon.colcon_core.environment:checking '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin/lib/python3.12/site-packages'
+[13.426s] Level 1:colcon.colcon_core.shell:create_environment_hook('yasmin', 'pythonpath')
+[13.428s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin/share/yasmin/hook/pythonpath.ps1'
+[13.432s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin/share/yasmin/hook/pythonpath.dsv'
+[13.437s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin/share/yasmin/hook/pythonpath.sh'
+[13.444s] Level 1:colcon.colcon_core.environment:checking '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin/bin'
+[13.448s] INFO:colcon.colcon_core.shell:Creating package script '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin/share/yasmin/package.ps1'
+[13.458s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin/share/yasmin/package.dsv'
+[13.466s] INFO:colcon.colcon_core.shell:Creating package script '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin/share/yasmin/package.sh'
+[13.477s] INFO:colcon.colcon_core.shell:Creating package script '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin/share/yasmin/package.bash'
+[13.488s] INFO:colcon.colcon_core.shell:Creating package script '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin/share/yasmin/package.zsh'
+[13.497s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin/share/colcon-core/packages/yasmin)
+[13.840s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/E14Raspberry/ScooperBot/tennisbot_ws/build/yasmin_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/E14Raspberry/ScooperBot/tennisbot_ws/build/yasmin_msgs
+[14.110s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(yasmin)
+[14.114s] Level 1:colcon.colcon_core.environment:checking '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin' for CMake module files
+[14.131s] Level 1:colcon.colcon_core.environment:checking '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin' for CMake config files
+[14.143s] Level 1:colcon.colcon_core.shell:create_environment_hook('yasmin', 'cmake_prefix_path')
+[14.144s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin/share/yasmin/hook/cmake_prefix_path.ps1'
+[14.153s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin/share/yasmin/hook/cmake_prefix_path.dsv'
+[14.161s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin/share/yasmin/hook/cmake_prefix_path.sh'
+[14.167s] Level 1:colcon.colcon_core.environment:checking '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin/lib'
+[14.170s] Level 1:colcon.colcon_core.environment:checking '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin/bin'
+[14.177s] Level 1:colcon.colcon_core.environment:checking '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin/lib/pkgconfig/yasmin.pc'
+[14.182s] Level 1:colcon.colcon_core.environment:checking '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin/lib/python3.12/site-packages'
+[14.184s] Level 1:colcon.colcon_core.shell:create_environment_hook('yasmin', 'pythonpath')
+[14.189s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin/share/yasmin/hook/pythonpath.ps1'
+[14.197s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin/share/yasmin/hook/pythonpath.dsv'
+[14.205s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin/share/yasmin/hook/pythonpath.sh'
+[14.216s] Level 1:colcon.colcon_core.environment:checking '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin/bin'
+[14.219s] INFO:colcon.colcon_core.shell:Creating package script '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin/share/yasmin/package.ps1'
+[14.230s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin/share/yasmin/package.dsv'
+[14.240s] INFO:colcon.colcon_core.shell:Creating package script '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin/share/yasmin/package.sh'
+[14.253s] INFO:colcon.colcon_core.shell:Creating package script '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin/share/yasmin/package.bash'
+[14.261s] INFO:colcon.colcon_core.shell:Creating package script '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin/share/yasmin/package.zsh'
+[14.270s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin/share/colcon-core/packages/yasmin)
+[14.276s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/E14Raspberry/ScooperBot/tennisbot_ws/src/yasmin/yasmin_ros' with build type 'ament_cmake'
+[14.279s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/E14Raspberry/ScooperBot/tennisbot_ws/src/yasmin/yasmin_ros'
+[14.285s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[14.286s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[14.414s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/E14Raspberry/ScooperBot/tennisbot_ws/build/serial_motor_demo_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/E14Raspberry/ScooperBot/tennisbot_ws/build/serial_motor_demo_msgs
+[14.500s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/E14Raspberry/ScooperBot/tennisbot_ws/build/yasmin_ros': AMENT_PREFIX_PATH=/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy LD_LIBRARY_PATH=/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/E14Raspberry/ScooperBot/tennisbot_ws/build/yasmin_ros -- -j4 -l4
+[15.571s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(yasmin_msgs)
+[15.576s] Level 1:colcon.colcon_core.environment:checking '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_msgs' for CMake module files
+[15.592s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/E14Raspberry/ScooperBot/tennisbot_ws/build/yasmin_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/E14Raspberry/ScooperBot/tennisbot_ws/build/yasmin_msgs
+[15.621s] Level 1:colcon.colcon_core.environment:checking '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_msgs' for CMake config files
+[15.660s] Level 1:colcon.colcon_core.shell:create_environment_hook('yasmin_msgs', 'cmake_prefix_path')
+[15.666s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_msgs/share/yasmin_msgs/hook/cmake_prefix_path.ps1'
+[15.679s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_msgs/share/yasmin_msgs/hook/cmake_prefix_path.dsv'
+[15.688s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_msgs/share/yasmin_msgs/hook/cmake_prefix_path.sh'
+[15.703s] Level 1:colcon.colcon_core.environment:checking '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_msgs/lib'
+[15.705s] Level 1:colcon.colcon_core.shell:create_environment_hook('yasmin_msgs', 'ld_library_path_lib')
+[15.707s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_msgs/share/yasmin_msgs/hook/ld_library_path_lib.ps1'
+[15.716s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_msgs/share/yasmin_msgs/hook/ld_library_path_lib.dsv'
+[15.723s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_msgs/share/yasmin_msgs/hook/ld_library_path_lib.sh'
+[15.735s] Level 1:colcon.colcon_core.environment:checking '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_msgs/bin'
+[15.739s] Level 1:colcon.colcon_core.environment:checking '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_msgs/lib/pkgconfig/yasmin_msgs.pc'
+[15.746s] Level 1:colcon.colcon_core.environment:checking '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_msgs/lib/python3.12/site-packages'
+[15.749s] Level 1:colcon.colcon_core.shell:create_environment_hook('yasmin_msgs', 'pythonpath')
+[15.753s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_msgs/share/yasmin_msgs/hook/pythonpath.ps1'
+[15.762s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_msgs/share/yasmin_msgs/hook/pythonpath.dsv'
+[15.773s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_msgs/share/yasmin_msgs/hook/pythonpath.sh'
+[15.785s] Level 1:colcon.colcon_core.environment:checking '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_msgs/bin'
+[15.792s] INFO:colcon.colcon_core.shell:Creating package script '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_msgs/share/yasmin_msgs/package.ps1'
+[15.807s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_msgs/share/yasmin_msgs/package.dsv'
+[15.813s] INFO:colcon.colcon_core.shell:Creating package script '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_msgs/share/yasmin_msgs/package.sh'
+[15.819s] INFO:colcon.colcon_core.shell:Creating package script '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_msgs/share/yasmin_msgs/package.bash'
+[15.823s] INFO:colcon.colcon_core.shell:Creating package script '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_msgs/share/yasmin_msgs/package.zsh'
+[15.827s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_msgs/share/colcon-core/packages/yasmin_msgs)
+[16.450s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(serial_motor_demo_msgs)
+[16.451s] Level 1:colcon.colcon_core.environment:checking '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs' for CMake module files
+[16.454s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/E14Raspberry/ScooperBot/tennisbot_ws/build/serial_motor_demo_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/E14Raspberry/ScooperBot/tennisbot_ws/build/serial_motor_demo_msgs
+[16.459s] Level 1:colcon.colcon_core.environment:checking '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs' for CMake config files
+[16.462s] Level 1:colcon.colcon_core.shell:create_environment_hook('serial_motor_demo_msgs', 'cmake_prefix_path')
+[16.464s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/hook/cmake_prefix_path.ps1'
+[16.471s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/hook/cmake_prefix_path.dsv'
+[16.473s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/hook/cmake_prefix_path.sh'
+[16.476s] Level 1:colcon.colcon_core.environment:checking '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/lib'
+[16.477s] Level 1:colcon.colcon_core.shell:create_environment_hook('serial_motor_demo_msgs', 'ld_library_path_lib')
+[16.478s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/hook/ld_library_path_lib.ps1'
+[16.480s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/hook/ld_library_path_lib.dsv'
+[16.483s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/hook/ld_library_path_lib.sh'
+[16.485s] Level 1:colcon.colcon_core.environment:checking '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/bin'
+[16.485s] Level 1:colcon.colcon_core.environment:checking '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/lib/pkgconfig/serial_motor_demo_msgs.pc'
+[16.486s] Level 1:colcon.colcon_core.environment:checking '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/lib/python3.12/site-packages'
+[16.487s] Level 1:colcon.colcon_core.shell:create_environment_hook('serial_motor_demo_msgs', 'pythonpath')
+[16.488s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/hook/pythonpath.ps1'
+[16.490s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/hook/pythonpath.dsv'
+[16.492s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/hook/pythonpath.sh'
+[16.495s] Level 1:colcon.colcon_core.environment:checking '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/bin'
+[16.497s] INFO:colcon.colcon_core.shell:Creating package script '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/package.ps1'
+[16.500s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/package.dsv'
+[16.502s] INFO:colcon.colcon_core.shell:Creating package script '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/package.sh'
+[16.505s] INFO:colcon.colcon_core.shell:Creating package script '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/package.bash'
+[16.507s] INFO:colcon.colcon_core.shell:Creating package script '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/package.zsh'
+[16.509s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/share/colcon-core/packages/serial_motor_demo_msgs)
+[18.219s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/E14Raspberry/ScooperBot/tennisbot_ws/build/ball_tracker': PYTHONPATH=/home/E14Raspberry/ScooperBot/tennisbot_ws/build/ball_tracker/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/ball_tracker/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/E14Raspberry/ScooperBot/tennisbot_ws/build/ball_tracker/build --no-deps symlink_data
+[18.224s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(yasmin_msgs)
+[18.226s] Level 1:colcon.colcon_core.environment:checking '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_msgs' for CMake module files
+[18.242s] Level 1:colcon.colcon_core.environment:checking '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_msgs' for CMake config files
+[18.251s] Level 1:colcon.colcon_core.shell:create_environment_hook('yasmin_msgs', 'cmake_prefix_path')
+[18.253s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_msgs/share/yasmin_msgs/hook/cmake_prefix_path.ps1'
+[18.258s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_msgs/share/yasmin_msgs/hook/cmake_prefix_path.dsv'
+[18.262s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_msgs/share/yasmin_msgs/hook/cmake_prefix_path.sh'
+[18.269s] Level 1:colcon.colcon_core.environment:checking '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_msgs/lib'
+[18.270s] Level 1:colcon.colcon_core.shell:create_environment_hook('yasmin_msgs', 'ld_library_path_lib')
+[18.272s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_msgs/share/yasmin_msgs/hook/ld_library_path_lib.ps1'
+[18.277s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_msgs/share/yasmin_msgs/hook/ld_library_path_lib.dsv'
+[18.281s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_msgs/share/yasmin_msgs/hook/ld_library_path_lib.sh'
+[18.286s] Level 1:colcon.colcon_core.environment:checking '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_msgs/bin'
+[18.287s] Level 1:colcon.colcon_core.environment:checking '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_msgs/lib/pkgconfig/yasmin_msgs.pc'
+[18.290s] Level 1:colcon.colcon_core.environment:checking '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_msgs/lib/python3.12/site-packages'
+[18.292s] Level 1:colcon.colcon_core.shell:create_environment_hook('yasmin_msgs', 'pythonpath')
+[18.293s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_msgs/share/yasmin_msgs/hook/pythonpath.ps1'
+[18.298s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_msgs/share/yasmin_msgs/hook/pythonpath.dsv'
+[18.301s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_msgs/share/yasmin_msgs/hook/pythonpath.sh'
+[18.307s] Level 1:colcon.colcon_core.environment:checking '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_msgs/bin'
+[18.310s] INFO:colcon.colcon_core.shell:Creating package script '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_msgs/share/yasmin_msgs/package.ps1'
+[18.317s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_msgs/share/yasmin_msgs/package.dsv'
+[18.324s] INFO:colcon.colcon_core.shell:Creating package script '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_msgs/share/yasmin_msgs/package.sh'
+[18.330s] INFO:colcon.colcon_core.shell:Creating package script '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_msgs/share/yasmin_msgs/package.bash'
+[18.335s] INFO:colcon.colcon_core.shell:Creating package script '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_msgs/share/yasmin_msgs/package.zsh'
+[18.339s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_msgs/share/colcon-core/packages/yasmin_msgs)
+[18.343s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/E14Raspberry/ScooperBot/tennisbot_ws/src/ball_tracker_msgs' with build type 'ament_cmake'
+[18.347s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/E14Raspberry/ScooperBot/tennisbot_ws/src/ball_tracker_msgs'
+[18.349s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[18.349s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[18.478s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/E14Raspberry/ScooperBot/tennisbot_ws/build/ball_tracker_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/E14Raspberry/ScooperBot/tennisbot_ws/build/ball_tracker_msgs -- -j4 -l4
+[18.838s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(serial_motor_demo_msgs)
+[18.840s] Level 1:colcon.colcon_core.environment:checking '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs' for CMake module files
+[18.856s] Level 1:colcon.colcon_core.environment:checking '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs' for CMake config files
+[18.863s] Level 1:colcon.colcon_core.shell:create_environment_hook('serial_motor_demo_msgs', 'cmake_prefix_path')
+[18.865s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/hook/cmake_prefix_path.ps1'
+[18.870s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/hook/cmake_prefix_path.dsv'
+[18.874s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/hook/cmake_prefix_path.sh'
+[18.880s] Level 1:colcon.colcon_core.environment:checking '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/lib'
+[18.882s] Level 1:colcon.colcon_core.shell:create_environment_hook('serial_motor_demo_msgs', 'ld_library_path_lib')
+[18.883s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/hook/ld_library_path_lib.ps1'
+[18.887s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/hook/ld_library_path_lib.dsv'
+[18.891s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/hook/ld_library_path_lib.sh'
+[18.898s] Level 1:colcon.colcon_core.environment:checking '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/bin'
+[18.899s] Level 1:colcon.colcon_core.environment:checking '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/lib/pkgconfig/serial_motor_demo_msgs.pc'
+[18.901s] Level 1:colcon.colcon_core.environment:checking '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/lib/python3.12/site-packages'
+[18.903s] Level 1:colcon.colcon_core.shell:create_environment_hook('serial_motor_demo_msgs', 'pythonpath')
+[18.905s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/hook/pythonpath.ps1'
+[18.911s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/hook/pythonpath.dsv'
+[18.915s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/hook/pythonpath.sh'
+[18.922s] Level 1:colcon.colcon_core.environment:checking '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/bin'
+[18.925s] INFO:colcon.colcon_core.shell:Creating package script '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/package.ps1'
+[18.934s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/package.dsv'
+[18.942s] INFO:colcon.colcon_core.shell:Creating package script '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/package.sh'
+[18.948s] INFO:colcon.colcon_core.shell:Creating package script '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/package.bash'
+[18.953s] INFO:colcon.colcon_core.shell:Creating package script '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/package.zsh'
+[18.958s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/share/colcon-core/packages/serial_motor_demo_msgs)
+[18.962s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/E14Raspberry/ScooperBot/tennisbot_ws/src/diffdrive_arduino' with build type 'ament_cmake'
+[18.964s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/E14Raspberry/ScooperBot/tennisbot_ws/src/diffdrive_arduino'
+[18.966s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[18.966s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[19.096s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/E14Raspberry/ScooperBot/tennisbot_ws/build/diffdrive_arduino': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/E14Raspberry/ScooperBot/tennisbot_ws/build/diffdrive_arduino -- -j4 -l4
+[21.201s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/E14Raspberry/ScooperBot/tennisbot_ws/build/diffdrive_arduino' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/E14Raspberry/ScooperBot/tennisbot_ws/build/diffdrive_arduino -- -j4 -l4
+[21.337s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/E14Raspberry/ScooperBot/tennisbot_ws/build/yasmin_ros' returned '0': AMENT_PREFIX_PATH=/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy LD_LIBRARY_PATH=/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/E14Raspberry/ScooperBot/tennisbot_ws/build/yasmin_ros -- -j4 -l4
+[22.026s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/E14Raspberry/ScooperBot/tennisbot_ws/build/diffdrive_arduino': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/E14Raspberry/ScooperBot/tennisbot_ws/build/diffdrive_arduino
+[22.279s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/E14Raspberry/ScooperBot/tennisbot_ws/build/yasmin_ros': AMENT_PREFIX_PATH=/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy LD_LIBRARY_PATH=/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/E14Raspberry/ScooperBot/tennisbot_ws/build/yasmin_ros
+[22.836s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(diffdrive_arduino)
+[22.838s] Level 1:colcon.colcon_core.environment:checking '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/diffdrive_arduino' for CMake module files
+[22.840s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/E14Raspberry/ScooperBot/tennisbot_ws/build/diffdrive_arduino' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/E14Raspberry/ScooperBot/tennisbot_ws/build/diffdrive_arduino
+[22.865s] Level 1:colcon.colcon_core.environment:checking '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/diffdrive_arduino' for CMake config files
+[22.889s] Level 1:colcon.colcon_core.shell:create_environment_hook('diffdrive_arduino', 'cmake_prefix_path')
+[22.891s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/diffdrive_arduino/share/diffdrive_arduino/hook/cmake_prefix_path.ps1'
+[22.902s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/diffdrive_arduino/share/diffdrive_arduino/hook/cmake_prefix_path.dsv'
+[22.909s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/diffdrive_arduino/share/diffdrive_arduino/hook/cmake_prefix_path.sh'
+[22.925s] Level 1:colcon.colcon_core.environment:checking '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/diffdrive_arduino/lib'
+[22.926s] Level 1:colcon.colcon_core.shell:create_environment_hook('diffdrive_arduino', 'ld_library_path_lib')
+[22.931s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/diffdrive_arduino/share/diffdrive_arduino/hook/ld_library_path_lib.ps1'
+[22.938s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/diffdrive_arduino/share/diffdrive_arduino/hook/ld_library_path_lib.dsv'
+[22.947s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/diffdrive_arduino/share/diffdrive_arduino/hook/ld_library_path_lib.sh'
+[22.961s] Level 1:colcon.colcon_core.environment:checking '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/diffdrive_arduino/bin'
+[22.965s] Level 1:colcon.colcon_core.environment:checking '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/diffdrive_arduino/lib/pkgconfig/diffdrive_arduino.pc'
+[22.971s] Level 1:colcon.colcon_core.environment:checking '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/diffdrive_arduino/lib/python3.12/site-packages'
+[22.973s] Level 1:colcon.colcon_core.environment:checking '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/diffdrive_arduino/bin'
+[22.979s] INFO:colcon.colcon_core.shell:Creating package script '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/diffdrive_arduino/share/diffdrive_arduino/package.ps1'
+[22.996s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/diffdrive_arduino/share/diffdrive_arduino/package.dsv'
+[23.002s] INFO:colcon.colcon_core.shell:Creating package script '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/diffdrive_arduino/share/diffdrive_arduino/package.sh'
+[23.007s] INFO:colcon.colcon_core.shell:Creating package script '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/diffdrive_arduino/share/diffdrive_arduino/package.bash'
+[23.013s] INFO:colcon.colcon_core.shell:Creating package script '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/diffdrive_arduino/share/diffdrive_arduino/package.zsh'
+[23.019s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/E14Raspberry/ScooperBot/tennisbot_ws/install/diffdrive_arduino/share/colcon-core/packages/diffdrive_arduino)
+[23.509s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(yasmin_ros)
+[23.515s] Level 1:colcon.colcon_core.environment:checking '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_ros' for CMake module files
+[23.522s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/E14Raspberry/ScooperBot/tennisbot_ws/build/yasmin_ros' returned '0': AMENT_PREFIX_PATH=/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy LD_LIBRARY_PATH=/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/E14Raspberry/ScooperBot/tennisbot_ws/build/yasmin_ros
+[23.543s] Level 1:colcon.colcon_core.environment:checking '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_ros' for CMake config files
+[23.549s] Level 1:colcon.colcon_core.shell:create_environment_hook('yasmin_ros', 'cmake_prefix_path')
+[23.551s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_ros/share/yasmin_ros/hook/cmake_prefix_path.ps1'
+[23.559s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_ros/share/yasmin_ros/hook/cmake_prefix_path.dsv'
+[23.570s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_ros/share/yasmin_ros/hook/cmake_prefix_path.sh'
+[23.591s] Level 1:colcon.colcon_core.environment:checking '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_ros/lib'
+[23.593s] Level 1:colcon.colcon_core.environment:checking '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_ros/bin'
+[23.594s] Level 1:colcon.colcon_core.environment:checking '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_ros/lib/pkgconfig/yasmin_ros.pc'
+[23.602s] Level 1:colcon.colcon_core.environment:checking '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_ros/lib/python3.12/site-packages'
+[23.611s] Level 1:colcon.colcon_core.shell:create_environment_hook('yasmin_ros', 'pythonpath')
+[23.612s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_ros/share/yasmin_ros/hook/pythonpath.ps1'
+[23.629s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_ros/share/yasmin_ros/hook/pythonpath.dsv'
+[23.639s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_ros/share/yasmin_ros/hook/pythonpath.sh'
+[23.664s] Level 1:colcon.colcon_core.environment:checking '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_ros/bin'
+[23.673s] INFO:colcon.colcon_core.shell:Creating package script '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_ros/share/yasmin_ros/package.ps1'
+[23.692s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_ros/share/yasmin_ros/package.dsv'
+[23.704s] INFO:colcon.colcon_core.shell:Creating package script '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_ros/share/yasmin_ros/package.sh'
+[23.712s] INFO:colcon.colcon_core.shell:Creating package script '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_ros/share/yasmin_ros/package.bash'
+[23.723s] INFO:colcon.colcon_core.shell:Creating package script '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_ros/share/yasmin_ros/package.zsh'
+[23.730s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_ros/share/colcon-core/packages/yasmin_ros)
+[23.781s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(diffdrive_arduino)
+[23.783s] Level 1:colcon.colcon_core.environment:checking '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/diffdrive_arduino' for CMake module files
+[23.826s] Level 1:colcon.colcon_core.environment:checking '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/diffdrive_arduino' for CMake config files
+[23.865s] Level 1:colcon.colcon_core.shell:create_environment_hook('diffdrive_arduino', 'cmake_prefix_path')
+[23.871s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/diffdrive_arduino/share/diffdrive_arduino/hook/cmake_prefix_path.ps1'
+[23.878s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/diffdrive_arduino/share/diffdrive_arduino/hook/cmake_prefix_path.dsv'
+[23.885s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/diffdrive_arduino/share/diffdrive_arduino/hook/cmake_prefix_path.sh'
+[23.897s] Level 1:colcon.colcon_core.environment:checking '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/diffdrive_arduino/lib'
+[23.904s] Level 1:colcon.colcon_core.shell:create_environment_hook('diffdrive_arduino', 'ld_library_path_lib')
+[23.909s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/diffdrive_arduino/share/diffdrive_arduino/hook/ld_library_path_lib.ps1'
+[23.917s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/diffdrive_arduino/share/diffdrive_arduino/hook/ld_library_path_lib.dsv'
+[23.932s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/diffdrive_arduino/share/diffdrive_arduino/hook/ld_library_path_lib.sh'
+[23.940s] Level 1:colcon.colcon_core.environment:checking '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/diffdrive_arduino/bin'
+[23.947s] Level 1:colcon.colcon_core.environment:checking '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/diffdrive_arduino/lib/pkgconfig/diffdrive_arduino.pc'
+[23.949s] Level 1:colcon.colcon_core.environment:checking '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/diffdrive_arduino/lib/python3.12/site-packages'
+[23.956s] Level 1:colcon.colcon_core.environment:checking '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/diffdrive_arduino/bin'
+[23.958s] INFO:colcon.colcon_core.shell:Creating package script '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/diffdrive_arduino/share/diffdrive_arduino/package.ps1'
+[23.970s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/diffdrive_arduino/share/diffdrive_arduino/package.dsv'
+[23.986s] INFO:colcon.colcon_core.shell:Creating package script '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/diffdrive_arduino/share/diffdrive_arduino/package.sh'
+[23.998s] INFO:colcon.colcon_core.shell:Creating package script '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/diffdrive_arduino/share/diffdrive_arduino/package.bash'
+[24.006s] INFO:colcon.colcon_core.shell:Creating package script '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/diffdrive_arduino/share/diffdrive_arduino/package.zsh'
+[24.019s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/E14Raspberry/ScooperBot/tennisbot_ws/install/diffdrive_arduino/share/colcon-core/packages/diffdrive_arduino)
+[24.026s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/E14Raspberry/ScooperBot/tennisbot_ws/src/ros2_nav_to_pose' with build type 'ament_python'
+[24.030s] Level 1:colcon.colcon_core.shell:create_environment_hook('ros2_nav_to_pose', 'ament_prefix_path')
+[24.035s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/ros2_nav_to_pose/share/ros2_nav_to_pose/hook/ament_prefix_path.ps1'
+[24.065s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/ros2_nav_to_pose/share/ros2_nav_to_pose/hook/ament_prefix_path.dsv'
+[24.077s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/ros2_nav_to_pose/share/ros2_nav_to_pose/hook/ament_prefix_path.sh'
+[24.099s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[24.099s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[26.697s] WARNING:colcon.colcon_ros.task.ament_python.build:Package 'ros2_nav_to_pose' doesn't explicitly install a marker in the package index (colcon-ros currently does it implicitly but that fallback will be removed in the future)
+[26.702s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/E14Raspberry/ScooperBot/tennisbot_ws/src/ros2_nav_to_pose'
+[26.703s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[26.703s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[26.723s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(yasmin_ros)
+[26.724s] Level 1:colcon.colcon_core.environment:checking '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_ros' for CMake module files
+[26.728s] Level 1:colcon.colcon_core.environment:checking '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_ros' for CMake config files
+[26.730s] Level 1:colcon.colcon_core.shell:create_environment_hook('yasmin_ros', 'cmake_prefix_path')
+[26.731s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_ros/share/yasmin_ros/hook/cmake_prefix_path.ps1'
+[26.733s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_ros/share/yasmin_ros/hook/cmake_prefix_path.dsv'
+[26.734s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_ros/share/yasmin_ros/hook/cmake_prefix_path.sh'
+[26.737s] Level 1:colcon.colcon_core.environment:checking '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_ros/lib'
+[26.737s] Level 1:colcon.colcon_core.environment:checking '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_ros/bin'
+[26.737s] Level 1:colcon.colcon_core.environment:checking '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_ros/lib/pkgconfig/yasmin_ros.pc'
+[26.738s] Level 1:colcon.colcon_core.environment:checking '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_ros/lib/python3.12/site-packages'
+[26.739s] Level 1:colcon.colcon_core.shell:create_environment_hook('yasmin_ros', 'pythonpath')
+[26.739s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_ros/share/yasmin_ros/hook/pythonpath.ps1'
+[26.741s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_ros/share/yasmin_ros/hook/pythonpath.dsv'
+[26.745s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_ros/share/yasmin_ros/hook/pythonpath.sh'
+[26.750s] Level 1:colcon.colcon_core.environment:checking '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_ros/bin'
+[26.753s] INFO:colcon.colcon_core.shell:Creating package script '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_ros/share/yasmin_ros/package.ps1'
+[26.758s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_ros/share/yasmin_ros/package.dsv'
+[26.765s] INFO:colcon.colcon_core.shell:Creating package script '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_ros/share/yasmin_ros/package.sh'
+[26.769s] INFO:colcon.colcon_core.shell:Creating package script '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_ros/share/yasmin_ros/package.bash'
+[26.773s] INFO:colcon.colcon_core.shell:Creating package script '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_ros/share/yasmin_ros/package.zsh'
+[26.777s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_ros/share/colcon-core/packages/yasmin_ros)
+[26.784s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/E14Raspberry/ScooperBot/tennisbot_ws/src/yasmin/yasmin_viewer' with build type 'ament_cmake'
+[26.785s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/E14Raspberry/ScooperBot/tennisbot_ws/src/yasmin/yasmin_viewer'
+[26.787s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[26.788s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[26.843s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/E14Raspberry/ScooperBot/tennisbot_ws/build/ball_tracker_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/E14Raspberry/ScooperBot/tennisbot_ws/build/ball_tracker_msgs -- -j4 -l4
+[27.033s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/E14Raspberry/ScooperBot/tennisbot_ws/build/yasmin_viewer': AMENT_PREFIX_PATH=/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_ros:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_msgs:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_ros:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_msgs:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy LD_LIBRARY_PATH=/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_ros/lib:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_msgs/lib:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_ros/lib/python3.12/site-packages:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_msgs/lib/python3.12/site-packages:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/E14Raspberry/ScooperBot/tennisbot_ws/build/yasmin_viewer -- -j4 -l4
+[28.380s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/E14Raspberry/ScooperBot/tennisbot_ws/build/ball_tracker_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/E14Raspberry/ScooperBot/tennisbot_ws/build/ball_tracker_msgs
+[28.909s] Level 1:colcon.colcon_core.shell:create_environment_hook('ball_tracker', 'pythonpath_develop')
+[28.912s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/E14Raspberry/ScooperBot/tennisbot_ws/build/ball_tracker/share/ball_tracker/hook/pythonpath_develop.ps1'
+[28.918s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/E14Raspberry/ScooperBot/tennisbot_ws/build/ball_tracker' returned '0': PYTHONPATH=/home/E14Raspberry/ScooperBot/tennisbot_ws/build/ball_tracker/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/ball_tracker/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/E14Raspberry/ScooperBot/tennisbot_ws/build/ball_tracker/build --no-deps symlink_data
+[28.925s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/E14Raspberry/ScooperBot/tennisbot_ws/build/ball_tracker/share/ball_tracker/hook/pythonpath_develop.dsv'
+[28.934s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/E14Raspberry/ScooperBot/tennisbot_ws/build/ball_tracker/share/ball_tracker/hook/pythonpath_develop.sh'
+[28.947s] Level 1:colcon.colcon_core.environment:checking '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/ball_tracker' for CMake module files
+[28.965s] Level 1:colcon.colcon_core.environment:checking '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/ball_tracker' for CMake config files
+[28.991s] Level 1:colcon.colcon_core.environment:checking '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/ball_tracker/lib'
+[28.992s] Level 1:colcon.colcon_core.environment:checking '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/ball_tracker/bin'
+[28.993s] Level 1:colcon.colcon_core.environment:checking '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/ball_tracker/lib/pkgconfig/ball_tracker.pc'
+[28.996s] Level 1:colcon.colcon_core.environment:checking '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/ball_tracker/lib/python3.12/site-packages'
+[28.999s] Level 1:colcon.colcon_core.shell:create_environment_hook('ball_tracker', 'pythonpath')
+[29.001s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/ball_tracker/share/ball_tracker/hook/pythonpath.ps1'
+[29.011s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/ball_tracker/share/ball_tracker/hook/pythonpath.dsv'
+[29.019s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/ball_tracker/share/ball_tracker/hook/pythonpath.sh'
+[29.029s] Level 1:colcon.colcon_core.environment:checking '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/ball_tracker/bin'
+[29.030s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ball_tracker)
+[29.033s] INFO:colcon.colcon_core.shell:Creating package script '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/ball_tracker/share/ball_tracker/package.ps1'
+[29.040s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/ball_tracker/share/ball_tracker/package.dsv'
+[29.046s] INFO:colcon.colcon_core.shell:Creating package script '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/ball_tracker/share/ball_tracker/package.sh'
+[29.051s] INFO:colcon.colcon_core.shell:Creating package script '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/ball_tracker/share/ball_tracker/package.bash'
+[29.056s] INFO:colcon.colcon_core.shell:Creating package script '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/ball_tracker/share/ball_tracker/package.zsh'
+[29.059s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/E14Raspberry/ScooperBot/tennisbot_ws/install/ball_tracker/share/colcon-core/packages/ball_tracker)
+[29.069s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/E14Raspberry/ScooperBot/tennisbot_ws/src/ros2_nav_to_pose_msgs' with build type 'ament_cmake'
+[29.070s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/E14Raspberry/ScooperBot/tennisbot_ws/src/ros2_nav_to_pose_msgs'
+[29.072s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[29.073s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[29.208s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/E14Raspberry/ScooperBot/tennisbot_ws/build/ros2_nav_to_pose_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/E14Raspberry/ScooperBot/tennisbot_ws/build/ros2_nav_to_pose_msgs -- -j4 -l4
+[30.036s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ball_tracker_msgs)
+[30.037s] Level 1:colcon.colcon_core.environment:checking '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/ball_tracker_msgs' for CMake module files
+[30.040s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/E14Raspberry/ScooperBot/tennisbot_ws/build/ball_tracker_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/E14Raspberry/ScooperBot/tennisbot_ws/build/ball_tracker_msgs
+[30.047s] Level 1:colcon.colcon_core.environment:checking '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/ball_tracker_msgs' for CMake config files
+[30.055s] Level 1:colcon.colcon_core.shell:create_environment_hook('ball_tracker_msgs', 'cmake_prefix_path')
+[30.056s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/ball_tracker_msgs/share/ball_tracker_msgs/hook/cmake_prefix_path.ps1'
+[30.060s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/ball_tracker_msgs/share/ball_tracker_msgs/hook/cmake_prefix_path.dsv'
+[30.062s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/ball_tracker_msgs/share/ball_tracker_msgs/hook/cmake_prefix_path.sh'
+[30.066s] Level 1:colcon.colcon_core.environment:checking '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/ball_tracker_msgs/lib'
+[30.071s] Level 1:colcon.colcon_core.shell:create_environment_hook('ball_tracker_msgs', 'ld_library_path_lib')
+[30.072s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/ball_tracker_msgs/share/ball_tracker_msgs/hook/ld_library_path_lib.ps1'
+[30.078s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/ball_tracker_msgs/share/ball_tracker_msgs/hook/ld_library_path_lib.dsv'
+[30.080s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/ball_tracker_msgs/share/ball_tracker_msgs/hook/ld_library_path_lib.sh'
+[30.085s] Level 1:colcon.colcon_core.environment:checking '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/ball_tracker_msgs/bin'
+[30.085s] Level 1:colcon.colcon_core.environment:checking '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/ball_tracker_msgs/lib/pkgconfig/ball_tracker_msgs.pc'
+[30.087s] Level 1:colcon.colcon_core.environment:checking '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/ball_tracker_msgs/lib/python3.12/site-packages'
+[30.088s] Level 1:colcon.colcon_core.shell:create_environment_hook('ball_tracker_msgs', 'pythonpath')
+[30.089s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/ball_tracker_msgs/share/ball_tracker_msgs/hook/pythonpath.ps1'
+[30.094s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/ball_tracker_msgs/share/ball_tracker_msgs/hook/pythonpath.dsv'
+[30.101s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/ball_tracker_msgs/share/ball_tracker_msgs/hook/pythonpath.sh'
+[30.108s] Level 1:colcon.colcon_core.environment:checking '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/ball_tracker_msgs/bin'
+[30.109s] INFO:colcon.colcon_core.shell:Creating package script '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/ball_tracker_msgs/share/ball_tracker_msgs/package.ps1'
+[30.115s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/ball_tracker_msgs/share/ball_tracker_msgs/package.dsv'
+[30.122s] INFO:colcon.colcon_core.shell:Creating package script '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/ball_tracker_msgs/share/ball_tracker_msgs/package.sh'
+[30.127s] INFO:colcon.colcon_core.shell:Creating package script '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/ball_tracker_msgs/share/ball_tracker_msgs/package.bash'
+[30.132s] INFO:colcon.colcon_core.shell:Creating package script '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/ball_tracker_msgs/share/ball_tracker_msgs/package.zsh'
+[30.137s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/E14Raspberry/ScooperBot/tennisbot_ws/install/ball_tracker_msgs/share/colcon-core/packages/ball_tracker_msgs)
+[32.387s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ball_tracker_msgs)
+[32.393s] Level 1:colcon.colcon_core.environment:checking '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/ball_tracker_msgs' for CMake module files
+[32.426s] Level 1:colcon.colcon_core.environment:checking '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/ball_tracker_msgs' for CMake config files
+[32.449s] Level 1:colcon.colcon_core.shell:create_environment_hook('ball_tracker_msgs', 'cmake_prefix_path')
+[32.456s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/ball_tracker_msgs/share/ball_tracker_msgs/hook/cmake_prefix_path.ps1'
+[32.467s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/ball_tracker_msgs/share/ball_tracker_msgs/hook/cmake_prefix_path.dsv'
+[32.482s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/ball_tracker_msgs/share/ball_tracker_msgs/hook/cmake_prefix_path.sh'
+[32.501s] Level 1:colcon.colcon_core.environment:checking '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/ball_tracker_msgs/lib'
+[32.507s] Level 1:colcon.colcon_core.shell:create_environment_hook('ball_tracker_msgs', 'ld_library_path_lib')
+[32.509s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/ball_tracker_msgs/share/ball_tracker_msgs/hook/ld_library_path_lib.ps1'
+[32.514s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/ball_tracker_msgs/share/ball_tracker_msgs/hook/ld_library_path_lib.dsv'
+[32.519s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/ball_tracker_msgs/share/ball_tracker_msgs/hook/ld_library_path_lib.sh'
+[32.529s] Level 1:colcon.colcon_core.environment:checking '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/ball_tracker_msgs/bin'
+[32.530s] Level 1:colcon.colcon_core.environment:checking '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/ball_tracker_msgs/lib/pkgconfig/ball_tracker_msgs.pc'
+[32.533s] Level 1:colcon.colcon_core.environment:checking '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/ball_tracker_msgs/lib/python3.12/site-packages'
+[32.534s] Level 1:colcon.colcon_core.shell:create_environment_hook('ball_tracker_msgs', 'pythonpath')
+[32.536s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/ball_tracker_msgs/share/ball_tracker_msgs/hook/pythonpath.ps1'
+[32.541s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/ball_tracker_msgs/share/ball_tracker_msgs/hook/pythonpath.dsv'
+[32.545s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/ball_tracker_msgs/share/ball_tracker_msgs/hook/pythonpath.sh'
+[32.551s] Level 1:colcon.colcon_core.environment:checking '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/ball_tracker_msgs/bin'
+[32.554s] INFO:colcon.colcon_core.shell:Creating package script '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/ball_tracker_msgs/share/ball_tracker_msgs/package.ps1'
+[32.561s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/ball_tracker_msgs/share/ball_tracker_msgs/package.dsv'
+[32.576s] INFO:colcon.colcon_core.shell:Creating package script '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/ball_tracker_msgs/share/ball_tracker_msgs/package.sh'
+[32.591s] INFO:colcon.colcon_core.shell:Creating package script '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/ball_tracker_msgs/share/ball_tracker_msgs/package.bash'
+[32.600s] INFO:colcon.colcon_core.shell:Creating package script '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/ball_tracker_msgs/share/ball_tracker_msgs/package.zsh'
+[32.611s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/E14Raspberry/ScooperBot/tennisbot_ws/install/ball_tracker_msgs/share/colcon-core/packages/ball_tracker_msgs)
+[32.615s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/E14Raspberry/ScooperBot/tennisbot_ws/src/tennisbotmaster' with build type 'ament_cmake'
+[32.621s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/E14Raspberry/ScooperBot/tennisbot_ws/src/tennisbotmaster'
+[32.623s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[32.623s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[32.852s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/E14Raspberry/ScooperBot/tennisbot_ws/build/tennisbotmaster': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/E14Raspberry/ScooperBot/tennisbot_ws/build/tennisbotmaster -- -j4 -l4
+[33.703s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/E14Raspberry/ScooperBot/tennisbot_ws/build/tennisbotmaster' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/E14Raspberry/ScooperBot/tennisbot_ws/build/tennisbotmaster -- -j4 -l4
+[34.258s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/E14Raspberry/ScooperBot/tennisbot_ws/build/tennisbotmaster': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/E14Raspberry/ScooperBot/tennisbot_ws/build/tennisbotmaster
+[34.466s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/E14Raspberry/ScooperBot/tennisbot_ws/build/yasmin_viewer' returned '0': AMENT_PREFIX_PATH=/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_ros:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_msgs:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_ros:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_msgs:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy LD_LIBRARY_PATH=/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_ros/lib:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_msgs/lib:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_ros/lib/python3.12/site-packages:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_msgs/lib/python3.12/site-packages:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/E14Raspberry/ScooperBot/tennisbot_ws/build/yasmin_viewer -- -j4 -l4
+[35.053s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(tennisbotmaster)
+[35.055s] Level 1:colcon.colcon_core.environment:checking '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/tennisbotmaster' for CMake module files
+[35.057s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/E14Raspberry/ScooperBot/tennisbot_ws/build/tennisbotmaster' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/E14Raspberry/ScooperBot/tennisbot_ws/build/tennisbotmaster
+[35.072s] Level 1:colcon.colcon_core.environment:checking '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/tennisbotmaster' for CMake config files
+[35.096s] Level 1:colcon.colcon_core.shell:create_environment_hook('tennisbotmaster', 'cmake_prefix_path')
+[35.098s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/tennisbotmaster/share/tennisbotmaster/hook/cmake_prefix_path.ps1'
+[35.103s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/tennisbotmaster/share/tennisbotmaster/hook/cmake_prefix_path.dsv'
+[35.108s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/tennisbotmaster/share/tennisbotmaster/hook/cmake_prefix_path.sh'
+[35.114s] Level 1:colcon.colcon_core.environment:checking '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/tennisbotmaster/bin'
+[35.115s] Level 1:colcon.colcon_core.environment:checking '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/tennisbotmaster/lib/pkgconfig/tennisbotmaster.pc'
+[35.117s] Level 1:colcon.colcon_core.environment:checking '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/tennisbotmaster/lib/python3.12/site-packages'
+[35.120s] Level 1:colcon.colcon_core.environment:checking '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/tennisbotmaster/bin'
+[35.122s] INFO:colcon.colcon_core.shell:Creating package script '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/tennisbotmaster/share/tennisbotmaster/package.ps1'
+[35.127s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/tennisbotmaster/share/tennisbotmaster/package.dsv'
+[35.132s] INFO:colcon.colcon_core.shell:Creating package script '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/tennisbotmaster/share/tennisbotmaster/package.sh'
+[35.136s] INFO:colcon.colcon_core.shell:Creating package script '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/tennisbotmaster/share/tennisbotmaster/package.bash'
+[35.140s] INFO:colcon.colcon_core.shell:Creating package script '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/tennisbotmaster/share/tennisbotmaster/package.zsh'
+[35.144s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/E14Raspberry/ScooperBot/tennisbot_ws/install/tennisbotmaster/share/colcon-core/packages/tennisbotmaster)
+[35.255s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/E14Raspberry/ScooperBot/tennisbot_ws/build/yasmin_viewer': AMENT_PREFIX_PATH=/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_ros:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_msgs:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_ros:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_msgs:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy LD_LIBRARY_PATH=/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_ros/lib:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_msgs/lib:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_ros/lib/python3.12/site-packages:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_msgs/lib/python3.12/site-packages:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/E14Raspberry/ScooperBot/tennisbot_ws/build/yasmin_viewer
+[35.547s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(tennisbotmaster)
+[35.550s] Level 1:colcon.colcon_core.environment:checking '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/tennisbotmaster' for CMake module files
+[35.573s] Level 1:colcon.colcon_core.environment:checking '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/tennisbotmaster' for CMake config files
+[35.591s] Level 1:colcon.colcon_core.shell:create_environment_hook('tennisbotmaster', 'cmake_prefix_path')
+[35.592s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/tennisbotmaster/share/tennisbotmaster/hook/cmake_prefix_path.ps1'
+[35.600s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/tennisbotmaster/share/tennisbotmaster/hook/cmake_prefix_path.dsv'
+[35.606s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/tennisbotmaster/share/tennisbotmaster/hook/cmake_prefix_path.sh'
+[35.617s] Level 1:colcon.colcon_core.environment:checking '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/tennisbotmaster/bin'
+[35.618s] Level 1:colcon.colcon_core.environment:checking '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/tennisbotmaster/lib/pkgconfig/tennisbotmaster.pc'
+[35.622s] Level 1:colcon.colcon_core.environment:checking '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/tennisbotmaster/lib/python3.12/site-packages'
+[35.627s] Level 1:colcon.colcon_core.environment:checking '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/tennisbotmaster/bin'
+[35.630s] INFO:colcon.colcon_core.shell:Creating package script '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/tennisbotmaster/share/tennisbotmaster/package.ps1'
+[35.642s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/tennisbotmaster/share/tennisbotmaster/package.dsv'
+[35.652s] INFO:colcon.colcon_core.shell:Creating package script '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/tennisbotmaster/share/tennisbotmaster/package.sh'
+[35.659s] INFO:colcon.colcon_core.shell:Creating package script '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/tennisbotmaster/share/tennisbotmaster/package.bash'
+[35.668s] INFO:colcon.colcon_core.shell:Creating package script '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/tennisbotmaster/share/tennisbotmaster/package.zsh'
+[35.679s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/E14Raspberry/ScooperBot/tennisbot_ws/install/tennisbotmaster/share/colcon-core/packages/tennisbotmaster)
+[35.686s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/E14Raspberry/ScooperBot/tennisbot_ws/src/twist_stamper' with build type 'ament_python'
+[35.687s] Level 1:colcon.colcon_core.shell:create_environment_hook('twist_stamper', 'ament_prefix_path')
+[35.689s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/twist_stamper/share/twist_stamper/hook/ament_prefix_path.ps1'
+[35.707s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/twist_stamper/share/twist_stamper/hook/ament_prefix_path.dsv'
+[35.711s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/twist_stamper/share/twist_stamper/hook/ament_prefix_path.sh'
+[35.716s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[35.717s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[38.215s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/E14Raspberry/ScooperBot/tennisbot_ws/src/twist_stamper'
+[38.217s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[38.217s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[38.293s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/E14Raspberry/ScooperBot/tennisbot_ws/build/ros2_nav_to_pose': PYTHONPATH=/home/E14Raspberry/ScooperBot/tennisbot_ws/build/ros2_nav_to_pose/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/ros2_nav_to_pose/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/E14Raspberry/ScooperBot/tennisbot_ws/build/ros2_nav_to_pose/build --no-deps symlink_data
+[38.298s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(yasmin_viewer)
+[38.300s] Level 1:colcon.colcon_core.environment:checking '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_viewer' for CMake module files
+[38.305s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/E14Raspberry/ScooperBot/tennisbot_ws/build/yasmin_viewer' returned '0': AMENT_PREFIX_PATH=/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_ros:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_msgs:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_ros:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_msgs:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy LD_LIBRARY_PATH=/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_ros/lib:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_msgs/lib:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_ros/lib/python3.12/site-packages:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_msgs/lib/python3.12/site-packages:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/E14Raspberry/ScooperBot/tennisbot_ws/build/yasmin_viewer
+[38.314s] Level 1:colcon.colcon_core.environment:checking '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_viewer' for CMake config files
+[38.324s] Level 1:colcon.colcon_core.shell:create_environment_hook('yasmin_viewer', 'cmake_prefix_path')
+[38.326s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_viewer/share/yasmin_viewer/hook/cmake_prefix_path.ps1'
+[38.332s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_viewer/share/yasmin_viewer/hook/cmake_prefix_path.dsv'
+[38.336s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_viewer/share/yasmin_viewer/hook/cmake_prefix_path.sh'
+[38.343s] Level 1:colcon.colcon_core.environment:checking '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_viewer/lib'
+[38.344s] Level 1:colcon.colcon_core.environment:checking '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_viewer/bin'
+[38.345s] Level 1:colcon.colcon_core.environment:checking '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_viewer/lib/pkgconfig/yasmin_viewer.pc'
+[38.347s] Level 1:colcon.colcon_core.environment:checking '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_viewer/lib/python3.12/site-packages'
+[38.349s] Level 1:colcon.colcon_core.shell:create_environment_hook('yasmin_viewer', 'pythonpath')
+[38.350s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_viewer/share/yasmin_viewer/hook/pythonpath.ps1'
+[38.354s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_viewer/share/yasmin_viewer/hook/pythonpath.dsv'
+[38.359s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_viewer/share/yasmin_viewer/hook/pythonpath.sh'
+[38.364s] Level 1:colcon.colcon_core.environment:checking '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_viewer/bin'
+[38.367s] INFO:colcon.colcon_core.shell:Creating package script '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_viewer/share/yasmin_viewer/package.ps1'
+[38.372s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_viewer/share/yasmin_viewer/package.dsv'
+[38.377s] INFO:colcon.colcon_core.shell:Creating package script '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_viewer/share/yasmin_viewer/package.sh'
+[38.381s] INFO:colcon.colcon_core.shell:Creating package script '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_viewer/share/yasmin_viewer/package.bash'
+[38.385s] INFO:colcon.colcon_core.shell:Creating package script '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_viewer/share/yasmin_viewer/package.zsh'
+[38.388s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_viewer/share/colcon-core/packages/yasmin_viewer)
+[38.401s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/E14Raspberry/ScooperBot/tennisbot_ws/build/ros2_nav_to_pose_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/E14Raspberry/ScooperBot/tennisbot_ws/build/ros2_nav_to_pose_msgs -- -j4 -l4
+[38.916s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(yasmin_viewer)
+[38.918s] Level 1:colcon.colcon_core.environment:checking '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_viewer' for CMake module files
+[38.929s] Level 1:colcon.colcon_core.environment:checking '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_viewer' for CMake config files
+[38.939s] Level 1:colcon.colcon_core.shell:create_environment_hook('yasmin_viewer', 'cmake_prefix_path')
+[38.941s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_viewer/share/yasmin_viewer/hook/cmake_prefix_path.ps1'
+[38.947s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_viewer/share/yasmin_viewer/hook/cmake_prefix_path.dsv'
+[38.951s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_viewer/share/yasmin_viewer/hook/cmake_prefix_path.sh'
+[38.958s] Level 1:colcon.colcon_core.environment:checking '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_viewer/lib'
+[38.959s] Level 1:colcon.colcon_core.environment:checking '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_viewer/bin'
+[38.960s] Level 1:colcon.colcon_core.environment:checking '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_viewer/lib/pkgconfig/yasmin_viewer.pc'
+[38.962s] Level 1:colcon.colcon_core.environment:checking '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_viewer/lib/python3.12/site-packages'
+[38.964s] Level 1:colcon.colcon_core.shell:create_environment_hook('yasmin_viewer', 'pythonpath')
+[38.966s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_viewer/share/yasmin_viewer/hook/pythonpath.ps1'
+[38.970s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_viewer/share/yasmin_viewer/hook/pythonpath.dsv'
+[38.974s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_viewer/share/yasmin_viewer/hook/pythonpath.sh'
+[38.981s] Level 1:colcon.colcon_core.environment:checking '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_viewer/bin'
+[38.984s] INFO:colcon.colcon_core.shell:Creating package script '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_viewer/share/yasmin_viewer/package.ps1'
+[39.081s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_viewer/share/yasmin_viewer/package.dsv'
+[39.088s] INFO:colcon.colcon_core.shell:Creating package script '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_viewer/share/yasmin_viewer/package.sh'
+[39.093s] INFO:colcon.colcon_core.shell:Creating package script '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_viewer/share/yasmin_viewer/package.bash'
+[39.098s] INFO:colcon.colcon_core.shell:Creating package script '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_viewer/share/yasmin_viewer/package.zsh'
+[39.103s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_viewer/share/colcon-core/packages/yasmin_viewer)
+[39.109s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/E14Raspberry/ScooperBot/tennisbot_ws/src/serial_motor_demo/serial_motor_demo' with build type 'ament_python'
+[39.113s] Level 1:colcon.colcon_core.shell:create_environment_hook('serial_motor_demo', 'ament_prefix_path')
+[39.115s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo/share/serial_motor_demo/hook/ament_prefix_path.ps1'
+[39.125s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo/share/serial_motor_demo/hook/ament_prefix_path.dsv'
+[39.129s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo/share/serial_motor_demo/hook/ament_prefix_path.sh'
+[39.134s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[39.135s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[41.800s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/E14Raspberry/ScooperBot/tennisbot_ws/src/serial_motor_demo/serial_motor_demo'
+[41.802s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[41.802s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[41.871s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/E14Raspberry/ScooperBot/tennisbot_ws/build/ros2_nav_to_pose_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/E14Raspberry/ScooperBot/tennisbot_ws/build/ros2_nav_to_pose_msgs
+[43.325s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ros2_nav_to_pose_msgs)
+[43.327s] Level 1:colcon.colcon_core.environment:checking '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/ros2_nav_to_pose_msgs' for CMake module files
+[43.332s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/E14Raspberry/ScooperBot/tennisbot_ws/build/ros2_nav_to_pose_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/E14Raspberry/ScooperBot/tennisbot_ws/build/ros2_nav_to_pose_msgs
+[43.347s] Level 1:colcon.colcon_core.environment:checking '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/ros2_nav_to_pose_msgs' for CMake config files
+[43.360s] Level 1:colcon.colcon_core.shell:create_environment_hook('ros2_nav_to_pose_msgs', 'cmake_prefix_path')
+[43.362s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/ros2_nav_to_pose_msgs/share/ros2_nav_to_pose_msgs/hook/cmake_prefix_path.ps1'
+[43.369s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/ros2_nav_to_pose_msgs/share/ros2_nav_to_pose_msgs/hook/cmake_prefix_path.dsv'
+[43.373s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/ros2_nav_to_pose_msgs/share/ros2_nav_to_pose_msgs/hook/cmake_prefix_path.sh'
+[43.380s] Level 1:colcon.colcon_core.environment:checking '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/ros2_nav_to_pose_msgs/lib'
+[43.381s] Level 1:colcon.colcon_core.shell:create_environment_hook('ros2_nav_to_pose_msgs', 'ld_library_path_lib')
+[43.383s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/ros2_nav_to_pose_msgs/share/ros2_nav_to_pose_msgs/hook/ld_library_path_lib.ps1'
+[43.387s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/ros2_nav_to_pose_msgs/share/ros2_nav_to_pose_msgs/hook/ld_library_path_lib.dsv'
+[43.391s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/ros2_nav_to_pose_msgs/share/ros2_nav_to_pose_msgs/hook/ld_library_path_lib.sh'
+[43.395s] Level 1:colcon.colcon_core.environment:checking '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/ros2_nav_to_pose_msgs/bin'
+[43.396s] Level 1:colcon.colcon_core.environment:checking '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/ros2_nav_to_pose_msgs/lib/pkgconfig/ros2_nav_to_pose_msgs.pc'
+[43.399s] Level 1:colcon.colcon_core.environment:checking '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/ros2_nav_to_pose_msgs/lib/python3.12/site-packages'
+[43.401s] Level 1:colcon.colcon_core.shell:create_environment_hook('ros2_nav_to_pose_msgs', 'pythonpath')
+[43.402s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/ros2_nav_to_pose_msgs/share/ros2_nav_to_pose_msgs/hook/pythonpath.ps1'
+[43.407s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/ros2_nav_to_pose_msgs/share/ros2_nav_to_pose_msgs/hook/pythonpath.dsv'
+[43.411s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/ros2_nav_to_pose_msgs/share/ros2_nav_to_pose_msgs/hook/pythonpath.sh'
+[43.417s] Level 1:colcon.colcon_core.environment:checking '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/ros2_nav_to_pose_msgs/bin'
+[43.420s] INFO:colcon.colcon_core.shell:Creating package script '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/ros2_nav_to_pose_msgs/share/ros2_nav_to_pose_msgs/package.ps1'
+[43.426s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/ros2_nav_to_pose_msgs/share/ros2_nav_to_pose_msgs/package.dsv'
+[43.432s] INFO:colcon.colcon_core.shell:Creating package script '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/ros2_nav_to_pose_msgs/share/ros2_nav_to_pose_msgs/package.sh'
+[43.438s] INFO:colcon.colcon_core.shell:Creating package script '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/ros2_nav_to_pose_msgs/share/ros2_nav_to_pose_msgs/package.bash'
+[43.442s] INFO:colcon.colcon_core.shell:Creating package script '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/ros2_nav_to_pose_msgs/share/ros2_nav_to_pose_msgs/package.zsh'
+[43.445s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/E14Raspberry/ScooperBot/tennisbot_ws/install/ros2_nav_to_pose_msgs/share/colcon-core/packages/ros2_nav_to_pose_msgs)
+[44.703s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ros2_nav_to_pose_msgs)
+[44.704s] Level 1:colcon.colcon_core.environment:checking '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/ros2_nav_to_pose_msgs' for CMake module files
+[44.722s] Level 1:colcon.colcon_core.environment:checking '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/ros2_nav_to_pose_msgs' for CMake config files
+[44.734s] Level 1:colcon.colcon_core.shell:create_environment_hook('ros2_nav_to_pose_msgs', 'cmake_prefix_path')
+[44.735s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/ros2_nav_to_pose_msgs/share/ros2_nav_to_pose_msgs/hook/cmake_prefix_path.ps1'
+[44.740s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/ros2_nav_to_pose_msgs/share/ros2_nav_to_pose_msgs/hook/cmake_prefix_path.dsv'
+[44.744s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/ros2_nav_to_pose_msgs/share/ros2_nav_to_pose_msgs/hook/cmake_prefix_path.sh'
+[44.751s] Level 1:colcon.colcon_core.environment:checking '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/ros2_nav_to_pose_msgs/lib'
+[44.752s] Level 1:colcon.colcon_core.shell:create_environment_hook('ros2_nav_to_pose_msgs', 'ld_library_path_lib')
+[44.754s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/ros2_nav_to_pose_msgs/share/ros2_nav_to_pose_msgs/hook/ld_library_path_lib.ps1'
+[44.759s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/ros2_nav_to_pose_msgs/share/ros2_nav_to_pose_msgs/hook/ld_library_path_lib.dsv'
+[44.763s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/ros2_nav_to_pose_msgs/share/ros2_nav_to_pose_msgs/hook/ld_library_path_lib.sh'
+[44.768s] Level 1:colcon.colcon_core.environment:checking '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/ros2_nav_to_pose_msgs/bin'
+[44.769s] Level 1:colcon.colcon_core.environment:checking '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/ros2_nav_to_pose_msgs/lib/pkgconfig/ros2_nav_to_pose_msgs.pc'
+[44.772s] Level 1:colcon.colcon_core.environment:checking '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/ros2_nav_to_pose_msgs/lib/python3.12/site-packages'
+[44.773s] Level 1:colcon.colcon_core.shell:create_environment_hook('ros2_nav_to_pose_msgs', 'pythonpath')
+[44.775s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/ros2_nav_to_pose_msgs/share/ros2_nav_to_pose_msgs/hook/pythonpath.ps1'
+[44.779s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/ros2_nav_to_pose_msgs/share/ros2_nav_to_pose_msgs/hook/pythonpath.dsv'
+[44.783s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/ros2_nav_to_pose_msgs/share/ros2_nav_to_pose_msgs/hook/pythonpath.sh'
+[44.790s] Level 1:colcon.colcon_core.environment:checking '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/ros2_nav_to_pose_msgs/bin'
+[44.793s] INFO:colcon.colcon_core.shell:Creating package script '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/ros2_nav_to_pose_msgs/share/ros2_nav_to_pose_msgs/package.ps1'
+[44.800s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/ros2_nav_to_pose_msgs/share/ros2_nav_to_pose_msgs/package.dsv'
+[44.807s] INFO:colcon.colcon_core.shell:Creating package script '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/ros2_nav_to_pose_msgs/share/ros2_nav_to_pose_msgs/package.sh'
+[44.818s] INFO:colcon.colcon_core.shell:Creating package script '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/ros2_nav_to_pose_msgs/share/ros2_nav_to_pose_msgs/package.bash'
+[44.823s] INFO:colcon.colcon_core.shell:Creating package script '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/ros2_nav_to_pose_msgs/share/ros2_nav_to_pose_msgs/package.zsh'
+[44.828s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/E14Raspberry/ScooperBot/tennisbot_ws/install/ros2_nav_to_pose_msgs/share/colcon-core/packages/ros2_nav_to_pose_msgs)
+[44.834s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/E14Raspberry/ScooperBot/tennisbot_ws/src/yasmin/yasmin_demos' with build type 'ament_cmake'
+[44.835s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/E14Raspberry/ScooperBot/tennisbot_ws/src/yasmin/yasmin_demos'
+[44.841s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[44.841s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[45.136s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/E14Raspberry/ScooperBot/tennisbot_ws/build/yasmin_demos': AMENT_PREFIX_PATH=/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_viewer:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_ros:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_msgs:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_viewer:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_ros:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_msgs:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy LD_LIBRARY_PATH=/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_viewer/lib:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_ros/lib:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_msgs/lib:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_viewer/lib/python3.12/site-packages:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_ros/lib/python3.12/site-packages:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_msgs/lib/python3.12/site-packages:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/E14Raspberry/ScooperBot/tennisbot_ws/build/yasmin_demos -- -j4 -l4
+[46.576s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/E14Raspberry/ScooperBot/tennisbot_ws/build/twist_stamper': PYTHONPATH=/home/E14Raspberry/ScooperBot/tennisbot_ws/build/twist_stamper/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/twist_stamper/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/E14Raspberry/ScooperBot/tennisbot_ws/build/twist_stamper/build --no-deps symlink_data
+[48.257s] Level 1:colcon.colcon_core.shell:create_environment_hook('ros2_nav_to_pose', 'pythonpath_develop')
+[48.260s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/E14Raspberry/ScooperBot/tennisbot_ws/build/ros2_nav_to_pose/share/ros2_nav_to_pose/hook/pythonpath_develop.ps1'
+[48.267s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/E14Raspberry/ScooperBot/tennisbot_ws/build/ros2_nav_to_pose' returned '0': PYTHONPATH=/home/E14Raspberry/ScooperBot/tennisbot_ws/build/ros2_nav_to_pose/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/ros2_nav_to_pose/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/E14Raspberry/ScooperBot/tennisbot_ws/build/ros2_nav_to_pose/build --no-deps symlink_data
+[48.272s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/E14Raspberry/ScooperBot/tennisbot_ws/build/ros2_nav_to_pose/share/ros2_nav_to_pose/hook/pythonpath_develop.dsv'
+[48.276s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/E14Raspberry/ScooperBot/tennisbot_ws/build/ros2_nav_to_pose/share/ros2_nav_to_pose/hook/pythonpath_develop.sh'
+[48.281s] Level 1:colcon.colcon_core.environment:checking '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/ros2_nav_to_pose' for CMake module files
+[48.291s] Level 1:colcon.colcon_core.environment:checking '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/ros2_nav_to_pose' for CMake config files
+[48.303s] Level 1:colcon.colcon_core.environment:checking '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/ros2_nav_to_pose/lib'
+[48.304s] Level 1:colcon.colcon_core.environment:checking '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/ros2_nav_to_pose/bin'
+[48.305s] Level 1:colcon.colcon_core.environment:checking '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/ros2_nav_to_pose/lib/pkgconfig/ros2_nav_to_pose.pc'
+[48.307s] Level 1:colcon.colcon_core.environment:checking '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/ros2_nav_to_pose/lib/python3.12/site-packages'
+[48.309s] Level 1:colcon.colcon_core.shell:create_environment_hook('ros2_nav_to_pose', 'pythonpath')
+[48.311s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/ros2_nav_to_pose/share/ros2_nav_to_pose/hook/pythonpath.ps1'
+[48.315s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/ros2_nav_to_pose/share/ros2_nav_to_pose/hook/pythonpath.dsv'
+[48.319s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/ros2_nav_to_pose/share/ros2_nav_to_pose/hook/pythonpath.sh'
+[48.328s] Level 1:colcon.colcon_core.environment:checking '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/ros2_nav_to_pose/bin'
+[48.328s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ros2_nav_to_pose)
+[48.331s] INFO:colcon.colcon_core.shell:Creating package script '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/ros2_nav_to_pose/share/ros2_nav_to_pose/package.ps1'
+[48.337s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/ros2_nav_to_pose/share/ros2_nav_to_pose/package.dsv'
+[48.343s] INFO:colcon.colcon_core.shell:Creating package script '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/ros2_nav_to_pose/share/ros2_nav_to_pose/package.sh'
+[48.349s] INFO:colcon.colcon_core.shell:Creating package script '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/ros2_nav_to_pose/share/ros2_nav_to_pose/package.bash'
+[48.353s] INFO:colcon.colcon_core.shell:Creating package script '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/ros2_nav_to_pose/share/ros2_nav_to_pose/package.zsh'
+[48.357s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/E14Raspberry/ScooperBot/tennisbot_ws/install/ros2_nav_to_pose/share/colcon-core/packages/ros2_nav_to_pose)
+[50.356s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/E14Raspberry/ScooperBot/tennisbot_ws/build/serial_motor_demo': AMENT_PREFIX_PATH=/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/E14Raspberry/ScooperBot/tennisbot_ws/build/serial_motor_demo/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo/lib/python3.12/site-packages:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/E14Raspberry/ScooperBot/tennisbot_ws/build/serial_motor_demo/build --no-deps symlink_data
+[52.069s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/E14Raspberry/ScooperBot/tennisbot_ws/build/yasmin_demos' returned '0': AMENT_PREFIX_PATH=/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_viewer:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_ros:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_msgs:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_viewer:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_ros:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_msgs:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy LD_LIBRARY_PATH=/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_viewer/lib:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_ros/lib:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_msgs/lib:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_viewer/lib/python3.12/site-packages:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_ros/lib/python3.12/site-packages:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_msgs/lib/python3.12/site-packages:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/E14Raspberry/ScooperBot/tennisbot_ws/build/yasmin_demos -- -j4 -l4
+[52.693s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/E14Raspberry/ScooperBot/tennisbot_ws/build/yasmin_demos': AMENT_PREFIX_PATH=/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_viewer:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_ros:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_msgs:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_viewer:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_ros:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_msgs:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy LD_LIBRARY_PATH=/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_viewer/lib:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_ros/lib:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_msgs/lib:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_viewer/lib/python3.12/site-packages:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_ros/lib/python3.12/site-packages:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_msgs/lib/python3.12/site-packages:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/E14Raspberry/ScooperBot/tennisbot_ws/build/yasmin_demos
+[53.613s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(yasmin_demos)
+[53.617s] Level 1:colcon.colcon_core.environment:checking '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_demos' for CMake module files
+[53.620s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/E14Raspberry/ScooperBot/tennisbot_ws/build/yasmin_demos' returned '0': AMENT_PREFIX_PATH=/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_viewer:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_ros:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_msgs:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_viewer:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_ros:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_msgs:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy LD_LIBRARY_PATH=/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_viewer/lib:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_ros/lib:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_msgs/lib:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_viewer/lib/python3.12/site-packages:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_ros/lib/python3.12/site-packages:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_msgs/lib/python3.12/site-packages:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/E14Raspberry/ScooperBot/tennisbot_ws/build/yasmin_demos
+[53.630s] Level 1:colcon.colcon_core.environment:checking '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_demos' for CMake config files
+[53.640s] Level 1:colcon.colcon_core.shell:create_environment_hook('yasmin_demos', 'cmake_prefix_path')
+[53.642s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_demos/share/yasmin_demos/hook/cmake_prefix_path.ps1'
+[53.646s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_demos/share/yasmin_demos/hook/cmake_prefix_path.dsv'
+[53.650s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_demos/share/yasmin_demos/hook/cmake_prefix_path.sh'
+[53.655s] Level 1:colcon.colcon_core.environment:checking '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_demos/lib'
+[53.657s] Level 1:colcon.colcon_core.environment:checking '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_demos/bin'
+[53.657s] Level 1:colcon.colcon_core.environment:checking '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_demos/lib/pkgconfig/yasmin_demos.pc'
+[53.660s] Level 1:colcon.colcon_core.environment:checking '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_demos/lib/python3.12/site-packages'
+[53.661s] Level 1:colcon.colcon_core.shell:create_environment_hook('yasmin_demos', 'pythonpath')
+[53.663s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_demos/share/yasmin_demos/hook/pythonpath.ps1'
+[53.667s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_demos/share/yasmin_demos/hook/pythonpath.dsv'
+[53.670s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_demos/share/yasmin_demos/hook/pythonpath.sh'
+[53.676s] Level 1:colcon.colcon_core.environment:checking '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_demos/bin'
+[53.678s] INFO:colcon.colcon_core.shell:Creating package script '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_demos/share/yasmin_demos/package.ps1'
+[53.683s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_demos/share/yasmin_demos/package.dsv'
+[53.688s] INFO:colcon.colcon_core.shell:Creating package script '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_demos/share/yasmin_demos/package.sh'
+[53.693s] INFO:colcon.colcon_core.shell:Creating package script '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_demos/share/yasmin_demos/package.bash'
+[53.697s] INFO:colcon.colcon_core.shell:Creating package script '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_demos/share/yasmin_demos/package.zsh'
+[53.700s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_demos/share/colcon-core/packages/yasmin_demos)
+[54.322s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(yasmin_demos)
+[54.326s] Level 1:colcon.colcon_core.environment:checking '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_demos' for CMake module files
+[54.338s] Level 1:colcon.colcon_core.environment:checking '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_demos' for CMake config files
+[54.346s] Level 1:colcon.colcon_core.shell:create_environment_hook('yasmin_demos', 'cmake_prefix_path')
+[54.348s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_demos/share/yasmin_demos/hook/cmake_prefix_path.ps1'
+[54.353s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_demos/share/yasmin_demos/hook/cmake_prefix_path.dsv'
+[54.357s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_demos/share/yasmin_demos/hook/cmake_prefix_path.sh'
+[54.363s] Level 1:colcon.colcon_core.environment:checking '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_demos/lib'
+[54.364s] Level 1:colcon.colcon_core.environment:checking '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_demos/bin'
+[54.365s] Level 1:colcon.colcon_core.environment:checking '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_demos/lib/pkgconfig/yasmin_demos.pc'
+[54.367s] Level 1:colcon.colcon_core.environment:checking '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_demos/lib/python3.12/site-packages'
+[54.368s] Level 1:colcon.colcon_core.shell:create_environment_hook('yasmin_demos', 'pythonpath')
+[54.370s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_demos/share/yasmin_demos/hook/pythonpath.ps1'
+[54.374s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_demos/share/yasmin_demos/hook/pythonpath.dsv'
+[54.378s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_demos/share/yasmin_demos/hook/pythonpath.sh'
+[54.383s] Level 1:colcon.colcon_core.environment:checking '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_demos/bin'
+[54.386s] INFO:colcon.colcon_core.shell:Creating package script '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_demos/share/yasmin_demos/package.ps1'
+[54.391s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_demos/share/yasmin_demos/package.dsv'
+[54.397s] INFO:colcon.colcon_core.shell:Creating package script '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_demos/share/yasmin_demos/package.sh'
+[54.402s] INFO:colcon.colcon_core.shell:Creating package script '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_demos/share/yasmin_demos/package.bash'
+[54.407s] INFO:colcon.colcon_core.shell:Creating package script '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_demos/share/yasmin_demos/package.zsh'
+[54.411s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_demos/share/colcon-core/packages/yasmin_demos)
+[55.576s] Level 1:colcon.colcon_core.shell:create_environment_hook('twist_stamper', 'pythonpath_develop')
+[55.578s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/E14Raspberry/ScooperBot/tennisbot_ws/build/twist_stamper/share/twist_stamper/hook/pythonpath_develop.ps1'
+[55.579s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/E14Raspberry/ScooperBot/tennisbot_ws/build/twist_stamper' returned '0': PYTHONPATH=/home/E14Raspberry/ScooperBot/tennisbot_ws/build/twist_stamper/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/twist_stamper/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/E14Raspberry/ScooperBot/tennisbot_ws/build/twist_stamper/build --no-deps symlink_data
+[55.586s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/E14Raspberry/ScooperBot/tennisbot_ws/build/twist_stamper/share/twist_stamper/hook/pythonpath_develop.dsv'
+[55.589s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/E14Raspberry/ScooperBot/tennisbot_ws/build/twist_stamper/share/twist_stamper/hook/pythonpath_develop.sh'
+[55.594s] Level 1:colcon.colcon_core.environment:checking '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/twist_stamper' for CMake module files
+[55.602s] Level 1:colcon.colcon_core.environment:checking '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/twist_stamper' for CMake config files
+[55.612s] Level 1:colcon.colcon_core.environment:checking '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/twist_stamper/lib'
+[55.613s] Level 1:colcon.colcon_core.environment:checking '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/twist_stamper/bin'
+[55.613s] Level 1:colcon.colcon_core.environment:checking '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/twist_stamper/lib/pkgconfig/twist_stamper.pc'
+[55.616s] Level 1:colcon.colcon_core.environment:checking '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/twist_stamper/lib/python3.12/site-packages'
+[55.617s] Level 1:colcon.colcon_core.shell:create_environment_hook('twist_stamper', 'pythonpath')
+[55.619s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/twist_stamper/share/twist_stamper/hook/pythonpath.ps1'
+[55.622s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/twist_stamper/share/twist_stamper/hook/pythonpath.dsv'
+[55.626s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/twist_stamper/share/twist_stamper/hook/pythonpath.sh'
+[55.631s] Level 1:colcon.colcon_core.environment:checking '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/twist_stamper/bin'
+[55.632s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(twist_stamper)
+[55.635s] INFO:colcon.colcon_core.shell:Creating package script '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/twist_stamper/share/twist_stamper/package.ps1'
+[55.641s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/twist_stamper/share/twist_stamper/package.dsv'
+[55.647s] INFO:colcon.colcon_core.shell:Creating package script '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/twist_stamper/share/twist_stamper/package.sh'
+[55.651s] INFO:colcon.colcon_core.shell:Creating package script '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/twist_stamper/share/twist_stamper/package.bash'
+[55.655s] INFO:colcon.colcon_core.shell:Creating package script '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/twist_stamper/share/twist_stamper/package.zsh'
+[55.658s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/E14Raspberry/ScooperBot/tennisbot_ws/install/twist_stamper/share/colcon-core/packages/twist_stamper)
+[57.565s] Level 1:colcon.colcon_core.shell:create_environment_hook('serial_motor_demo', 'pythonpath_develop')
+[57.568s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/E14Raspberry/ScooperBot/tennisbot_ws/build/serial_motor_demo/share/serial_motor_demo/hook/pythonpath_develop.ps1'
+[57.569s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/E14Raspberry/ScooperBot/tennisbot_ws/build/serial_motor_demo' returned '0': AMENT_PREFIX_PATH=/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/E14Raspberry/ScooperBot/tennisbot_ws/build/serial_motor_demo/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo/lib/python3.12/site-packages:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo_msgs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/E14Raspberry/ScooperBot/tennisbot_ws/build/serial_motor_demo/build --no-deps symlink_data
+[57.575s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/E14Raspberry/ScooperBot/tennisbot_ws/build/serial_motor_demo/share/serial_motor_demo/hook/pythonpath_develop.dsv'
+[57.578s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/E14Raspberry/ScooperBot/tennisbot_ws/build/serial_motor_demo/share/serial_motor_demo/hook/pythonpath_develop.sh'
+[57.583s] Level 1:colcon.colcon_core.environment:checking '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo' for CMake module files
+[57.592s] Level 1:colcon.colcon_core.environment:checking '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo' for CMake config files
+[57.601s] Level 1:colcon.colcon_core.environment:checking '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo/lib'
+[57.602s] Level 1:colcon.colcon_core.environment:checking '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo/bin'
+[57.602s] Level 1:colcon.colcon_core.environment:checking '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo/lib/pkgconfig/serial_motor_demo.pc'
+[57.605s] Level 1:colcon.colcon_core.environment:checking '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo/lib/python3.12/site-packages'
+[57.606s] Level 1:colcon.colcon_core.shell:create_environment_hook('serial_motor_demo', 'pythonpath')
+[57.607s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo/share/serial_motor_demo/hook/pythonpath.ps1'
+[57.611s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo/share/serial_motor_demo/hook/pythonpath.dsv'
+[57.615s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo/share/serial_motor_demo/hook/pythonpath.sh'
+[57.620s] Level 1:colcon.colcon_core.environment:checking '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo/bin'
+[57.620s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(serial_motor_demo)
+[57.623s] INFO:colcon.colcon_core.shell:Creating package script '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo/share/serial_motor_demo/package.ps1'
+[57.628s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo/share/serial_motor_demo/package.dsv'
+[57.633s] INFO:colcon.colcon_core.shell:Creating package script '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo/share/serial_motor_demo/package.sh'
+[57.637s] INFO:colcon.colcon_core.shell:Creating package script '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo/share/serial_motor_demo/package.bash'
+[57.641s] INFO:colcon.colcon_core.shell:Creating package script '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo/share/serial_motor_demo/package.zsh'
+[57.644s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo/share/colcon-core/packages/serial_motor_demo)
+[57.649s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[57.650s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[57.651s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[57.652s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[57.720s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.notify_send': Could not find 'notify-send'
+[57.721s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[57.722s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[57.722s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[57.816s] DEBUG:colcon.colcon_notification.desktop_notification.notify2:Failed to initialize notify2: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.Notifications was not provided by any .service files
+[57.817s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[57.818s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/local_setup.ps1'
+[57.824s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/_local_setup_util_ps1.py'
+[57.836s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/setup.ps1'
+[57.847s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/local_setup.sh'
+[57.853s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/_local_setup_util_sh.py'
+[57.857s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/setup.sh'
+[57.868s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/local_setup.bash'
+[57.874s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/setup.bash'
+[57.884s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/local_setup.zsh'
+[57.892s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/setup.zsh'

@@ -4,3 +4,5 @@ ball_tracker_msgs.egg-info/PKG-INFO
 ball_tracker_msgs.egg-info/SOURCES.txt
 ball_tracker_msgs.egg-info/dependency_links.txt
 ball_tracker_msgs.egg-info/top_level.txt
+ball_tracker_msgs/action/__init__.py
+ball_tracker_msgs/action/_follow_ball_action.py

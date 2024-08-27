@@ -1,0 +1,35 @@
+[7.743s] Invoking command in '/home/E14Raspberry/ScooperBot/tennisbot_ws/build/ball_tracker': PYTHONPATH=/home/E14Raspberry/ScooperBot/tennisbot_ws/build/ball_tracker/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/ball_tracker/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/E14Raspberry/ScooperBot/tennisbot_ws/build/ball_tracker/build --no-deps symlink_data
+[9.384s] running develop
+[9.385s] /usr/lib/python3/dist-packages/setuptools/command/develop.py:40: EasyInstallDeprecationWarning: easy_install command is deprecated.
+[9.385s] !!
+[9.385s] 
+[9.386s]         ********************************************************************************
+[9.386s]         Please avoid running ``setup.py`` and ``easy_install``.
+[9.387s]         Instead, use pypa/build, pypa/installer or other
+[9.387s]         standards-based tools.
+[9.387s] 
+[9.388s]         See https://github.com/pypa/setuptools/issues/917 for details.
+[9.388s]         ********************************************************************************
+[9.389s] 
+[9.389s] !!
+[9.389s]   easy_install.initialize_options(self)
+[10.433s] running egg_info
+[10.547s] writing ball_tracker.egg-info/PKG-INFO
+[10.549s] writing dependency_links to ball_tracker.egg-info/dependency_links.txt
+[10.550s] writing entry points to ball_tracker.egg-info/entry_points.txt
+[10.551s] writing requirements to ball_tracker.egg-info/requires.txt
+[10.552s] writing top-level names to ball_tracker.egg-info/top_level.txt
+[11.077s] reading manifest file 'ball_tracker.egg-info/SOURCES.txt'
+[11.089s] writing manifest file 'ball_tracker.egg-info/SOURCES.txt'
+[11.372s] running build_ext
+[11.373s] Creating /home/E14Raspberry/ScooperBot/tennisbot_ws/install/ball_tracker/lib/python3.12/site-packages/ball-tracker.egg-link (link to .)
+[11.380s] Installing detect_ball script to /home/E14Raspberry/ScooperBot/tennisbot_ws/install/ball_tracker/lib/ball_tracker
+[11.384s] Installing detect_ball_3d script to /home/E14Raspberry/ScooperBot/tennisbot_ws/install/ball_tracker/lib/ball_tracker
+[11.386s] Installing detect_ball_nn script to /home/E14Raspberry/ScooperBot/tennisbot_ws/install/ball_tracker/lib/ball_tracker
+[11.387s] Installing detect_ball_nn_offload script to /home/E14Raspberry/ScooperBot/tennisbot_ws/install/ball_tracker/lib/ball_tracker
+[11.390s] Installing follow_ball script to /home/E14Raspberry/ScooperBot/tennisbot_ws/install/ball_tracker/lib/ball_tracker
+[11.392s] Installing follow_ball_action_server script to /home/E14Raspberry/ScooperBot/tennisbot_ws/install/ball_tracker/lib/ball_tracker
+[11.395s] 
+[11.396s] Installed /home/E14Raspberry/ScooperBot/tennisbot_ws/build/ball_tracker
+[11.398s] running symlink_data
+[11.680s] Invoked command in '/home/E14Raspberry/ScooperBot/tennisbot_ws/build/ball_tracker' returned '0': PYTHONPATH=/home/E14Raspberry/ScooperBot/tennisbot_ws/build/ball_tracker/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/ball_tracker/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/E14Raspberry/ScooperBot/tennisbot_ws/build/ball_tracker/build --no-deps symlink_data

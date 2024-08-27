@@ -1,0 +1,53 @@
+[  0%] Built target ament_cmake_python_symlink_yasmin_ros
+[100%] Built target yasmin_ros_lib
+running egg_info
+writing yasmin_ros.egg-info/PKG-INFO
+writing dependency_links to yasmin_ros.egg-info/dependency_links.txt
+writing top-level names to yasmin_ros.egg-info/top_level.txt
+reading manifest file 'yasmin_ros.egg-info/SOURCES.txt'
+writing manifest file 'yasmin_ros.egg-info/SOURCES.txt'
+[100%] Built target ament_cmake_python_build_yasmin_ros_egg
+-- Install configuration: ""
+-- Execute custom install script
+-- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_ros/lib/libyasmin_ros_lib.a
+-- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_ros/include//yasmin_ros/action_state.hpp
+-- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_ros/include//yasmin_ros/basic_outcomes.hpp
+-- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_ros/include//yasmin_ros/monitor_state.hpp
+-- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_ros/include//yasmin_ros/service_state.hpp
+-- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_ros/include//yasmin_ros/yasmin_node.hpp
+-- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_ros/share/yasmin_ros/environment/library_path.sh
+-- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_ros/share/yasmin_ros/environment/library_path.dsv
+-- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_ros/share/yasmin_ros/environment/pythonpath.sh
+-- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_ros/share/yasmin_ros/environment/pythonpath.dsv
+-- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_ros/lib/python3.12/site-packages/yasmin_ros-2.3.1-py3.12.egg-info/PKG-INFO
+-- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_ros/lib/python3.12/site-packages/yasmin_ros-2.3.1-py3.12.egg-info/SOURCES.txt
+-- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_ros/lib/python3.12/site-packages/yasmin_ros-2.3.1-py3.12.egg-info/dependency_links.txt
+-- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_ros/lib/python3.12/site-packages/yasmin_ros-2.3.1-py3.12.egg-info/top_level.txt
+-- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_ros/lib/python3.12/site-packages/yasmin_ros/__init__.py
+-- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_ros/lib/python3.12/site-packages/yasmin_ros/action_state.py
+-- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_ros/lib/python3.12/site-packages/yasmin_ros/basic_outcomes.py
+-- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_ros/lib/python3.12/site-packages/yasmin_ros/monitor_state.py
+-- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_ros/lib/python3.12/site-packages/yasmin_ros/service_state.py
+-- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_ros/lib/python3.12/site-packages/yasmin_ros/yasmin_node.py
+-- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_ros/pytests//run_pytests.sh
+-- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_ros/pytests//test_yasmin_ros.py
+-- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_ros/lib/yasmin_ros/run_pytests.sh
+-- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_ros/share/ament_index/resource_index/package_run_dependencies/yasmin_ros
+-- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_ros/share/ament_index/resource_index/parent_prefix_path/yasmin_ros
+-- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_ros/share/yasmin_ros/environment/ament_prefix_path.sh
+-- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_ros/share/yasmin_ros/environment/ament_prefix_path.dsv
+-- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_ros/share/yasmin_ros/environment/path.sh
+-- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_ros/share/yasmin_ros/environment/path.dsv
+-- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_ros/share/yasmin_ros/local_setup.bash
+-- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_ros/share/yasmin_ros/local_setup.sh
+-- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_ros/share/yasmin_ros/local_setup.zsh
+-- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_ros/share/yasmin_ros/local_setup.dsv
+-- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_ros/share/yasmin_ros/package.dsv
+-- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_ros/share/ament_index/resource_index/packages/yasmin_ros
+-- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_ros/share/yasmin_ros/cmake/ament_cmake_export_include_directories-extras.cmake
+-- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_ros/share/yasmin_ros/cmake/ament_cmake_export_libraries-extras.cmake
+-- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_ros/share/yasmin_ros/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_ros/share/yasmin_ros/cmake/yasmin_rosConfig.cmake
+-- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_ros/share/yasmin_ros/cmake/yasmin_rosConfig-version.cmake
+-- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_ros/share/yasmin_ros/package.xml
+Listing '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_ros/lib/python3.12/site-packages/yasmin_ros'...

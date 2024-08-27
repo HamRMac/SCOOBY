@@ -10,27 +10,29 @@ import asyncio
 import json
 import numpy as np
 
+from .helper import WebSocketClient
+
 class DetectBall(Node):
 
     def __init__(self):
+        self.declare_parameter("websocket_url", "ws://192.168.0.0:8765")
+        self.websocket_url = self.get_parameter('rcv_timeout_secs').get_parameter_value().string_value
         super().__init__('detect_ball')
         self.get_logger().info('Initialising WS Params...')
         self.image_sub = self.create_subscription(Image, "/image_in", self.callback, rclpy.qos.QoSPresetProfiles.SENSOR_DATA.value)
         self.image_out_pub = self.create_publisher(Image, "/image_out", 1)
         self.ball_pub = self.create_publisher(Point, "/detected_ball", 1)
         self.bridge = CvBridge()
-        self.server_uri = "ws://172.20.10.3:8765"
+
         self.loop = asyncio.get_event_loop()
         self.get_logger().info('Connecting to WS Detector!')
         self.lastrcvtime = 0
         self.to_interval = 0.5
 
-    async def send_receive(self, image):
-        async with websockets.connect(self.server_uri) as websocket:
-            _, compressed_image = cv2.imencode('.webp', image, [int(cv2.IMWRITE_WEBP_QUALITY), 70])
-            await websocket.send(compressed_image.tobytes())
-            result = await websocket.recv()
-            return json.loads(result)
+        self.client = WebSocketClient(self.websocket_url)
+
+    def get_client(self):
+        return self.client
 
     def callback(self, data):
         if time.time() - self.lastrcvtime < self.to_interval:
@@ -48,7 +50,7 @@ class DetectBall(Node):
 
         # Send image to server and receive processed points
         try:
-            points = self.loop.run_until_complete(self.send_receive(img_uint8))
+            points = self.loop.run_until_complete(client.send_receive(img_uint8))
             centrelist = []
             for point in points:
                 x = point['x']
@@ -81,6 +83,9 @@ class DetectBall(Node):
         except Exception as e:
             self.get_logger().error(f'Error during websocket communication: {e}')
 
+async def close_client(client):
+    await client.close()
+
 def main(args=None):
     rclpy.init(args=args)
     detect_ball = DetectBall()
@@ -89,6 +94,7 @@ def main(args=None):
     except KeyboardInterrupt:
         pass
     detect_ball.destroy_node()
+    asyncio.run(close_client(detect_ball.client))
     rclpy.shutdown()
 
 if __name__ == '__main__':
