@@ -103,9 +103,9 @@ class DetectBall(Node):
                 self.get_logger().info(f"Pt {i}: ({x},{y},{s})")
 
                 if (s > point_out.z):                    
-                    point_out.x = x
-                    point_out.y = y
-                    point_out.z = s
+                    point_out.x = (x-320)/320
+                    point_out.y = (y-240)/240
+                    point_out.z = s/307200
 
             if (point_out.z > 0):
                 self.ball_pub.publish(point_out) 

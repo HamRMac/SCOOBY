@@ -46,7 +46,7 @@ class FollowBall(Node):
         self.filter_value = self.get_parameter('filter_value').get_parameter_value().double_value
 
 
-        timer_period = 0.1  # seconds
+        timer_period = 0.5  # seconds
         self.timer = self.create_timer(timer_period, self.timer_callback)
         self.target_val = 0.0
         self.target_dist = 0.0

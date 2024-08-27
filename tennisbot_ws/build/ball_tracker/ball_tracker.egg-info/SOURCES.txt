@@ -5,6 +5,7 @@ ball_tracker/__init__.py
 ball_tracker/detect_ball.py
 ball_tracker/detect_ball_3d.py
 ball_tracker/detect_ball_nn.py
+ball_tracker/detect_ball_nn_offload.py
 ball_tracker/follow_ball.py
 ball_tracker/process_image.py
 ball_tracker.egg-info/PKG-INFO
@@ -17,5 +18,6 @@ ball_tracker.egg-info/zip-safe
 config/ball_tracker_params_example.yaml
 launch/ball_tracker.launch.py
 launch/ball_tracker_nn.launch.py
+launch/ball_tracker_offload.launch.py
 launch/example_launch_include.launch.py
 resource/ball_tracker

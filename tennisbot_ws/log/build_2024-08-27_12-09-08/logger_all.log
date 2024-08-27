@@ -1,0 +1,310 @@
+[1.903s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--symlink-install', '--packages-select', 'ball_tracker']
+[1.904s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=True, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=4, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=['ball_tracker'], packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0xffff92e01e80>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0xffff92fbcf20>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0xffff92fbcf20>>, mixin_verb=('build',))
+[2.554s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[2.555s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[2.556s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[2.556s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[2.556s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[2.557s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[2.557s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/E14Raspberry/ScooperBot/tennisbot_ws'
+[2.558s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[2.559s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[2.560s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[2.561s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[2.561s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[2.562s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[2.562s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[2.563s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[2.563s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[2.905s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[2.906s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[2.907s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[2.908s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[2.908s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[2.910s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[2.911s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[2.912s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[2.914s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[2.915s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[2.915s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[2.919s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[2.920s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[2.921s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[2.922s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[2.923s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[2.924s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[2.926s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[2.926s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[2.926s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[2.927s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[2.927s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[2.928s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[2.929s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[2.929s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[2.930s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[2.930s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[2.931s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[2.932s] Level 1:colcon.colcon_core.package_identification:_identify(src/ball_tracker) by extensions ['ignore', 'ignore_ament_install']
+[2.933s] Level 1:colcon.colcon_core.package_identification:_identify(src/ball_tracker) by extension 'ignore'
+[2.934s] Level 1:colcon.colcon_core.package_identification:_identify(src/ball_tracker) by extension 'ignore_ament_install'
+[2.935s] Level 1:colcon.colcon_core.package_identification:_identify(src/ball_tracker) by extensions ['colcon_pkg']
+[2.935s] Level 1:colcon.colcon_core.package_identification:_identify(src/ball_tracker) by extension 'colcon_pkg'
+[2.936s] Level 1:colcon.colcon_core.package_identification:_identify(src/ball_tracker) by extensions ['colcon_meta']
+[2.936s] Level 1:colcon.colcon_core.package_identification:_identify(src/ball_tracker) by extension 'colcon_meta'
+[2.937s] Level 1:colcon.colcon_core.package_identification:_identify(src/ball_tracker) by extensions ['ros']
+[2.937s] Level 1:colcon.colcon_core.package_identification:_identify(src/ball_tracker) by extension 'ros'
+[2.972s] DEBUG:colcon.colcon_core.package_identification:Package 'src/ball_tracker' with type 'ros.ament_python' and name 'ball_tracker'
+[2.973s] Level 1:colcon.colcon_core.package_identification:_identify(src/diffdrive_arduino) by extensions ['ignore', 'ignore_ament_install']
+[2.974s] Level 1:colcon.colcon_core.package_identification:_identify(src/diffdrive_arduino) by extension 'ignore'
+[2.975s] Level 1:colcon.colcon_core.package_identification:_identify(src/diffdrive_arduino) by extension 'ignore_ament_install'
+[2.976s] Level 1:colcon.colcon_core.package_identification:_identify(src/diffdrive_arduino) by extensions ['colcon_pkg']
+[2.977s] Level 1:colcon.colcon_core.package_identification:_identify(src/diffdrive_arduino) by extension 'colcon_pkg'
+[2.978s] Level 1:colcon.colcon_core.package_identification:_identify(src/diffdrive_arduino) by extensions ['colcon_meta']
+[2.978s] Level 1:colcon.colcon_core.package_identification:_identify(src/diffdrive_arduino) by extension 'colcon_meta'
+[2.979s] Level 1:colcon.colcon_core.package_identification:_identify(src/diffdrive_arduino) by extensions ['ros']
+[2.979s] Level 1:colcon.colcon_core.package_identification:_identify(src/diffdrive_arduino) by extension 'ros'
+[2.989s] DEBUG:colcon.colcon_core.package_identification:Package 'src/diffdrive_arduino' with type 'ros.ament_cmake' and name 'diffdrive_arduino'
+[2.991s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_nav_to_pose) by extensions ['ignore', 'ignore_ament_install']
+[2.992s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_nav_to_pose) by extension 'ignore'
+[2.993s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_nav_to_pose) by extension 'ignore_ament_install'
+[2.994s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_nav_to_pose) by extensions ['colcon_pkg']
+[2.994s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_nav_to_pose) by extension 'colcon_pkg'
+[2.995s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_nav_to_pose) by extensions ['colcon_meta']
+[2.995s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_nav_to_pose) by extension 'colcon_meta'
+[2.996s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_nav_to_pose) by extensions ['ros']
+[2.996s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_nav_to_pose) by extension 'ros'
+[3.005s] DEBUG:colcon.colcon_core.package_identification:Package 'src/ros2_nav_to_pose' with type 'ros.ament_python' and name 'ros2_nav_to_pose'
+[3.009s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_nav_to_pose_msgs) by extensions ['ignore', 'ignore_ament_install']
+[3.010s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_nav_to_pose_msgs) by extension 'ignore'
+[3.011s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_nav_to_pose_msgs) by extension 'ignore_ament_install'
+[3.013s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_nav_to_pose_msgs) by extensions ['colcon_pkg']
+[3.013s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_nav_to_pose_msgs) by extension 'colcon_pkg'
+[3.014s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_nav_to_pose_msgs) by extensions ['colcon_meta']
+[3.015s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_nav_to_pose_msgs) by extension 'colcon_meta'
+[3.015s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_nav_to_pose_msgs) by extensions ['ros']
+[3.016s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_nav_to_pose_msgs) by extension 'ros'
+[3.024s] DEBUG:colcon.colcon_core.package_identification:Package 'src/ros2_nav_to_pose_msgs' with type 'ros.ament_cmake' and name 'ros2_nav_to_pose_msgs'
+[3.026s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial_motor_demo) by extensions ['ignore', 'ignore_ament_install']
+[3.027s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial_motor_demo) by extension 'ignore'
+[3.028s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial_motor_demo) by extension 'ignore_ament_install'
+[3.029s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial_motor_demo) by extensions ['colcon_pkg']
+[3.029s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial_motor_demo) by extension 'colcon_pkg'
+[3.030s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial_motor_demo) by extensions ['colcon_meta']
+[3.030s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial_motor_demo) by extension 'colcon_meta'
+[3.031s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial_motor_demo) by extensions ['ros']
+[3.031s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial_motor_demo) by extension 'ros'
+[3.032s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial_motor_demo) by extensions ['cmake', 'python']
+[3.033s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial_motor_demo) by extension 'cmake'
+[3.033s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial_motor_demo) by extension 'python'
+[3.034s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial_motor_demo) by extensions ['python_setup_py']
+[3.034s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial_motor_demo) by extension 'python_setup_py'
+[3.036s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial_motor_demo/serial_motor_demo) by extensions ['ignore', 'ignore_ament_install']
+[3.037s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial_motor_demo/serial_motor_demo) by extension 'ignore'
+[3.038s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial_motor_demo/serial_motor_demo) by extension 'ignore_ament_install'
+[3.039s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial_motor_demo/serial_motor_demo) by extensions ['colcon_pkg']
+[3.039s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial_motor_demo/serial_motor_demo) by extension 'colcon_pkg'
+[3.040s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial_motor_demo/serial_motor_demo) by extensions ['colcon_meta']
+[3.041s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial_motor_demo/serial_motor_demo) by extension 'colcon_meta'
+[3.042s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial_motor_demo/serial_motor_demo) by extensions ['ros']
+[3.042s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial_motor_demo/serial_motor_demo) by extension 'ros'
+[3.053s] DEBUG:colcon.colcon_core.package_identification:Package 'src/serial_motor_demo/serial_motor_demo' with type 'ros.ament_python' and name 'serial_motor_demo'
+[3.055s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial_motor_demo/serial_motor_demo_msgs) by extensions ['ignore', 'ignore_ament_install']
+[3.056s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial_motor_demo/serial_motor_demo_msgs) by extension 'ignore'
+[3.057s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial_motor_demo/serial_motor_demo_msgs) by extension 'ignore_ament_install'
+[3.058s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial_motor_demo/serial_motor_demo_msgs) by extensions ['colcon_pkg']
+[3.059s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial_motor_demo/serial_motor_demo_msgs) by extension 'colcon_pkg'
+[3.060s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial_motor_demo/serial_motor_demo_msgs) by extensions ['colcon_meta']
+[3.061s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial_motor_demo/serial_motor_demo_msgs) by extension 'colcon_meta'
+[3.062s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial_motor_demo/serial_motor_demo_msgs) by extensions ['ros']
+[3.063s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial_motor_demo/serial_motor_demo_msgs) by extension 'ros'
+[3.070s] DEBUG:colcon.colcon_core.package_identification:Package 'src/serial_motor_demo/serial_motor_demo_msgs' with type 'ros.ament_cmake' and name 'serial_motor_demo_msgs'
+[3.071s] Level 1:colcon.colcon_core.package_identification:_identify(src/tennisbotmaster) by extensions ['ignore', 'ignore_ament_install']
+[3.072s] Level 1:colcon.colcon_core.package_identification:_identify(src/tennisbotmaster) by extension 'ignore'
+[3.073s] Level 1:colcon.colcon_core.package_identification:_identify(src/tennisbotmaster) by extension 'ignore_ament_install'
+[3.074s] Level 1:colcon.colcon_core.package_identification:_identify(src/tennisbotmaster) by extensions ['colcon_pkg']
+[3.074s] Level 1:colcon.colcon_core.package_identification:_identify(src/tennisbotmaster) by extension 'colcon_pkg'
+[3.075s] Level 1:colcon.colcon_core.package_identification:_identify(src/tennisbotmaster) by extensions ['colcon_meta']
+[3.075s] Level 1:colcon.colcon_core.package_identification:_identify(src/tennisbotmaster) by extension 'colcon_meta'
+[3.076s] Level 1:colcon.colcon_core.package_identification:_identify(src/tennisbotmaster) by extensions ['ros']
+[3.077s] Level 1:colcon.colcon_core.package_identification:_identify(src/tennisbotmaster) by extension 'ros'
+[3.083s] DEBUG:colcon.colcon_core.package_identification:Package 'src/tennisbotmaster' with type 'ros.ament_cmake' and name 'tennisbotmaster'
+[3.087s] Level 1:colcon.colcon_core.package_identification:_identify(src/twist_stamper) by extensions ['ignore', 'ignore_ament_install']
+[3.088s] Level 1:colcon.colcon_core.package_identification:_identify(src/twist_stamper) by extension 'ignore'
+[3.089s] Level 1:colcon.colcon_core.package_identification:_identify(src/twist_stamper) by extension 'ignore_ament_install'
+[3.090s] Level 1:colcon.colcon_core.package_identification:_identify(src/twist_stamper) by extensions ['colcon_pkg']
+[3.090s] Level 1:colcon.colcon_core.package_identification:_identify(src/twist_stamper) by extension 'colcon_pkg'
+[3.091s] Level 1:colcon.colcon_core.package_identification:_identify(src/twist_stamper) by extensions ['colcon_meta']
+[3.092s] Level 1:colcon.colcon_core.package_identification:_identify(src/twist_stamper) by extension 'colcon_meta'
+[3.093s] Level 1:colcon.colcon_core.package_identification:_identify(src/twist_stamper) by extensions ['ros']
+[3.093s] Level 1:colcon.colcon_core.package_identification:_identify(src/twist_stamper) by extension 'ros'
+[3.100s] DEBUG:colcon.colcon_core.package_identification:Package 'src/twist_stamper' with type 'ros.ament_python' and name 'twist_stamper'
+[3.104s] Level 1:colcon.colcon_core.package_identification:_identify(src/yasmin) by extensions ['ignore', 'ignore_ament_install']
+[3.105s] Level 1:colcon.colcon_core.package_identification:_identify(src/yasmin) by extension 'ignore'
+[3.106s] Level 1:colcon.colcon_core.package_identification:_identify(src/yasmin) by extension 'ignore_ament_install'
+[3.108s] Level 1:colcon.colcon_core.package_identification:_identify(src/yasmin) by extensions ['colcon_pkg']
+[3.108s] Level 1:colcon.colcon_core.package_identification:_identify(src/yasmin) by extension 'colcon_pkg'
+[3.109s] Level 1:colcon.colcon_core.package_identification:_identify(src/yasmin) by extensions ['colcon_meta']
+[3.109s] Level 1:colcon.colcon_core.package_identification:_identify(src/yasmin) by extension 'colcon_meta'
+[3.110s] Level 1:colcon.colcon_core.package_identification:_identify(src/yasmin) by extensions ['ros']
+[3.110s] Level 1:colcon.colcon_core.package_identification:_identify(src/yasmin) by extension 'ros'
+[3.112s] Level 1:colcon.colcon_core.package_identification:_identify(src/yasmin) by extensions ['cmake', 'python']
+[3.113s] Level 1:colcon.colcon_core.package_identification:_identify(src/yasmin) by extension 'cmake'
+[3.113s] Level 1:colcon.colcon_core.package_identification:_identify(src/yasmin) by extension 'python'
+[3.114s] Level 1:colcon.colcon_core.package_identification:_identify(src/yasmin) by extensions ['python_setup_py']
+[3.114s] Level 1:colcon.colcon_core.package_identification:_identify(src/yasmin) by extension 'python_setup_py'
+[3.116s] Level 1:colcon.colcon_core.package_identification:_identify(src/yasmin/docs) by extensions ['ignore', 'ignore_ament_install']
+[3.117s] Level 1:colcon.colcon_core.package_identification:_identify(src/yasmin/docs) by extension 'ignore'
+[3.118s] Level 1:colcon.colcon_core.package_identification:_identify(src/yasmin/docs) by extension 'ignore_ament_install'
+[3.119s] Level 1:colcon.colcon_core.package_identification:_identify(src/yasmin/docs) by extensions ['colcon_pkg']
+[3.119s] Level 1:colcon.colcon_core.package_identification:_identify(src/yasmin/docs) by extension 'colcon_pkg'
+[3.120s] Level 1:colcon.colcon_core.package_identification:_identify(src/yasmin/docs) by extensions ['colcon_meta']
+[3.121s] Level 1:colcon.colcon_core.package_identification:_identify(src/yasmin/docs) by extension 'colcon_meta'
+[3.121s] Level 1:colcon.colcon_core.package_identification:_identify(src/yasmin/docs) by extensions ['ros']
+[3.122s] Level 1:colcon.colcon_core.package_identification:_identify(src/yasmin/docs) by extension 'ros'
+[3.124s] Level 1:colcon.colcon_core.package_identification:_identify(src/yasmin/docs) by extensions ['cmake', 'python']
+[3.124s] Level 1:colcon.colcon_core.package_identification:_identify(src/yasmin/docs) by extension 'cmake'
+[3.125s] Level 1:colcon.colcon_core.package_identification:_identify(src/yasmin/docs) by extension 'python'
+[3.125s] Level 1:colcon.colcon_core.package_identification:_identify(src/yasmin/docs) by extensions ['python_setup_py']
+[3.126s] Level 1:colcon.colcon_core.package_identification:_identify(src/yasmin/docs) by extension 'python_setup_py'
+[3.131s] Level 1:colcon.colcon_core.package_identification:_identify(src/yasmin/yasmin) by extensions ['ignore', 'ignore_ament_install']
+[3.132s] Level 1:colcon.colcon_core.package_identification:_identify(src/yasmin/yasmin) by extension 'ignore'
+[3.133s] Level 1:colcon.colcon_core.package_identification:_identify(src/yasmin/yasmin) by extension 'ignore_ament_install'
+[3.134s] Level 1:colcon.colcon_core.package_identification:_identify(src/yasmin/yasmin) by extensions ['colcon_pkg']
+[3.134s] Level 1:colcon.colcon_core.package_identification:_identify(src/yasmin/yasmin) by extension 'colcon_pkg'
+[3.134s] Level 1:colcon.colcon_core.package_identification:_identify(src/yasmin/yasmin) by extensions ['colcon_meta']
+[3.135s] Level 1:colcon.colcon_core.package_identification:_identify(src/yasmin/yasmin) by extension 'colcon_meta'
+[3.135s] Level 1:colcon.colcon_core.package_identification:_identify(src/yasmin/yasmin) by extensions ['ros']
+[3.136s] Level 1:colcon.colcon_core.package_identification:_identify(src/yasmin/yasmin) by extension 'ros'
+[3.144s] DEBUG:colcon.colcon_core.package_identification:Package 'src/yasmin/yasmin' with type 'ros.ament_cmake' and name 'yasmin'
+[3.147s] Level 1:colcon.colcon_core.package_identification:_identify(src/yasmin/yasmin_demos) by extensions ['ignore', 'ignore_ament_install']
+[3.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/yasmin/yasmin_demos) by extension 'ignore'
+[3.149s] Level 1:colcon.colcon_core.package_identification:_identify(src/yasmin/yasmin_demos) by extension 'ignore_ament_install'
+[3.150s] Level 1:colcon.colcon_core.package_identification:_identify(src/yasmin/yasmin_demos) by extensions ['colcon_pkg']
+[3.151s] Level 1:colcon.colcon_core.package_identification:_identify(src/yasmin/yasmin_demos) by extension 'colcon_pkg'
+[3.151s] Level 1:colcon.colcon_core.package_identification:_identify(src/yasmin/yasmin_demos) by extensions ['colcon_meta']
+[3.152s] Level 1:colcon.colcon_core.package_identification:_identify(src/yasmin/yasmin_demos) by extension 'colcon_meta'
+[3.152s] Level 1:colcon.colcon_core.package_identification:_identify(src/yasmin/yasmin_demos) by extensions ['ros']
+[3.153s] Level 1:colcon.colcon_core.package_identification:_identify(src/yasmin/yasmin_demos) by extension 'ros'
+[3.163s] DEBUG:colcon.colcon_core.package_identification:Package 'src/yasmin/yasmin_demos' with type 'ros.ament_cmake' and name 'yasmin_demos'
+[3.166s] Level 1:colcon.colcon_core.package_identification:_identify(src/yasmin/yasmin_msgs) by extensions ['ignore', 'ignore_ament_install']
+[3.167s] Level 1:colcon.colcon_core.package_identification:_identify(src/yasmin/yasmin_msgs) by extension 'ignore'
+[3.168s] Level 1:colcon.colcon_core.package_identification:_identify(src/yasmin/yasmin_msgs) by extension 'ignore_ament_install'
+[3.169s] Level 1:colcon.colcon_core.package_identification:_identify(src/yasmin/yasmin_msgs) by extensions ['colcon_pkg']
+[3.169s] Level 1:colcon.colcon_core.package_identification:_identify(src/yasmin/yasmin_msgs) by extension 'colcon_pkg'
+[3.170s] Level 1:colcon.colcon_core.package_identification:_identify(src/yasmin/yasmin_msgs) by extensions ['colcon_meta']
+[3.170s] Level 1:colcon.colcon_core.package_identification:_identify(src/yasmin/yasmin_msgs) by extension 'colcon_meta'
+[3.171s] Level 1:colcon.colcon_core.package_identification:_identify(src/yasmin/yasmin_msgs) by extensions ['ros']
+[3.171s] Level 1:colcon.colcon_core.package_identification:_identify(src/yasmin/yasmin_msgs) by extension 'ros'
+[3.177s] DEBUG:colcon.colcon_core.package_identification:Package 'src/yasmin/yasmin_msgs' with type 'ros.ament_cmake' and name 'yasmin_msgs'
+[3.179s] Level 1:colcon.colcon_core.package_identification:_identify(src/yasmin/yasmin_ros) by extensions ['ignore', 'ignore_ament_install']
+[3.180s] Level 1:colcon.colcon_core.package_identification:_identify(src/yasmin/yasmin_ros) by extension 'ignore'
+[3.181s] Level 1:colcon.colcon_core.package_identification:_identify(src/yasmin/yasmin_ros) by extension 'ignore_ament_install'
+[3.182s] Level 1:colcon.colcon_core.package_identification:_identify(src/yasmin/yasmin_ros) by extensions ['colcon_pkg']
+[3.183s] Level 1:colcon.colcon_core.package_identification:_identify(src/yasmin/yasmin_ros) by extension 'colcon_pkg'
+[3.184s] Level 1:colcon.colcon_core.package_identification:_identify(src/yasmin/yasmin_ros) by extensions ['colcon_meta']
+[3.184s] Level 1:colcon.colcon_core.package_identification:_identify(src/yasmin/yasmin_ros) by extension 'colcon_meta'
+[3.185s] Level 1:colcon.colcon_core.package_identification:_identify(src/yasmin/yasmin_ros) by extensions ['ros']
+[3.186s] Level 1:colcon.colcon_core.package_identification:_identify(src/yasmin/yasmin_ros) by extension 'ros'
+[3.193s] DEBUG:colcon.colcon_core.package_identification:Package 'src/yasmin/yasmin_ros' with type 'ros.ament_cmake' and name 'yasmin_ros'
+[3.196s] Level 1:colcon.colcon_core.package_identification:_identify(src/yasmin/yasmin_viewer) by extensions ['ignore', 'ignore_ament_install']
+[3.197s] Level 1:colcon.colcon_core.package_identification:_identify(src/yasmin/yasmin_viewer) by extension 'ignore'
+[3.197s] Level 1:colcon.colcon_core.package_identification:_identify(src/yasmin/yasmin_viewer) by extension 'ignore_ament_install'
+[3.198s] Level 1:colcon.colcon_core.package_identification:_identify(src/yasmin/yasmin_viewer) by extensions ['colcon_pkg']
+[3.199s] Level 1:colcon.colcon_core.package_identification:_identify(src/yasmin/yasmin_viewer) by extension 'colcon_pkg'
+[3.199s] Level 1:colcon.colcon_core.package_identification:_identify(src/yasmin/yasmin_viewer) by extensions ['colcon_meta']
+[3.200s] Level 1:colcon.colcon_core.package_identification:_identify(src/yasmin/yasmin_viewer) by extension 'colcon_meta'
+[3.200s] Level 1:colcon.colcon_core.package_identification:_identify(src/yasmin/yasmin_viewer) by extensions ['ros']
+[3.201s] Level 1:colcon.colcon_core.package_identification:_identify(src/yasmin/yasmin_viewer) by extension 'ros'
+[3.210s] DEBUG:colcon.colcon_core.package_identification:Package 'src/yasmin/yasmin_viewer' with type 'ros.ament_cmake' and name 'yasmin_viewer'
+[3.212s] Level 1:colcon.colcon_core.package_identification:_identify(venv) by extensions ['ignore', 'ignore_ament_install']
+[3.213s] Level 1:colcon.colcon_core.package_identification:_identify(venv) by extension 'ignore'
+[3.214s] Level 1:colcon.colcon_core.package_identification:_identify(venv) ignored
+[3.214s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[3.215s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[3.215s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[3.215s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[3.216s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[3.514s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'diffdrive_arduino' in 'src/diffdrive_arduino'
+[3.515s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'ros2_nav_to_pose' in 'src/ros2_nav_to_pose'
+[3.515s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'ros2_nav_to_pose_msgs' in 'src/ros2_nav_to_pose_msgs'
+[3.516s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'serial_motor_demo_msgs' in 'src/serial_motor_demo/serial_motor_demo_msgs'
+[3.516s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'tennisbotmaster' in 'src/tennisbotmaster'
+[3.516s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'twist_stamper' in 'src/twist_stamper'
+[3.517s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'yasmin' in 'src/yasmin/yasmin'
+[3.517s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'yasmin_msgs' in 'src/yasmin/yasmin_msgs'
+[3.517s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'serial_motor_demo' in 'src/serial_motor_demo/serial_motor_demo'
+[3.518s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'yasmin_ros' in 'src/yasmin/yasmin_ros'
+[3.518s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'yasmin_viewer' in 'src/yasmin/yasmin_viewer'
+[3.518s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'yasmin_demos' in 'src/yasmin/yasmin_demos'
+[3.524s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[3.525s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[3.577s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 13 installed packages in /home/E14Raspberry/ScooperBot/tennisbot_ws/install
+[3.614s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 341 installed packages in /opt/ros/jazzy
+[3.628s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[4.382s] Level 5:colcon.colcon_core.verb:set package 'ball_tracker' build argument 'cmake_args' from command line to 'None'
+[4.383s] Level 5:colcon.colcon_core.verb:set package 'ball_tracker' build argument 'cmake_target' from command line to 'None'
+[4.383s] Level 5:colcon.colcon_core.verb:set package 'ball_tracker' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[4.384s] Level 5:colcon.colcon_core.verb:set package 'ball_tracker' build argument 'cmake_clean_cache' from command line to 'False'
+[4.384s] Level 5:colcon.colcon_core.verb:set package 'ball_tracker' build argument 'cmake_clean_first' from command line to 'False'
+[4.384s] Level 5:colcon.colcon_core.verb:set package 'ball_tracker' build argument 'cmake_force_configure' from command line to 'False'
+[4.385s] Level 5:colcon.colcon_core.verb:set package 'ball_tracker' build argument 'ament_cmake_args' from command line to 'None'
+[4.385s] Level 5:colcon.colcon_core.verb:set package 'ball_tracker' build argument 'catkin_cmake_args' from command line to 'None'
+[4.386s] Level 5:colcon.colcon_core.verb:set package 'ball_tracker' build argument 'catkin_skip_building_tests' from command line to 'False'
+[4.386s] DEBUG:colcon.colcon_core.verb:Building package 'ball_tracker' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/E14Raspberry/ScooperBot/tennisbot_ws/build/ball_tracker', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/ball_tracker', 'merge_install': False, 'path': '/home/E14Raspberry/ScooperBot/tennisbot_ws/src/ball_tracker', 'symlink_install': True, 'test_result_base': None}
+[4.388s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[4.396s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[4.398s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/E14Raspberry/ScooperBot/tennisbot_ws/src/ball_tracker' with build type 'ament_python'
+[4.400s] Level 1:colcon.colcon_core.shell:create_environment_hook('ball_tracker', 'ament_prefix_path')
+[4.451s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[4.454s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/ball_tracker/share/ball_tracker/hook/ament_prefix_path.ps1'
+[4.462s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/ball_tracker/share/ball_tracker/hook/ament_prefix_path.dsv'
+[4.469s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/ball_tracker/share/ball_tracker/hook/ament_prefix_path.sh'
+[4.478s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[4.478s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[7.548s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/E14Raspberry/ScooperBot/tennisbot_ws/src/ball_tracker'
+[7.550s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[7.551s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[17.824s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/E14Raspberry/ScooperBot/tennisbot_ws/build/ball_tracker': PYTHONPATH=/home/E14Raspberry/ScooperBot/tennisbot_ws/build/ball_tracker/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/ball_tracker/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/E14Raspberry/ScooperBot/tennisbot_ws/build/ball_tracker/build --no-deps symlink_data
+[27.888s] Level 1:colcon.colcon_core.shell:create_environment_hook('ball_tracker', 'pythonpath_develop')
+[27.891s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/E14Raspberry/ScooperBot/tennisbot_ws/build/ball_tracker' returned '0': PYTHONPATH=/home/E14Raspberry/ScooperBot/tennisbot_ws/build/ball_tracker/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/ball_tracker/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/E14Raspberry/ScooperBot/tennisbot_ws/build/ball_tracker/build --no-deps symlink_data
+[27.893s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/E14Raspberry/ScooperBot/tennisbot_ws/build/ball_tracker/share/ball_tracker/hook/pythonpath_develop.ps1'
+[27.902s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/E14Raspberry/ScooperBot/tennisbot_ws/build/ball_tracker/share/ball_tracker/hook/pythonpath_develop.dsv'
+[27.907s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/E14Raspberry/ScooperBot/tennisbot_ws/build/ball_tracker/share/ball_tracker/hook/pythonpath_develop.sh'
+[27.964s] Level 1:colcon.colcon_core.environment:checking '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/ball_tracker' for CMake module files
+[27.974s] Level 1:colcon.colcon_core.environment:checking '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/ball_tracker' for CMake config files
+[27.986s] Level 1:colcon.colcon_core.environment:checking '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/ball_tracker/lib'
+[27.989s] Level 1:colcon.colcon_core.environment:checking '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/ball_tracker/bin'
+[27.990s] Level 1:colcon.colcon_core.environment:checking '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/ball_tracker/lib/pkgconfig/ball_tracker.pc'
+[27.993s] Level 1:colcon.colcon_core.environment:checking '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/ball_tracker/lib/python3.12/site-packages'
+[27.994s] Level 1:colcon.colcon_core.shell:create_environment_hook('ball_tracker', 'pythonpath')
+[27.996s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/ball_tracker/share/ball_tracker/hook/pythonpath.ps1'
+[28.000s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/ball_tracker/share/ball_tracker/hook/pythonpath.dsv'
+[28.004s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/ball_tracker/share/ball_tracker/hook/pythonpath.sh'
+[28.010s] Level 1:colcon.colcon_core.environment:checking '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/ball_tracker/bin'
+[28.011s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ball_tracker)
+[28.014s] INFO:colcon.colcon_core.shell:Creating package script '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/ball_tracker/share/ball_tracker/package.ps1'
+[28.024s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/ball_tracker/share/ball_tracker/package.dsv'
+[28.034s] INFO:colcon.colcon_core.shell:Creating package script '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/ball_tracker/share/ball_tracker/package.sh'
+[28.047s] INFO:colcon.colcon_core.shell:Creating package script '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/ball_tracker/share/ball_tracker/package.bash'
+[28.056s] INFO:colcon.colcon_core.shell:Creating package script '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/ball_tracker/share/ball_tracker/package.zsh'
+[28.067s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/E14Raspberry/ScooperBot/tennisbot_ws/install/ball_tracker/share/colcon-core/packages/ball_tracker)
+[28.073s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[28.074s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[28.075s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[28.075s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[28.168s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.notify_send': Could not find 'notify-send'
+[28.168s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[28.169s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[28.170s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[28.337s] DEBUG:colcon.colcon_notification.desktop_notification.notify2:Failed to initialize notify2: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.Notifications was not provided by any .service files
+[28.338s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[28.340s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/local_setup.ps1'
+[28.352s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/_local_setup_util_ps1.py'
+[28.366s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/setup.ps1'
+[28.397s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/local_setup.sh'
+[28.403s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/_local_setup_util_sh.py'
+[28.411s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/setup.sh'
+[28.437s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/local_setup.bash'
+[28.444s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/setup.bash'
+[28.478s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/local_setup.zsh'
+[28.484s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/setup.zsh'

@@ -1,0 +1,57 @@
+[0.270s] Invoking command in '/home/E14Raspberry/ScooperBot/tennisbot_ws/build/yasmin_ros': AMENT_PREFIX_PATH=/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy LD_LIBRARY_PATH=/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/E14Raspberry/ScooperBot/tennisbot_ws/build/yasmin_ros -- -j4 -l4
+[1.558s] [  0%] Built target ament_cmake_python_symlink_yasmin_ros
+[1.666s] [100%] Built target yasmin_ros_lib
+[5.104s] running egg_info
+[5.606s] writing yasmin_ros.egg-info/PKG-INFO
+[5.613s] writing dependency_links to yasmin_ros.egg-info/dependency_links.txt
+[5.615s] writing top-level names to yasmin_ros.egg-info/top_level.txt
+[6.527s] reading manifest file 'yasmin_ros.egg-info/SOURCES.txt'
+[6.536s] writing manifest file 'yasmin_ros.egg-info/SOURCES.txt'
+[6.890s] [100%] Built target ament_cmake_python_build_yasmin_ros_egg
+[7.923s] Invoked command in '/home/E14Raspberry/ScooperBot/tennisbot_ws/build/yasmin_ros' returned '0': AMENT_PREFIX_PATH=/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy LD_LIBRARY_PATH=/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/E14Raspberry/ScooperBot/tennisbot_ws/build/yasmin_ros -- -j4 -l4
+[8.568s] Invoking command in '/home/E14Raspberry/ScooperBot/tennisbot_ws/build/yasmin_ros': AMENT_PREFIX_PATH=/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy LD_LIBRARY_PATH=/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/E14Raspberry/ScooperBot/tennisbot_ws/build/yasmin_ros
+[8.739s] -- Install configuration: ""
+[8.743s] -- Execute custom install script
+[8.754s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_ros/lib/libyasmin_ros_lib.a
+[8.765s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_ros/include//yasmin_ros/action_state.hpp
+[8.770s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_ros/include//yasmin_ros/basic_outcomes.hpp
+[8.776s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_ros/include//yasmin_ros/monitor_state.hpp
+[8.783s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_ros/include//yasmin_ros/service_state.hpp
+[8.790s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_ros/include//yasmin_ros/yasmin_node.hpp
+[8.796s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_ros/share/yasmin_ros/environment/library_path.sh
+[8.803s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_ros/share/yasmin_ros/environment/library_path.dsv
+[8.808s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_ros/share/yasmin_ros/environment/pythonpath.sh
+[8.815s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_ros/share/yasmin_ros/environment/pythonpath.dsv
+[8.826s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_ros/lib/python3.12/site-packages/yasmin_ros-2.3.1-py3.12.egg-info/PKG-INFO
+[8.835s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_ros/lib/python3.12/site-packages/yasmin_ros-2.3.1-py3.12.egg-info/SOURCES.txt
+[8.840s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_ros/lib/python3.12/site-packages/yasmin_ros-2.3.1-py3.12.egg-info/dependency_links.txt
+[8.848s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_ros/lib/python3.12/site-packages/yasmin_ros-2.3.1-py3.12.egg-info/top_level.txt
+[8.860s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_ros/lib/python3.12/site-packages/yasmin_ros/__init__.py
+[8.866s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_ros/lib/python3.12/site-packages/yasmin_ros/action_state.py
+[8.872s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_ros/lib/python3.12/site-packages/yasmin_ros/basic_outcomes.py
+[8.878s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_ros/lib/python3.12/site-packages/yasmin_ros/monitor_state.py
+[8.886s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_ros/lib/python3.12/site-packages/yasmin_ros/service_state.py
+[8.892s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_ros/lib/python3.12/site-packages/yasmin_ros/yasmin_node.py
+[8.905s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_ros/pytests//run_pytests.sh
+[8.911s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_ros/pytests//test_yasmin_ros.py
+[8.916s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_ros/lib/yasmin_ros/run_pytests.sh
+[8.928s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_ros/share/ament_index/resource_index/package_run_dependencies/yasmin_ros
+[8.935s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_ros/share/ament_index/resource_index/parent_prefix_path/yasmin_ros
+[8.940s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_ros/share/yasmin_ros/environment/ament_prefix_path.sh
+[8.944s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_ros/share/yasmin_ros/environment/ament_prefix_path.dsv
+[8.947s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_ros/share/yasmin_ros/environment/path.sh
+[8.952s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_ros/share/yasmin_ros/environment/path.dsv
+[8.958s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_ros/share/yasmin_ros/local_setup.bash
+[8.965s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_ros/share/yasmin_ros/local_setup.sh
+[8.974s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_ros/share/yasmin_ros/local_setup.zsh
+[8.976s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_ros/share/yasmin_ros/local_setup.dsv
+[8.981s] -- Symlinking: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_ros/share/yasmin_ros/package.dsv
+[9.146s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_ros/share/ament_index/resource_index/packages/yasmin_ros
+[9.152s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_ros/share/yasmin_ros/cmake/ament_cmake_export_include_directories-extras.cmake
+[9.158s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_ros/share/yasmin_ros/cmake/ament_cmake_export_libraries-extras.cmake
+[9.164s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_ros/share/yasmin_ros/cmake/ament_cmake_export_dependencies-extras.cmake
+[9.169s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_ros/share/yasmin_ros/cmake/yasmin_rosConfig.cmake
+[9.175s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_ros/share/yasmin_ros/cmake/yasmin_rosConfig-version.cmake
+[9.182s] -- Up-to-date symlink: /home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_ros/share/yasmin_ros/package.xml
+[9.640s] Listing '/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin_ros/lib/python3.12/site-packages/yasmin_ros'...
+[9.742s] Invoked command in '/home/E14Raspberry/ScooperBot/tennisbot_ws/build/yasmin_ros' returned '0': AMENT_PREFIX_PATH=/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy LD_LIBRARY_PATH=/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/E14Raspberry/ScooperBot/tennisbot_ws/install/yasmin/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/E14Raspberry/ScooperBot/tennisbot_ws/build/yasmin_ros

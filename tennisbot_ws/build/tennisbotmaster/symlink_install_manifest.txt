@@ -4,6 +4,7 @@
 /home/E14Raspberry/ScooperBot/tennisbot_ws/install/tennisbotmaster/share/tennisbotmaster/description/robot_core.xacro
 /home/E14Raspberry/ScooperBot/tennisbot_ws/install/tennisbotmaster/share/tennisbotmaster/description/ros2_control.xacro
 /home/E14Raspberry/ScooperBot/tennisbot_ws/install/tennisbotmaster/share/tennisbotmaster/launch/robot_state_pub.launch.py
+/home/E14Raspberry/ScooperBot/tennisbot_ws/install/tennisbotmaster/share/tennisbotmaster/launch/start_camera.launch.py
 /home/E14Raspberry/ScooperBot/tennisbot_ws/install/tennisbotmaster/share/tennisbotmaster/launch/start_robot_ctlr.launch.py
 /home/E14Raspberry/ScooperBot/tennisbot_ws/install/tennisbotmaster/share/tennisbotmaster/config/my_controllers.yaml
 /home/E14Raspberry/ScooperBot/tennisbot_ws/install/tennisbotmaster/share/tennisbotmaster/config/twist_mux.yaml
