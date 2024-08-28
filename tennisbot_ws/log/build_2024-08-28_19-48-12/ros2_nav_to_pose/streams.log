@@ -1,0 +1,31 @@
+[21.453s] Invoking command in '/home/E14Raspberry/ScooperBot/tennisbot_ws/build/ros2_nav_to_pose': PYTHONPATH=/home/E14Raspberry/ScooperBot/tennisbot_ws/build/ros2_nav_to_pose/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/ros2_nav_to_pose/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/E14Raspberry/ScooperBot/tennisbot_ws/build/ros2_nav_to_pose/build --no-deps symlink_data
+[30.515s] running develop
+[30.520s] /usr/lib/python3/dist-packages/setuptools/command/develop.py:40: EasyInstallDeprecationWarning: easy_install command is deprecated.
+[30.521s] !!
+[30.523s] 
+[30.524s]         ********************************************************************************
+[30.526s]         Please avoid running ``setup.py`` and ``easy_install``.
+[30.527s]         Instead, use pypa/build, pypa/installer or other
+[30.529s]         standards-based tools.
+[30.530s] 
+[30.533s]         See https://github.com/pypa/setuptools/issues/917 for details.
+[30.534s]         ********************************************************************************
+[30.536s] 
+[30.537s] !!
+[30.538s]   easy_install.initialize_options(self)
+[36.288s] running egg_info
+[37.004s] writing ros2_nav_to_pose.egg-info/PKG-INFO
+[37.014s] writing dependency_links to ros2_nav_to_pose.egg-info/dependency_links.txt
+[37.026s] writing entry points to ros2_nav_to_pose.egg-info/entry_points.txt
+[37.048s] writing requirements to ros2_nav_to_pose.egg-info/requires.txt
+[37.060s] writing top-level names to ros2_nav_to_pose.egg-info/top_level.txt
+[38.152s] reading manifest file 'ros2_nav_to_pose.egg-info/SOURCES.txt'
+[38.179s] writing manifest file 'ros2_nav_to_pose.egg-info/SOURCES.txt'
+[38.857s] running build_ext
+[38.868s] Creating /home/E14Raspberry/ScooperBot/tennisbot_ws/install/ros2_nav_to_pose/lib/python3.12/site-packages/ros2-nav-to-pose.egg-link (link to .)
+[38.869s] Installing nav_to_pose_action_client script to /home/E14Raspberry/ScooperBot/tennisbot_ws/install/ros2_nav_to_pose/lib/ros2_nav_to_pose
+[38.873s] Installing nav_to_pose_action_server script to /home/E14Raspberry/ScooperBot/tennisbot_ws/install/ros2_nav_to_pose/lib/ros2_nav_to_pose
+[38.881s] 
+[38.882s] Installed /home/E14Raspberry/ScooperBot/tennisbot_ws/build/ros2_nav_to_pose
+[38.887s] running symlink_data
+[40.107s] Invoked command in '/home/E14Raspberry/ScooperBot/tennisbot_ws/build/ros2_nav_to_pose' returned '0': PYTHONPATH=/home/E14Raspberry/ScooperBot/tennisbot_ws/build/ros2_nav_to_pose/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/ros2_nav_to_pose/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/E14Raspberry/ScooperBot/tennisbot_ws/build/ros2_nav_to_pose/build --no-deps symlink_data

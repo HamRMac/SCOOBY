@@ -20,6 +20,13 @@ import time
 from tf2_ros import TransformListener, Buffer
 from tf_transformations import euler_from_quaternion
 
+from math import pi
+
+def normalize_angle(angle):
+    # Normalize the angle to be between -pi and pi
+    angle = (angle + math.pi) % (2 * math.pi) - math.pi
+    return angle
+
 class FollowBall(Node):
 
     def __init__(self):
@@ -77,6 +84,8 @@ class FollowBall(Node):
     def timer_callback(self):
         msg = Twist()
         if (time.time() - self.lastrcvtime < self.rcv_timeout_secs):
+            if not (self.initial_yaw is None):
+                self.initial_yaw = None
             self.is_scanning = False
             self.get_logger().info('Target: x={} @ dist={}'.format(self.target_val,self.target_dist))
             print(self.target_dist)
@@ -95,7 +104,7 @@ class FollowBall(Node):
             else:
                 # Perform scan sweep otherwise
                 self.perform_scan(msg)
-            self.get_logger().info(str(msg))
+            self.get_logger().debug(str(msg))
         self.publisher_.publish(msg)
 
     def perform_scan(self, msg):
@@ -107,7 +116,7 @@ class FollowBall(Node):
             self.current_yaw = self.get_yaw_from_odom()
 
             if self.current_yaw is not None:
-                yaw_diff = self.current_yaw - self.initial_yaw
+                yaw_diff = normalize_angle(self.current_yaw - self.initial_yaw)
                 self.get_logger().info(str(yaw_diff))
                 if self.scan_direction == 1:
                     if yaw_diff >= self.scan_angle_limit_rad:  # Convert degrees to radians

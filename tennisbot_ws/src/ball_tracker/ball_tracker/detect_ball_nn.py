@@ -63,10 +63,10 @@ class DetectBall(Node):
 
     def callback(self,data):
         # If not ready to process nxt frame skip
-        if (time.time() - self.lastrcvtime < self.to_interval):
-            return;
+        #if (time.time() - self.lastrcvtime < self.to_interval):
+        #    return
 
-        self.lastrcvtime = time.time()
+        #self.lastrcvtime = time.time()
 
         try:
             cv_image = self.bridge.imgmsg_to_cv2(data, "bgr8")
@@ -75,18 +75,22 @@ class DetectBall(Node):
 
         try:
            #keypoints_norm, out_image, tuning_image = proc.find_circles(cv_image, self.tuning_params)
-
+            process_time_start = time.time()
             classIndex, confidence, bbox = self.model.detect(cv_image, confThreshold=0.5)
             centrelist = []
             if len(classIndex) > 0:
                 # Draw bounding boxes and labels on the frame
-                for classInd, conf, boxes in zip(classIndex.flatten(), confidence.flatten(), bbox):
+                for classInd, _, boxes in zip(classIndex.flatten(), confidence.flatten(), bbox):
                     if (classInd <= len(self.classLabels)) and (classInd.item() == 37):
                         cv2.rectangle(cv_image, boxes, (255, 0, 0), 2)
                         boxes = boxes.tolist()
                         centrelist.append([boxes[0]+boxes[2]/2,boxes[1]+boxes[3]/2,boxes[2]*boxes[3]])
                     #else:
                         #print(f"Warning: Detected class index {classInd} out of range")
+            process_time_end = time.time()
+            process_time = process_time_end - process_time_start
+            self.get_logger().info(f'Processing Time: {process_time:.4f}')
+
             img_to_pub = self.bridge.cv2_to_imgmsg(cv_image, "bgr8")
             img_to_pub.header = data.header
             self.image_out_pub.publish(img_to_pub)
@@ -100,12 +104,12 @@ class DetectBall(Node):
                 y = float(kp[1])
                 s = float(kp[2])
 
-                self.get_logger().info(f"Pt {i}: ({x},{y},{s})")
-
                 if (s > point_out.z):                    
                     point_out.x = (x-320)/320
                     point_out.y = (y-240)/240
                     point_out.z = s/307200
+
+            self.get_logger().info(f"Largest Pt: ({point_out.x},{point_out.y},{point_out.s})")
 
             if (point_out.z > 0):
                 self.ball_pub.publish(point_out) 

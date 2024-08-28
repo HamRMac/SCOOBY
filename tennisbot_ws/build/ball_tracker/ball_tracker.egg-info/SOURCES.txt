@@ -9,6 +9,7 @@ ball_tracker/detect_ball_nn_offload.py
 ball_tracker/follow_ball.py
 ball_tracker/follow_ball_OLD.py
 ball_tracker/follow_ball_action_server.py
+ball_tracker/helper.py
 ball_tracker/process_image.py
 ball_tracker.egg-info/PKG-INFO
 ball_tracker.egg-info/SOURCES.txt

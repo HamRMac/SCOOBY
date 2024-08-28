@@ -15,29 +15,35 @@ from .helper import WebSocketClient
 class DetectBall(Node):
 
     def __init__(self):
-        self.declare_parameter("websocket_url", "ws://192.168.0.0:8765")
-        self.websocket_url = self.get_parameter('rcv_timeout_secs').get_parameter_value().string_value
         super().__init__('detect_ball')
+
+        # Declare param for the websocket
+        self.declare_parameter("websocket_url", "ws://192.168.0.0:8765")
+        self.websocket_url = self.get_parameter('websocket_url').get_parameter_value().string_value
+        
+        # Init subscriptions
         self.get_logger().info('Initialising WS Params...')
         self.image_sub = self.create_subscription(Image, "/image_in", self.callback, rclpy.qos.QoSPresetProfiles.SENSOR_DATA.value)
         self.image_out_pub = self.create_publisher(Image, "/image_out", 1)
         self.ball_pub = self.create_publisher(Point, "/detected_ball", 1)
         self.bridge = CvBridge()
 
+        # Get the async event loop
         self.loop = asyncio.get_event_loop()
-        self.get_logger().info('Connecting to WS Detector!')
         self.lastrcvtime = 0
         self.to_interval = 0.5
 
-        self.client = WebSocketClient(self.websocket_url)
-
-    def get_client(self):
-        return self.client
+        self.get_logger().info(f'Connecting to WS Detector at {self.websocket_url}')
+        self.client = WebSocketClient(self.websocket_url,self.get_logger())
+        self.get_logger().info(f'WS client created!')
 
     def callback(self, data):
-        if time.time() - self.lastrcvtime < self.to_interval:
-            return
-        self.lastrcvtime = time.time()
+        #self.get_logger().info('Running Callback')
+        #if time.time() - self.lastrcvtime < self.to_interval:
+        #    return
+        #self.lastrcvtime = time.time()
+
+        #self.get_logger().info('Getting img')
         try:
             cv_image = self.bridge.imgmsg_to_cv2(data, "bgr8")
         except CvBridgeError as e:
@@ -50,8 +56,10 @@ class DetectBall(Node):
 
         # Send image to server and receive processed points
         try:
-            points = self.loop.run_until_complete(client.send_receive(img_uint8))
+            points = self.loop.run_until_complete(self.client.send_receive(img_uint8))
+            process_time_start = time.time()
             centrelist = []
+            cv_image = cv2.resize(cv_image, (320, 320), interpolation=cv2.INTER_NEAREST)
             for point in points:
                 x = point['x']
                 y = point['y']
@@ -69,11 +77,14 @@ class DetectBall(Node):
                     point_out.z = float(kp[2])
 
             if point_out.z > 0:
-                point_out.x = (point_out.x-320)/320
-                point_out.y = (point_out.y-240)/240
-                point_out.z = point_out.z/307200
+                point_out.x = (point_out.x-160)/160
+                point_out.y = (point_out.y-160)/160
+                point_out.z = point_out.z/102400
                 self.ball_pub.publish(point_out)
 
+            process_time_end = time.time()
+            process_time = process_time_end - process_time_start
+            self.get_logger().debug(f'Processing Time: {process_time:.4f}')
 
             # Publish the image with bounding boxes
             img_to_pub = self.bridge.cv2_to_imgmsg(cv_image, "bgr8")
@@ -89,12 +100,14 @@ async def close_client(client):
 def main(args=None):
     rclpy.init(args=args)
     detect_ball = DetectBall()
+    detect_ball.get_logger().info('Starting Loop')
     try:
         rclpy.spin(detect_ball)
     except KeyboardInterrupt:
         pass
-    detect_ball.destroy_node()
+    detect_ball.get_logger().info('Detector closed. Goodbye!')
     asyncio.run(close_client(detect_ball.client))
+    detect_ball.destroy_node()
     rclpy.shutdown()
 
 if __name__ == '__main__':
