@@ -1,1 +1,0 @@
-/home/E14Raspberry/ScooperBot/tennisbot_ws/build/yasmin_msgs/ament_cmake_export_targets/ament_cmake_export_targets-extras.cmake

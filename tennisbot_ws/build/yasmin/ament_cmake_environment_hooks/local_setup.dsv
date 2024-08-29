@@ -1,4 +1,0 @@
-source;share/yasmin/environment/ament_prefix_path.sh
-source;share/yasmin/environment/library_path.sh
-source;share/yasmin/environment/path.sh
-source;share/yasmin/environment/pythonpath.sh

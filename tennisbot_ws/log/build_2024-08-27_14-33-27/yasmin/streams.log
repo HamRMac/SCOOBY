@@ -1,5 +1,0 @@
-[0.458s] Invoking command in '/home/E14Raspberry/ScooperBot/tennisbot_ws/build/yasmin': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/twist_stamper:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/ros2_nav_to_pose:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/ball_tracker:/opt/ros/jazzy /usr/bin/cmake --build /home/E14Raspberry/ScooperBot/tennisbot_ws/build/yasmin -- -j4 -l4
-[3.275s] gmake[1]: *** [CMakeFiles/Makefile2:167: CMakeFiles/ament_cmake_python_symlink_yasmin.dir/all] Interrupt
-[3.340s] gmake[2]: *** [CMakeFiles/yasmin_lib.dir/build.make:157: CMakeFiles/yasmin_lib.dir/depend] Interrupt
-[3.341s] gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/yasmin_lib.dir/all] Interrupt
-[3.342s] gmake: *** [Makefile:146: all] Interrupt

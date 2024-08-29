@@ -1,1 +1,0 @@
-/home/E14Raspberry/ScooperBot/tennisbot_ws/build/tennisbotmaster/ament_cmake_environment_hooks/local_setup.sh

@@ -1,1 +1,0 @@
-/home/E14Raspberry/ScooperBot/tennisbot_ws/build/ros2_nav_to_pose_msgs/rosidl_generator_c/ros2_nav_to_pose_msgs/action/detail/navigate_to_pose__type_support.h

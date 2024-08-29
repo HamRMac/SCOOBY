@@ -1,6 +1,0 @@
-{
-  "package_name": "ros2_nav_to_pose_msgs",
-  "non_idl_tuples": [
-    "/home/E14Raspberry/ScooperBot/tennisbot_ws/src/ros2_nav_to_pose_msgs:action/NavigateToPose.action"
-  ]
-}

@@ -1,1 +1,0 @@
-/home/E14Raspberry/ScooperBot/tennisbot_ws/build/yasmin_demos/ament_cmake_core/yasmin_demosConfig.cmake

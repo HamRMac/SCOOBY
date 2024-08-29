@@ -1,4 +1,0 @@
-Invoking command in '/home/E14Raspberry/ScooperBot/tennisbot_ws/build/yasmin': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/E14Raspberry/ScooperBot/tennisbot_ws/build/yasmin -- -j4 -l4
-Invoked command in '/home/E14Raspberry/ScooperBot/tennisbot_ws/build/yasmin' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/E14Raspberry/ScooperBot/tennisbot_ws/build/yasmin -- -j4 -l4
-Invoking command in '/home/E14Raspberry/ScooperBot/tennisbot_ws/build/yasmin': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/E14Raspberry/ScooperBot/tennisbot_ws/build/yasmin
-Invoked command in '/home/E14Raspberry/ScooperBot/tennisbot_ws/build/yasmin' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/E14Raspberry/ScooperBot/tennisbot_ws/build/yasmin

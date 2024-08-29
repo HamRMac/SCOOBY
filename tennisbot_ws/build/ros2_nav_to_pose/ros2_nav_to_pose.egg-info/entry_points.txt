@@ -1,3 +1,0 @@
-[console_scripts]
-nav_to_pose_action_client = ros2_nav_to_pose.nav_to_pose_action_client:main
-nav_to_pose_action_server = ros2_nav_to_pose.nav_to_pose_action_server:main

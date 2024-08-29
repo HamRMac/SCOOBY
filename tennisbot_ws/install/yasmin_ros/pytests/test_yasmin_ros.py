@@ -1,1 +1,0 @@
-/home/E14Raspberry/ScooperBot/tennisbot_ws/src/yasmin/yasmin_ros/tests/python/test_yasmin_ros.py

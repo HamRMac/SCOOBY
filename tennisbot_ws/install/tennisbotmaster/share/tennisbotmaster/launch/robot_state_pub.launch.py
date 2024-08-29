@@ -1,1 +1,0 @@
-/home/E14Raspberry/ScooperBot/tennisbot_ws/src/tennisbotmaster/launch/robot_state_pub.launch.py

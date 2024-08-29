@@ -1,9 +1,0 @@
-{
-  "package_name": "yasmin_msgs",
-  "output_dir": "/home/E14Raspberry/ScooperBot/tennisbot_ws/build/yasmin_msgs/rosidl_generator_type_description/yasmin_msgs",
-  "idl_tuples": [
-    "/home/E14Raspberry/ScooperBot/tennisbot_ws/build/yasmin_msgs/rosidl_adapter/yasmin_msgs:msg/State.idl",
-    "/home/E14Raspberry/ScooperBot/tennisbot_ws/build/yasmin_msgs/rosidl_adapter/yasmin_msgs:msg/Transition.idl",
-    "/home/E14Raspberry/ScooperBot/tennisbot_ws/build/yasmin_msgs/rosidl_adapter/yasmin_msgs:msg/StateMachine.idl"
-  ]
-}

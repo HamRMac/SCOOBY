@@ -1,1 +1,0 @@
-/home/E14Raspberry/ScooperBot/tennisbot_ws/build/ball_tracker_msgs/rosidl_typesupport_fastrtps_c/ball_tracker_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h

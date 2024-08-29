@@ -1,8 +1,0 @@
-source;share/tennisbotmaster/hook/cmake_prefix_path.ps1
-source;share/tennisbotmaster/hook/cmake_prefix_path.dsv
-source;share/tennisbotmaster/hook/cmake_prefix_path.sh
-source;share/tennisbotmaster/local_setup.bash
-source;share/tennisbotmaster/local_setup.dsv
-source;share/tennisbotmaster/local_setup.ps1
-source;share/tennisbotmaster/local_setup.sh
-source;share/tennisbotmaster/local_setup.zsh

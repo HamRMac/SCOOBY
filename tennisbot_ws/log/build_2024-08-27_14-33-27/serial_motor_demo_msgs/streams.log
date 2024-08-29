@@ -1,8 +1,0 @@
-[0.500s] Invoking command in '/home/E14Raspberry/ScooperBot/tennisbot_ws/build/serial_motor_demo_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/twist_stamper:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/serial_motor_demo:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/ros2_nav_to_pose:/home/E14Raspberry/ScooperBot/tennisbot_ws/install/ball_tracker:/opt/ros/jazzy /usr/bin/cmake --build /home/E14Raspberry/ScooperBot/tennisbot_ws/build/serial_motor_demo_msgs -- -j4 -l4
-[3.076s] gmake[2]: *** wait: No child processes.  Stop.
-[3.092s] gmake[2]: *** Waiting for unfinished jobs....
-[3.097s] gmake[2]: *** wait: No child processes.  Stop.
-[3.099s] gmake[2]: *** [CMakeFiles/serial_motor_demo_msgs__rosidl_generator_type_description.dir/build.make:103: CMakeFiles/serial_motor_demo_msgs__rosidl_generator_type_description.dir/depend] Interrupt
-[3.138s] gmake[1]: *** [CMakeFiles/Makefile2:451: CMakeFiles/ament_cmake_python_symlink_serial_motor_demo_msgs.dir/all] Error 2
-[3.139s] gmake[1]: *** [CMakeFiles/Makefile2:214: CMakeFiles/serial_motor_demo_msgs__rosidl_generator_type_description.dir/all] Interrupt
-[3.141s] gmake: *** [Makefile:146: all] Interrupt

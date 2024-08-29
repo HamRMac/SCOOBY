@@ -1,8 +1,0 @@
-{
-  "package_name": "yasmin_msgs",
-  "non_idl_tuples": [
-    "/home/E14Raspberry/ScooperBot/tennisbot_ws/src/yasmin/yasmin_msgs:msg/State.msg",
-    "/home/E14Raspberry/ScooperBot/tennisbot_ws/src/yasmin/yasmin_msgs:msg/Transition.msg",
-    "/home/E14Raspberry/ScooperBot/tennisbot_ws/src/yasmin/yasmin_msgs:msg/StateMachine.msg"
-  ]
-}

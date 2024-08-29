@@ -1,4 +1,0 @@
-gmake[1]: *** [CMakeFiles/Makefile2:167: CMakeFiles/ament_cmake_python_symlink_yasmin.dir/all] Interrupt
-gmake[2]: *** [CMakeFiles/yasmin_lib.dir/build.make:157: CMakeFiles/yasmin_lib.dir/depend] Interrupt
-gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/yasmin_lib.dir/all] Interrupt
-gmake: *** [Makefile:146: all] Interrupt

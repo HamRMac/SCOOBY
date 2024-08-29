@@ -1,1 +1,0 @@
-/home/E14Raspberry/ScooperBot/tennisbot_ws/build/yasmin_msgs/rosidl_generator_cpp/yasmin_msgs/msg/detail/state__builder.hpp

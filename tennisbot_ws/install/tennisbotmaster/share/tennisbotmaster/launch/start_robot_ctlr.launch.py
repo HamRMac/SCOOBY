@@ -1,1 +1,0 @@
-/home/E14Raspberry/ScooperBot/tennisbot_ws/src/tennisbotmaster/launch/start_robot_ctlr.launch.py

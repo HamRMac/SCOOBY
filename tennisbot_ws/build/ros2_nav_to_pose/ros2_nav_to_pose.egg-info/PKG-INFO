@@ -1,7 +1,0 @@
-Metadata-Version: 2.1
-Name: ros2-nav-to-pose
-Version: 0.1.0
-Summary: Contains an action server to navigate to location based on a given frame
-Maintainer: E14
-Maintainer-email: NA@mmail.com
-License: TODO: License declaration

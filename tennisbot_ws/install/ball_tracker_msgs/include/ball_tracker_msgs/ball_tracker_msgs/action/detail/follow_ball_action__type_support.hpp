@@ -1,1 +1,0 @@
-/home/E14Raspberry/ScooperBot/tennisbot_ws/build/ball_tracker_msgs/rosidl_generator_cpp/ball_tracker_msgs/action/detail/follow_ball_action__type_support.hpp

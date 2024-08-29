@@ -1,1 +1,0 @@
-/home/E14Raspberry/ScooperBot/tennisbot_ws/src/yasmin/yasmin_demos/yasmin_demos/nav_demo.py

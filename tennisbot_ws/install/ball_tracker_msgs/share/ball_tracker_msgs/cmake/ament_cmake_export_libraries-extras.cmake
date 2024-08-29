@@ -1,1 +1,0 @@
-/home/E14Raspberry/ScooperBot/tennisbot_ws/build/ball_tracker_msgs/ament_cmake_export_libraries/ament_cmake_export_libraries-extras.cmake
