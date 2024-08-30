@@ -9,11 +9,18 @@ from geometry_msgs.msg import Point, Twist
 from ball_tracker_msgs.action import FollowBallAction  # Ensure this action is defined in your package
 from tf2_ros import TransformListener, Buffer
 from tf_transformations import euler_from_quaternion
+from math import pi as pi
+
+def normalize_angle(angle):
+    # Normalize the angle to be between -pi and pi
+    angle = (angle + pi) % (2 * pi) - pi
+    return angle
 
 class FollowBallActionServer(Node):
 
     def __init__(self):
         super().__init__('follow_ball_action_server')
+        self.get_logger().info('follow_ball_action_server is starting... Please wait')
         self._goal_handle = None
         self._goal_lock = threading.Lock()
 
@@ -38,13 +45,25 @@ class FollowBallActionServer(Node):
         self.return_scan_scale = self.search_angular_speed - self.min_angular_speed
         self.forward_distance = self.get_parameter('forward_distance').get_parameter_value().double_value
 
+        self.get_logger().info('Using parameters:'+
+                               " rcv_timeout_secs: "+str(self.rcv_timeout_secs)+
+                                " angular_chase_multiplier: "+str(self.angular_chase_multiplier)+
+                                " forward_chase_speed: "+str(self.forward_chase_speed)+
+                                " search_angular_speed: "+str(self.search_angular_speed)+
+                                " max_size_thresh: "+str(self.max_size_thresh)+
+                                " filter_value: "+str(self.filter_value)+
+                                " min_angular_speed: "+str(self.min_angular_speed)+
+                                " return_scan_scale: "+str(self.return_scan_scale)+
+                                " forward_distance: "+str(self.forward_distance)
+                               )
+
         # Initialize tf2 buffer and listener
         self.tf_buffer = Buffer()
         self.tf_listener = TransformListener(self.tf_buffer, self)
 
         self.scan_direction = 1  # 1 for left, -1 for right
         self.scan_angle = 0.0  # Current scan angle
-        self.scan_angle_limit = 45.0  # Maximum scan angle in degrees
+        self.scan_angle_limit = 75.0  # Maximum scan angle in degrees
         self.scan_angle_limit_rad = self.scan_angle_limit * (3.14159 / 180.0)
 
         self.initial_yaw = None
@@ -73,6 +92,8 @@ class FollowBallActionServer(Node):
         self.target_dist = 0.0
         self.lastrcvtime = time.time() - 10000
 
+        self.get_logger().info('follow_ball_action_server has started! Waiting for requests!')
+
     def goal_callback(self, goal_handle):
         self.get_logger().info('Received goal request')
         return GoalResponse.ACCEPT
@@ -97,15 +118,28 @@ class FollowBallActionServer(Node):
         feedback_msg = FollowBallAction.Feedback()
         result = FollowBallAction.Result()
 
+        #Reset Chase Params
+        self.target_val = 0.0
+        self.target_dist = 0.0
+        self.lastrcvtime = time.time() - 10000
+        self.initial_yaw = None
+
         while rclpy.ok():
             msg = Twist()
             if (time.time() - self.lastrcvtime < self.rcv_timeout_secs):
+                self.initial_yaw = None
                 self.is_scanning = False
                 self.get_logger().info('Target: x={} @ dist={}'.format(self.target_val, self.target_dist))
                 if (self.target_dist < self.max_size_thresh):
-                    msg.linear.x = self.forward_chase_speed
+                    msg.linear.x = self.forward_chase_speed * max(abs((self.max_size_thresh-self.target_dist)/self.max_size_thresh),0.4)
                 else:
                     self.get_logger().info('Reached Target Size')
+                '''request_angz = -self.angular_chase_multiplier * self.target_val
+                if request_angz<0:
+                    msg.angular.z = min(request_angz,-0.9) # if neg get the most powerful (most neg)
+                else:
+                    msg.angular.z = max(request_angz,0.9)
+                '''
                 msg.angular.z = -self.angular_chase_multiplier * self.target_val
             else:
                 self.is_scanning = True
@@ -114,7 +148,7 @@ class FollowBallActionServer(Node):
                     self.continue_forward(msg)
                 else:
                     self.perform_scan(msg)
-                self.get_logger().info(str(msg))
+                self.get_logger().debug(str(msg))
 
             self.publisher_.publish(msg)
 
@@ -122,8 +156,10 @@ class FollowBallActionServer(Node):
             feedback_msg.current_distance = self.target_dist
             goal_handle.publish_feedback(feedback_msg)
 
-            if self.target_dist < self.max_size_thresh:
-                self.get_logger().info('Goal threshold reached, completing goal')
+            if self.target_dist > self.max_size_thresh:
+                self.get_logger().info(f'Satisfied distance. Success!')
+                #if abs(self.target_val) < 0.25:
+                #    self.get_logger().info(f'Goal threshold reached ({self.target_dist} > {self.max_size_thresh}, completing goal')
                 result.success = True
                 goal_handle.succeed()
                 return result
@@ -142,7 +178,7 @@ class FollowBallActionServer(Node):
             self.current_yaw = self.get_yaw_from_odom()
 
             if self.current_yaw is not None:
-                yaw_diff = self.current_yaw - self.initial_yaw
+                yaw_diff = normalize_angle(self.current_yaw - self.initial_yaw)
                 self.get_logger().info(str(yaw_diff))
                 if self.scan_direction == 1:
                     if yaw_diff >= self.scan_angle_limit_rad:
@@ -182,7 +218,8 @@ class FollowBallActionServer(Node):
         distance_covered = elapsed_time * self.forward_chase_speed
 
         if distance_covered < self.forward_distance:
-            msg.linear.x = self.forward_chase_speed
+            msg.linear.x = self.forward_chase_speed*1.2
+            msg.angular.z = -0.2 # Prevent drift maybe
         else:
             self.moving_forward = False
             self.initial_yaw = None

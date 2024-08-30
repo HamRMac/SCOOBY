@@ -13,7 +13,7 @@ from rclpy.action.server import ServerGoalHandle
 from rclpy.executors import MultiThreadedExecutor, SingleThreadedExecutor
 
 from geometry_msgs.msg import Twist
-from ros2_nav_to_pose_msgs.action._navigate_to_pose import NavigateToPose
+from ros2_nav_to_pose_msgs.action import NavigateToPose
 
 import threading
 
@@ -28,11 +28,11 @@ class ROS2ActionServer(rclpy.node.Node):
 
         # Declare parameters with default values
         self.declare_parameter('lin_gain', 1.0)
-        self.declare_parameter('rot_gain', 3.0)
+        self.declare_parameter('rot_gain', 1.0)
         self.declare_parameter('lin_max', 0.3)
-        self.declare_parameter('rot_max', 4.0)
-        self.declare_parameter('rotation_error_tolerance', 0.2)
-        self.declare_parameter('dist_error_tolerance', 0.05)
+        self.declare_parameter('rot_max', 1.3)
+        self.declare_parameter('rotation_error_tolerance', 3.0)
+        self.declare_parameter('dist_error_tolerance', 0.15)
 
         # Retrieve parameters
         lin_gain = self.get_parameter('lin_gain').get_parameter_value().double_value
@@ -138,6 +138,7 @@ class ROS2ActionServer(rclpy.node.Node):
                 self.get_logger().info('Goal canceled')
                 return NavigateToPose.Result()
 
+            '''
             if dist_error < self.dist_error_tolerance:
                 self.get_logger().info(
                     "We are at goal now (dist="+str(dist_error)+"), adjusting to correct heading")
@@ -146,6 +147,13 @@ class ROS2ActionServer(rclpy.node.Node):
             if dist_to_goal_satisfied and (abs(rot_error) < self.rotation_error_tolerance):
                 self.get_logger().info(
                     "Corrected the heading,")
+                rot_to_goal_satisfied = True
+            '''
+
+            if dist_error < self.dist_error_tolerance:
+                self.get_logger().info(
+                    "We are at goal now! (dist="+str(dist_error)+")")
+                dist_to_goal_satisfied = True
                 rot_to_goal_satisfied = True
 
             self.get_logger().debug('Publishing Feedback')

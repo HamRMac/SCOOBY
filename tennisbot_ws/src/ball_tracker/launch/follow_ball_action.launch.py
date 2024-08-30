@@ -23,6 +23,12 @@ def generate_launch_description():
     default_value='/cmd_vel',
     description='The name of the output command vel topic.')
 
+    image_topic = LaunchConfiguration('image_topic')
+    image_topic_dec = DeclareLaunchArgument(
+        'image_topic',
+        default_value='/camera/image_raw',
+        description='The name of the input image topic.')
+
     follow_action_server_node = Node(
             package='ball_tracker',
             executable='follow_ball_action_server',
@@ -30,11 +36,18 @@ def generate_launch_description():
             remappings=[('/cmd_vel',cmd_vel_topic)]
          )
 
+    detect_node = Node(
+            package='ball_tracker',
+            executable='detect_ball_nn_offload',
+            remappings=[('/image_in',image_topic)],
+            parameters=[params_file]
+         )
 
 
 
     return LaunchDescription([
         params_file_dec,
         cmd_vel_topic_dec,
+        detect_node,
         follow_action_server_node,    
     ])

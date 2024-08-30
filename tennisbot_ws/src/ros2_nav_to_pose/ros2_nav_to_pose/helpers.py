@@ -21,6 +21,7 @@ class SimpleNavHelpers():
         self.tf_buffer = tf2_ros.Buffer()
         self.tf_listener = tf2_ros.TransformListener(
             buffer=self.tf_buffer,  node=node)
+        self.parent_node = node
 
     def pose_euclidean_dist(self, a, b):
 
@@ -39,6 +40,7 @@ class SimpleNavHelpers():
             curr_robot_pose.pose.position.y = transform.transform.translation.y
             curr_robot_pose.pose.position.z = transform.transform.translation.z
             curr_robot_pose.pose.orientation = transform.transform.rotation
+            #self.parent_node.get_logger().info(str(transform))
 
         except (tf2_ros.TypeException, tf2_ros.NotImplementedException):
             logger.info("Failed to get current robot pose")

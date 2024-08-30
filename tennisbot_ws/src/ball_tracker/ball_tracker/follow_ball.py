@@ -20,11 +20,11 @@ import time
 from tf2_ros import TransformListener, Buffer
 from tf_transformations import euler_from_quaternion
 
-from math import pi
+from math import pi as pi
 
 def normalize_angle(angle):
     # Normalize the angle to be between -pi and pi
-    angle = (angle + math.pi) % (2 * math.pi) - math.pi
+    angle = (angle + pi) % (2 * pi) - pi
     return angle
 
 class FollowBall(Node):
@@ -65,7 +65,7 @@ class FollowBall(Node):
 
         self.scan_direction = 1  # 1 for left, -1 for right
         self.scan_angle = 0.0  # Current scan angle
-        self.scan_angle_limit = 45.0  # Maximum scan angle in degrees
+        self.scan_angle_limit = 90.0  # Maximum scan angle in degrees
         self.scan_angle_limit_rad = self.scan_angle_limit * (3.14159 / 180.0)
 
         self.initial_yaw = None
