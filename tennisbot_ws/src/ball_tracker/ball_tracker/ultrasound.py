@@ -2,8 +2,8 @@ from gpiozero import DistanceSensor
 from gpiozero import LED
 #from gpiozero import Buzzer
 
-ultrasonic = DistanceSensor(echo=16, trigger=15, max_distance=1, threshold_distance=0.03)
-led = LED(13)
+ultrasonic = DistanceSensor(echo=23, trigger=22, max_distance=1, threshold_distance=0.03)
+led = LED(27)
 #buzzer = Buzzer(GPIOpin)
 
 while True:
