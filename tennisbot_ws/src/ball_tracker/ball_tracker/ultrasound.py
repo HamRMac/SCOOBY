@@ -1,9 +1,9 @@
 from gpiozero import DistanceSensor
-#from gpiozero import LED
+from gpiozero import LED
 #from gpiozero import Buzzer
 
 ultrasonic = DistanceSensor(echo=16, trigger=15, max_distance=1, threshold_distance=0.03)
-#led = LED(GPIOpin)
+led = LED(13)
 #buzzer = Buzzer(GPIOpin)
 
 while True:
@@ -14,8 +14,8 @@ while True:
     while True:
         ultrasonic.wait_for_in_range()
         print("In range")
-        #led.on()
+        led.on()
         #buzzer.beep()
         ultrasonic.wait_for_out_of_range()
         print("Out of range")
-        #led.off()
+        led.off()
