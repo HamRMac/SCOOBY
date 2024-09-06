@@ -48,12 +48,14 @@ while True:
     #ultrasonic.wait_for_out_of_range = function
     while True:
         dist = distance()
-        print ("Measured Distance = %.1f cm" % dist)
+        #print ("Measured Distance = %.1f cm" % dist)
         print(dist)
-        time.sleep(1)
-        if dist > 5:
+        time.sleep(0.1)
+        if dist < 5:
+            #print ("In Range")
             led.on()
-            time.sleep(1)
+            #time.sleep(1)
+        else:
             led.off()
         
         #ultrasonic.wait_for_in_range()
