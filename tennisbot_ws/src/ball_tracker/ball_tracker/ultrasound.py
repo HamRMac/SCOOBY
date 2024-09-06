@@ -5,7 +5,7 @@ import time
 #from gpiozero import Buzzer
 
 #ultrasonic = DistanceSensor(echo=23, trigger=22, max_distance=1, threshold_distance=0.03)
-#led = LED(27)
+led = LED(27)
 #buzzer = Buzzer(GPIOpin)
 GPIO.setmode(GPIO.BCM)
 GPIO_TRIGGER = 22
@@ -49,12 +49,16 @@ while True:
     while True:
         dist = distance()
         print ("Measured Distance = %.1f cm" % dist)
+        print(dist)
         time.sleep(1)
-        
+        if dist > 5:
+            led.on()
+            time.sleep(1)
+            led.off()
         
         #ultrasonic.wait_for_in_range()
         #print("In range")
-        #led.on()
+
         #buzzer.beep()
         #ultrasonic.wait_for_out_of_range()
         #print("Out of range")
