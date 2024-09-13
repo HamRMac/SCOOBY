@@ -1,6 +1,8 @@
 [submodule "tennisbot_ws/src/serial_motor_demo"]
 	path = tennisbot_ws/src/serial_motor_demo
 	url = https://github.com/joshnewans/serial_motor_demo.git
+	ignore = all
 [submodule "tennisbot_ws/src/yasmin"]
 	path = tennisbot_ws/src/yasmin
 	url = https://github.com/uleroboticsgroup/yasmin
+	ignore = all
