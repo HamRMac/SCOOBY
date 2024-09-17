@@ -126,8 +126,6 @@ def find_balls(frame):
                 mask = np.all(path_frame == [0, 255, 0], axis=-1)
                 combined_image = np.where(mask[:, :, None], frame, path_frame)
                 combined_image = weighted_img(combined_image, frame,0.5,0.5)
-                
-                
 
                 mask = np.all(combined_image == [255, 0, 0], axis=-1)
 
@@ -143,6 +141,7 @@ def find_balls(frame):
                     centers.append(new_center)
                     radii.append(radius)
                     ball_count += 1
+                    # TODO: change centers and radii from list to pqueue, using y_pos as priority
 
 
 
@@ -221,6 +220,13 @@ def get_line_equations(houghLines):
 
 
 def find_lines(img): 
+    """
+    input 
+        img: camera frame image
+    output
+        hough_lines image, where the image is all black ([0,0,0]) except for red lines
+
+    """
     gray_image = cv2.cvtColor(img, cv2.COLOR_RGB2GRAY)
     blurred_image = cv2.GaussianBlur(gray_image, (9, 9), 2)
     edges_image = cv2.Canny(blurred_image, 50, 120)
@@ -230,19 +236,18 @@ def find_lines(img):
     threshold = 155
     
     hough_lines = cv2.HoughLines(edges_image, rho_resolution , theta_resolution , threshold)
-    
-    if hough_lines is None:
-        return []
 
+    if hough_lines is None:
+        return np.zeros_like(img)
 
     hough_lines_image = np.zeros_like(img)
     draw_lines(hough_lines_image, hough_lines)
-
 
     mask = np.all(hough_lines_image == [0, 0, 0], axis=-1)
     combined_image = np.where(mask[:, :, None], img, hough_lines_image)
 
     return combined_image
 
-#test_one_image('tennisbot_ws\\src\\ball_tracker\\ball_tracker\\test_images_real\\WIN_20240913_12_51_43_Pro.jpg')
+# test_one_image('tennisbot_ws\\src\\ball_tracker\\ball_tracker\\test_images_real\\WIN_20240913_12_49_11_Pro.jpg')
+
 test_image_folder(first_idx=10,last_idx=-1,rdmize=True,plot_rows=3)
