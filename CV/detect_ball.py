@@ -4,23 +4,19 @@ import matplotlib.pyplot as plt
 from os import listdir
 from os.path import isfile, join
 
-# colour calibration
-hsv_range = np.load('CV\\colour calibration\\hsv_value.npy')
-print(hsv_range)
-
 # Known parameters
+lower_green = np.array([24,  24, 114])
+upper_green = np.array([94, 229, 255])
 known_diameter = 6.7  # Diameter of a tennis ball in cm
 focal_length = 700  # Adjust this based on your camera calibration
 min_distance_between_balls = 100  # Minimum distance between centers of detected balls
 min_ball_radius = 15
 
-test_image_folder = 'tennisbot_ws\\src\\ball_tracker\\ball_tracker\\test_images_court'
+test_image_folder = 'tennisbot_ws\\src\\ball_tracker\\ball_tracker\\test_images_real'
 test_images = [f for f in listdir(test_image_folder) if isfile(join(test_image_folder, f))]
 test_images = test_images[18:]
 print(test_images)
 
-# Capture video from the camera
-#cap = cv2.VideoCapture(1)
 
 def is_too_close(new_center, centers, min_dist):
     for center in centers:
