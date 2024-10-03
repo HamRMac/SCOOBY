@@ -30,10 +30,10 @@ class DepositToBoxActionServer(Node):
         self.declare_parameter('backup_time', 5.0)  # Maximum time to back up in seconds
         self.backup_time = self.get_parameter('backup_time').value
 
-        self.declare_parameter('forward_speed', 0.2)
+        self.declare_parameter('forward_speed', 0.3)
         self.forward_speed = self.get_parameter('forward_speed').value
 
-        self.declare_parameter('turn_speed', 0.5)
+        self.declare_parameter('turn_speed', 1.5)
         self.turn_speed = self.get_parameter('turn_speed').value
 
         self.declare_parameter('backup_speed', -0.2)  # Negative for backing up
@@ -100,15 +100,19 @@ class DepositToBoxActionServer(Node):
                 self._goal_handle.abort()
             self._goal_handle = goal_handle
         # Start the execution in a new thread to avoid blocking
-        threading.Thread(target=self.execute_callback, args=(goal_handle,)).start()
+        goal_handle.execute()
 
     def execute_callback(self, goal_handle):
+        threading.Thread(target=self.execute_callback_threaded, args=(goal_handle,)).start()
+
+    def execute_callback_threaded(self, goal_handle):
         self.get_logger().info("Executing goal")
 
         feedback_msg = DepositToBox.Feedback()
         result = DepositToBox.Result()
 
         # Initialize variables
+        self.get_logger().info("Init Vars")
         self.state = 'SEARCHING'
         self.box_msg = None
         self.rear_door_actuating = False
@@ -119,6 +123,7 @@ class DepositToBoxActionServer(Node):
         # Timer for control loop
         timer_period = 0.1  # seconds
         last_time = self.get_clock().now()
+        self.get_logger().info("Starting Loop...")
         while rclpy.ok():
             # Check for cancellation
             if goal_handle.is_cancel_requested:
@@ -129,9 +134,11 @@ class DepositToBoxActionServer(Node):
                 return DepositToBox.Result()
 
             # Update control loop
+            self.get_logger().info("Update CL")
             self.control_loop()
 
             # Provide feedback
+            self.get_logger().info("Set FB")
             feedback_msg.current_state = self.state
             goal_handle.publish_feedback(feedback_msg)
 
@@ -155,11 +162,12 @@ class DepositToBoxActionServer(Node):
 
     def control_loop(self):
         current_time = self.get_clock().now().nanoseconds / 1e9  # Current time in seconds
+        self.get_logger().info(f"State: {self.state}")
 
         if self.state == 'SEARCHING':
             # Spin slowly to search for the box
             twist = Twist()
-            twist.angular.z = 0.2
+            twist.angular.z = 1.4
             self.cmd_vel_pub.publish(twist)
             if self.box_msg:
                 self.state = 'MOVING_TOWARDS_BOX'
@@ -173,8 +181,8 @@ class DepositToBoxActionServer(Node):
                 twist.angular.z = -self.turn_speed * self.box_msg.x
                 self.cmd_vel_pub.publish(twist)
 
-                # Check if the box is close enough
-                if abs(self.box_msg.x) < self.centroid_threshold:
+                # Check if the box is close enough by checking y height
+                if self.box_msg.y > self.centroid_threshold:
                     self.get_logger().info("Box is close enough, turning around.")
                     self.state = 'TURNING_AROUND'
                     self.turn_start_time = current_time

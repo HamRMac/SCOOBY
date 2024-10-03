@@ -11,4 +11,4 @@ bool success
 ---
 # The feedback definition
 # Feedback will include the current distance to the ball
-float32 current_distance
+string current_state
