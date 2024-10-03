@@ -1,4 +1,4 @@
 
-from .state import State
-from .cb_state import CbState
-from .state_machine import StateMachine
+from yasmin import State
+from yasmin import CbState
+from yasmin import StateMachine

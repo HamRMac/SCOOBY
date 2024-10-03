@@ -32,26 +32,28 @@ class ServoController(Node):
         # Set up input pin
         self.pi.set_mode(self.input_pin, pigpio.INPUT)
         self.pi.set_pull_up_down(self.input_pin, pigpio.PUD_DOWN)
+        self.pi.set_glitch_filter(self.input_pin, 300)  # Adjust the debounce time (in microseconds)
+        self.start_angle = 0
+        self.up_angle = 180
 
         # Publisher for lifter_actuating topic
         self.lifter_publisher = self.create_publisher(Bool, 'lifter_actuating', 5)
-        
-        # Create a timer to check the GPIO input pin
-        self.timer = self.create_timer(0.1, self.check_input_pin)
+
+        # Set up interrupt on the input pin
+        self.pi.callback(self.input_pin, pigpio.RISING_EDGE, self.input_callback)
 
         if self.debug:
-            self.get_logger().info("ServoController node initialized with:")
+            self.get_logger().info("ServoController node B1 initialized with:")
             self.get_logger().info(f"Input pin: {self.input_pin}")
             self.get_logger().info(f"Servo pin: {self.servo_pin}")
             self.get_logger().info(f"Debug mode: {self.debug}")
             
-        self.pi.set_servo_pulsewidth(self.servo_pin, self.angle_to_pulsewidth(5))
+        self.pi.set_servo_pulsewidth(self.servo_pin, self.angle_to_pulsewidth(self.start_angle))
 
-    def check_input_pin(self):
-        if self.pi.read(self.input_pin) == 1:  # High signal detected
-            if self.debug:
-                self.get_logger().info("High signal detected on input pin")
-            self.actuate_servo()
+    def input_callback(self, gpio, level, tick):
+        if self.debug:
+            self.get_logger().info(f"Interrupt triggered (GPIO{gpio}- {level} signal detected on input pin (t={tick})")
+        self.actuate_servo()
 
     def actuate_servo(self):
         if self.debug:
@@ -61,7 +63,7 @@ class ServoController(Node):
         self.publish_lifter_actuating(True)
 
         # Move servo to full deflection (e.g., 180 degrees)
-        self.pi.set_servo_pulsewidth(self.servo_pin, self.angle_to_pulsewidth(180))
+        self.pi.set_servo_pulsewidth(self.servo_pin, self.angle_to_pulsewidth(self.up_angle))
         time.sleep(1)  # Give the servo time to move
         
         if self.debug:
@@ -74,7 +76,7 @@ class ServoController(Node):
             self.get_logger().info("Returning servo to resting position")
         
         # Move servo back to resting position (Change as required)
-        self.pi.set_servo_pulsewidth(self.servo_pin, self.angle_to_pulsewidth(5))
+        self.pi.set_servo_pulsewidth(self.servo_pin, self.angle_to_pulsewidth(self.start_angle))
         time.sleep(1)  # Give the servo time to move back
         
         # Stop servo

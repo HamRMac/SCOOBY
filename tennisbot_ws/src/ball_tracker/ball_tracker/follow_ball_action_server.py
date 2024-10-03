@@ -6,6 +6,7 @@ from rclpy.node import Node
 from rclpy.executors import MultiThreadedExecutor
 
 from geometry_msgs.msg import Point, Twist
+from std_msgs.msg import Bool
 from ball_tracker_msgs.action import FollowBallAction  # Ensure this action is defined in your package
 from tf2_ros import TransformListener, Buffer
 from tf_transformations import euler_from_quaternion
@@ -27,34 +28,46 @@ class FollowBallActionServer(Node):
         # Declare parameters with default values
         self.declare_parameter("rcv_timeout_secs", 1.0)
         self.declare_parameter("angular_chase_multiplier", 0.7)
-        self.declare_parameter("forward_chase_speed", 0.1)
+        self.declare_parameter("forward_chase_speed", 0.3)
+        self.declare_parameter("min_forward_chase_speed", 0.25)
         self.declare_parameter("search_angular_speed", 2.0)
         self.declare_parameter("min_angular_speed", 1.0)
         self.declare_parameter("max_size_thresh", 0.1)
         self.declare_parameter("filter_value", 0.9)
         self.declare_parameter("forward_distance", 0.1)
+        self.declare_parameter("creep_speed", 0.6)  # New parameter for creep speed
+        self.declare_parameter("creep_rotation_compensation", 0)  # New parameter for rotation compensation
+        self.declare_parameter("creep_timeout_secs", 10.0)  # Timeout for forward creep motion
 
         # Retrieve parameters
         self.rcv_timeout_secs = self.get_parameter('rcv_timeout_secs').get_parameter_value().double_value
         self.angular_chase_multiplier = self.get_parameter('angular_chase_multiplier').get_parameter_value().double_value
         self.forward_chase_speed = self.get_parameter('forward_chase_speed').get_parameter_value().double_value
+        self.min_forward_chase_speed = self.get_parameter('min_forward_chase_speed').get_parameter_value().double_value
         self.search_angular_speed = self.get_parameter('search_angular_speed').get_parameter_value().double_value
         self.max_size_thresh = self.get_parameter('max_size_thresh').get_parameter_value().double_value
         self.filter_value = self.get_parameter('filter_value').get_parameter_value().double_value
         self.min_angular_speed = self.get_parameter('min_angular_speed').get_parameter_value().double_value
         self.return_scan_scale = self.search_angular_speed - self.min_angular_speed
         self.forward_distance = self.get_parameter('forward_distance').get_parameter_value().double_value
+        self.creep_speed = self.get_parameter('creep_speed').get_parameter_value().double_value
+        self.creep_rotation_compensation = self.get_parameter('creep_rotation_compensation').get_parameter_value().double_value
+        self.creep_timeout_secs = self.get_parameter('creep_timeout_secs').get_parameter_value().double_value
 
         self.get_logger().info('Using parameters:'+
                                " rcv_timeout_secs: "+str(self.rcv_timeout_secs)+
                                 " angular_chase_multiplier: "+str(self.angular_chase_multiplier)+
                                 " forward_chase_speed: "+str(self.forward_chase_speed)+
+                                " min_forward_chase_speed: "+str(self.min_forward_chase_speed)+
                                 " search_angular_speed: "+str(self.search_angular_speed)+
                                 " max_size_thresh: "+str(self.max_size_thresh)+
                                 " filter_value: "+str(self.filter_value)+
                                 " min_angular_speed: "+str(self.min_angular_speed)+
                                 " return_scan_scale: "+str(self.return_scan_scale)+
-                                " forward_distance: "+str(self.forward_distance)
+                                " forward_distance: "+str(self.forward_distance) +
+                                " creep_speed: "+str(self.creep_speed)+
+                                " creep_rotation_compensation: "+str(self.creep_rotation_compensation)+
+                                " creep_timeout_secs: "+str(self.creep_timeout_secs)
                                )
 
         # Initialize tf2 buffer and listener
@@ -87,6 +100,12 @@ class FollowBallActionServer(Node):
 
         self.publisher_ = self.create_publisher(Twist, '/cmd_vel', 10)
         self.subscription = self.create_subscription(Point, '/detected_ball', self.listener_callback, 10)
+
+        # New variable to track if lifter_actuating is True
+        self.lifter_actuating = False
+        # Subscribe to /lifter_actuating topic
+        self.lifter_sub = self.create_subscription(
+            Bool, '/lifter_actuating', self.lifter_callback, 10)
         
         self.target_val = 0.0
         self.target_dist = 0.0
@@ -123,6 +142,7 @@ class FollowBallActionServer(Node):
         self.target_dist = 0.0
         self.lastrcvtime = time.time() - 10000
         self.initial_yaw = None
+        self.lifter_actuating = False
 
         while rclpy.ok():
             msg = Twist()
@@ -131,7 +151,8 @@ class FollowBallActionServer(Node):
                 self.is_scanning = False
                 self.get_logger().info('Target: x={} @ dist={}'.format(self.target_val, self.target_dist))
                 if (self.target_dist < self.max_size_thresh):
-                    msg.linear.x = self.forward_chase_speed * max(abs((self.max_size_thresh-self.target_dist)/self.max_size_thresh),0.4)
+                    # The threshold is now the y position from the base of the camera. This is -1 to 1. self.max_size_thresh-self.target_dist is between 0 and 2
+                    msg.linear.x = max(self.forward_chase_speed * abs((self.max_size_thresh-self.target_dist)/(self.max_size_thresh+1)),self.min_forward_chase_speed)
                 else:
                     self.get_logger().info('Reached Target Size')
                 '''request_angz = -self.angular_chase_multiplier * self.target_val
@@ -171,13 +192,25 @@ class FollowBallActionServer(Node):
     def move_forward_with_creep(self, goal_handle):
         start_time = time.time()
         while rclpy.ok() and (time.time() - start_time < self.creep_timeout_secs):
+            if self.lifter_actuating:
+                self.get_logger().info('Lifter actuated. Creep ended successfully.')
+                goal_handle.succeed()
+                return
+
             msg = Twist()
             msg.linear.x = self.creep_speed
             msg.angular.z = self.creep_rotation_compensation
             self.publisher_.publish(msg)
-            time.sleep(0.1)  # Small sleep to simulate a control loop
+            time.sleep(0.1)
 
-        self.get_logger().info('Creep forward motion complete.')
+        self.get_logger().info('Creep forward motion complete with no pickup. Goal Failed')
+        goal_handle.abort()
+
+    def lifter_callback(self, msg: Bool):
+        if msg.data:
+            self.lifter_actuating = True
+        else:
+            self.lifter_actuating = False
 
     def perform_scan(self, msg):
         if self.initial_yaw is None:
@@ -237,7 +270,7 @@ class FollowBallActionServer(Node):
     def listener_callback(self, msg):
         f = self.filter_value
         self.target_val = self.target_val * f + msg.x * (1 - f)
-        self.target_dist = self.target_dist * f + msg.z * (1 - f)
+        self.target_dist = self.target_dist * f + msg.y * (1 - f)
         self.lastrcvtime = time.time()
         self.scan_start_time = time.time()
 
