@@ -4,18 +4,16 @@ from std_msgs.msg import Bool
 import pigpio
 import time
 
-class ServoController(Node):
+class ServoControllerRemote(Node):
 
     def __init__(self):
-        super().__init__('servo_controller')
+        super().__init__('servo_controller_remote')
         
         # Declare parameters
-        self.declare_parameter('input_pin', 17)  # Default GPIO pin 17
-        self.declare_parameter('servo_pin', 18)  # Default GPIO pin 18
+        self.declare_parameter('servo_pin', 27)  # Default GPIO pin 18
         self.declare_parameter('debug', True)  # Debug mode
 
         # Get parameters
-        self.input_pin = self.get_parameter('input_pin').get_parameter_value().integer_value
         self.servo_pin = self.get_parameter('servo_pin').get_parameter_value().integer_value
         self.debug = self.get_parameter('debug').get_parameter_value().bool_value
 
@@ -29,28 +27,27 @@ class ServoController(Node):
             rclpy.shutdown()
             return
 
-        # Set up input pin
-        self.pi.set_mode(self.input_pin, pigpio.INPUT)
-        self.pi.set_pull_up_down(self.input_pin, pigpio.PUD_DOWN)
-
         # Publisher for lifter_actuating topic
         self.lifter_publisher = self.create_publisher(Bool, 'lifter_actuating', 5)
         
-        # Create a timer to check the GPIO input pin
-        self.timer = self.create_timer(0.1, self.check_input_pin)
-
+        # Subscriber for triggering the servo
+        self.trigger_subscriber = self.create_subscription(
+            Bool,
+            'trigger_servo',  # Topic name
+            self.trigger_callback,
+            10
+        )
+        
         if self.debug:
-            self.get_logger().info("ServoController node initialized with:")
-            self.get_logger().info(f"Input pin: {self.input_pin}")
+            self.get_logger().info("ServoControllerRemote node initialized with:")
             self.get_logger().info(f"Servo pin: {self.servo_pin}")
             self.get_logger().info(f"Debug mode: {self.debug}")
-            
         self.pi.set_servo_pulsewidth(self.servo_pin, self.angle_to_pulsewidth(5))
 
-    def check_input_pin(self):
-        if self.pi.read(self.input_pin) == 1:  # High signal detected
+    def trigger_callback(self, msg):
+        if msg.data:
             if self.debug:
-                self.get_logger().info("High signal detected on input pin")
+                self.get_logger().info("Received trigger message to actuate servo")
             self.actuate_servo()
 
     def actuate_servo(self):
@@ -61,7 +58,7 @@ class ServoController(Node):
         self.publish_lifter_actuating(True)
 
         # Move servo to full deflection (e.g., 180 degrees)
-        self.pi.set_servo_pulsewidth(self.servo_pin, self.angle_to_pulsewidth(180))
+        self.pi.set_servo_pulsewidth(self.servo_pin, self.angle_to_pulsewidth(110))
         time.sleep(1)  # Give the servo time to move
         
         if self.debug:
@@ -105,7 +102,7 @@ class ServoController(Node):
 def main(args=None):
     rclpy.init(args=args)
     
-    servo_controller = ServoController()
+    servo_controller = ServoControllerRemote()
     
     try:
         rclpy.spin(servo_controller)

@@ -20,7 +20,8 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'servo_controller = lift_arm.servo_controller:main'
+            'servo_controller = lift_arm.servo_controller:main',
+            'servo_controller_remote = lift_arm.servo_controller_remote:main'
         ],
     },
 )

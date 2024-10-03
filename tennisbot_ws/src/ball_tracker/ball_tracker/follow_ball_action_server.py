@@ -157,17 +157,27 @@ class FollowBallActionServer(Node):
             goal_handle.publish_feedback(feedback_msg)
 
             if self.target_dist > self.max_size_thresh:
-                self.get_logger().info(f'Satisfied distance. Success!')
-                #if abs(self.target_val) < 0.25:
-                #    self.get_logger().info(f'Goal threshold reached ({self.target_dist} > {self.max_size_thresh}, completing goal')
+                self.get_logger().info(f'Reached target size. Moving forward at creep speed.')
+                self.move_forward_with_creep(goal_handle)
+                self.get_logger().info(f'Goal Finished')
                 result.success = True
-                goal_handle.succeed()
                 return result
 
             if goal_handle.is_cancel_requested:
                 goal_handle.canceled()
                 self.get_logger().info('Goal canceled')
                 return FollowBallAction.Result()
+
+    def move_forward_with_creep(self, goal_handle):
+        start_time = time.time()
+        while rclpy.ok() and (time.time() - start_time < self.creep_timeout_secs):
+            msg = Twist()
+            msg.linear.x = self.creep_speed
+            msg.angular.z = self.creep_rotation_compensation
+            self.publisher_.publish(msg)
+            time.sleep(0.1)  # Small sleep to simulate a control loop
+
+        self.get_logger().info('Creep forward motion complete.')
 
     def perform_scan(self, msg):
         if self.initial_yaw is None:
