@@ -30,6 +30,7 @@ setup(
             'detect_ball_nn = ball_tracker.detect_ball_nn:main',
             'detect_ball_nn_offload = ball_tracker.detect_ball_nn_offload:main',
             'follow_ball_action_server = ball_tracker.follow_ball_action_server:main',
+            'deposit_to_box_action_server = ball_tracker.deposit_to_box_action_server:main'
         ],
     },
 )

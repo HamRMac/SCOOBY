@@ -23,6 +23,10 @@ class DetectBox(Node):
         self.box_pub = self.create_publisher(Point, "/detected_box", 1)
         self.bridge = CvBridge()
 
+        # Declare a parameter for minimum contour area
+        self.declare_parameter('min_area_threshold', 1000)  # Adjust this value as needed
+        self.min_area_threshold = self.get_parameter('min_area_threshold').value
+
     def callback(self, data):
         try:
             cv_image = self.bridge.imgmsg_to_cv2(data, "bgr8")
@@ -56,27 +60,33 @@ class DetectBox(Node):
         if len(contours) > 0:
             # Find the largest contour assuming it's the box
             largest_contour = max(contours, key=cv2.contourArea)
-            # Calculate centroid
-            M = cv2.moments(largest_contour)
-            if M["m00"] != 0:
-                cX = int(M["m10"] / M["m00"])
-                cY = int(M["m01"] / M["m00"])
-            else:
-                cX, cY = 0, 0
             # Calculate size (area)
             area = cv2.contourArea(largest_contour)
 
-            # Draw circle at centroid
-            cv2.circle(cv_image, (cX, cY), radius=4, color=(0, 0, 255), thickness=-1)
+            # Check if the area exceeds the threshold
+            if area > self.min_area_threshold:
+                # Calculate centroid
+                M = cv2.moments(largest_contour)
+                if M["m00"] != 0:
+                    cX = int(M["m10"] / M["m00"])
+                    cY = int(M["m01"] / M["m00"])
+                else:
+                    cX, cY = 0, 0
 
-            # Create and publish Point message
-            point_out = Point()
-            # Normalize x and y between -1 and 1
-            point_out.x = (cX - 160) / 160.0
-            point_out.y = (cY - 160) / 160.0
-            point_out.z = area / (320 * 320)  # area normalized
+                # Draw circle at centroid
+                cv2.circle(cv_image, (cX, cY), radius=4, color=(0, 0, 255), thickness=-1)
 
-            self.box_pub.publish(point_out)
+                # Create and publish Point message
+                point_out = Point()
+                # Normalize x and y between -1 and 1
+                point_out.x = (cX - 160) / 160.0
+                point_out.y = (cY - 160) / 160.0
+                point_out.z = area / (320 * 320)  # area normalized
+
+                self.box_pub.publish(point_out)
+            else:
+                # Area too small, ignore detection
+                self.get_logger().info(f"Detected contour area too small ({area}), ignoring.")
         else:
             # No box found
             self.get_logger().info("No box found.")
