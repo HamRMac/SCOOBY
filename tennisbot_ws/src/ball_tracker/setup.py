@@ -24,6 +24,7 @@ setup(
     entry_points={
         'console_scripts': [
             'detect_ball = ball_tracker.detect_ball:main',
+            'detect_box = ball_tracker.detect_box:main',
             'detect_ball_3d = ball_tracker.detect_ball_3d:main',
             'follow_ball = ball_tracker.follow_ball:main',
             'detect_ball_nn = ball_tracker.detect_ball_nn:main',
