@@ -177,47 +177,22 @@ def find_balls(frame):
     return frame_rgb
 
 
-def draw_lines(img, houghLines, color=[255, 0, 0], thickness=4):
+def draw_lines(img, houghLines, color=[0, 255, 0], thickness=4):
     for line in houghLines:
         for rho,theta in line:
             a = np.cos(theta)
             b = np.sin(theta)
             x0 = a*rho
             y0 = b*rho
-            x1 = int(x0 + 1000*(-b))
-            y1 = int(y0 + 1000*(a))
-            x2 = int(x0 - 1000*(-b))
-            y2 = int(y0 - 1000*(a))
+            x1 = int(x0 + 10000*(-b))
+            y1 = int(y0 + 10000*(a))
+            x2 = int(x0 - 10000*(-b))
+            y2 = int(y0 - 10000*(a))
 
             cv2.line(img,(x1,y1),(x2,y2),color,thickness)   
             
-
 def weighted_img(img, initial_img, α=0.8, β=1., λ=0.):
     return cv2.addWeighted(initial_img, α, img, β, λ)
-
-
-def get_line_equations(houghLines):
-    if houghLines is None:
-        return None
-    
-    line_equations = []
-    for line in houghLines:
-        for rho, theta in line:
-            a = np.cos(theta)
-            b = np.sin(theta)
-            
-            # Check if the line is vertical (theta close to 0 or pi)
-            if b == 0:  # Vertical line case
-                x_intercept = rho / a
-                line_equations.append(f"x = {x_intercept}")
-            else:
-                # For non-vertical lines, calculate slope (m) and y-intercept (c)
-                m = -a / b
-                c = rho / b
-                line_equations.append(f"y = {m}x + {c}")
-    
-    return line_equations
-
 
 def find_lines(img): 
     """
@@ -242,12 +217,68 @@ def find_lines(img):
 
     hough_lines_image = np.zeros_like(img)
     draw_lines(hough_lines_image, hough_lines)
+    resized_lines_mask = cv2.resize(hough_lines_image, (300, 300))
 
-    mask = np.all(hough_lines_image == [0, 0, 0], axis=-1)
-    combined_image = np.where(mask[:, :, None], img, hough_lines_image)
+    return resized_lines_mask
 
-    return combined_image
+def draw_path_line(xratio, yratio, boundarylength):
+    FRAME_SIZE = 300
+    # Create a black image of size 300x300
+    img = np.zeros((FRAME_SIZE, FRAME_SIZE, 3), dtype=np.uint8)
+    frame_bottom_middle = (FRAME_SIZE//2, FRAME_SIZE-1)
 
-#test_one_image('tennisbot_ws\\src\\ball_tracker\\ball_tracker\\test_images_real\\WIN_20240913_12_50_05_Pro.jpg')
+    # Map xratio and yratio from (-1, 1) to (0, 300)
+    center_x = int((xratio + 1) * (FRAME_SIZE/2))
+    center_y = int((yratio + 1) * (FRAME_SIZE/2))
 
-test_image_folder(first_idx=10,last_idx=-1,rdmize=True,plot_rows=3)
+    # Calculate the half boundary length to find top-left and bottom-right points
+    half_length = boundarylength // 2
+    top_left = (center_x - half_length, center_y - half_length)
+    bottom_right = (center_x + half_length, center_y + half_length)
+
+    ball_bottom_middle = (center_x, center_y + half_length)
+    cv2.line(img, frame_bottom_middle, ball_bottom_middle, (0,255,0), 2)
+
+    # Draw the green bounding box
+    # cv2.rectangle(img, top_left, bottom_right, (0, 255, 0), 2)
+
+    return img
+
+img_false = 'tennisbot_ws\\src\\ball_tracker\\ball_tracker\\test_images_real\\WIN_20240913_12_49_14_Pro.jpg'
+img_true = 'tennisbot_ws\\src\\ball_tracker\\ball_tracker\\test_images_real\\WIN_20240913_12_50_05_Pro.jpg'
+
+img = cv2.imread(img_true)
+img = cv2.resize(img, (300,300))
+lines_mask = find_lines(img)
+draw_path_line = draw_path_line(-0.85,-0.36,20)
+# draw_path_line = draw_path_line(-0.1,-0.36,20)
+
+masks_combined = weighted_img(lines_mask, draw_path_line,0.5,0.5)
+
+three_combined = weighted_img(masks_combined,img,0.5,0.5)
+
+# check for overlap of masks
+green_mask = np.all(masks_combined == [0, 255, 0], axis=-1)
+has_collision = np.any(green_mask)
+
+
+fig, axes = plt.subplots(1, 2, figsize=(10, 5))
+
+# Display the first image in the first subplot
+axes[0].imshow(masks_combined)
+axes[0].axis('off')  # Hide the axis for better display
+axes[0].set_title('has collision: ' + str(has_collision))
+
+# Display the second image in the second subplot
+axes[1].imshow(three_combined)
+axes[1].axis('off')  # Hide the axis for better display
+axes[1].set_title('image with mask')
+
+# Show the plot
+plt.tight_layout()
+plt.show()
+
+
+# test_one_image('tennisbot_ws\\src\\ball_tracker\\ball_tracker\\test_images_real\\WIN_20240913_12_50_05_Pro.jpg')
+
+# test_image_folder(first_idx=10,last_idx=-1,rdmize=True,plot_rows=3)
