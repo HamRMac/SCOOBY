@@ -24,7 +24,7 @@ class DetectBox(Node):
         self.bridge = CvBridge()
 
         # Declare a parameter for minimum contour area
-        self.declare_parameter('min_area_threshold', 1000)  # Adjust this value as needed
+        self.declare_parameter('min_area_threshold', 500)  # Adjust this value as needed
         self.min_area_threshold = self.get_parameter('min_area_threshold').value
 
     def callback(self, data):
@@ -42,7 +42,7 @@ class DetectBox(Node):
 
         # Define range of brown color in HSV
         lower_brown = np.array([10, 60, 20])
-        upper_brown = np.array([30, 255, 200])
+        upper_brown = np.array([50, 255, 230])
 
         # Threshold the HSV image to get only brown colors
         mask = cv2.inRange(hsv, lower_brown, upper_brown)
