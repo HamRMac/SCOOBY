@@ -87,7 +87,7 @@ class ServoController(Node):
         time.sleep(1)  # Give the servo time to move back
         
         # Stop servo
-        self.pi.set_servo_pulsewidth(self.servo_pin, 0)
+        #self.pi.set_servo_pulsewidth(self.servo_pin, 0)
         
         # Publish lifter_actuating as False
         self.publish_lifter_actuating(False)

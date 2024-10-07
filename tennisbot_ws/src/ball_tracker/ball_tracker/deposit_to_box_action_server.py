@@ -208,7 +208,7 @@ class DepositToBoxActionServer(Node):
                 twist.angular.z = -twist.angular.z
             self.cmd_vel_pub.publish(twist)
             # Check alignment
-            if abs(self.box_msg.x) > self.alignment_threshold:
+            if abs(self.box_msg.x) < self.alignment_threshold:
                 self.get_logger().info("Box is roughly centered. Turning around")
                 self.state = 'TURNING_AROUND'
                 self.turn_start_time = current_time
@@ -234,11 +234,12 @@ class DepositToBoxActionServer(Node):
                 current_yaw = self.get_yaw()
                 if current_yaw is not None:
                     yaw_diff = normalize_angle(current_yaw - self.initial_yaw)
-                    self.get_logger().info(f"yaw_diff = {abs(yaw_diff)}")
+                    self.get_logger().info(f"yaw_diff = {yaw_diff}")
                     if abs(yaw_diff) >= pi-0.2 and not self.has_changed_ta_speed:
                         self.has_changed_ta_speed = True
+                        self.get_logger().info("Approaching 180. Slowing turn")
                         self.current_TS = 2*self.turn180_speed/3
-                    if abs(yaw_diff) >= pi-0.01:  # Allowing a small margin
+                    if abs(yaw_diff) >= pi-0.03:  # Allowing a small margin
                         self.get_logger().info("Turned 180 degrees, backing up.")
                         self.state = 'BACKING_UP'
                         self.has_changed_ta_speed = False
@@ -258,7 +259,7 @@ class DepositToBoxActionServer(Node):
             # Back up into the box
             twist = Twist()
             twist.linear.x = self.backup_speed
-            twist.angular.z = -0.5 # Compensation for not travelling straight
+            #twist.angular.z = -0.5 # Compensation for not travelling straight
             self.cmd_vel_pub.publish(twist)
 
             # Check if we need to stop
