@@ -2,6 +2,7 @@ import rclpy
 from rclpy.node import Node
 from sensor_msgs.msg import Image
 from geometry_msgs.msg import Point
+from std_msgs.msg import Bool
 from cv_bridge import CvBridge, CvBridgeError
 import cv2
 import numpy as np
@@ -12,7 +13,6 @@ class DetectBox(Node):
         super().__init__('detect_box')
 
         # Initialize subscriptions and publishers
-        # self.get_logger().info('Initializing parameters...')
         self.image_sub = self.create_subscription(
             Image,
             "/image_in",
@@ -21,13 +21,33 @@ class DetectBox(Node):
         )
         self.image_out_pub = self.create_publisher(Image, "/image_out_box", 1)
         self.box_pub = self.create_publisher(Point, "/detected_box", 1)
+        
+        # Subscriber to control image processing
+        self.process_img_sub = self.create_subscription(
+            Bool,
+            "/process_img_box",
+            self.process_img_callback,
+            10
+        )
+
+        # Initialize CvBridge
         self.bridge = CvBridge()
 
         # Declare a parameter for minimum contour area
         self.declare_parameter('min_area_threshold', 500)  # Adjust this value as needed
         self.min_area_threshold = self.get_parameter('min_area_threshold').value
 
+        # Variable to track if processing should occur
+        self.process_img = False
+
+    def process_img_callback(self, msg):
+        self.process_img = msg.data
+        self.get_logger().info(f"Image processing set to: {self.process_img}")
+
     def callback(self, data):
+        if not self.process_img:
+            return
+
         try:
             cv_image = self.bridge.imgmsg_to_cv2(data, "bgr8")
         except CvBridgeError as e:
@@ -81,15 +101,9 @@ class DetectBox(Node):
                 # Normalize x and y between -1 and 1
                 point_out.x = (cX - 160) / 160.0
                 point_out.y = (cY - 160) / 160.0
-                point_out.z = 0.0 #area / (320 * 320)  # area normalized
+                point_out.z = 0.0
 
                 self.box_pub.publish(point_out)
-            #else:
-                # Area too small, ignore detection
-                # self.get_logger().info(f"Detected contour area too small ({area}), ignoring.")
-        #else:
-            # No box found
-            # self.get_logger().info("No box found.")
 
         # Publish the image with the circle drawn
         img_to_pub = self.bridge.cv2_to_imgmsg(cv_image, "bgr8")

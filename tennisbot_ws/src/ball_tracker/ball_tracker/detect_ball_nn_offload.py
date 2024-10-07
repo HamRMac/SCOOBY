@@ -2,6 +2,7 @@ import rclpy
 from rclpy.node import Node
 from sensor_msgs.msg import Image
 from geometry_msgs.msg import Point
+from std_msgs.msg import Bool
 from cv_bridge import CvBridge, CvBridgeError
 import time
 import cv2
@@ -24,9 +25,13 @@ class DetectBall(Node):
         # Init subscriptions
         self.get_logger().info('Initialising WS Params...')
         self.image_sub = self.create_subscription(Image, "/image_in", self.callback, rclpy.qos.QoSPresetProfiles.SENSOR_DATA.value)
+        self.process_img_sub = self.create_subscription(Bool, "/process_img_ball", self.process_img_callback, 10)
         self.image_out_pub = self.create_publisher(Image, "/image_out", 1)
         self.ball_pub = self.create_publisher(Point, "/detected_ball", 1)
         self.bridge = CvBridge()
+
+        # State variable to control image processing
+        self.process_img_box = False
 
         # Get the async event loop
         self.loop = asyncio.get_event_loop()
@@ -34,16 +39,19 @@ class DetectBall(Node):
         self.to_interval = 0.5
 
         self.get_logger().info(f'Connecting to WS Detector at {self.websocket_url}')
-        self.client = WebSocketClient(self.websocket_url,self.get_logger())
+        self.client = WebSocketClient(self.websocket_url, self.get_logger())
         self.get_logger().info(f'WS client created!')
 
-    def callback(self, data):
-        #self.get_logger().info('Running Callback')
-        #if time.time() - self.lastrcvtime < self.to_interval:
-        #    return
-        #self.lastrcvtime = time.time()
+    def process_img_callback(self, msg):
+        # Update the state variable based on the incoming Bool message
+        self.process_img_box = msg.data
+        self.get_logger().info(f'Updated process_img_box state to: {self.process_img_box}')
 
-        #self.get_logger().info('Getting img')
+    def callback(self, data):
+        # Only process the image if process_img_box is True
+        if not self.process_img_box:
+            return
+
         try:
             cv_image = self.bridge.imgmsg_to_cv2(data, "bgr8")
         except CvBridgeError as e:
@@ -51,7 +59,6 @@ class DetectBall(Node):
             return
 
         # Resize and convert to uint8
-        #img_resized = cv2.resize(cv_image, (320, 320))
         img_uint8 = cv_image.astype(np.uint8)
 
         # Send image to server and receive processed points

@@ -68,6 +68,7 @@ ament_python_install_package(${PROJECT_NAME})
 # Install the F&R state machine
 install(PROGRAMS
   yasmin_fsms/robot_find_and_return.py
+  yasmin_fsms/robot_collect_and_deposit.py
   DESTINATION lib/${PROJECT_NAME}
 )
 
