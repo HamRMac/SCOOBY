@@ -12,12 +12,27 @@ class ServoController(Node):
         # Declare parameters
         self.declare_parameter('input_pin', 17)  # Default GPIO pin 17
         self.declare_parameter('servo_pin', 18)  # Default GPIO pin 18
+        self.declare_parameter('min_angle', 0.0)  # Default GPIO pin 17
+        self.declare_parameter('max_angle', 180.0)  # Default GPIO pin 18
         self.declare_parameter('debug', True)  # Debug mode
+        self.declare_parameter('name', "DEFAULT")  # Debug mode
 
         # Get parameters
         self.input_pin = self.get_parameter('input_pin').get_parameter_value().integer_value
         self.servo_pin = self.get_parameter('servo_pin').get_parameter_value().integer_value
         self.debug = self.get_parameter('debug').get_parameter_value().bool_value
+        self.min_angle = self.get_parameter('min_angle').get_parameter_value().double_value
+        self.max_angle = self.get_parameter('max_angle').get_parameter_value().double_value
+        self.publish_topic = f"{self.get_parameter('name').get_parameter_value().string_value}_actuating"
+
+        if self.debug:
+            self.get_logger().info("ServoController node V1.0 initialized with:")
+            self.get_logger().info(f"Input pin: {self.input_pin}")
+            self.get_logger().info(f"Servo pin: {self.servo_pin}")
+            self.get_logger().info(f"Debug mode: {self.debug}")
+            self.get_logger().info(f"Min angle: {self.min_angle}")
+            self.get_logger().info(f"Max angle: {self.max_angle}")
+            self.get_logger().info(f"Publish topic: {self.publish_topic}")
 
         # Initialize pigpio
         self.pi = pigpio.pi()
@@ -33,22 +48,14 @@ class ServoController(Node):
         self.pi.set_mode(self.input_pin, pigpio.INPUT)
         self.pi.set_pull_up_down(self.input_pin, pigpio.PUD_DOWN)
         self.pi.set_glitch_filter(self.input_pin, 300)  # Adjust the debounce time (in microseconds)
-        self.start_angle = 0
-        self.up_angle = 180
 
         # Publisher for lifter_actuating topic
-        self.lifter_publisher = self.create_publisher(Bool, 'lifter_actuating', 5)
+        self.lifter_publisher = self.create_publisher(Bool, self.publish_topic, 5)
 
         # Set up interrupt on the input pin
         self.pi.callback(self.input_pin, pigpio.RISING_EDGE, self.input_callback)
-
-        if self.debug:
-            self.get_logger().info("ServoController node B1 initialized with:")
-            self.get_logger().info(f"Input pin: {self.input_pin}")
-            self.get_logger().info(f"Servo pin: {self.servo_pin}")
-            self.get_logger().info(f"Debug mode: {self.debug}")
             
-        self.pi.set_servo_pulsewidth(self.servo_pin, self.angle_to_pulsewidth(self.start_angle))
+        self.pi.set_servo_pulsewidth(self.servo_pin, self.angle_to_pulsewidth(self.min_angle))
 
     def input_callback(self, gpio, level, tick):
         if self.debug:
@@ -63,7 +70,7 @@ class ServoController(Node):
         self.publish_lifter_actuating(True)
 
         # Move servo to full deflection (e.g., 180 degrees)
-        self.pi.set_servo_pulsewidth(self.servo_pin, self.angle_to_pulsewidth(self.up_angle))
+        self.pi.set_servo_pulsewidth(self.servo_pin, self.angle_to_pulsewidth(self.max_angle))
         time.sleep(1)  # Give the servo time to move
         
         if self.debug:
@@ -76,7 +83,7 @@ class ServoController(Node):
             self.get_logger().info("Returning servo to resting position")
         
         # Move servo back to resting position (Change as required)
-        self.pi.set_servo_pulsewidth(self.servo_pin, self.angle_to_pulsewidth(self.start_angle))
+        self.pi.set_servo_pulsewidth(self.servo_pin, self.angle_to_pulsewidth(self.min_angle))
         time.sleep(1)  # Give the servo time to move back
         
         # Stop servo

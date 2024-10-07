@@ -12,7 +12,7 @@ class DetectBox(Node):
         super().__init__('detect_box')
 
         # Initialize subscriptions and publishers
-        self.get_logger().info('Initializing parameters...')
+        # self.get_logger().info('Initializing parameters...')
         self.image_sub = self.create_subscription(
             Image,
             "/image_in",
@@ -81,15 +81,15 @@ class DetectBox(Node):
                 # Normalize x and y between -1 and 1
                 point_out.x = (cX - 160) / 160.0
                 point_out.y = (cY - 160) / 160.0
-                point_out.z = area / (320 * 320)  # area normalized
+                point_out.z = 0.0 #area / (320 * 320)  # area normalized
 
                 self.box_pub.publish(point_out)
-            else:
+            #else:
                 # Area too small, ignore detection
-                self.get_logger().info(f"Detected contour area too small ({area}), ignoring.")
-        else:
+                # self.get_logger().info(f"Detected contour area too small ({area}), ignoring.")
+        #else:
             # No box found
-            self.get_logger().info("No box found.")
+            # self.get_logger().info("No box found.")
 
         # Publish the image with the circle drawn
         img_to_pub = self.bridge.cv2_to_imgmsg(cv_image, "bgr8")

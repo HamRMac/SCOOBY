@@ -105,7 +105,7 @@ class FollowBallActionServer(Node):
         self.lifter_actuating = False
         # Subscribe to /lifter_actuating topic
         self.lifter_sub = self.create_subscription(
-            Bool, '/lifter_actuating', self.lifter_callback, 10)
+            Bool, '/main_arm_actuating', self.lifter_callback, 10)
         
         self.target_val = 0.0
         self.target_dist = 0.0

@@ -26,12 +26,24 @@ def generate_launch_description():
     )
 
     # Camera Node
-    params = {'image_size': [640,480], 'camera_frame_id': "camera_optical_link"}
+    params_camera = {'image_size': [640, 480], 'camera_frame_id': "camera_optical_link"}
     node_camera_pub = Node(
         package='v4l2_camera',
         executable='v4l2_camera_node',
         output='screen',
-        parameters=[params]
+        parameters=[params_camera]
+    )
+
+    # Add the image_rotator node
+    params_image_rotator = {
+        'input_topic': '/image_raw',
+        'output_topic': '/camera/rotated_image'
+    }
+    node_image_rotator = Node(
+        package='image_rotator',
+        executable='image_rotator_node',
+        output='screen',
+        parameters=[params_image_rotator]
     )
 
     # Robot controller manager
@@ -107,5 +119,6 @@ def generate_launch_description():
         delayed_controller_manager,
         delayed_diff_drive_spawner,
         delayed_joint_broad_spawner,
-        twist_stamper
+        twist_stamper,
+        node_image_rotator
     ])

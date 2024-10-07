@@ -29,6 +29,9 @@ class DepositToBoxActionServer(Node):
         self.declare_parameter('centroid_threshold', 0.1)
         self.centroid_threshold = self.get_parameter('centroid_threshold').value
 
+        self.declare_parameter('alignment_threshold', 0.1)
+        self.alignment_threshold = self.get_parameter('alignment_threshold').value
+
         self.declare_parameter('backup_time', 5.0)  # Maximum time to back up in seconds
         self.backup_time = self.get_parameter('backup_time').value
 
@@ -53,6 +56,7 @@ class DepositToBoxActionServer(Node):
         self.backup_start_time = None
         self.turn_start_time = None
         self.initial_yaw = None
+        self.has_changed_ta_speed = False
 
         # Publishers and subscribers
         self.cmd_vel_pub = self.create_publisher(Twist, '/cmd_vel', 10)
@@ -66,7 +70,7 @@ class DepositToBoxActionServer(Node):
 
         self.rear_door_actuating_sub = self.create_subscription(
             Bool,
-            '/rear_door_actuating',
+            '/rear_flap_actuating',
             self.rear_door_actuating_callback,
             10
         )
@@ -189,25 +193,38 @@ class DepositToBoxActionServer(Node):
 
                 # Check if the box is close enough by checking y height
                 if self.box_msg.y > self.centroid_threshold:
-                    self.get_logger().info("Box is close enough, turning around.")
-                    self.state = 'TURNING_AROUND'
-                    self.turn_start_time = current_time
-                    self.initial_yaw = self.get_yaw()
-                    if self.initial_yaw is None:
-                        self.get_logger().warn("Cannot get initial yaw, defaulting to time-based turn.")
-                        self.turn_duration = pi / self.turn180_speed
+                    self.get_logger().info("Box is close enough, aligning.")
+                    self.state = 'ALIGNING'
+
             else:
                 # Lost sight of the box
                 self.get_logger().info("Lost sight of the box, searching.")
                 self.state = 'SEARCHING'
 
+        elif self.state == 'ALIGNING':
+            twist = Twist()
+            twist.angular.z = min(self.turn_speed*abs(self.box_msg.x),1.1)
+            if self.box_msg.x > 0: # If ball is to the right turn to the left
+                twist.angular.z = -twist.angular.z
+            self.cmd_vel_pub.publish(twist)
+            # Check alignment
+            if abs(self.box_msg.x) > self.alignment_threshold:
+                self.get_logger().info("Box is roughly centered. Turning around")
+                self.state = 'TURNING_AROUND'
+                self.turn_start_time = current_time
+                self.initial_yaw = self.get_yaw()
+                self.current_TS = self.turn180_speed
+                if self.initial_yaw is None:
+                    self.get_logger().warn("Cannot get initial yaw, defaulting to time-based turn.")
+                    self.turn_duration = pi / self.turn180_speed
+            
         elif self.state == 'TURNING_AROUND':
             # Turn 180 degrees using odometry
             #self.get_logger().info("Creating TA twist")
             #self.get_logger().info(f"Type of turn180_speed: {type(self.forward_speed)}")
 
             twist = Twist()
-            twist.angular.z = float(self.turn180_speed)
+            twist.angular.z = float(self.current_TS)
             #self.get_logger().info("Publish Twist")
             self.cmd_vel_pub.publish(twist)
 
@@ -217,10 +234,14 @@ class DepositToBoxActionServer(Node):
                 current_yaw = self.get_yaw()
                 if current_yaw is not None:
                     yaw_diff = normalize_angle(current_yaw - self.initial_yaw)
-                    self.get_logger().info(f"yaw_diff = {yaw_diff}")
-                    if abs(yaw_diff) >= pi - 0.03:  # Allowing a small margin
+                    self.get_logger().info(f"yaw_diff = {abs(yaw_diff)}")
+                    if abs(yaw_diff) >= pi-0.2 and not self.has_changed_ta_speed:
+                        self.has_changed_ta_speed = True
+                        self.current_TS = 2*self.turn180_speed/3
+                    if abs(yaw_diff) >= pi-0.01:  # Allowing a small margin
                         self.get_logger().info("Turned 180 degrees, backing up.")
                         self.state = 'BACKING_UP'
+                        self.has_changed_ta_speed = False
                         self.backup_start_time = current_time
                         self.initial_yaw = None
                         self.turn_start_time = None
@@ -237,6 +258,7 @@ class DepositToBoxActionServer(Node):
             # Back up into the box
             twist = Twist()
             twist.linear.x = self.backup_speed
+            twist.angular.z = -0.5 # Compensation for not travelling straight
             self.cmd_vel_pub.publish(twist)
 
             # Check if we need to stop
