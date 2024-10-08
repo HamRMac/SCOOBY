@@ -86,6 +86,9 @@ class FollowBallActionServer(Node):
         self.forward_start_time = None
         self.scan_sweep_returning = False
 
+        self.settling_time = 2000
+        self.settling_time_init = 0
+
         # Setup the action server
         self.action_server = ActionServer(
             node=self,
@@ -143,6 +146,7 @@ class FollowBallActionServer(Node):
         self.lastrcvtime = time.time() - 10000
         self.initial_yaw = None
         self.lifter_actuating = False
+        self.is_close = False
 
         while rclpy.ok():
             msg = Twist()
@@ -153,8 +157,10 @@ class FollowBallActionServer(Node):
                 if (self.target_dist < self.max_size_thresh):
                     # The threshold is now the y position from the base of the camera. This is -1 to 1. self.max_size_thresh-self.target_dist is between 0 and 2
                     msg.linear.x = max(self.forward_chase_speed * abs((self.max_size_thresh-self.target_dist)/(self.max_size_thresh+1)),self.min_forward_chase_speed)
+                    self.is_close = False
                 else:
                     self.get_logger().info('Reached Target Size')
+                    self.is_close = True
                 '''request_angz = -self.angular_chase_multiplier * self.target_val
                 if request_angz<0:
                     msg.angular.z = min(request_angz,-0.9) # if neg get the most powerful (most neg)
@@ -164,6 +170,7 @@ class FollowBallActionServer(Node):
                 msg.angular.z = -self.angular_chase_multiplier * self.target_val
             else:
                 self.is_scanning = True
+                self.is_close = False
                 self.get_logger().info('Target lost')
                 if self.moving_forward:
                     self.continue_forward(msg)
@@ -177,12 +184,26 @@ class FollowBallActionServer(Node):
             feedback_msg.current_distance = self.target_dist
             goal_handle.publish_feedback(feedback_msg)
 
-            if self.target_dist > self.max_size_thresh:
-                self.get_logger().info(f'Reached target size. Moving forward at creep speed.')
-                self.move_forward_with_creep(goal_handle)
-                self.get_logger().info(f'Goal Finished')
-                result.success = True
-                return result
+            # Check ball is close enough
+            if self.is_close:
+                self.get_logger().info(f'Ball Close Enough')
+                # Check ball is roughly centered
+                if abs(self.target_val) < 0.3:
+                    self.get_logger().info(f'Ball Centered Enough')
+                    # If settling time is un set start it
+                    #if self.settling_time_init == -1:
+                    #    self.get_logger().info(f'Reached target size and angle. Allowing time for result to settle')
+                    #    self.settling_time_init = time.time()
+                    # Check if the time is up
+                    #if (time.time() - self.settling_time_init > self.settling_time):
+                    self.get_logger().info(f'Reached target size and angle for required time. Moving forward at creep speed.')
+                    self.move_forward_with_creep(goal_handle)
+                    self.get_logger().info(f'Goal Finished')
+                    result.success = True
+                    return result
+                # Set the timeout to -1
+                #elif not (self.settling_time_init == -1):
+                #    self.settling_time_init == -1
 
             if goal_handle.is_cancel_requested:
                 goal_handle.canceled()
@@ -214,30 +235,22 @@ class FollowBallActionServer(Node):
 
     def perform_scan(self, msg):
         if self.initial_yaw is None:
-            self.scan_sweep_returning = False
             self.initial_yaw = self.get_yaw_from_odom()
+            self.get_logger().info('Starting 360-degree turn')
 
         if self.initial_yaw is not None:
             self.current_yaw = self.get_yaw_from_odom()
 
             if self.current_yaw is not None:
-                yaw_diff = normalize_angle(self.current_yaw - self.initial_yaw)
-                self.get_logger().info(str(yaw_diff))
-                if self.scan_direction == 1:
-                    if yaw_diff >= self.scan_angle_limit_rad:
-                        self.scan_direction = -1
-                else:
-                    if yaw_diff <= -self.scan_angle_limit_rad:
-                        self.scan_direction = 1
-                        self.scan_sweep_returning = True
+                yaw_diff = abs(self.current_yaw - self.initial_yaw)
+                self.get_logger().info(f'Current yaw difference: {yaw_diff}')
 
-                if abs(yaw_diff) < 0.04 and self.scan_sweep_returning:
-                    self.start_forward_motion()
+                # Perform a 360-degree turn
+                if yaw_diff < 2 * pi:
+                    msg.angular.z = self.search_angular_speed * self.scan_direction
                 else:
-                    if (self.scan_direction == 1) and (yaw_diff < 0) and (2 * yaw_diff >= -self.scan_angle_limit_rad):
-                        msg.angular.z = self.scan_direction * (self.return_scan_scale * 2 * abs(yaw_diff) / self.scan_angle_limit_rad + self.min_angular_speed)
-                    else:
-                        msg.angular.z = self.search_angular_speed * self.scan_direction
+                    self.get_logger().info('360-degree turn completed, starting forward motion')
+                    self.start_forward_motion()
 
     def get_yaw_from_odom(self):
         try:

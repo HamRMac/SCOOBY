@@ -55,7 +55,7 @@ private:
             // Convert ROS Image message to OpenCV image
             cv::Mat frame = cv_bridge::toCvCopy(msg, sensor_msgs::image_encodings::BGR8)->image;
             cv::Mat frame_resized;
-            cv::resize(frame, frame_resized, cv::Size(300, 300));
+            cv::resize(frame, frame_resized, cv::Size(320, 320));
 
             // Find lines in the image
             cv::Mat lines_mask = find_lines(frame_resized);

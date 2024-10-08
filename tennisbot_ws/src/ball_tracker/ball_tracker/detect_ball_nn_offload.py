@@ -2,6 +2,7 @@ import rclpy
 from rclpy.node import Node
 from sensor_msgs.msg import Image
 from geometry_msgs.msg import Point
+from geometry_msgs.msg import PointStamped
 from std_msgs.msg import Bool
 from cv_bridge import CvBridge, CvBridgeError
 import time
@@ -28,6 +29,7 @@ class DetectBall(Node):
         self.process_img_sub = self.create_subscription(Bool, "/process_img_ball", self.process_img_callback, 10)
         self.image_out_pub = self.create_publisher(Image, "/image_out", 1)
         self.ball_pub = self.create_publisher(Point, "/detected_ball", 1)
+        self.all_balls_pub = self.create_publisher(PointStamped, "/detected_balls_all", 1)
         self.bridge = CvBridge()
 
         # State variable to control image processing
@@ -68,16 +70,32 @@ class DetectBall(Node):
             centrelist = []
             cv_image = cv2.resize(cv_image, (320, 320), interpolation=cv2.INTER_NEAREST)
             for point in points:
+                #print(point)
                 x = point['x']
                 y = point['y']
                 w = point['w']
                 h = point['h']
+
                 centrelist.append([x + w/2, y + h/2, w * h])
-                cv2.rectangle(cv_image, (x, y), (x + w, y + h), (255, 0, 0), 2)
+                if point['in_bounds']:
+                    cv2.rectangle(cv_image, (x, y), (x + w, y + h), (255, 0, 0), 2)
+                else:
+                    cv2.rectangle(cv_image, (x, y), (x + w, y + h), (0, 0, 255), 2)
 
             # Determine and publish the biggest point
             point_out = Point()
+            all_points_msg = PointStamped()
+            all_points_msg.header = data.header
+            
             for i, kp in enumerate(centrelist):
+                # Append all detected ball points to the message
+                pt = Point()
+                pt.x = float(kp[0])
+                pt.y = float(kp[1])
+                pt.z = float(kp[2])
+                all_points_msg.point = pt
+
+                # Check for the largest detected ball
                 if kp[2] > point_out.z:
                     point_out.x = float(kp[0])
                     point_out.y = float(kp[1])
@@ -88,6 +106,9 @@ class DetectBall(Node):
                 point_out.y = (point_out.y-160)/160
                 point_out.z = point_out.z/102400
                 self.ball_pub.publish(point_out)
+
+            # Publish all detected balls
+            self.all_balls_pub.publish(all_points_msg)
 
             process_time_end = time.time()
             process_time = process_time_end - process_time_start
