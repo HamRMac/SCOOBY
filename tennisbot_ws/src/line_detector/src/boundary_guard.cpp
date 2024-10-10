@@ -65,26 +65,26 @@ private:
                 if (green_in_left && green_in_right)
                 {
                     RCLCPP_INFO(this->get_logger(), "Green detected in both halves. Turning right.");
-                    twist_msg.angular.z = -0.5; // Turn to the right
+                    twist_msg.angular.z = -2.5; // Turn to the right
                 }
                 else if (green_in_left)
                 {
                     RCLCPP_INFO(this->get_logger(), "Green detected in left half. Turning right.");
-                    twist_msg.angular.z = -0.5; // Turn to the right
+                    twist_msg.angular.z = -2.5; // Turn to the right
                 }
                 else if (green_in_right)
                 {
                     RCLCPP_INFO(this->get_logger(), "Green detected in right half. Turning left.");
-                    twist_msg.angular.z = 0.5; // Turn to the left
+                    twist_msg.angular.z = 2.5; // Turn to the left
                 }
 
                 // Publish the twist message
                 cmd_vel_publisher_->publish(twist_msg);
             }
-            else
+            /*else
             {
                 RCLCPP_INFO(this->get_logger(), "No green detected. Not sending any command.");
-            }
+            }*/
         }
         catch (const std::exception &e)
         {
