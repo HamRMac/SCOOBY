@@ -38,8 +38,11 @@ class DepositToBoxActionServer(Node):
         self.declare_parameter('forward_speed', 0.3)
         self.forward_speed = self.get_parameter('forward_speed').get_parameter_value().double_value
 
-        self.declare_parameter('turn_speed', 1.5)
+        self.declare_parameter('turn_speed', 2.2)
         self.turn_speed = self.get_parameter('turn_speed').get_parameter_value().double_value
+
+        self.declare_parameter('min_turn_speed', 1.9)
+        self.min_turn_speed = self.get_parameter('min_turn_speed').get_parameter_value().double_value
 
         self.declare_parameter('search_turn_speed', 2.0)
         self.search_turn_speed = self.get_parameter('search_turn_speed').get_parameter_value().double_value
@@ -57,6 +60,9 @@ class DepositToBoxActionServer(Node):
         self.turn_start_time = None
         self.initial_yaw = None
         self.has_changed_ta_speed = False
+
+        # Calculate turn velocity gradient
+        self.turn_speed_gradient = (self.turn_speed - self.min_turn_speed)/(1 - alignment_threshold)
 
         # Publishers and subscribers
         self.cmd_vel_pub = self.create_publisher(Twist, '/cmd_vel', 10)
@@ -187,8 +193,21 @@ class DepositToBoxActionServer(Node):
             elif self.box_msg:
                 # Move towards the box based on its position
                 twist = Twist()
-                twist.linear.x = self.forward_speed
-                twist.angular.z = -self.turn_speed * self.box_msg.x
+                if abs(self.box_msg.x) < self.alignment_threshold:
+                    # Box is alligned move forward
+                    twist.linear.x = self.forward_speed
+                else:
+                    # Realign before moving forward
+                    # This calculates the required speed using a min speed and and max speed
+                    requested_speed = -self.turn_speed_gradient * self.box_msg.x
+                    if requested_speed < 0:
+                        # Need negative so subtract
+                        twist.angular.z = requested_speed - self.min_turn_speed
+                    else:
+                        # Need positive so add
+                        twist.angular.z = requested_speed + self.min_turn_speed
+
+                # Cmd robot to move
                 self.cmd_vel_pub.publish(twist)
 
                 # Check if the box is close enough by checking y height
@@ -203,9 +222,12 @@ class DepositToBoxActionServer(Node):
 
         elif self.state == 'ALIGNING':
             twist = Twist()
-            twist.angular.z = min(self.turn_speed*abs(self.box_msg.x),1.1)
+            # Ensure robot can always turn by clamping speed
+            twist.angular.z = min(self.turn_speed*abs(self.box_msg.x),1.8)
+
             if self.box_msg.x > 0: # If ball is to the right turn to the left
                 twist.angular.z = -twist.angular.z
+
             self.cmd_vel_pub.publish(twist)
             # Check alignment
             if abs(self.box_msg.x) < self.alignment_threshold:
@@ -234,7 +256,7 @@ class DepositToBoxActionServer(Node):
                 current_yaw = self.get_yaw()
                 if current_yaw is not None:
                     yaw_diff = normalize_angle(current_yaw - self.initial_yaw)
-                    self.get_logger().info(f"yaw_diff = {yaw_diff}")
+                    self.get_logger().info(f"yaw_diff = {current_yaw} - {self.initial_yaw} = {current_yaw - self.initial_yaw} = norm {yaw_diff}")
                     if abs(yaw_diff) >= pi-0.2 and not self.has_changed_ta_speed:
                         self.has_changed_ta_speed = True
                         self.get_logger().info("Approaching 180. Slowing turn")
@@ -250,7 +272,7 @@ class DepositToBoxActionServer(Node):
                 # Fallback to time-based turning
                 elapsed_time = current_time - self.turn_start_time
                 if elapsed_time >= self.turn_duration:
-                    self.get_logger().info("Turned 180 degrees (time-based), backing up.")
+                    self.get_logger().info("WARN: Turned 180 degrees (time-based), backing up.")
                     self.state = 'BACKING_UP'
                     self.backup_start_time = current_time
                     self.turn_start_time = None
@@ -278,7 +300,7 @@ class DepositToBoxActionServer(Node):
             self.stop_robot()
 
         else:
-            self.get_logger().error(f"Unknown state: {self.state}")
+            self.get_logger().error(f"CRITICAL ERROR: Unknown state: {self.state}")
 
     def stop_robot(self):
         twist = Twist()
