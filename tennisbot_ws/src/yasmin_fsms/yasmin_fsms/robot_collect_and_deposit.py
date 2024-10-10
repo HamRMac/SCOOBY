@@ -50,6 +50,7 @@ class CollectBallState(ActionState):
         print("Setting process_img_ball = false")
 
         if result.success:
+            time.sleep(5) # Wait 5 secs for the lifter to drop
             # Increment the number of collected balls by 1
             blackboard.balls_collected += 1
             print(f"Collected ball. Have now collected {blackboard.balls_collected} of {blackboard.max_balls} balls")

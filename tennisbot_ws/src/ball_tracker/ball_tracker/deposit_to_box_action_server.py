@@ -21,7 +21,7 @@ class DepositToBoxActionServer(Node):
 
     def __init__(self):
         super().__init__('deposit_to_box_action_server')
-        self.get_logger().info('deposit_to_box_action_server V1.1 is starting... Please wait')
+        self.get_logger().info('deposit_to_box_action_server V1.2 is starting... Please wait')
         self._goal_handle = None
         self._goal_lock = threading.Lock()
 
@@ -291,6 +291,8 @@ class DepositToBoxActionServer(Node):
             elapsed_time = current_time - self.backup_start_time
             if self.rear_door_actuating:
                 self.get_logger().info("Rear door actuated, stopping.")
+                time.sleep(0.5)
+                self.shake_robot() # Shake to dislodge balls
                 self.state = 'STOPPED'
                 self.stop_robot()
             elif elapsed_time >= self.backup_time:
@@ -319,6 +321,28 @@ class DepositToBoxActionServer(Node):
         except Exception as e:
             self.get_logger().warn(f"Failed to get transform: {e}")
             return None
+    def shake_robot(self):
+        twist = Twist()
+        start_time = time.time()
+        
+        # Shake left and right for 2 seconds
+        while time.time() - start_time < 2.0:
+            twist.angular.z = 2.0  # Rotate left
+            self.publisher_.publish(twist)
+            time.sleep(0.1)  # Shake frequency
+
+            twist.angular.z = -2.0  # Rotate right
+            self.publisher_.publish(twist)
+            time.sleep(0.1)  # Shake frequency
+        
+        # Stop the robot
+        twist.angular.z = 0.0
+        self.publisher_.publish(twist)
+        
+        # Wait for 2 seconds
+        self.get_logger().info('Shaking complete, now waiting for 2 seconds.')
+        time.sleep(2.0)
+        return
 
 def main(args=None):
     rclpy.init(args=args)
