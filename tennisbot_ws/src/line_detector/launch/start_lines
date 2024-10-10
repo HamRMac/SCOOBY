@@ -1,0 +1,16 @@
+from launch import LaunchDescription
+from launch_ros.actions import Node
+
+def generate_launch_description():
+    return LaunchDescription([
+        Node(
+            package='line_detector',
+            executable='detect_lines',
+            name='detect_lines'
+        ),
+        Node(
+            package='line_detector',
+            executable='line_detector',
+            name='boundary_guard'
+        )
+    ])

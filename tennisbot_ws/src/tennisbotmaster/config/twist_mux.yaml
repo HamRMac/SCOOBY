@@ -2,11 +2,15 @@ twist_mux:
   ros__parameters:
     topics:
       navigation:
-        topic: cmd_vel_node
+        topic: cmd_vel
         timeout: 0.5
         priority: 10
       ball_tracker:
         topic: cmd_vel_tracker
+        timeout: 0.5
+        priority: 20
+      line_force_away:
+        topic: cmd_vel_boundary_guard
         timeout: 0.5
         priority: 20
       manual:

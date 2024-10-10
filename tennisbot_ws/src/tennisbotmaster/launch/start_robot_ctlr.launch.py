@@ -27,14 +27,10 @@ def generate_launch_description():
                     get_package_share_directory(package_name),'launch','robot_state_pub.launch.py'
                 )]), launch_arguments={'use_sim_time': 'false', 'use_ros2_control': 'true'}.items()
     )
-
     
-
-
     robot_description = Command(['ros2 param get --hide-type /robot_state_publisher robot_description'])
 
     controller_params_file = os.path.join(get_package_share_directory(package_name),'config','my_controllers.yaml')
-    mux_params_file = os.path.join(get_package_share_directory(package_name),'config','twist_mux.yaml')
 
     controller_manager = Node(
         package="controller_manager",
@@ -75,21 +71,18 @@ def generate_launch_description():
         package="twist_stamper",
         executable="twist_stamper",
         remappings=[
-            ("/cmd_vel_in","/cmd_vel"),
+            ("/cmd_vel_in",'/cmd_vel_unstamped'),
             ("/cmd_vel_out","/diff_cont/cmd_vel")
         ]
     )
 
+    twist_mux_params = os.path.join(get_package_share_directory(package_name),'config','twist_mux.yaml')
     twist_mux = Node(
-        package='twist_mux',
-        executable='twist_mux',
-        name='twist_mux',
-        output='screen',
-        parameters=[mux_params_file],
-        remappings=[
-            ("/cmd_vel","/cmd_vel_mux")
-        ]
-    )
+            package="twist_mux",
+            executable="twist_mux",
+            parameters=[twist_mux_params],
+            remappings=[('/cmd_vel_out','/cmd_vel_unstamped')]
+        )
 
 
     # Code for delaying a node (I haven't tested how effective it is)
@@ -116,5 +109,6 @@ def generate_launch_description():
         delayed_controller_manager,
         delayed_diff_drive_spawner,
         delayed_joint_broad_spawner,
+        twist_mux,
         twist_stamper
     ])

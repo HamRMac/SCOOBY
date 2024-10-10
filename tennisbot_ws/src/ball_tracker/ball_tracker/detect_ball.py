@@ -41,6 +41,10 @@ class DetectBall(Node):
         self.lower_green_yellow = np.array([20, 60, 60])  # Adjust these values as needed
         self.upper_green_yellow = np.array([100, 255, 255])
 
+        self.FRAME_SIZE = 400
+
+        self.apply_bounds_check = True
+
     def process_img_callback(self, msg):
         # Update the state variable based on the incoming Bool message
         self.process_img_box = msg.data
@@ -59,11 +63,11 @@ class DetectBall(Node):
 
         # Resize and convert to uint8
         #img_uint8 = cv_image.astype(np.uint8)
-        cv_image = cv2.resize(cv_image, (400, 400), interpolation=cv2.INTER_NEAREST)
+        cv_image = cv2.resize(cv_image, (self.FRAME_SIZE, self.FRAME_SIZE), interpolation=cv2.INTER_NEAREST)
 
         # Send image to server and receive processed points
-        points = self.extract_balls(cv_image) # Detection function goes here
         process_time_start = time.time()
+        points = self.extract_balls(cv_image) # Detection function goes here
         centrelist = []
         for point in points:
             #print(point)
@@ -71,8 +75,11 @@ class DetectBall(Node):
             y = point['y']
             w = point['w']
             h = point['h']
+            cx = point['cx']
+            cy = point['cy']
+            area = point['area']
 
-            centrelist.append([x + w/2, y + h/2, w * h])
+            centrelist.append([cx, cy, area])
             if point['in_bounds']:
                 cv2.rectangle(cv_image, (x, y), (x + w, y + h), (255, 0, 0), 2)
             else:
@@ -80,17 +87,9 @@ class DetectBall(Node):
 
         # Determine and publish the biggest point
         point_out = Point()
-        all_points_msg = PointStamped()
-        all_points_msg.header = data.header
+        point_out.y = 0
         
-        for i, kp in enumerate(centrelist):
-            # Append all detected ball points to the message
-            pt = Point()
-            pt.x = float(kp[0])
-            pt.y = float(kp[1])
-            pt.z = float(kp[2])
-            all_points_msg.point = pt
-
+        for kp in centrelist:
             # Check for the largest detected ball
             if kp[1] > point_out.y:
                 point_out.x = float(kp[0])
@@ -98,13 +97,9 @@ class DetectBall(Node):
                 point_out.z = float(kp[2])
 
         if point_out.z > 0:
-            point_out.x = (point_out.x-160)/160
-            point_out.y = (point_out.y-160)/160
-            point_out.z = point_out.z/102400
+            point_out.x = (point_out.x-200)/200
+            point_out.y = (point_out.y-200)/200
             self.ball_pub.publish(point_out)
-
-        # Publish all detected balls
-        self.all_balls_pub.publish(all_points_msg)
 
         process_time_end = time.time()
         process_time = process_time_end - process_time_start
@@ -131,10 +126,12 @@ class DetectBall(Node):
         mask = cv2.morphologyEx(mask, cv2.MORPH_OPEN, kernel)
         mask = cv2.morphologyEx(mask, cv2.MORPH_CLOSE, kernel)
         
-        
-
         # Find contours in the mask
         contours, _ = cv2.findContours(mask, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
+
+        # Global check for boundary lines
+        if self.apply_bounds_check:
+            lines_mask = find_lines(cv_image)
 
         points = []
 
@@ -152,17 +149,83 @@ class DetectBall(Node):
             cx = x + w / 2
             cy = y + h / 2
 
-            # Determine if the center is in bounds (within the central region)
-            if abs(cx - 160) <= 80 and abs(cy - 160) <= 80:
-                in_bounds = True
-            else:
-                in_bounds = False
+            # Global check for boundary lines
+            if self.apply_bounds_check:
+                # Create mask for line and combine with detected lines
+                path_line_mask = draw_path_line(cx,cy,w)
+                masks_combined = cv2.addWeighted(lines_mask, 0.5, path_line_mask, 0.5, 0)
 
-            point = {'x': x, 'y': y, 'w': w, 'h': h, 'in_bounds': in_bounds}
+                # Determine if the center is in bounds (within the central region)
+                # check for overlap of masks
+                green_mask = np.all(masks_combined == [0, 255, 0], axis=-1)
+                has_collision = np.any(green_mask)
+            else:
+                has_collision = False
+
+            # Create list of points
+            point = {'x': x, 'y': y, 'w': w, 'h': h, 'cx': cx, 'cy': cy, 'area': area, 'in_bounds': not has_collision}
             points.append(point)
 
         return points
 
+def find_lines(img): 
+    """
+    input 
+        img: camera frame image
+    output
+        hough_lines image, where the image is all black ([0,0,0]) except for red lines
+
+    """
+    gray_image = cv2.cvtColor(img, cv2.COLOR_RGB2GRAY)
+    blurred_image = cv2.GaussianBlur(gray_image, (9, 9), 2)
+    edges_image = cv2.Canny(blurred_image, 50, 120)
+    
+    rho_resolution = 1
+    theta_resolution = np.pi/180
+    threshold = 155
+    
+    hough_lines = cv2.HoughLines(edges_image, rho_resolution , theta_resolution , threshold)
+
+    if hough_lines is None:
+        return np.zeros_like(img)
+
+    hough_lines_image = np.zeros_like(img)
+    draw_lines(hough_lines_image, hough_lines)
+
+    return hough_lines_image
+
+def draw_lines(img, houghLines, color=[0, 255, 0], thickness=4):
+    for line in houghLines:
+        for rho,theta in line:
+            a = np.cos(theta)
+            b = np.sin(theta)
+            x0 = a*rho
+            y0 = b*rho
+            x1 = int(x0 + 10000*(-b))
+            y1 = int(y0 + 10000*(a))
+            x2 = int(x0 - 10000*(-b))
+            y2 = int(y0 - 10000*(a))
+
+            cv2.line(img,(x1,y1),(x2,y2),color,thickness)
+
+def draw_path_line(center_x, center_y, boundarylength):
+    FRAME_SIZE = 400
+    # Create a black image of size 300x300
+    img = np.zeros((FRAME_SIZE, FRAME_SIZE, 3), dtype=np.uint8)
+    frame_bottom_middle = (FRAME_SIZE//2, FRAME_SIZE-1)
+
+    # Calculate the half boundary length to find top-left and bottom-right points
+    half_length = boundarylength // 2
+    top_left = (center_x - half_length, center_y - half_length)
+    bottom_right = (center_x + half_length, center_y + half_length)
+
+    ball_bottom_middle = (center_x, center_y + half_length)
+    cv2.line(img, frame_bottom_middle, ball_bottom_middle, (0,255,0), 2)
+
+    # Draw the green bounding box
+    # cv2.rectangle(img, top_left, bottom_right, (0, 255, 0), 2)
+
+    return img
 
 def main(args=None):
     rclpy.init(args=args)

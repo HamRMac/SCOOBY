@@ -13,6 +13,7 @@ find_package(ament_cmake REQUIRED)
 
 find_package(rclcpp REQUIRED)
 find_package(sensor_msgs REQUIRED)
+find_package(geometry_msgs REQUIRED)
 find_package(cv_bridge REQUIRED)
 find_package(OpenCV REQUIRED)
 find_package(image_transport REQUIRED)
@@ -23,15 +24,26 @@ target_include_directories(detect_lines PUBLIC
   $<INSTALL_INTERFACE:include/${PROJECT_NAME}>)
 target_compile_features(detect_lines PUBLIC c_std_99 cxx_std_17)  # Require C99 and C++17
 
+add_executable(boundary_guard src/boundary_guard.cpp)
+target_include_directories(boundary_guard PUBLIC
+  $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
+  $<INSTALL_INTERFACE:include/${PROJECT_NAME}>)
+target_compile_features(boundary_guard PUBLIC c_std_99 cxx_std_17)  # Require C99 and C++17
+
 ament_target_dependencies(detect_lines
+  boundary_guard
   rclcpp
   sensor_msgs
+  geometry_msgs
   cv_bridge
   OpenCV
   image_transport
 )
 
 install(TARGETS detect_lines
+  DESTINATION lib/${PROJECT_NAME})
+
+install(TARGETS boundary_guard
   DESTINATION lib/${PROJECT_NAME})
 
 if(BUILD_TESTING)
