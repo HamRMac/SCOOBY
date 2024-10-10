@@ -258,17 +258,22 @@ class FollowBallActionServer(Node):
         if self.initial_yaw is None:
             self.initial_yaw = self.get_yaw_from_odom()
             self.get_logger().info('Starting 360-degree turn')
+            self.quarter_turns = 0
 
         if self.initial_yaw is not None:
             self.current_yaw = self.get_yaw_from_odom()
 
             if self.current_yaw is not None:
                 yaw_diff = abs(self.current_yaw - self.initial_yaw)
-                self.get_logger().info(f'Current yaw difference: {yaw_diff}')
+                self.get_logger().info(f'Current yaw difference (qt {self.quarter_turns}): {yaw_diff}')
 
                 # Perform a 360-degree turn
-                if yaw_diff < 2 * pi:
+                if yaw_diff < pi/2:
                     msg.angular.z = self.search_angular_speed * self.scan_direction
+                elif self.quarter_turns <= 3:
+                    # This should hopefully cause the robot to turn 360 degrees
+                    self.quarter_turns += 1
+                    self.initial_yaw = self.current_yaw
                 else:
                     self.get_logger().info('360-degree turn completed, starting forward motion')
                     self.start_forward_motion()

@@ -64,17 +64,17 @@ private:
                 // Determine turning direction based on the presence of green pixels
                 if (green_in_left && green_in_right)
                 {
-                    RCLCPP_INFO(this->get_logger(), "Green detected in both halves. Turning right.");
+                    RCLCPP_INFO(this->get_logger(), "Lines detected in both halves. Turning right.");
                     twist_msg.angular.z = -2.5; // Turn to the right
                 }
                 else if (green_in_left)
                 {
-                    RCLCPP_INFO(this->get_logger(), "Green detected in left half. Turning right.");
+                    RCLCPP_INFO(this->get_logger(), "Line detected in left half. Turning right.");
                     twist_msg.angular.z = -2.5; // Turn to the right
                 }
                 else if (green_in_right)
                 {
-                    RCLCPP_INFO(this->get_logger(), "Green detected in right half. Turning left.");
+                    RCLCPP_INFO(this->get_logger(), "Line detected in right half. Turning left.");
                     twist_msg.angular.z = 2.5; // Turn to the left
                 }
 
