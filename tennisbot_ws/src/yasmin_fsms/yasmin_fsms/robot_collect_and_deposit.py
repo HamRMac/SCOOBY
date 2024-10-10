@@ -1,4 +1,8 @@
 #!/usr/bin/env python3
+# ST for final Demo
+# Written by Team E14
+# Wrtten on 11/10/24
+# Written using the awesome YASMIN library avaliable at https://github.com/uleroboticsgroup/yasmin
 
 import rclpy
 from rclpy.action import ActionClient
@@ -11,6 +15,8 @@ from yasmin_ros.basic_outcomes import SUCCEED, ABORT
 from yasmin_viewer import YasminViewerPub
 from ball_tracker_msgs.action import FollowBallAction, DepositToBox
 from std_msgs.msg import Bool
+import time
+from math import floor
 
 class CollectBallState(ActionState):
     def __init__(self, node: Node):
@@ -18,7 +24,7 @@ class CollectBallState(ActionState):
             FollowBallAction,
             "/follow_ball",
             self.create_goal_handler,
-            ["completed", "aborted", "canceled"],
+            ["drop_off", "next_pickup", "canceled"],
             self.result_handler,
             self.feedback_handler,
         )
@@ -44,9 +50,24 @@ class CollectBallState(ActionState):
         print("Setting process_img_ball = false")
 
         if result.success:
-            return "completed"
+            # Increment the number of collected balls by 1
+            blackboard.balls_collected += 1
+            print(f"Collected ball. Have now collected {blackboard.balls_collected} of {blackboard.max_balls} balls")
+            # Check to see if we are out of time
+            elapsed_time = blackboard.start_time-time.time()
+            if (elapsed_time > blackboard.max_time):
+                print(f"Max Time Exceeded. Dropping Off now")
+                return "drop_off"
+            print(f"We have {floor(blackboard.max_time-elapsed_time)} seconds remaining")
+            # Check if we have the required balls
+            if (blackboard.balls_collected >= blackboard.max_balls):
+                
+                return "drop_off"
+            else:
+                return "next_pickup"
         else:
-            return "aborted"
+            print(f"Failed to collect ball. Have collected {blackboard.balls_collected} balls")
+            return "next_pickup"
 
 
 class DepositBallState(ActionState):
@@ -55,7 +76,7 @@ class DepositBallState(ActionState):
             DepositToBox,
             "/follow_box",
             self.create_goal_handler,
-            ["completed", "aborted", "canceled"],
+            ["completed", "failed", "canceled"],
             self.result_handler,
         )
         self.node = node
@@ -77,9 +98,28 @@ class DepositBallState(ActionState):
         print("Setting process_img_box = false")
 
         if result.success:
+            # Rest the number of collected balls
+            blackboard.balls_collected = 0
+            blackboard.failed_dropoff_attempts = 0
+            print(f"Drop-off complete. Reset ball counter to {blackboard.balls_collected} balls")
+            elapsed_time = blackboard.start_time-time.time()
+            if elapsed_time > blackboard.max_time:
+                print(f"Max Time Exceeded. Stopping")
+                return "canceled"
+            print(f"We have {floor(blackboard.max_time-elapsed_time)} seconds remaining")
             return "completed"
         else:
-            return "aborted"
+            # Failed to drop off the balls
+            blackboard.failed_dropoff_attempts += 1
+            print(f"Failed to deposit balls {blackboard.failed_dropoff_attempts} time(s)")
+            if blackboard.failed_dropoff_attempts == blackboard.max_failed_dropoff_attempts:
+                # Give up
+                print("WARN!!!: Max retries reached. Giving Up.")
+                return "canceled"
+            else:
+                # Try again
+                print(f"Trying again. {blackboard.max_failed_dropoff_attempts-blackboard.failed_dropoff_attempts} retry/retries left")
+                return "failed"
 
 
 def main():
@@ -94,21 +134,11 @@ def main():
 
     # Add the COLLECT_BALL state twice
     sm.add_state(
-        "COLLECT_BALL_1",
+        "COLLECT_BALL",
         CollectBallState(node),
         transitions={
-            "completed": "COLLECT_BALL_2",
-            "aborted": "outcome_final",
-            "canceled": "outcome_final"
-        }
-    )
-
-    sm.add_state(
-        "COLLECT_BALL_2",
-        CollectBallState(node),
-        transitions={
-            "completed": "DEPOSIT_BALL",
-            "aborted": "outcome_final",
+            "next_pickup": "COLLECT_BALL",
+            "drop_off": "DEPOSIT_BALL",
             "canceled": "outcome_final"
         }
     )
@@ -118,8 +148,8 @@ def main():
         "DEPOSIT_BALL",
         DepositBallState(node),
         transitions={
-            "completed": "outcome_final",
-            "aborted": "outcome_final",
+            "completed": "COLLECT_BALL",
+            "failed": "DEPOSIT_BALL",
             "canceled": "outcome_final"
         }
     )
@@ -127,8 +157,16 @@ def main():
     # Publish FSM info to the YASMIN viewer for visualization
     YasminViewerPub("YASMIN_COLLECT_AND_DEPOSIT", sm)
 
-    # Execute the FSM
+    # Set Params
     blackboard = Blackboard()
+    blackboard.balls_collected = 0
+    blackboard.max_balls = 5
+    blackboard.failed_dropoff_attempts = 0
+    blackboard.max_failed_dropoff_attempts = 2
+    blackboard.start_time = time.time()  # Record the global start time
+    blackboard.max_time = 9*60
+
+    # Execute the FSM
     outcome = sm(blackboard)
     print(outcome)
 
