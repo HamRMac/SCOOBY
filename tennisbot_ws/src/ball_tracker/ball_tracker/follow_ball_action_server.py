@@ -31,13 +31,16 @@ class FollowBallActionServer(Node):
         self.declare_parameter("forward_chase_speed", 0.3)
         self.declare_parameter("min_forward_chase_speed", 0.25)
         self.declare_parameter("search_angular_speed", 2.0)
-        self.declare_parameter("min_angular_speed", 1.0)
+        self.declare_parameter("max_angular_speed", 2.0)
+        self.declare_parameter("min_angular_speed", 1.8)
         self.declare_parameter("max_size_thresh", 0.1)
         self.declare_parameter("filter_value", 0.9)
         self.declare_parameter("forward_distance", 0.1)
         self.declare_parameter("creep_speed", 0.6)  # New parameter for creep speed
         self.declare_parameter("creep_rotation_compensation", 0)  # New parameter for rotation compensation
         self.declare_parameter("creep_timeout_secs", 10.0)  # Timeout for forward creep motion
+        self.declare_parameter('alignment_threshold', 0.1)
+        
 
         # Retrieve parameters
         self.rcv_timeout_secs = self.get_parameter('rcv_timeout_secs').get_parameter_value().double_value
@@ -47,12 +50,14 @@ class FollowBallActionServer(Node):
         self.search_angular_speed = self.get_parameter('search_angular_speed').get_parameter_value().double_value
         self.max_size_thresh = self.get_parameter('max_size_thresh').get_parameter_value().double_value
         self.filter_value = self.get_parameter('filter_value').get_parameter_value().double_value
+        self.max_angular_speed = self.get_parameter('max_angular_speed').get_parameter_value().double_value
         self.min_angular_speed = self.get_parameter('min_angular_speed').get_parameter_value().double_value
         self.return_scan_scale = self.search_angular_speed - self.min_angular_speed
         self.forward_distance = self.get_parameter('forward_distance').get_parameter_value().double_value
         self.creep_speed = self.get_parameter('creep_speed').get_parameter_value().double_value
         self.creep_rotation_compensation = self.get_parameter('creep_rotation_compensation').get_parameter_value().double_value
         self.creep_timeout_secs = self.get_parameter('creep_timeout_secs').get_parameter_value().double_value
+        self.alignment_threshold = self.get_parameter('alignment_threshold').value
 
         self.get_logger().info('Using parameters:'+
                                " rcv_timeout_secs: "+str(self.rcv_timeout_secs)+
@@ -85,6 +90,8 @@ class FollowBallActionServer(Node):
         self.moving_forward = False
         self.forward_start_time = None
         self.scan_sweep_returning = False
+
+        self.turn_speed_gradient = (self.max_angular_speed - self.min_angular_speed)/(1 - self.alignment_threshold)
 
         self.settling_time = 2000
         self.settling_time_init = 0
@@ -154,20 +161,32 @@ class FollowBallActionServer(Node):
                 self.initial_yaw = None
                 self.is_scanning = False
                 self.get_logger().info('Target: x={} @ dist={}'.format(self.target_val, self.target_dist))
-                if (self.target_dist < self.max_size_thresh):
-                    # The threshold is now the y position from the base of the camera. This is -1 to 1. self.max_size_thresh-self.target_dist is between 0 and 2
-                    msg.linear.x = max(self.forward_chase_speed * abs((self.max_size_thresh-self.target_dist)/(self.max_size_thresh+1)),self.min_forward_chase_speed)
-                    self.is_close = False
+                
+                if abs(self.target_val) < self.alignment_threshold:
+                    if (self.target_dist < self.max_size_thresh):
+                        self.get_logger().info("Ball is centered. Approaching...")
+                        # Box is alligned move forward
+                        msg.linear.x = self.forward_chase_speed
+                    else:
+                        self.get_logger().info('Reached Target Size + Alignment')
+                        self.is_close = True
                 else:
-                    self.get_logger().info('Reached Target Size')
-                    self.is_close = True
-                '''request_angz = -self.angular_chase_multiplier * self.target_val
-                if request_angz<0:
-                    msg.angular.z = min(request_angz,-0.9) # if neg get the most powerful (most neg)
-                else:
-                    msg.angular.z = max(request_angz,0.9)
-                '''
-                msg.angular.z = -self.angular_chase_multiplier * self.target_val
+                    self.get_logger().info("Ball is NOT centered. Aligning...")
+                    # Realign before moving forward
+                    # This calculates the required speed using a min speed and and max speed
+                    requested_speed = self.turn_speed_gradient * -self.target_val
+                    if requested_speed < 0:
+                        # Need negative so subtract
+                        msg.angular.z = requested_speed - self.min_angular_speed
+                    else:
+                        # Need positive so add
+                        msg.angular.z = requested_speed + self.min_angular_speed
+                    # msg.linear.x = self.forward_chase_speed*(1/2)
+                    #self.get_logger().info(f"b.x = {self.target_val} ; RS = {requested_speed} ; t.a.z = {msg.angular.z}")
+
+                # Cmd robot to move
+                self.publisher_.publish(msg)
+
             else:
                 self.is_scanning = True
                 self.is_close = False
@@ -178,7 +197,9 @@ class FollowBallActionServer(Node):
                     self.perform_scan(msg)
                 self.get_logger().debug(str(msg))
 
-            self.publisher_.publish(msg)
+                # Cmd robot to move
+                self.publisher_.publish(msg)
+
 
             # Provide feedback to the client
             feedback_msg.current_distance = self.target_dist

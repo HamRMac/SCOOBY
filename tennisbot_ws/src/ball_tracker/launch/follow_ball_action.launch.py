@@ -38,7 +38,7 @@ def generate_launch_description():
 
     detect_node = Node(
             package='ball_tracker',
-            executable='detect_ball_nn_offload',
+            executable='detect_ball',
             remappings=[('/image_in',image_topic)],
             parameters=[params_file]
          )

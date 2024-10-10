@@ -21,7 +21,7 @@ class DepositToBoxActionServer(Node):
 
     def __init__(self):
         super().__init__('deposit_to_box_action_server')
-        self.get_logger().info('deposit_to_box_action_server is starting... Please wait')
+        self.get_logger().info('deposit_to_box_action_server V1.1 is starting... Please wait')
         self._goal_handle = None
         self._goal_lock = threading.Lock()
 
@@ -62,7 +62,7 @@ class DepositToBoxActionServer(Node):
         self.has_changed_ta_speed = False
 
         # Calculate turn velocity gradient
-        self.turn_speed_gradient = (self.turn_speed - self.min_turn_speed)/(1 - alignment_threshold)
+        self.turn_speed_gradient = (self.turn_speed - self.min_turn_speed)/(1 - self.alignment_threshold)
 
         # Publishers and subscribers
         self.cmd_vel_pub = self.create_publisher(Twist, '/cmd_vel', 10)
@@ -194,18 +194,21 @@ class DepositToBoxActionServer(Node):
                 # Move towards the box based on its position
                 twist = Twist()
                 if abs(self.box_msg.x) < self.alignment_threshold:
+                    self.get_logger().info("Box is centered. Approaching...")
                     # Box is alligned move forward
                     twist.linear.x = self.forward_speed
                 else:
+                    self.get_logger().info("Box is NOT centered. Aligning...")
                     # Realign before moving forward
                     # This calculates the required speed using a min speed and and max speed
-                    requested_speed = -self.turn_speed_gradient * self.box_msg.x
+                    requested_speed = self.turn_speed_gradient * -self.box_msg.x
                     if requested_speed < 0:
                         # Need negative so subtract
                         twist.angular.z = requested_speed - self.min_turn_speed
                     else:
                         # Need positive so add
                         twist.angular.z = requested_speed + self.min_turn_speed
+                    self.get_logger().info(f"b.x = {self.box_msg.x} ; RS = {requested_speed} ; t.a.z = {twist.angular.z}")
 
                 # Cmd robot to move
                 self.cmd_vel_pub.publish(twist)
