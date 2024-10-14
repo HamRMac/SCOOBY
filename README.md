@@ -1,5 +1,5 @@
 <div align="center">
-<img src="https://github.com/HamRMac/ScooperBot/blob/main/assets/scooby.png" width="600" alt="Project S.C.O.O.B.Y" align="center"/>
+<img src="https://github.com/HamRMac/SCOOBY/blob/main/assets/scooby.png" width="600" alt="Project S.C.O.O.B.Y" align="center"/>
 
 <h1>Project "S.C.O.O.B.Y"</h1>
 <p>A <b>S</b>earch, <b>C</b>ollect, <b>O</b>rientate and <b>O</b>rganise Tennis <b>B</b>alls S<b>y</b>stem</p>
@@ -26,11 +26,11 @@ user@scooby:/$ source /opt/ros/jazzy/setup.bash
 1. Rercursively clone this repository into your home folder
 ```console
 user@scooby:/$ cd ~
-user@scooby:~$ git clone --recurse-submodules -j8 https://github.com/HamRMac/ScooperBot
+user@scooby:~$ git clone --recurse-submodules -j8 https://github.com/HamRMac/SCOOBY
 ```
 2. CD into the workspace folder of the cloned repository
 ```console
-user@scooby:~$ cd ScooperBot/tennisbot_ws
+user@scooby:~$ cd SCOOBY/tennisbot_ws
 ```
 3. Build the workspace with colcon and the symlink install flag. This process will take a few minutes.
 ```console
@@ -43,7 +43,7 @@ user@scooby:tennisbot_ws$ cd ~
 ```
 ## Operation Steps
 The following commands are used to start the operation of the robot. It is recommended that you use the [tmux](https://github.com/tmux/tmux) library to prevent multiple ssh connections to the Pi thereby increasing performance. This is not required.<br>
-For each of the following blocks they should be run in a new terminal session. All nodes assume that the hardware is configured as described in the accompanying report. If your hardware is different you may need to modify the [config file](https://github.com/HamRMac/ScooperBot/blob/main/Scooperbot_params.yaml) supplied or the nodes themselves to adjust pins and other parameters.
+For each of the following blocks they should be run in a new terminal session. All nodes assume that the hardware is configured as described in the accompanying report. If your hardware is different you may need to modify the [config file](https://github.com/HamRMac/SCOOBY/blob/main/SCOOBY_params.yaml) supplied or the nodes themselves to adjust pins and other parameters.
 1. Start [FoxGlove Bridge](https://docs.foxglove.dev/docs/connecting-to-data/ros-foxglove-bridge) (Optional. Used for monitoring the robot. You must install this package with apt if you wish to use it)
 ```console
 user@scooby:~$ ros2 launch foxglove_bridge foxglove_bridge_launch.xml
@@ -67,11 +67,11 @@ user@scooby:~$ ros2 run ball_tracker detect_box --ros-args -r image_in:=/camera/
 ```
 6. Start the action server responsible for the robot navigating to and depositing the balls into the box
 ```console
-user@scooby:~$ ros2 run ball_tracker deposit_to_box_action_server --ros-args --params-file /home/user/Scooperbot_params.yaml
+user@scooby:~$ ros2 run ball_tracker deposit_to_box_action_server --ros-args --params-file /home/user/SCOOBY_params.yaml
 ```
 7. Start the ball detection node and accompanying action server responsible for the robot navigating to and collecting the tennis balls.
 ```console
-user@scooby:~$ ros2 launch ball_tracker follow_ball_action.launch.py params_file:=/home/user/Scooperbot_params.yaml image_topic:=/camera/rotated_image detect_only:=false
+user@scooby:~$ ros2 launch ball_tracker follow_ball_action.launch.py params_file:=/home/user/SCOOBY_params.yaml image_topic:=/camera/rotated_image detect_only:=false
 ```
 8. Start the state machine (only run once all the other nodes have started and initialised correctly)
 ```console
@@ -88,6 +88,6 @@ IN A SEPARATE CONSOLE
 user@scooby:~$ ros2 run line_detector boundary_guard
 ```
 ## Our Thanks
-<img src="https://github.com/HamRMac/ScooperBot/blob/main/assets/1st-place-medal.png" width="200" alt="1st Place Trophy" align="right"/>
+<img src="https://github.com/HamRMac/SCOOBY/blob/main/assets/1st-place-medal.png" width="200" alt="1st Place Trophy" align="right"/>
 A big thanks to the ECE4132 teaching staff for coming up with such an interesting and challenging project. Thanks to Josh Newans (https://github.com/joshnewans) for his repositories and guide videos that helped us learn how to use ROS and which provided the Differential Drive controller used to control the arduino used as the motor controller. Thanks to the ROS2 community for such a versatile and powerful open-source project.<br>
 Of course the biggest thanks go to our team members. Well done to everyone for your contributions to both the physical robot and the code-base. Your combined efforts contributed to our great 1st place outcome in the demonstration. Kudos to you all!
