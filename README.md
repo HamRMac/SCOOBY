@@ -3,7 +3,7 @@
 
 <h1>Project "S.C.O.O.B.Y"</h1>
 <p>A <b>S</b>earch, <b>C</b>ollect, <b>O</b>rientate and <b>O</b>rganise Tennis <b>B</b>alls S<b>y</b>stem</p>
-<p>This repository contains the code for the prototype version of the robot desinged and built by the 2024 ECE4132 Team, E14. There will be no ongoing support for this repository. All code is provided as is.</p>
+<p>This repository contains the code for the prototype version of the robot designed and built by the 2024 ECE4132 Team, E14. There will be no ongoing support for this repository. All code is provided as is.</p>
 </div>
 
 ## About S.C.O.O.B.Y
@@ -67,11 +67,11 @@ user@scooby:~$ ros2 run ball_tracker detect_box --ros-args -r image_in:=/camera/
 ```
 6. Start the action server responsible for the robot navigating to and depositing the balls into the box
 ```console
-user@scooby:~$ ros2 run ball_tracker deposit_to_box_action_server --ros-args --params-file /home/user/SCOOBY_params.yaml
+user@scooby:~$ ros2 run ball_tracker deposit_to_box_action_server --ros-args --params-file /home/user/SCOOBY/SCOOBY_params.yaml
 ```
 7. Start the ball detection node and accompanying action server responsible for the robot navigating to and collecting the tennis balls.
 ```console
-user@scooby:~$ ros2 launch ball_tracker follow_ball_action.launch.py params_file:=/home/user/SCOOBY_params.yaml image_topic:=/camera/rotated_image detect_only:=false
+user@scooby:~$ ros2 launch ball_tracker follow_ball_action.launch.py params_file:=/home/user/SCOOBY/SCOOBY_params.yaml image_topic:=/camera/rotated_image detect_only:=false
 ```
 8. Start the state machine (only run once all the other nodes have started and initialised correctly)
 ```console
