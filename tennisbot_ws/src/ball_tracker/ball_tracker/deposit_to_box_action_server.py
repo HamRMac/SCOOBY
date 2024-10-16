@@ -328,16 +328,16 @@ class DepositToBoxActionServer(Node):
         # Shake left and right for 2 seconds
         while time.time() - start_time < 2.0:
             twist.angular.z = 2.0  # Rotate left
-            self.publisher_.publish(twist)
+            self.cmd_vel_pub.publish(twist)
             time.sleep(0.1)  # Shake frequency
 
             twist.angular.z = -2.0  # Rotate right
-            self.publisher_.publish(twist)
+            self.cmd_vel_pub.publish(twist)
             time.sleep(0.1)  # Shake frequency
         
         # Stop the robot
         twist.angular.z = 0.0
-        self.publisher_.publish(twist)
+        self.cmd_vel_pub.publish(twist)
         
         # Wait for 2 seconds
         self.get_logger().info('Shaking complete, now waiting for 2 seconds.')

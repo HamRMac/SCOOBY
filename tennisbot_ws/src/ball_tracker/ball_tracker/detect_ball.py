@@ -79,7 +79,7 @@ class DetectBall(Node):
             cy = point['cy']
             area = point['area']
 
-            centrelist.append([cx, cy, area])
+            centrelist.append([cx, cy, area,point['in_bounds']])
             if point['in_bounds']:
                 cv2.rectangle(cv_image, (x, y), (x + w, y + h), (255, 0, 0), 2)
             else:
@@ -91,6 +91,8 @@ class DetectBall(Node):
         
         for kp in centrelist:
             # Check for the largest detected ball
+            if not kp[3]:
+                continue
             if kp[1] > point_out.y:
                 point_out.x = float(kp[0])
                 point_out.y = float(kp[1])
@@ -219,7 +221,7 @@ def draw_path_line(center_x, center_y, boundarylength):
     top_left = (center_x - half_length, center_y - half_length)
     bottom_right = (center_x + half_length, center_y + half_length)
 
-    ball_bottom_middle = (center_x, center_y + half_length)
+    ball_bottom_middle = (int(center_x), int(center_y + half_length))
     cv2.line(img, frame_bottom_middle, ball_bottom_middle, (0,255,0), 2)
 
     # Draw the green bounding box

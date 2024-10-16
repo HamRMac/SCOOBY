@@ -31,7 +31,15 @@ target_include_directories(boundary_guard PUBLIC
 target_compile_features(boundary_guard PUBLIC c_std_99 cxx_std_17)  # Require C99 and C++17
 
 ament_target_dependencies(detect_lines
-  boundary_guard
+  rclcpp
+  sensor_msgs
+  geometry_msgs
+  cv_bridge
+  OpenCV
+  image_transport
+)
+
+ament_target_dependencies(boundary_guard
   rclcpp
   sensor_msgs
   geometry_msgs

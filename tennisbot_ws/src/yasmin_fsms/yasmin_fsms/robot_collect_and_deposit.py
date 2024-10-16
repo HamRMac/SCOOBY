@@ -55,7 +55,7 @@ class CollectBallState(ActionState):
             blackboard.balls_collected += 1
             print(f"Collected ball. Have now collected {blackboard.balls_collected} of {blackboard.max_balls} balls")
             # Check to see if we are out of time
-            elapsed_time = blackboard.start_time-time.time()
+            elapsed_time = time.time()-blackboard.start_time
             if (elapsed_time > blackboard.max_time):
                 print(f"Max Time Exceeded. Dropping Off now")
                 return "drop_off"
@@ -103,7 +103,7 @@ class DepositBallState(ActionState):
             blackboard.balls_collected = 0
             blackboard.failed_dropoff_attempts = 0
             print(f"Drop-off complete. Reset ball counter to {blackboard.balls_collected} balls")
-            elapsed_time = blackboard.start_time-time.time()
+            elapsed_time = time.time()-blackboard.start_time
             if elapsed_time > blackboard.max_time:
                 print(f"Max Time Exceeded. Stopping")
                 return "canceled"
@@ -140,6 +140,7 @@ def main():
         transitions={
             "next_pickup": "COLLECT_BALL",
             "drop_off": "DEPOSIT_BALL",
+            "aborted": "COLLECT_BALL",
             "canceled": "outcome_final"
         }
     )
